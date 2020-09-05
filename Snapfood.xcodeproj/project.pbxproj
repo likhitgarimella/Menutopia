@@ -58,10 +58,10 @@
 			children = (
 				027510EA2503D1B800BF7987 /* AppDelegate.swift */,
 				027510EC2503D1B800BF7987 /* SceneDelegate.swift */,
-				027510EE2503D1B800BF7987 /* ViewController.swift */,
-				027510F02503D1B800BF7987 /* Main.storyboard */,
 				027510F32503D1CC00BF7987 /* Assets.xcassets */,
 				027510F52503D1CC00BF7987 /* LaunchScreen.storyboard */,
+				027510F02503D1B800BF7987 /* Main.storyboard */,
+				027510EE2503D1B800BF7987 /* ViewController.swift */,
 				027510F82503D1CC00BF7987 /* Info.plist */,
 			);
 			path = Snapfood;
