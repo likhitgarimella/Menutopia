@@ -8,6 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Medium.otf">
+            <string>SFProRounded-Medium</string>
+        </array>
         <array key="SF-Pro-Rounded-Semibold.otf">
             <string>SFProRounded-Semibold</string>
         </array>
@@ -29,20 +32,76 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or Sign up to discover your next meal!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufo-KK-nFM">
-                                <rect key="frame" x="16" y="396" width="382" height="24"/>
+                                <rect key="frame" x="32" y="396" width="350" height="48"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvb-QP-PE3">
+                                <rect key="frame" x="20" y="596" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qng-SI-OjN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmX-19-XTF">
+                                <rect key="frame" x="20" y="656" width="156" height="40"/>
+                                <color key="backgroundColor" red="0.81176470588235294" green="0.27058823529411763" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="j71-1r-4Oo"/>
+                                    <constraint firstAttribute="width" constant="156" id="ya0-Wh-gyk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsc-Nr-DcZ">
+                                <rect key="frame" x="238" y="656" width="156" height="40"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AtI-ba-KIa"/>
+                                    <constraint firstAttribute="width" constant="156" id="f82-su-yhA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Ufo-KK-nFM" secondAttribute="trailing" constant="16" id="EDd-A0-XgR"/>
-                            <constraint firstItem="Ufo-KK-nFM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="EO6-8F-CeF"/>
+                            <constraint firstItem="wmX-19-XTF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8r7-7l-Wwr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qsc-Nr-DcZ" secondAttribute="trailing" constant="20" id="BYT-7B-7bk"/>
+                            <constraint firstAttribute="trailing" secondItem="Ufo-KK-nFM" secondAttribute="trailing" constant="32" id="EDd-A0-XgR"/>
+                            <constraint firstItem="Ufo-KK-nFM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="EO6-8F-CeF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wmX-19-XTF" secondAttribute="bottom" constant="40" id="IGw-Dq-6XD"/>
                             <constraint firstItem="9So-tn-kbt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="NsY-kE-Ecd"/>
-                            <constraint firstItem="Ufo-KK-nFM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RUV-ff-yMN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qsc-Nr-DcZ" secondAttribute="bottom" constant="40" id="Xzn-co-gWQ"/>
                             <constraint firstItem="9So-tn-kbt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e1a-6z-idc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xvb-QP-PE3" secondAttribute="trailing" constant="20" id="fpV-YM-kTu"/>
+                            <constraint firstItem="wmX-19-XTF" firstAttribute="top" secondItem="xvb-QP-PE3" secondAttribute="bottom" constant="20" id="hgA-DZ-6c9"/>
+                            <constraint firstItem="xvb-QP-PE3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="n3Q-8l-5gU"/>
                             <constraint firstItem="Ufo-KK-nFM" firstAttribute="top" secondItem="9So-tn-kbt" secondAttribute="bottom" constant="16" id="yUs-m9-VJY"/>
                         </constraints>
                     </view>
