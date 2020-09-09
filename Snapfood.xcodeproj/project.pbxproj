@@ -28,6 +28,8 @@
 		027510F42503D1CC00BF7987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027510F32503D1CC00BF7987 /* Assets.xcassets */; };
 		027510F72503D1CC00BF7987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027510F52503D1CC00BF7987 /* LaunchScreen.storyboard */; };
 		027510FF2503E25000BF7987 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027510FE2503E24F00BF7987 /* Extensions.swift */; };
+		02A15A0B2508DA07001B5FAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A15A0A2508DA07001B5FAD /* LoginViewController.swift */; };
+		02A15A0D2508DA31001B5FAD /* SelectSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		027510F62503D1CC00BF7987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		027510F82503D1CC00BF7987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		027510FE2503E24F00BF7987 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		02A15A0A2508DA07001B5FAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				027510F52503D1CC00BF7987 /* LaunchScreen.storyboard */,
 				027510F02503D1B800BF7987 /* Main.storyboard */,
 				027510EE2503D1B800BF7987 /* ViewController.swift */,
+				02A15A0A2508DA07001B5FAD /* LoginViewController.swift */,
+				02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */,
 				027510FE2503E24F00BF7987 /* Extensions.swift */,
 				027510F82503D1CC00BF7987 /* Info.plist */,
 			);
@@ -205,9 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02A15A0D2508DA31001B5FAD /* SelectSignupViewController.swift in Sources */,
 				027510EF2503D1B800BF7987 /* ViewController.swift in Sources */,
 				027510EB2503D1B800BF7987 /* AppDelegate.swift in Sources */,
 				027510ED2503D1B800BF7987 /* SceneDelegate.swift in Sources */,
+				02A15A0B2508DA07001B5FAD /* LoginViewController.swift in Sources */,
 				027510FF2503E25000BF7987 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
