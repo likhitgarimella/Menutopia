@@ -47,11 +47,6 @@
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmX-19-XTF">
                                 <rect key="frame" x="20" y="656" width="156" height="40"/>
@@ -64,11 +59,6 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="R9w-1x-dtT" kind="presentation" id="83a-6F-wcJ"/>
                                 </connections>
@@ -84,11 +74,6 @@
                                 <state key="normal" title="Sign up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="oSf-CI-aFj" kind="presentation" id="5QU-o9-fNs"/>
                                 </connections>
@@ -111,6 +96,11 @@
                             <constraint firstItem="Ufo-KK-nFM" firstAttribute="top" secondItem="9So-tn-kbt" secondAttribute="bottom" constant="16" id="yUs-m9-VJY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="continueButton" destination="xvb-QP-PE3" id="s2n-aw-auo"/>
+                        <outlet property="loginButton" destination="wmX-19-XTF" id="uQN-9f-SZa"/>
+                        <outlet property="signupButton" destination="Qsc-Nr-DcZ" id="JVO-BG-fKJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
