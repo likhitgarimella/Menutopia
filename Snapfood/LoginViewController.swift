@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     // Outlets
     @IBOutlet var email: UITextField!
     @IBOutlet var password: UITextField!
+    @IBOutlet var loginOutlet: UIButton!
     
     func Properties() {
         
@@ -25,6 +26,7 @@ class LoginViewController: UIViewController {
         
         email.layer.cornerRadius = 20
         password.layer.cornerRadius = 20
+        loginOutlet.layer.cornerRadius = 20
         
     }
     
@@ -48,4 +50,4 @@ class LoginViewController: UIViewController {
         
     }
     
-}   // #52
+}   // #54

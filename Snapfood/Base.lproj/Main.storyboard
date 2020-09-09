@@ -60,7 +60,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="R9w-1x-dtT" kind="presentation" id="83a-6F-wcJ"/>
+                                    <segue destination="R9w-1x-dtT" kind="presentation" modalPresentationStyle="fullScreen" id="83a-6F-wcJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsc-Nr-DcZ">
@@ -75,7 +75,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oSf-CI-aFj" kind="presentation" id="5QU-o9-fNs"/>
+                                    <segue destination="oSf-CI-aFj" kind="presentation" modalPresentationStyle="fullScreen" id="5QU-o9-fNs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -145,7 +145,7 @@
                                 </constraints>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                         <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -159,31 +159,76 @@
                                 </constraints>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                         <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6N-HL-BZP">
+                                <rect key="frame" x="20" y="518" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JMn-S7-qDu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxX-vQ-lJC">
+                                <rect key="frame" x="83.666666666666686" y="645" width="247" height="31"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Don't have an account?">
+                                            <attributes>
+                                                <color key="NSColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="SFProRounded-Medium"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="16" name="SFProRounded-Medium"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Signup here">
+                                            <attributes>
+                                                <color key="NSColor" red="0.81176470588235294" green="0.27058823529411763" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="SFProRounded-Medium"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="oSf-CI-aFj" kind="presentation" modalPresentationStyle="fullScreen" id="5uX-w9-ay9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VRF-6F-Yaf"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="r6N-HL-BZP" firstAttribute="top" secondItem="KVe-dl-85X" secondAttribute="bottom" constant="30" id="0y2-sl-ZMm"/>
                             <constraint firstItem="KVe-dl-85X" firstAttribute="top" secondItem="L87-ZM-ofb" secondAttribute="bottom" constant="20" id="3K8-7G-Inj"/>
                             <constraint firstItem="tzN-0I-SMI" firstAttribute="centerX" secondItem="X9P-Cj-CsD" secondAttribute="centerX" id="4VC-HK-koS"/>
+                            <constraint firstItem="pxX-vQ-lJC" firstAttribute="centerX" secondItem="X9P-Cj-CsD" secondAttribute="centerX" id="5aT-bI-j8L"/>
                             <constraint firstItem="KVe-dl-85X" firstAttribute="leading" secondItem="VRF-6F-Yaf" secondAttribute="leading" constant="20" id="6qy-ed-8P5"/>
                             <constraint firstItem="VRF-6F-Yaf" firstAttribute="trailing" secondItem="L87-ZM-ofb" secondAttribute="trailing" constant="20" id="8ML-kd-dCm"/>
+                            <constraint firstItem="r6N-HL-BZP" firstAttribute="leading" secondItem="VRF-6F-Yaf" secondAttribute="leading" constant="20" id="EhO-S7-GRI"/>
                             <constraint firstItem="VRF-6F-Yaf" firstAttribute="trailing" secondItem="KVe-dl-85X" secondAttribute="trailing" constant="20" id="GAR-qG-DL5"/>
                             <constraint firstItem="ZqI-KN-pDx" firstAttribute="centerX" secondItem="X9P-Cj-CsD" secondAttribute="centerX" id="HNw-eF-aAn"/>
                             <constraint firstItem="tzN-0I-SMI" firstAttribute="top" secondItem="ZqI-KN-pDx" secondAttribute="bottom" constant="20" id="Wte-sX-UZ7"/>
+                            <constraint firstItem="VRF-6F-Yaf" firstAttribute="bottom" secondItem="pxX-vQ-lJC" secondAttribute="bottom" constant="60" id="grP-zy-mXB"/>
                             <constraint firstItem="L87-ZM-ofb" firstAttribute="leading" secondItem="VRF-6F-Yaf" secondAttribute="leading" constant="20" id="kq5-5G-kku"/>
                             <constraint firstItem="L87-ZM-ofb" firstAttribute="top" secondItem="tzN-0I-SMI" secondAttribute="bottom" constant="40" id="xO1-Nu-AIQ"/>
+                            <constraint firstItem="VRF-6F-Yaf" firstAttribute="trailing" secondItem="r6N-HL-BZP" secondAttribute="trailing" constant="20" id="xmf-Mt-y6S"/>
                             <constraint firstItem="ZqI-KN-pDx" firstAttribute="top" secondItem="VRF-6F-Yaf" secondAttribute="top" constant="40" id="xnj-Sm-W74"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="email" destination="L87-ZM-ofb" id="NIh-IY-fNP"/>
+                        <outlet property="loginOutlet" destination="r6N-HL-BZP" id="oP9-nr-jaa"/>
                         <outlet property="password" destination="KVe-dl-85X" id="3Gq-Vn-f2r"/>
                     </connections>
                 </viewController>
@@ -192,6 +237,9 @@
             <point key="canvasLocation" x="977" y="-291"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5uX-w9-ay9"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="login" width="345" height="264"/>
         <image name="splash-image" width="341" height="340"/>
