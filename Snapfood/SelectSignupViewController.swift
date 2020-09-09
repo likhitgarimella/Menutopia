@@ -9,12 +9,23 @@
 import UIKit
 
 class SelectSignupViewController: UIViewController {
+    
+    // Outlets
+    @IBOutlet var selectRestaurant: UIButton!
+    @IBOutlet var selectUser: UIButton!
+    
+    func CornerRadius() {
+        
+        selectRestaurant.layer.cornerRadius = 20
+        selectUser.layer.cornerRadius = 20
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        CornerRadius()
         
     }
     
-}   // #21
+}   // #32

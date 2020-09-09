@@ -113,9 +113,101 @@
                     <view key="view" contentMode="scaleToFill" id="zr5-Hp-yAf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select-signup" translatesAutoresizingMaskIntoConstraints="NO" id="Tm9-hJ-EJ5">
+                                <rect key="frame" x="34.666666666666657" y="40" width="345" height="309"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are a restaurant, create your profile to start uploading your menu to help users find their next meal!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYl-Pn-CVs">
+                                <rect key="frame" x="40" y="369" width="334" height="71.666666666666686"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLT-XQ-dsD">
+                                <rect key="frame" x="20" y="460.66666666666669" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AXk-Y0-poI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                <state key="normal" title="Restaurant">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are an explorer looking for your next meal, sign up here!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYt-tD-GuU">
+                                <rect key="frame" x="40" y="530.66666666666663" width="334" height="48"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJj-ET-p5s">
+                                <rect key="frame" x="20" y="598.66666666666663" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ufy-Hq-Bqd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                <state key="normal" title="User">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DVD-SF-ZMT">
+                                <rect key="frame" x="80.666666666666686" y="675" width="253" height="31"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Already have an account?">
+                                            <attributes>
+                                                <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="SFProRounded-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="16" name="SFProRounded-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Login here">
+                                            <attributes>
+                                                <color key="NSColor" red="0.81176470588235294" green="0.27058823529411763" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="16" name="SFProRounded-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="R9w-1x-dtT" kind="presentation" modalPresentationStyle="fullScreen" id="Wiq-Au-WLx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hpp-LA-Lx8"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tm9-hJ-EJ5" firstAttribute="top" secondItem="hpp-LA-Lx8" secondAttribute="top" constant="40" id="8op-lA-KMe"/>
+                            <constraint firstItem="hpp-LA-Lx8" firstAttribute="trailing" secondItem="bJj-ET-p5s" secondAttribute="trailing" constant="20" id="BjY-9R-hhF"/>
+                            <constraint firstItem="MYt-tD-GuU" firstAttribute="left" secondItem="zr5-Hp-yAf" secondAttribute="left" constant="40" id="CMa-F7-2by"/>
+                            <constraint firstAttribute="right" secondItem="zYl-Pn-CVs" secondAttribute="right" constant="40" id="DnI-Aj-d20"/>
+                            <constraint firstItem="MYt-tD-GuU" firstAttribute="top" secondItem="tLT-XQ-dsD" secondAttribute="bottom" constant="30" id="KFi-f5-lY4"/>
+                            <constraint firstAttribute="right" secondItem="MYt-tD-GuU" secondAttribute="right" constant="40" id="Otg-H2-qVp"/>
+                            <constraint firstItem="zYl-Pn-CVs" firstAttribute="left" secondItem="zr5-Hp-yAf" secondAttribute="left" constant="40" id="VXx-Zo-Gzi"/>
+                            <constraint firstItem="hpp-LA-Lx8" firstAttribute="trailing" secondItem="tLT-XQ-dsD" secondAttribute="trailing" constant="20" id="VaU-XF-4Rf"/>
+                            <constraint firstItem="Tm9-hJ-EJ5" firstAttribute="centerX" secondItem="zr5-Hp-yAf" secondAttribute="centerX" id="YFU-0H-usN"/>
+                            <constraint firstItem="bJj-ET-p5s" firstAttribute="top" secondItem="MYt-tD-GuU" secondAttribute="bottom" constant="20" id="bQz-ga-i8W"/>
+                            <constraint firstItem="tLT-XQ-dsD" firstAttribute="top" secondItem="zYl-Pn-CVs" secondAttribute="bottom" constant="20" id="eFZ-1P-gGp"/>
+                            <constraint firstItem="hpp-LA-Lx8" firstAttribute="bottom" secondItem="DVD-SF-ZMT" secondAttribute="bottom" constant="30" id="ljL-Mo-GnN"/>
+                            <constraint firstItem="bJj-ET-p5s" firstAttribute="leading" secondItem="hpp-LA-Lx8" secondAttribute="leading" constant="20" id="nks-wE-UfI"/>
+                            <constraint firstItem="zYl-Pn-CVs" firstAttribute="top" secondItem="Tm9-hJ-EJ5" secondAttribute="bottom" constant="20" id="pO6-lO-9Gt"/>
+                            <constraint firstItem="tLT-XQ-dsD" firstAttribute="leading" secondItem="hpp-LA-Lx8" secondAttribute="leading" constant="20" id="qhP-ob-7sb"/>
+                            <constraint firstItem="DVD-SF-ZMT" firstAttribute="centerX" secondItem="zr5-Hp-yAf" secondAttribute="centerX" id="xRz-mV-5JM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="selectRestaurant" destination="tLT-XQ-dsD" id="bIq-UT-ZZc"/>
+                        <outlet property="selectUser" destination="bJj-ET-p5s" id="EqD-rw-L9g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k9Q-Ea-RJR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,12 +270,12 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxX-vQ-lJC">
-                                <rect key="frame" x="83.666666666666686" y="645" width="247" height="31"/>
+                                <rect key="frame" x="81.666666666666686" y="645" width="251" height="31"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Don't have an account?">
                                             <attributes>
-                                                <color key="NSColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="16" name="SFProRounded-Medium"/>
                                             </attributes>
                                         </fragment>
@@ -193,9 +285,9 @@
                                                 <font key="NSFont" size="16" name="SFProRounded-Medium"/>
                                             </attributes>
                                         </fragment>
-                                        <fragment content="Signup here">
+                                        <fragment content="Sign up here">
                                             <attributes>
-                                                <color key="NSColor" red="0.81176470588235294" green="0.27058823529411763" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" red="0.81176470588235294" green="0.27058823529411763" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="16" name="SFProRounded-Medium"/>
                                             </attributes>
                                         </fragment>
@@ -238,10 +330,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Wiq-Au-WLx"/>
         <segue reference="5uX-w9-ay9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="login" width="345" height="264"/>
+        <image name="select-signup" width="345" height="309"/>
         <image name="splash-image" width="341" height="340"/>
     </resources>
 </document>
