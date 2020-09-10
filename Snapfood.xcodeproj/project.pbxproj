@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0172B93A084744908D31BDCB /* Pods_Snapfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCFAB7B393D3DA1D527E783 /* Pods_Snapfood.framework */; };
+		021210CD2509C1DA0062DB29 /* RestaurantSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021210CC2509C1DA0062DB29 /* RestaurantSignupViewController.swift */; };
+		021210CF2509C2710062DB29 /* UserSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021210CE2509C2710062DB29 /* UserSignupViewController.swift */; };
 		025C113D2505836500A1E130 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 025C112F2505836300A1E130 /* SF-Pro-Rounded-Regular.otf */; };
 		025C113E2505836500A1E130 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 025C11302505836300A1E130 /* SF-Pro-Rounded-Bold.otf */; };
 		025C113F2505836500A1E130 /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 025C11312505836300A1E130 /* SF-Pro-Text-LightItalic.otf */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		021210CC2509C1DA0062DB29 /* RestaurantSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantSignupViewController.swift; sourceTree = "<group>"; };
+		021210CE2509C2710062DB29 /* UserSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignupViewController.swift; sourceTree = "<group>"; };
 		025C112F2505836300A1E130 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
 		025C11302505836300A1E130 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
 		025C11312505836300A1E130 /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				027510EE2503D1B800BF7987 /* ViewController.swift */,
 				02A15A0A2508DA07001B5FAD /* LoginViewController.swift */,
 				02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */,
+				021210CC2509C1DA0062DB29 /* RestaurantSignupViewController.swift */,
+				021210CE2509C2710062DB29 /* UserSignupViewController.swift */,
 				027510FE2503E24F00BF7987 /* Extensions.swift */,
 				027510F82503D1CC00BF7987 /* Info.plist */,
 			);
@@ -283,6 +289,8 @@
 				027510EF2503D1B800BF7987 /* ViewController.swift in Sources */,
 				027510EB2503D1B800BF7987 /* AppDelegate.swift in Sources */,
 				027510ED2503D1B800BF7987 /* SceneDelegate.swift in Sources */,
+				021210CD2509C1DA0062DB29 /* RestaurantSignupViewController.swift in Sources */,
+				021210CF2509C2710062DB29 /* UserSignupViewController.swift in Sources */,
 				02A15A0B2508DA07001B5FAD /* LoginViewController.swift in Sources */,
 				027510FF2503E25000BF7987 /* Extensions.swift in Sources */,
 			);
