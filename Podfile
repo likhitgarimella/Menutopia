@@ -6,6 +6,7 @@ target 'Snapfood' do
 
   # Pods for Snapfood
 
+pod 'Firebase'
 pod 'Firebase/Auth'
 
 end
