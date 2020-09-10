@@ -1,0 +1,6 @@
+framework module Pods_Snapfood {
+  umbrella header "Pods-Snapfood-umbrella.h"
+
+  export *
+  module * { export * }
+}
