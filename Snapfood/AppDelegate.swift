@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /// Status bar color
         // In Info.plist...
         // View controller-based status bar appearance -> NO
+        
+        FirebaseApp.configure()
         
         /// Increase Launch Screen Time
         Thread.sleep(forTimeInterval: 1)
@@ -48,4 +51,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-}   // #52
+}   // #55
