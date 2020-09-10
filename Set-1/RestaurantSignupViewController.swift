@@ -61,6 +61,9 @@ class RestaurantSignupViewController: UIViewController {
         
     }
     
+    // Progress HUD
+    let hud1 = JGProgressHUD(style: .dark)
+    
     @IBAction func registerTapped(_ sender: UIButton) {
         
         func isValidEmail(testStr:String) -> Bool {
@@ -73,38 +76,56 @@ class RestaurantSignupViewController: UIViewController {
             
             if (password.text == confirmPassword.text) {
                 
+                if(isValidEmail(testStr: restEmail.text!)) {
+                    
+                    hud1.show(in: self.view)
+                    
+                    // Validations
+                    guard let name = restName.text, let email = restEmail.text, let password = password.text else {
+                        print("Invalid Form Input")
+                        return
+                    }
+                    
+                    // Auth service sign up
+                    AuthService.restaurantSignUp(name: name, email: email, password: password, onSuccess: {
+                        print("On Success")
+                        self.hud1.show(in: self.view)
+                        self.hud1.indicatorView = nil
+                        self.hud1.textLabel.text = "Welcome!"
+                        self.hud1.dismiss(afterDelay: 2.0, animated: true)
+                        // segue to tab bar VC
+                        self.performSegue(withIdentifier: "goToHome", sender: self)
+                    }) {errorString in
+                        // this will be the one which prints error due to auth, in console
+                        print(errorString!)
+                        self.hud1.show(in: self.view)
+                        self.hud1.indicatorView = nil
+                        self.hud1.textLabel.text = errorString!
+                        self.hud1.dismiss(afterDelay: 2.0, animated: true)
+                    }
+                    
+                } else {
+                    hud1.show(in: self.view)
+                    hud1.indicatorView = nil
+                    hud1.textLabel.text = "Enter a valid email address"
+                    hud1.dismiss(afterDelay: 2.0, animated: true)
+                }
                 
-                
+            } else {
+                hud1.show(in: self.view)
+                hud1.indicatorView = nil
+                hud1.textLabel.text = "Password and Confirm password doesn't match"
+                hud1.dismiss(afterDelay: 2.0, animated: true)
             }
             
-        }
-        
-        // Progress HUD
-        let hud1 = JGProgressHUD(style: .dark)
-        hud1.show(in: self.view)
-        
-        // validations
-        guard let name = restName.text, let email = restEmail.text, let password = password.text else {
-            print("Invalid Form Input")
-            return
-        }
-        
-        // Auth service sign up
-        AuthService.restaurantSignUp(name: name, email: email, password: password, onSuccess: {
-            print("On Success")
-            hud1.indicatorView = nil
-            hud1.textLabel.text = "Welcome!"
-            hud1.dismiss(afterDelay: 2.0, animated: true)
-            // segue to tab bar VC
-            self.performSegue(withIdentifier: "goToHome", sender: self)
-        }) {errorString in
-            // this will be the one which prints error due to auth, in console
-            print(errorString!)
-            hud1.indicatorView = nil
-            hud1.textLabel.text = errorString!
-            hud1.dismiss(afterDelay: 2.0, animated: true)
+        } else {
+            // Alert
+            let alertController = UIAlertController(title: "Oops!", message: "Please fill all the fields to proceed", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
         }
         
     }
     
-}   // #111
+}   // #132
