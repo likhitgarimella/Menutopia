@@ -240,14 +240,14 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="v6Q-i0-owY" customClass="RestaurantSignupViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mKz-8e-Pn2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1040"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cec-wV-cA4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1040"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXH-gD-mbg">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1040"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="znA-uH-eHB">
                                                 <rect key="frame" x="20" y="30" width="374" height="261"/>
@@ -329,6 +329,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="SWC-on-KQN" firstAttribute="left" secondItem="tXH-gD-mbg" secondAttribute="left" constant="20" id="2hS-fh-KRl"/>
+                                            <constraint firstAttribute="bottom" secondItem="vXv-WT-ZG2" secondAttribute="bottom" constant="327.32999999999998" id="4fp-vh-agj"/>
                                             <constraint firstItem="vXv-WT-ZG2" firstAttribute="left" secondItem="tXH-gD-mbg" secondAttribute="left" constant="20" id="89w-aa-0RB"/>
                                             <constraint firstAttribute="right" secondItem="sQW-fv-XoE" secondAttribute="right" constant="40" id="Dtg-aF-WJY"/>
                                             <constraint firstItem="8B7-rD-N1U" firstAttribute="left" secondItem="tXH-gD-mbg" secondAttribute="left" constant="20" id="FmL-Zo-VTP"/>
@@ -348,7 +349,6 @@
                                             <constraint firstItem="o7D-NL-X6S" firstAttribute="top" secondItem="sQW-fv-XoE" secondAttribute="bottom" constant="30" id="lZ2-7J-3Q8"/>
                                             <constraint firstAttribute="right" secondItem="SyD-Os-RJD" secondAttribute="right" constant="20" id="n8u-G6-8m6"/>
                                             <constraint firstAttribute="right" secondItem="o7D-NL-X6S" secondAttribute="right" constant="20" id="xcB-dt-WyF"/>
-                                            <constraint firstAttribute="bottom" secondItem="vXv-WT-ZG2" secondAttribute="bottom" constant="287.32999999999998" id="yn0-WY-mwC"/>
                                             <constraint firstAttribute="right" secondItem="8B7-rD-N1U" secondAttribute="right" constant="20" id="zzB-I3-LBA"/>
                                         </constraints>
                                     </view>
@@ -372,7 +372,7 @@
                             <constraint firstItem="cec-wV-cA4" firstAttribute="leading" secondItem="yOq-4O-fcd" secondAttribute="leading" id="idW-Xx-68B"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="414" height="1000"/>
+                    <size key="freeformSize" width="414" height="1040"/>
                     <connections>
                         <outlet property="confirmPassword" destination="SyD-Os-RJD" id="hQ9-Og-UfP"/>
                         <outlet property="password" destination="8B7-rD-N1U" id="1ep-4R-hqB"/>
