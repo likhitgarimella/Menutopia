@@ -17,9 +17,9 @@ class UserApi {
     var REF_RESTAURANTS = Database.database().reference().child("Restaurants")
     var REF_USERS = Database.database().reference().child("Users")
     
-    func obersveUser(withId uid: String, completion: @escaping (AppUser) -> Void) {
+    func observeRestaurant(withId uid: String, completion: @escaping (AppUser) -> Void) {
         
-        REF_USERS.child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+        REF_RESTAURANTS.child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
             
             if let dict = snapshot.value as? [String:Any] {
                 let user = AppUser.transformUser(dict: dict, key: snapshot.key)
@@ -31,13 +31,13 @@ class UserApi {
     }
     
     ///
-    func observeCurrentUser(completion: @escaping (AppUser) -> Void) {
+    func observeCurrentRestaurant(completion: @escaping (AppUser) -> Void) {
         
         guard let currentUser = Auth.auth().currentUser else {
              return
         }
         
-        REF_USERS.child(currentUser.uid).observeSingleEvent(of: .value, with: { (snapshot) in
+        REF_RESTAURANTS.child(currentUser.uid).observeSingleEvent(of: .value, with: { (snapshot) in
             
             /// tranform data snapshot to user object
             if let dict = snapshot.value as? [String:Any] {
@@ -49,16 +49,16 @@ class UserApi {
         
     }
     
-    func observeUsers(completion: @escaping (AppUser) -> Void) {
+    func observeRestaurants(completion: @escaping (AppUser) -> Void) {
         
-        REF_USERS.observe(.childAdded, with: {
+        REF_RESTAURANTS.observe(.childAdded, with: {
             snapshot in
             
             if let dict = snapshot.value as? [String:Any] {
                 let user = AppUser.transformUser(dict: dict, key: snapshot.key)
                 
                 /// Display list of users in 'Discover users' exclusing the current user in that
-                if user.id! !=  Api.UserDet.CURRENT_USER?.uid {
+                if user.id! !=  Api.UserDet.CURRENT_RESTAURANT?.uid {
                     completion(user)
                 }
             }
@@ -71,20 +71,20 @@ class UserApi {
     // func queryUsers
     
     ///
-    var CURRENT_USER: User? {
+    var CURRENT_RESTAURANT: User? {
         if let currentUser = Auth.auth().currentUser {
             return currentUser
         }
         return nil
     }
     
-    var REF_CURRENT_USER: DatabaseReference? {
+    var REF_CURRENT_RESTAURANT: DatabaseReference? {
         
         guard let currentUser = Auth.auth().currentUser else {
              return nil
         }
         
-        return REF_USERS.child(currentUser.uid)
+        return REF_RESTAURANTS.child(currentUser.uid)
         
     }
     
