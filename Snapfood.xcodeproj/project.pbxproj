@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0172B93A084744908D31BDCB /* Pods_Snapfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCFAB7B393D3DA1D527E783 /* Pods_Snapfood.framework */; };
 		025C113D2505836500A1E130 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 025C112F2505836300A1E130 /* SF-Pro-Rounded-Regular.otf */; };
 		025C113E2505836500A1E130 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 025C11302505836300A1E130 /* SF-Pro-Rounded-Bold.otf */; };
 		025C113F2505836500A1E130 /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 025C11312505836300A1E130 /* SF-Pro-Text-LightItalic.otf */; };
@@ -58,6 +59,9 @@
 		027510FE2503E24F00BF7987 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		02A15A0A2508DA07001B5FAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSignupViewController.swift; sourceTree = "<group>"; };
+		0568DE127CA574181615345D /* Pods-Snapfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapfood.release.xcconfig"; path = "Target Support Files/Pods-Snapfood/Pods-Snapfood.release.xcconfig"; sourceTree = "<group>"; };
+		7BCFAB7B393D3DA1D527E783 /* Pods_Snapfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68CA803AFED627A62142BF2 /* Pods-Snapfood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapfood.debug.xcconfig"; path = "Target Support Files/Pods-Snapfood/Pods-Snapfood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0172B93A084744908D31BDCB /* Pods_Snapfood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +104,7 @@
 				027510E92503D1B800BF7987 /* Snapfood */,
 				027510E82503D1B800BF7987 /* Products */,
 				31A2D91CB99F3D3085B6B20A /* Pods */,
+				DA21E98B7D56C7C6A2D74B98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,8 +136,18 @@
 		31A2D91CB99F3D3085B6B20A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				A68CA803AFED627A62142BF2 /* Pods-Snapfood.debug.xcconfig */,
+				0568DE127CA574181615345D /* Pods-Snapfood.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA21E98B7D56C7C6A2D74B98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BCFAB7B393D3DA1D527E783 /* Pods_Snapfood.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 027510FB2503D1CD00BF7987 /* Build configuration list for PBXNativeTarget "Snapfood" */;
 			buildPhases = (
+				287785D4CF8E68D309EE8D73 /* [CP] Check Pods Manifest.lock */,
 				027510E32503D1B800BF7987 /* Sources */,
 				027510E42503D1B800BF7987 /* Frameworks */,
 				027510E52503D1B800BF7987 /* Resources */,
+				FB5362879E1C0D582C64270C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +231,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		287785D4CF8E68D309EE8D73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Snapfood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB5362879E1C0D582C64270C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Snapfood/Pods-Snapfood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Snapfood/Pods-Snapfood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Snapfood/Pods-Snapfood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		027510E32503D1B800BF7987 /* Sources */ = {
@@ -368,6 +428,7 @@
 		};
 		027510FC2503D1CD00BF7987 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A68CA803AFED627A62142BF2 /* Pods-Snapfood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -387,6 +448,7 @@
 		};
 		027510FD2503D1CD00BF7987 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0568DE127CA574181615345D /* Pods-Snapfood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
