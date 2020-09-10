@@ -9,12 +9,19 @@
 import UIKit
 
 class RestaurantSignupViewController: UIViewController {
+    
+    // Outlets
+    @IBOutlet var restName: UITextField!
+    @IBOutlet var restEmail: UITextField!
+    @IBOutlet var password: UITextField!
+    @IBOutlet var confirmPassword: UITextField!
+    @IBOutlet var register: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        hideKeyboardWhenTappedAround()
         
     }
     
-}   // #21
+}   // #28

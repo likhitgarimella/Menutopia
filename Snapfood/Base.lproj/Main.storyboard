@@ -220,10 +220,10 @@
             </objects>
             <point key="canvasLocation" x="977" y="558"/>
         </scene>
-        <!--View Controller-->
+        <!--User Signup View Controller-->
         <scene sceneID="6t8-kX-JCh">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Fzc-K0-9lU" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Fzc-K0-9lU" customClass="UserSignupViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IGF-MK-mGz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -235,10 +235,10 @@
             </objects>
             <point key="canvasLocation" x="1912" y="1021"/>
         </scene>
-        <!--View Controller-->
+        <!--Restaurant Signup View Controller-->
         <scene sceneID="mtk-HR-orx">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="v6Q-i0-owY" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="v6Q-i0-owY" customClass="RestaurantSignupViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mKz-8e-Pn2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -373,6 +373,13 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="confirmPassword" destination="SyD-Os-RJD" id="hQ9-Og-UfP"/>
+                        <outlet property="password" destination="8B7-rD-N1U" id="1ep-4R-hqB"/>
+                        <outlet property="register" destination="vXv-WT-ZG2" id="fQV-8l-FN9"/>
+                        <outlet property="restEmail" destination="SWC-on-KQN" id="ZWk-fZ-cag"/>
+                        <outlet property="restName" destination="o7D-NL-X6S" id="p8m-vA-Fjr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZU-ST-n4e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
