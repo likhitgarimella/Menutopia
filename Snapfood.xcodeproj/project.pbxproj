@@ -82,6 +82,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0259A0912509E1D500C567A6 /* Set-1 */ = {
+			isa = PBXGroup;
+			children = (
+				027510EE2503D1B800BF7987 /* ViewController.swift */,
+				02A15A0A2508DA07001B5FAD /* LoginViewController.swift */,
+				02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */,
+				021210CC2509C1DA0062DB29 /* RestaurantSignupViewController.swift */,
+				021210CE2509C2710062DB29 /* UserSignupViewController.swift */,
+			);
+			path = "Set-1";
+			sourceTree = "<group>";
+		};
 		025C112E2505833500A1E130 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +120,7 @@
 			children = (
 				025C112E2505833500A1E130 /* Fonts */,
 				027510E92503D1B800BF7987 /* Snapfood */,
+				0259A0912509E1D500C567A6 /* Set-1 */,
 				027510E82503D1B800BF7987 /* Products */,
 				31A2D91CB99F3D3085B6B20A /* Pods */,
 				DA21E98B7D56C7C6A2D74B98 /* Frameworks */,
@@ -130,11 +143,6 @@
 				027510F32503D1CC00BF7987 /* Assets.xcassets */,
 				027510F52503D1CC00BF7987 /* LaunchScreen.storyboard */,
 				027510F02503D1B800BF7987 /* Main.storyboard */,
-				027510EE2503D1B800BF7987 /* ViewController.swift */,
-				02A15A0A2508DA07001B5FAD /* LoginViewController.swift */,
-				02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */,
-				021210CC2509C1DA0062DB29 /* RestaurantSignupViewController.swift */,
-				021210CE2509C2710062DB29 /* UserSignupViewController.swift */,
 				027510FE2503E24F00BF7987 /* Extensions.swift */,
 				027510F82503D1CC00BF7987 /* Info.plist */,
 				0259A08F2509E0CC00C567A6 /* GoogleService-Info.plist */,
