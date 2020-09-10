@@ -27,8 +27,8 @@ class AuthService {
         
     }
     
-    // Sign up
-    static func signUp(name: String, email: String, phone: String, block: String, password: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
+    // Restaurant Sign up
+    static func restaurantSignUp(name: String, email: String, password: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
         
         print("Sign up")
         // Firebase Auth
@@ -43,20 +43,19 @@ class AuthService {
                 return
             }
             
-            self.setUserInformation(name: name, email: email, phone: phone, block: block, uid: uid, onSuccess: onSuccess)
+            self.setRestaurantInformation(name: name, email: email, uid: uid, onSuccess: onSuccess)
             
         })
         
     }
     
-    // Set user info to database
-    static func setUserInformation(name: String, email: String, phone: String, block: String, uid: String, onSuccess: @escaping () -> Void) {
+    // Set restaurant info to database
+    static func setRestaurantInformation(name: String, email: String, uid: String, onSuccess: @escaping () -> Void) {
         
-        let databaseRef = Database.database().reference().child("Users").child(uid)
-        // put that download url string in db
-        databaseRef.setValue(["1) Name": name, "2) Email": email, "3) Phone": phone, "4) Block": block])
+        let databaseRefRest = Database.database().reference().child("Restaurants").child(uid)
+        databaseRefRest.setValue(["1) Restaurant name": name, "2) Restaurant email": email])
         onSuccess()
         
     }
     
-}   // #63
+}   // #62
