@@ -101,6 +101,7 @@
                         <outlet property="continueButton" destination="xvb-QP-PE3" id="s2n-aw-auo"/>
                         <outlet property="loginButton" destination="wmX-19-XTF" id="uQN-9f-SZa"/>
                         <outlet property="signupButton" destination="Qsc-Nr-DcZ" id="JVO-BG-fKJ"/>
+                        <segue destination="fvh-3q-dK0" kind="presentation" identifier="goToHomeDirect" modalPresentationStyle="fullScreen" id="dK4-NH-PMa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -524,6 +525,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="83a-6F-wcJ"/>
+        <segue reference="dK4-NH-PMa"/>
         <segue reference="5QU-o9-fNs"/>
     </inferredMetricsTieBreakers>
     <resources>
