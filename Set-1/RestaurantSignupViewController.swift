@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JGProgressHUD
 
 class RestaurantSignupViewController: UIViewController {
     
@@ -60,4 +61,35 @@ class RestaurantSignupViewController: UIViewController {
         
     }
     
-}   // #64
+    @IBAction func registerTapped(_ sender: UIButton) {
+        
+        // Progress HUD
+        let hud1 = JGProgressHUD(style: .dark)
+        // hud1.textLabel.text = "Please Wait..."
+        hud1.show(in: self.view)
+        
+        // validations
+        guard let name = restName.text, let email = restEmail.text, let password = password.text else {
+            print("Invalid Form Input")
+            return
+        }
+        
+        // Auth service sign up
+        AuthService.restaurantSignUp(name: name, email: email, password: password, onSuccess: {
+            print("On Success")
+            hud1.indicatorView = nil    // remove indicator
+            hud1.textLabel.text = "Welcome!"
+            hud1.dismiss(afterDelay: 2.0, animated: true)
+            // segue to tab bar VC
+            self.performSegue(withIdentifier: "goToHome", sender: self)
+        }) {errorString in
+            // this will be the one which prints error due to auth, in console
+            print(errorString!)
+            hud1.indicatorView = nil    // remove indicator
+            hud1.textLabel.text = errorString!
+            hud1.dismiss(afterDelay: 2.0, animated: true)
+        }
+        
+    }
+    
+}   // #96

@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -324,6 +325,9 @@
                                                 <state key="normal" title="Register">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="registerTapped:" destination="v6Q-i0-owY" eventType="touchUpInside" id="Da4-sK-yrg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -379,11 +383,27 @@
                         <outlet property="register" destination="vXv-WT-ZG2" id="fQV-8l-FN9"/>
                         <outlet property="restEmail" destination="SWC-on-KQN" id="ZWk-fZ-cag"/>
                         <outlet property="restName" destination="o7D-NL-X6S" id="p8m-vA-Fjr"/>
+                        <segue destination="fvh-3q-dK0" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="byU-wR-8Fx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZU-ST-n4e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1911.594202898551" y="116.57608695652175"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="t31-Wp-c9o">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="fvh-3q-dK0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GYw-vF-o7N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jOV-P1-Ilw"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ig5-Od-yaz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2791" y="-7"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="8UT-ty-ryi">
@@ -511,5 +531,8 @@
         <image name="restaurant" width="345" height="261"/>
         <image name="select-signup" width="345" height="309"/>
         <image name="splash-image" width="341" height="340"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
