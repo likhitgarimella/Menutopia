@@ -63,9 +63,24 @@ class RestaurantSignupViewController: UIViewController {
     
     @IBAction func registerTapped(_ sender: UIButton) {
         
+        func isValidEmail(testStr:String) -> Bool {
+            let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+            let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+            return emailTest.evaluate(with: testStr)
+        }
+        
+        if (restName.text?.isEmpty == false && restEmail.text?.isEmpty == false && password.text?.isEmpty == false && confirmPassword.text?.isEmpty == false) {
+            
+            if (password.text == confirmPassword.text) {
+                
+                
+                
+            }
+            
+        }
+        
         // Progress HUD
         let hud1 = JGProgressHUD(style: .dark)
-        // hud1.textLabel.text = "Please Wait..."
         hud1.show(in: self.view)
         
         // validations
@@ -77,7 +92,7 @@ class RestaurantSignupViewController: UIViewController {
         // Auth service sign up
         AuthService.restaurantSignUp(name: name, email: email, password: password, onSuccess: {
             print("On Success")
-            hud1.indicatorView = nil    // remove indicator
+            hud1.indicatorView = nil
             hud1.textLabel.text = "Welcome!"
             hud1.dismiss(afterDelay: 2.0, animated: true)
             // segue to tab bar VC
@@ -85,11 +100,11 @@ class RestaurantSignupViewController: UIViewController {
         }) {errorString in
             // this will be the one which prints error due to auth, in console
             print(errorString!)
-            hud1.indicatorView = nil    // remove indicator
+            hud1.indicatorView = nil
             hud1.textLabel.text = errorString!
             hud1.dismiss(afterDelay: 2.0, animated: true)
         }
         
     }
     
-}   // #96
+}   // #111
