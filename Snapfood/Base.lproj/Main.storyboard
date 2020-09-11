@@ -391,7 +391,7 @@
             </objects>
             <point key="canvasLocation" x="1911.594202898551" y="116.57608695652175"/>
         </scene>
-        <!--Item-->
+        <!--Explore-->
         <scene sceneID="t31-Wp-c9o">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="fvh-3q-dK0" sceneMemberID="viewController">
@@ -399,13 +399,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="jOV-P1-Ilw"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="PAx-2C-KZp"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="compass" id="PAx-2C-KZp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ig5-Od-yaz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3697.1014492753625" y="-7.3369565217391308"/>
+            <point key="canvasLocation" x="4103" y="-1964"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="OMp-iH-nxf">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="ovG-pG-ZTc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kbv-MX-xS6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="g7L-uF-x7w"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="zsx-BG-bfm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgb-SE-Gfg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5361" y="-1217"/>
+        </scene>
+        <!--Likes-->
+        <scene sceneID="iOj-ku-o80">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="gBb-HN-xLE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z6V-vK-tsX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fFd-0O-UHO"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Likes" image="thumbs-up" id="sSS-q4-5bA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUg-Xh-xxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5361" y="-327"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="hQE-xZ-OSf">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="2jz-ZB-rZK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ov-eL-5Cv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="niD-im-8dS"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="star" id="5FG-r6-h9A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pXt-kL-Kcw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5361" y="558"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="L8q-7K-fON">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Rro-ky-0p2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i0G-n2-OmJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="apF-Ql-0ln"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="notification" id="86Z-Ot-NmT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ew-bQ-J9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5361" y="1471"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="jTn-ua-eGd">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="1lc-9Z-dRL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H4m-IZ-162">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zU1-BH-9OO"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="users" id="CLK-04-7IS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a7l-YW-iLf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4103" y="2163"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="8UT-ty-ryi">
@@ -534,6 +614,11 @@
                     </tabBar>
                     <connections>
                         <segue destination="fvh-3q-dK0" kind="relationship" relationship="viewControllers" id="5Hj-V8-Y7y"/>
+                        <segue destination="ovG-pG-ZTc" kind="relationship" relationship="viewControllers" id="96q-m2-aJI"/>
+                        <segue destination="gBb-HN-xLE" kind="relationship" relationship="viewControllers" id="Qmq-eu-7ka"/>
+                        <segue destination="2jz-ZB-rZK" kind="relationship" relationship="viewControllers" id="mhD-1N-WI6"/>
+                        <segue destination="Rro-ky-0p2" kind="relationship" relationship="viewControllers" id="wSD-GG-uIW"/>
+                        <segue destination="1lc-9Z-dRL" kind="relationship" relationship="viewControllers" id="liH-XI-bLn"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="By2-XQ-bLi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -547,12 +632,33 @@
         <segue reference="5QU-o9-fNs"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="compass" width="22" height="22"/>
         <image name="login" width="345" height="264"/>
+        <image name="notification" width="22" height="22"/>
         <image name="restaurant" width="345" height="261"/>
+        <image name="search" width="20" height="20"/>
         <image name="select-signup" width="345" height="309"/>
         <image name="splash-image" width="341" height="340"/>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="star" width="22" height="21"/>
+        <image name="thumbs-up" width="22" height="22"/>
+        <image name="users" width="24" height="20"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

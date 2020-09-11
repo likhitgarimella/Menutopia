@@ -22,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // In Info.plist...
         // View controller-based status bar appearance -> NO
         
+        UITabBar.appearance().barTintColor = .white
+        UITabBar.appearance().tintColor = .systemBlue
+        
         FirebaseApp.configure()
         
         /// Increase Launch Screen Time
@@ -51,4 +54,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-}   // #55
+}   // #58
