@@ -101,7 +101,7 @@
                         <outlet property="continueButton" destination="xvb-QP-PE3" id="s2n-aw-auo"/>
                         <outlet property="loginButton" destination="wmX-19-XTF" id="uQN-9f-SZa"/>
                         <outlet property="signupButton" destination="Qsc-Nr-DcZ" id="JVO-BG-fKJ"/>
-                        <segue destination="fvh-3q-dK0" kind="presentation" identifier="goToHomeDirect" modalPresentationStyle="fullScreen" id="dK4-NH-PMa"/>
+                        <segue destination="Oru-6M-prY" kind="presentation" identifier="goToHomeDirect" modalPresentationStyle="fullScreen" id="dK4-NH-PMa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -384,14 +384,14 @@
                         <outlet property="register" destination="vXv-WT-ZG2" id="fQV-8l-FN9"/>
                         <outlet property="restEmail" destination="SWC-on-KQN" id="ZWk-fZ-cag"/>
                         <outlet property="restName" destination="o7D-NL-X6S" id="p8m-vA-Fjr"/>
-                        <segue destination="fvh-3q-dK0" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="byU-wR-8Fx"/>
+                        <segue destination="Oru-6M-prY" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="byU-wR-8Fx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZU-ST-n4e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1911.594202898551" y="116.57608695652175"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="t31-Wp-c9o">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="fvh-3q-dK0" sceneMemberID="viewController">
@@ -401,10 +401,11 @@
                         <viewLayoutGuide key="safeArea" id="jOV-P1-Ilw"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="PAx-2C-KZp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ig5-Od-yaz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2791" y="-7"/>
+            <point key="canvasLocation" x="3697.1014492753625" y="-7.3369565217391308"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="8UT-ty-ryi">
@@ -522,10 +523,27 @@
             </objects>
             <point key="canvasLocation" x="977" y="-291"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wge-x8-nyL">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Oru-6M-prY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dVr-83-1CV">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fvh-3q-dK0" kind="relationship" relationship="viewControllers" id="5Hj-V8-Y7y"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="By2-XQ-bLi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2789.8550724637685" y="-7.3369565217391308"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="83a-6F-wcJ"/>
         <segue reference="dK4-NH-PMa"/>
+        <segue reference="83a-6F-wcJ"/>
         <segue reference="5QU-o9-fNs"/>
     </inferredMetricsTieBreakers>
     <resources>
