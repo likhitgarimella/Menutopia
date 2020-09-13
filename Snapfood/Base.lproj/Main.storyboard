@@ -381,11 +381,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="fvh-3q-dK0" customClass="ExploreViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GYw-vF-o7N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tt6-rg-7JK">
-                                <rect key="frame" x="20" y="567" width="374" height="40"/>
+                                <rect key="frame" x="20" y="547" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="NsF-de-cy4"/>
@@ -418,7 +418,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="ovG-pG-ZTc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kbv-MX-xS6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="g7L-uF-x7w"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
@@ -434,7 +434,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="gBb-HN-xLE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z6V-vK-tsX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="fFd-0O-UHO"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -450,7 +450,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="2jz-ZB-rZK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0ov-eL-5Cv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="niD-im-8dS"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -466,7 +466,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Rro-ky-0p2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i0G-n2-OmJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="apF-Ql-0ln"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -722,6 +722,9 @@
                                                 <state key="normal" title="Register">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="registerTapped:" destination="FWW-OK-F57" eventType="touchUpInside" id="n9L-lw-DQo"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -782,6 +785,7 @@
                         <outlet property="userEmail" destination="YTz-Zw-HZ2" id="R9S-On-0CN"/>
                         <outlet property="userName" destination="Qur-No-YS5" id="Tx3-QB-LRs"/>
                         <outlet property="userUsername" destination="Cse-Tg-ew0" id="ynd-MW-Lfk"/>
+                        <segue destination="Oru-6M-prY" kind="presentation" identifier="userSignupToHome" id="CG4-qB-vAW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RpI-Re-LQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -790,7 +794,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="otA-gX-0wF"/>
+        <segue reference="CG4-qB-vAW"/>
         <segue reference="83a-6F-wcJ"/>
         <segue reference="5uX-w9-ay9"/>
     </inferredMetricsTieBreakers>

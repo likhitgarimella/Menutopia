@@ -66,4 +66,71 @@ class UserSignupViewController: UIViewController {
         
     }
     
-}   // #70
+    // Progress HUD
+    let hud1 = JGProgressHUD(style: .dark)
+    
+    @IBAction func registerTapped(_ sender: UIButton) {
+        
+        hud1.show(in: self.view)
+        
+        func isValidEmail(testStr:String) -> Bool {
+            let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+            let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+            return emailTest.evaluate(with: testStr)
+        }
+        
+        if (userUsername.text?.isEmpty == false && userName.text?.isEmpty == false && userEmail.text?.isEmpty == false && password.text?.isEmpty == false && confirmPassword.text?.isEmpty == false) {
+            
+            if (password.text == confirmPassword.text) {
+                
+                if(isValidEmail(testStr: userEmail.text!)) {
+                    
+                    // Validations
+                    guard let username = userUsername.text, let name = userName.text, let email = userEmail.text, let password = password.text else {
+                        print("Invalid Form Input")
+                        return
+                    }
+                    
+                    // Auth service sign up
+                    AuthService.userSignUp(username: username, name: name, email: email, password: password, onSuccess: {
+                        print("On Success")
+                        self.hud1.show(in: self.view)
+                        self.hud1.indicatorView = nil
+                        self.hud1.textLabel.text = "Welcome!"
+                        self.hud1.dismiss(afterDelay: 2.0, animated: true)
+                        // segue to tab bar VC
+                        self.performSegue(withIdentifier: "userSignupToHome", sender: self)
+                    }) {errorString in
+                        // this will be the one which prints error due to auth, in console
+                        print(errorString!)
+                        self.hud1.show(in: self.view)
+                        self.hud1.indicatorView = nil
+                        self.hud1.textLabel.text = errorString!
+                        self.hud1.dismiss(afterDelay: 2.0, animated: true)
+                    }
+                    
+                } else {
+                    hud1.show(in: self.view)
+                    hud1.indicatorView = nil
+                    hud1.textLabel.text = "Enter a valid email address"
+                    hud1.dismiss(afterDelay: 2.0, animated: true)
+                }
+                
+            } else {
+                hud1.show(in: self.view)
+                hud1.indicatorView = nil
+                hud1.textLabel.text = "Password and Confirm password doesn't match"
+                hud1.dismiss(afterDelay: 2.0, animated: true)
+            }
+            
+        } else {
+            // Alert
+            let alertController = UIAlertController(title: "Oops!", message: "Please fill all the fields to proceed", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+    }
+    
+}   // #137
