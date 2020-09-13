@@ -775,6 +775,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="HjG-tO-ZOK"/>
                     <size key="freeformSize" width="414" height="1040"/>
+                    <connections>
+                        <outlet property="confirmPassword" destination="8uZ-jl-mIl" id="Klo-fM-U4w"/>
+                        <outlet property="password" destination="gVp-x8-0jf" id="ah9-6w-WQL"/>
+                        <outlet property="register" destination="Kqa-mI-Cns" id="BdR-pc-6e0"/>
+                        <outlet property="userEmail" destination="YTz-Zw-HZ2" id="R9S-On-0CN"/>
+                        <outlet property="userName" destination="Qur-No-YS5" id="Tx3-QB-LRs"/>
+                        <outlet property="userUsername" destination="Cse-Tg-ew0" id="ynd-MW-Lfk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RpI-Re-LQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
