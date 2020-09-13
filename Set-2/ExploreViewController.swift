@@ -9,11 +9,50 @@
 import UIKit
 
 class ExploreViewController: UIViewController {
+    
+    @IBOutlet var restaurantEmailLabel: UILabel!
+    @IBOutlet var userEmailLabel: UILabel!
+    
+    var restaurant: AppUser? {
+        didSet {
+            updateView()
+        }
+    }
+    
+    var user: AppUser? {
+        didSet {
+            updateView()
+        }
+    }
+    
+    func fetchRestaurant() {
+        
+        Api.UserDet.observeCurrentRestaurant { (restaurant) in
+            self.restaurant = restaurant
+        }
+        
+    }
+    
+    func fetchUser() {
+        
+        Api.UserDet.observeCurrentUser { (user) in
+            self.user = user
+        }
+        
+    }
+    
+    func updateView() {
+        
+        self.restaurantEmailLabel.text = user!.restaurantEmail
+        self.userEmailLabel.text = user!.userEmail
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        fetchRestaurant()
+        fetchUser()
         
     }
     
@@ -34,4 +73,4 @@ class ExploreViewController: UIViewController {
         
     }
     
-}   // #38
+}   // #77

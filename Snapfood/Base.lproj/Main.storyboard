@@ -381,11 +381,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="fvh-3q-dK0" customClass="ExploreViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GYw-vF-o7N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tt6-rg-7JK">
-                                <rect key="frame" x="20" y="547" width="374" height="40"/>
+                                <rect key="frame" x="20" y="567" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="NsF-de-cy4"/>
@@ -398,16 +398,36 @@
                                     <action selector="logoutAction:" destination="fvh-3q-dK0" eventType="touchUpInside" id="qnj-mw-STZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User email id" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qj-V7-spk">
+                                <rect key="frame" x="150.33333333333334" y="174" width="113.33333333333334" height="24"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant email id" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ir-BZ-XcE">
+                                <rect key="frame" x="123.00000000000001" y="100" width="168.33333333333337" height="24"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jOV-P1-Ilw"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="9Ir-BZ-XcE" firstAttribute="centerX" secondItem="GYw-vF-o7N" secondAttribute="centerX" id="Gsi-c0-1T3"/>
                             <constraint firstItem="jOV-P1-Ilw" firstAttribute="bottom" secondItem="Tt6-rg-7JK" secondAttribute="bottom" constant="80" id="KGq-B9-QXd"/>
+                            <constraint firstItem="9Ir-BZ-XcE" firstAttribute="top" secondItem="jOV-P1-Ilw" secondAttribute="top" constant="100" id="Vft-d5-hNL"/>
                             <constraint firstItem="Tt6-rg-7JK" firstAttribute="left" secondItem="jOV-P1-Ilw" secondAttribute="left" constant="20" id="mLu-aR-MDa"/>
+                            <constraint firstItem="0qj-V7-spk" firstAttribute="top" secondItem="9Ir-BZ-XcE" secondAttribute="bottom" constant="50" id="ofN-Ez-wuk"/>
+                            <constraint firstItem="0qj-V7-spk" firstAttribute="centerX" secondItem="GYw-vF-o7N" secondAttribute="centerX" id="y3E-Tm-0gh"/>
                             <constraint firstItem="jOV-P1-Ilw" firstAttribute="right" secondItem="Tt6-rg-7JK" secondAttribute="right" constant="20" id="zT7-XH-imq"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Explore" image="compass" id="PAx-2C-KZp"/>
+                    <connections>
+                        <outlet property="restaurantEmailLabel" destination="9Ir-BZ-XcE" id="x14-hR-fio"/>
+                        <outlet property="userEmailLabel" destination="0qj-V7-spk" id="kJY-57-Pmr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ig5-Od-yaz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -418,7 +438,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="ovG-pG-ZTc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kbv-MX-xS6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="g7L-uF-x7w"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
@@ -434,7 +454,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="gBb-HN-xLE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z6V-vK-tsX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="fFd-0O-UHO"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -450,7 +470,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="2jz-ZB-rZK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0ov-eL-5Cv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="niD-im-8dS"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -466,7 +486,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Rro-ky-0p2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i0G-n2-OmJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="apF-Ql-0ln"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -794,7 +814,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CG4-qB-vAW"/>
+        <segue reference="otA-gX-0wF"/>
         <segue reference="83a-6F-wcJ"/>
         <segue reference="5uX-w9-ay9"/>
     </inferredMetricsTieBreakers>
