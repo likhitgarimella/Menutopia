@@ -30,7 +30,7 @@ class AuthService {
     // Restaurant Sign up
     static func restaurantSignUp(name: String, email: String, password: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
         
-        print("Sign up")
+        print("Restaurant Sign up")
         // Firebase Auth
         Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
             
@@ -58,6 +58,37 @@ class AuthService {
         
     }
     
+    // User Sign up
+    static func userSignUp(username: String, name: String, email: String, password: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
+        
+        print("User Sign up")
+        // Firebase Auth
+        Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
+            
+            if error != nil {
+                onError(error!.localizedDescription)
+                return
+            }
+            // unique user id
+            guard let uid = user?.user.uid else {
+                return
+            }
+            
+            self.setUserInformation(username: username, name: name, email: email, uid: uid, onSuccess: onSuccess)
+            
+        })
+        
+    }
+    
+    // Set user info to database
+    static func setUserInformation(username: String, name: String, email: String, uid: String, onSuccess: @escaping () -> Void) {
+        
+        let databaseRefUser = Database.database().reference().child("Users").child(uid)
+        databaseRefUser.setValue(["1) User username": username, "2) User name": name, "3) User email": email])
+        onSuccess()
+        
+    }
+    
     // Log out
     static func logout(onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
         
@@ -70,4 +101,4 @@ class AuthService {
         
     }
     
-}   // #74
+}   // #105

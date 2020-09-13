@@ -12,6 +12,7 @@ class AppUser {
     
     var restaurantName: String?
     var restaurantEmail: String?
+    var userUsername: String?
     var userName: String?
     var userEmail: String?
     
@@ -26,12 +27,13 @@ extension AppUser {
         let user = AppUser()
         user.restaurantName = dict["1) Restaurant name"] as? String
         user.restaurantEmail = dict["2) Restaurant email"] as? String
-        user.userName = dict["1) User name"] as? String
-        user.userEmail = dict["2) User email"] as? String
+        user.userUsername = dict["1) User username"] as? String
+        user.userName = dict["2) User name"] as? String
+        user.userEmail = dict["3) User email"] as? String
         
         user.id = key
         return user
         
     }
     
-}   // #38
+}   // #40

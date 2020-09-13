@@ -22,6 +22,7 @@ class ExploreViewController: UIViewController {
         
         /// using AuthService class
         AuthService.logout(onSuccess: {
+            print("----------------")
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "ViewController")
             self.present(vc, animated: true, completion: nil)
@@ -33,4 +34,4 @@ class ExploreViewController: UIViewController {
         
     }
     
-}   // #37
+}   // #38
