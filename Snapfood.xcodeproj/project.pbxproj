@@ -38,6 +38,7 @@
 		027510FF2503E25000BF7987 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027510FE2503E24F00BF7987 /* Extensions.swift */; };
 		02A15A0B2508DA07001B5FAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A15A0A2508DA07001B5FAD /* LoginViewController.swift */; };
 		02A15A0D2508DA31001B5FAD /* SelectSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */; };
+		02FA637C250D63ED00703E29 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA637B250D63ED00703E29 /* ExploreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		027510FE2503E24F00BF7987 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		02A15A0A2508DA07001B5FAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSignupViewController.swift; sourceTree = "<group>"; };
+		02FA637B250D63ED00703E29 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		0568DE127CA574181615345D /* Pods-Snapfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapfood.release.xcconfig"; path = "Target Support Files/Pods-Snapfood/Pods-Snapfood.release.xcconfig"; sourceTree = "<group>"; };
 		7BCFAB7B393D3DA1D527E783 /* Pods_Snapfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68CA803AFED627A62142BF2 /* Pods-Snapfood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapfood.debug.xcconfig"; path = "Target Support Files/Pods-Snapfood/Pods-Snapfood.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				025C112E2505833500A1E130 /* Fonts */,
 				027510E92503D1B800BF7987 /* Snapfood */,
 				0259A0912509E1D500C567A6 /* Set-1 */,
+				02FA637A250D63A200703E29 /* Set-2 */,
 				027510E82503D1B800BF7987 /* Products */,
 				31A2D91CB99F3D3085B6B20A /* Pods */,
 				DA21E98B7D56C7C6A2D74B98 /* Frameworks */,
@@ -160,6 +163,14 @@
 				0259A08F2509E0CC00C567A6 /* GoogleService-Info.plist */,
 			);
 			path = Snapfood;
+			sourceTree = "<group>";
+		};
+		02FA637A250D63A200703E29 /* Set-2 */ = {
+			isa = PBXGroup;
+			children = (
+				02FA637B250D63ED00703E29 /* ExploreViewController.swift */,
+			);
+			path = "Set-2";
 			sourceTree = "<group>";
 		};
 		31A2D91CB99F3D3085B6B20A /* Pods */ = {
@@ -319,6 +330,7 @@
 				027510ED2503D1B800BF7987 /* SceneDelegate.swift in Sources */,
 				021210CD2509C1DA0062DB29 /* RestaurantSignupViewController.swift in Sources */,
 				021210CF2509C2710062DB29 /* UserSignupViewController.swift in Sources */,
+				02FA637C250D63ED00703E29 /* ExploreViewController.swift in Sources */,
 				02A15A0B2508DA07001B5FAD /* LoginViewController.swift in Sources */,
 				027510FF2503E25000BF7987 /* Extensions.swift in Sources */,
 			);
