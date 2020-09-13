@@ -58,28 +58,55 @@ class LoginViewController: UIViewController {
         
         hud1.show(in: self.view)
         
-        // validations
-        guard let email = email.text, let password = password.text else {
-            print("Invalid Form Input")
-            return
+        func isValidEmail(testStr:String) -> Bool {
+            let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+            let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+            return emailTest.evaluate(with: testStr)
         }
         
-        // Auth service sign in
-        AuthService.signIn(email: email, password: password, onSuccess: {
-            print("On Success")
-            self.hud1.indicatorView = nil
-            self.hud1.textLabel.text = "Logged In!"
-            self.hud1.dismiss(afterDelay: 2.0, animated: true)
-            // segue to tab bar VC
-            self.performSegue(withIdentifier: "loginToHome", sender: self)
-        }, onError: {errorString in
-            // this will be the one which prints error due to auth, in console
-            print(errorString!)
-            self.hud1.indicatorView = nil
-            self.hud1.textLabel.text = errorString!
-            self.hud1.dismiss(afterDelay: 2.0, animated: true)
-        })
+        if (email.text?.isEmpty == false && password.text?.isEmpty == false) {
+            
+            if(isValidEmail(testStr: email.text!)) {
+                
+                // validations
+                guard let email = email.text, let password = password.text else {
+                    print("Invalid Form Input")
+                    return
+                }
+                
+                // Auth service sign in
+                AuthService.signIn(email: email, password: password, onSuccess: {
+                    print("On Success")
+                    self.hud1.show(in: self.view)
+                    self.hud1.indicatorView = nil
+                    self.hud1.textLabel.text = "Logged In!"
+                    self.hud1.dismiss(afterDelay: 2.0, animated: true)
+                    // segue to tab bar VC
+                    self.performSegue(withIdentifier: "loginToHome", sender: self)
+                }, onError: {errorString in
+                    // this will be the one which prints error due to auth, in console
+                    print(errorString!)
+                    self.hud1.show(in: self.view)
+                    self.hud1.indicatorView = nil
+                    self.hud1.textLabel.text = errorString!
+                    self.hud1.dismiss(afterDelay: 2.0, animated: true)
+                })
+                
+            } else {
+                hud1.show(in: self.view)
+                hud1.indicatorView = nil
+                hud1.textLabel.text = "Enter a valid email address"
+                hud1.dismiss(afterDelay: 2.0, animated: true)
+            }
+            
+        } else {
+            // Alert
+            let alertController = UIAlertController(title: "Oops!", message: "Please fill all the fields to proceed", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
         
     }
     
-}   // #86
+}   // #113
