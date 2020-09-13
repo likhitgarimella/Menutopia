@@ -20,7 +20,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -383,8 +383,29 @@
                     <view key="view" contentMode="scaleToFill" id="GYw-vF-o7N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tt6-rg-7JK">
+                                <rect key="frame" x="20" y="567" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NsF-de-cy4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                <state key="normal" title="Logout reference button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutAction:" destination="fvh-3q-dK0" eventType="touchUpInside" id="qnj-mw-STZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jOV-P1-Ilw"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jOV-P1-Ilw" firstAttribute="bottom" secondItem="Tt6-rg-7JK" secondAttribute="bottom" constant="80" id="KGq-B9-QXd"/>
+                            <constraint firstItem="Tt6-rg-7JK" firstAttribute="left" secondItem="jOV-P1-Ilw" secondAttribute="left" constant="20" id="mLu-aR-MDa"/>
+                            <constraint firstItem="jOV-P1-Ilw" firstAttribute="right" secondItem="Tt6-rg-7JK" secondAttribute="right" constant="20" id="zT7-XH-imq"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Explore" image="compass" id="PAx-2C-KZp"/>
                 </viewController>
@@ -474,7 +495,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L87-ZM-ofb">
-                                <rect key="frame" x="20" y="378" width="374" height="40"/>
+                                <rect key="frame" x="20" y="358" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ujC-rY-ccd"/>
                                 </constraints>
@@ -488,7 +509,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KVe-dl-85X">
-                                <rect key="frame" x="20" y="438" width="374" height="40"/>
+                                <rect key="frame" x="20" y="418" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Uxb-7d-B1s"/>
                                 </constraints>
@@ -502,7 +523,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6N-HL-BZP">
-                                <rect key="frame" x="20" y="508" width="374" height="40"/>
+                                <rect key="frame" x="20" y="488" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="JMn-S7-qDu"/>
@@ -548,16 +569,16 @@
                             <constraint firstItem="KVe-dl-85X" firstAttribute="top" secondItem="L87-ZM-ofb" secondAttribute="bottom" constant="20" id="3K8-7G-Inj"/>
                             <constraint firstItem="tzN-0I-SMI" firstAttribute="centerX" secondItem="X9P-Cj-CsD" secondAttribute="centerX" id="4VC-HK-koS"/>
                             <constraint firstItem="pxX-vQ-lJC" firstAttribute="centerX" secondItem="X9P-Cj-CsD" secondAttribute="centerX" id="5aT-bI-j8L"/>
-                            <constraint firstItem="KVe-dl-85X" firstAttribute="leading" secondItem="VRF-6F-Yaf" secondAttribute="leading" constant="20" id="6qy-ed-8P5"/>
-                            <constraint firstItem="VRF-6F-Yaf" firstAttribute="trailing" secondItem="L87-ZM-ofb" secondAttribute="trailing" constant="20" id="8ML-kd-dCm"/>
+                            <constraint firstItem="KVe-dl-85X" firstAttribute="left" secondItem="VRF-6F-Yaf" secondAttribute="left" constant="20" id="6qy-ed-8P5"/>
+                            <constraint firstItem="VRF-6F-Yaf" firstAttribute="right" secondItem="L87-ZM-ofb" secondAttribute="right" constant="20" id="8ML-kd-dCm"/>
                             <constraint firstItem="r6N-HL-BZP" firstAttribute="left" secondItem="VRF-6F-Yaf" secondAttribute="left" constant="20" id="EhO-S7-GRI"/>
-                            <constraint firstItem="VRF-6F-Yaf" firstAttribute="trailing" secondItem="KVe-dl-85X" secondAttribute="trailing" constant="20" id="GAR-qG-DL5"/>
+                            <constraint firstItem="VRF-6F-Yaf" firstAttribute="right" secondItem="KVe-dl-85X" secondAttribute="right" constant="20" id="GAR-qG-DL5"/>
                             <constraint firstItem="tzN-0I-SMI" firstAttribute="top" secondItem="ZqI-KN-pDx" secondAttribute="bottom" constant="20" id="Wte-sX-UZ7"/>
                             <constraint firstItem="ZqI-KN-pDx" firstAttribute="leading" secondItem="VRF-6F-Yaf" secondAttribute="leading" constant="20" id="eQM-z2-579"/>
                             <constraint firstItem="VRF-6F-Yaf" firstAttribute="bottom" secondItem="pxX-vQ-lJC" secondAttribute="bottom" constant="60" id="grP-zy-mXB"/>
-                            <constraint firstItem="L87-ZM-ofb" firstAttribute="leading" secondItem="VRF-6F-Yaf" secondAttribute="leading" constant="20" id="kq5-5G-kku"/>
+                            <constraint firstItem="L87-ZM-ofb" firstAttribute="left" secondItem="VRF-6F-Yaf" secondAttribute="left" constant="20" id="kq5-5G-kku"/>
                             <constraint firstItem="VRF-6F-Yaf" firstAttribute="trailing" secondItem="ZqI-KN-pDx" secondAttribute="trailing" constant="20" id="uPc-hY-9mr"/>
-                            <constraint firstItem="L87-ZM-ofb" firstAttribute="top" secondItem="tzN-0I-SMI" secondAttribute="bottom" constant="40" id="xO1-Nu-AIQ"/>
+                            <constraint firstItem="L87-ZM-ofb" firstAttribute="top" secondItem="tzN-0I-SMI" secondAttribute="bottom" constant="20" id="xO1-Nu-AIQ"/>
                             <constraint firstItem="VRF-6F-Yaf" firstAttribute="right" secondItem="r6N-HL-BZP" secondAttribute="right" constant="20" id="xmf-Mt-y6S"/>
                             <constraint firstItem="ZqI-KN-pDx" firstAttribute="top" secondItem="VRF-6F-Yaf" secondAttribute="top" constant="30" id="xnj-Sm-W74"/>
                         </constraints>
@@ -758,8 +779,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="byU-wR-8Fx"/>
-        <segue reference="Wiq-Au-WLx"/>
-        <segue reference="5QU-o9-fNs"/>
+        <segue reference="83a-6F-wcJ"/>
+        <segue reference="5uX-w9-ay9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="compass" width="22" height="22"/>
@@ -780,9 +801,6 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
