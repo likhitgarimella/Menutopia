@@ -94,7 +94,7 @@ class RestaurantSignupViewController: UIViewController {
                         self.hud1.textLabel.text = "Welcome!"
                         self.hud1.dismiss(afterDelay: 2.0, animated: true)
                         // segue to tab bar VC
-                        self.performSegue(withIdentifier: "goToHome", sender: self)
+                        self.performSegue(withIdentifier: "restSignupToHome", sender: self)
                     }) {errorString in
                         // this will be the one which prints error due to auth, in console
                         print(errorString!)

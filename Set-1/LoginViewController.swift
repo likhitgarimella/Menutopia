@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JGProgressHUD
 
 class LoginViewController: UIViewController {
     
@@ -50,4 +51,37 @@ class LoginViewController: UIViewController {
         
     }
     
-}   // #54
+    @IBAction func loginTapped(_ sender: UIButton) {
+        
+        // dismiss keyboard
+        view.endEditing(true)
+        
+        // Progress HUD
+        let hud1 = JGProgressHUD(style: .dark)
+        hud1.show(in: self.view)
+        
+        // validations
+        guard let email = email.text, let password = password.text else {
+            print("Invalid Form Input")
+            return
+        }
+        
+        // Auth service sign in
+        AuthService.signIn(email: email, password: password, onSuccess: {
+            print("On Success")
+            hud1.indicatorView = nil
+            hud1.textLabel.text = "Logged In!"
+            hud1.dismiss(afterDelay: 2.0, animated: true)
+            // segue to tab bar VC
+            self.performSegue(withIdentifier: "loginToHome", sender: self)
+        }, onError: {errorString in
+            // this will be the one which prints error due to auth, in console
+            print(errorString!)
+            hud1.indicatorView = nil
+            hud1.textLabel.text = errorString!
+            hud1.dismiss(afterDelay: 2.0, animated: true)
+        })
+        
+    }
+    
+}   // #88

@@ -369,7 +369,7 @@
                         <outlet property="register" destination="vXv-WT-ZG2" id="fQV-8l-FN9"/>
                         <outlet property="restEmail" destination="SWC-on-KQN" id="ZWk-fZ-cag"/>
                         <outlet property="restName" destination="o7D-NL-X6S" id="p8m-vA-Fjr"/>
-                        <segue destination="Oru-6M-prY" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="byU-wR-8Fx"/>
+                        <segue destination="Oru-6M-prY" kind="presentation" identifier="restSignupToHome" modalPresentationStyle="fullScreen" id="byU-wR-8Fx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZU-ST-n4e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -532,6 +532,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginTapped:" destination="R9w-1x-dtT" eventType="touchUpInside" id="DM1-k2-dZu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxX-vQ-lJC">
                                 <rect key="frame" x="81.666666666666686" y="645" width="251" height="31"/>
@@ -587,6 +590,7 @@
                         <outlet property="email" destination="L87-ZM-ofb" id="NIh-IY-fNP"/>
                         <outlet property="loginOutlet" destination="r6N-HL-BZP" id="oP9-nr-jaa"/>
                         <outlet property="password" destination="KVe-dl-85X" id="3Gq-Vn-f2r"/>
+                        <segue destination="Oru-6M-prY" kind="presentation" identifier="loginToHome" modalPresentationStyle="fullScreen" id="otA-gX-0wF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A96-OC-gac" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -778,7 +782,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="byU-wR-8Fx"/>
+        <segue reference="otA-gX-0wF"/>
         <segue reference="83a-6F-wcJ"/>
         <segue reference="5uX-w9-ay9"/>
     </inferredMetricsTieBreakers>
