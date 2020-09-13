@@ -398,14 +398,14 @@
                                     <action selector="logoutAction:" destination="fvh-3q-dK0" eventType="touchUpInside" id="qnj-mw-STZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User email id" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qj-V7-spk">
-                                <rect key="frame" x="150.33333333333334" y="174" width="113.33333333333334" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qj-V7-spk">
+                                <rect key="frame" x="199" y="174" width="16.333333333333343" height="24"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant email id" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ir-BZ-XcE">
-                                <rect key="frame" x="123.00000000000001" y="100" width="168.33333333333337" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ir-BZ-XcE">
+                                <rect key="frame" x="199" y="100" width="16.333333333333343" height="24"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -805,7 +805,7 @@
                         <outlet property="userEmail" destination="YTz-Zw-HZ2" id="R9S-On-0CN"/>
                         <outlet property="userName" destination="Qur-No-YS5" id="Tx3-QB-LRs"/>
                         <outlet property="userUsername" destination="Cse-Tg-ew0" id="ynd-MW-Lfk"/>
-                        <segue destination="Oru-6M-prY" kind="presentation" identifier="userSignupToHome" id="CG4-qB-vAW"/>
+                        <segue destination="Oru-6M-prY" kind="presentation" identifier="userSignupToHome" modalPresentationStyle="fullScreen" id="CG4-qB-vAW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RpI-Re-LQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -814,7 +814,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="otA-gX-0wF"/>
+        <segue reference="CG4-qB-vAW"/>
         <segue reference="83a-6F-wcJ"/>
         <segue reference="5uX-w9-ay9"/>
     </inferredMetricsTieBreakers>

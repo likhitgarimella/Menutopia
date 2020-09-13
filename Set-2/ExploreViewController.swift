@@ -15,13 +15,13 @@ class ExploreViewController: UIViewController {
     
     var restaurant: AppUser? {
         didSet {
-            updateView()
+            updateView1()
         }
     }
     
     var user: AppUser? {
         didSet {
-            updateView()
+            updateView2()
         }
     }
     
@@ -41,9 +41,14 @@ class ExploreViewController: UIViewController {
         
     }
     
-    func updateView() {
+    func updateView1() {
         
-        self.restaurantEmailLabel.text = user!.restaurantEmail
+        self.restaurantEmailLabel.text = restaurant!.restaurantEmail
+        
+    }
+    
+    func updateView2() {
+        
         self.userEmailLabel.text = user!.userEmail
         
     }
@@ -73,4 +78,4 @@ class ExploreViewController: UIViewController {
         
     }
     
-}   // #77
+}   // #82
