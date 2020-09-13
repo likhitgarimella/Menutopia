@@ -66,6 +66,8 @@ class RestaurantSignupViewController: UIViewController {
     
     @IBAction func registerTapped(_ sender: UIButton) {
         
+        hud1.show(in: self.view)
+        
         func isValidEmail(testStr:String) -> Bool {
             let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
             let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
@@ -77,8 +79,6 @@ class RestaurantSignupViewController: UIViewController {
             if (password.text == confirmPassword.text) {
                 
                 if(isValidEmail(testStr: restEmail.text!)) {
-                    
-                    hud1.show(in: self.view)
                     
                     // Validations
                     guard let name = restName.text, let email = restEmail.text, let password = password.text else {
