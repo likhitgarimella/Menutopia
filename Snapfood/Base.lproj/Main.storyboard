@@ -234,19 +234,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1040"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXH-gD-mbg">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1040"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1038.3333333333333"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="znA-uH-eHB">
                                                 <rect key="frame" x="20" y="30" width="374" height="261"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please provide the following information to create your restaurant’s profile!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQW-fv-XoE">
-                                                <rect key="frame" x="40" y="321" width="334" height="71.666666666666686"/>
+                                                <rect key="frame" x="40" y="321" width="334" height="70"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restaurant name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o7D-NL-X6S">
-                                                <rect key="frame" x="20" y="422.66666666666669" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="421" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="9gm-Zm-MyW"/>
                                                 </constraints>
@@ -260,7 +260,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restaurant email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SWC-on-KQN">
-                                                <rect key="frame" x="20" y="482.66666666666669" width="374" height="40.000000000000057"/>
+                                                <rect key="frame" x="20" y="481" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="epR-dS-kgC"/>
                                                 </constraints>
@@ -274,7 +274,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8B7-rD-N1U">
-                                                <rect key="frame" x="20" y="542.66666666666663" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="541" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="xbB-Ou-J2f"/>
                                                 </constraints>
@@ -288,7 +288,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SyD-Os-RJD">
-                                                <rect key="frame" x="20" y="602.66666666666663" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="601" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="7rH-IO-YMV"/>
                                                 </constraints>
@@ -302,7 +302,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXv-WT-ZG2">
-                                                <rect key="frame" x="20" y="672.66666666666663" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="671" width="374" height="40"/>
                                                 <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="u8a-Ru-bzu"/>
@@ -449,7 +449,7 @@
             </objects>
             <point key="canvasLocation" x="5361" y="-1217"/>
         </scene>
-        <!--Likes-->
+        <!--Post-->
         <scene sceneID="iOj-ku-o80">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="gBb-HN-xLE" sceneMemberID="viewController">
@@ -459,7 +459,7 @@
                         <viewLayoutGuide key="safeArea" id="fFd-0O-UHO"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Likes" image="thumbs-up" id="sSS-q4-5bA"/>
+                    <tabBarItem key="tabBarItem" title="Post" image="plus" id="sSS-q4-5bA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUg-Xh-xxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -822,12 +822,12 @@
         <image name="compass" width="22" height="22"/>
         <image name="login" width="345" height="264"/>
         <image name="notification" width="22" height="22"/>
+        <image name="plus" width="22" height="22"/>
         <image name="restaurant" width="345" height="261"/>
         <image name="search" width="20" height="20"/>
         <image name="select-signup" width="345" height="309"/>
         <image name="splash-image" width="341" height="340"/>
         <image name="star" width="22" height="21"/>
-        <image name="thumbs-up" width="22" height="22"/>
         <image name="user" width="345" height="224"/>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
