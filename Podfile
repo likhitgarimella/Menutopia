@@ -1,4 +1,4 @@
-platform :ios, '12.0'
+platform :ios, '11.0'
 
 target 'Snapfood' do
   # Comment the next line if you don't want to use dynamic frameworks
