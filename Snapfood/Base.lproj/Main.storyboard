@@ -459,7 +459,7 @@
                         <viewLayoutGuide key="safeArea" id="fFd-0O-UHO"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Post" image="plus" id="sSS-q4-5bA"/>
+                    <tabBarItem key="tabBarItem" title="Post" id="sSS-q4-5bA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUg-Xh-xxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -822,7 +822,6 @@
         <image name="compass" width="22" height="22"/>
         <image name="login" width="345" height="264"/>
         <image name="notification" width="22" height="22"/>
-        <image name="plus" width="22" height="22"/>
         <image name="restaurant" width="345" height="261"/>
         <image name="search" width="20" height="20"/>
         <image name="select-signup" width="345" height="309"/>
