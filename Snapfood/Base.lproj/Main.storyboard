@@ -436,7 +436,7 @@
         <!--Search-->
         <scene sceneID="OMp-iH-nxf">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="ovG-pG-ZTc" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="ovG-pG-ZTc" customClass="SearchViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kbv-MX-xS6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -452,12 +452,12 @@
         <!--Post-->
         <scene sceneID="iOj-ku-o80">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="gBb-HN-xLE" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="gBb-HN-xLE" customClass="PostViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z6V-vK-tsX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="fFd-0O-UHO"/>
-                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Post" image="plus" id="sSS-q4-5bA"/>
                 </viewController>
@@ -468,7 +468,7 @@
         <!--Favorites-->
         <scene sceneID="hQE-xZ-OSf">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="2jz-ZB-rZK" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="2jz-ZB-rZK" customClass="FavoritesViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0ov-eL-5Cv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -484,7 +484,7 @@
         <!--Profile-->
         <scene sceneID="L8q-7K-fON">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Rro-ky-0p2" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Rro-ky-0p2" customClass="ProfileViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i0G-n2-OmJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -829,9 +829,6 @@
         <image name="star" width="22" height="21"/>
         <image name="user" width="345" height="224"/>
         <image name="users" width="24" height="20"/>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

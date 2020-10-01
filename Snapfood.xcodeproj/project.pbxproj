@@ -10,6 +10,10 @@
 		0172B93A084744908D31BDCB /* Pods_Snapfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCFAB7B393D3DA1D527E783 /* Pods_Snapfood.framework */; };
 		021210CD2509C1DA0062DB29 /* RestaurantSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021210CC2509C1DA0062DB29 /* RestaurantSignupViewController.swift */; };
 		021210CF2509C2710062DB29 /* UserSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021210CE2509C2710062DB29 /* UserSignupViewController.swift */; };
+		0237701C2525FC9300CC3F32 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237701B2525FC9300CC3F32 /* SearchViewController.swift */; };
+		0237701F2525FCE300CC3F32 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237701E2525FCE300CC3F32 /* PostViewController.swift */; };
+		023770222525FD0400CC3F32 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023770212525FD0400CC3F32 /* FavoritesViewController.swift */; };
+		023770252525FD2500CC3F32 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023770242525FD2500CC3F32 /* ProfileViewController.swift */; };
 		0259A0902509E0CC00C567A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0259A08F2509E0CC00C567A6 /* GoogleService-Info.plist */; };
 		0259A0932509E2B900C567A6 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0259A0922509E2B900C567A6 /* AppUser.swift */; };
 		0259A0952509E44100C567A6 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0259A0942509E44100C567A6 /* UserApi.swift */; };
@@ -44,6 +48,10 @@
 /* Begin PBXFileReference section */
 		021210CC2509C1DA0062DB29 /* RestaurantSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantSignupViewController.swift; sourceTree = "<group>"; };
 		021210CE2509C2710062DB29 /* UserSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignupViewController.swift; sourceTree = "<group>"; };
+		0237701B2525FC9300CC3F32 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0237701E2525FCE300CC3F32 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		023770212525FD0400CC3F32 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		023770242525FD2500CC3F32 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0259A08F2509E0CC00C567A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0259A0922509E2B900C567A6 /* AppUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		0259A0942509E44100C567A6 /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
@@ -169,6 +177,10 @@
 			isa = PBXGroup;
 			children = (
 				02FA637B250D63ED00703E29 /* ExploreViewController.swift */,
+				0237701B2525FC9300CC3F32 /* SearchViewController.swift */,
+				0237701E2525FCE300CC3F32 /* PostViewController.swift */,
+				023770212525FD0400CC3F32 /* FavoritesViewController.swift */,
+				023770242525FD2500CC3F32 /* ProfileViewController.swift */,
 			);
 			path = "Set-2";
 			sourceTree = "<group>";
@@ -327,7 +339,11 @@
 				027510EF2503D1B800BF7987 /* ViewController.swift in Sources */,
 				027510EB2503D1B800BF7987 /* AppDelegate.swift in Sources */,
 				0259A0972509E50200C567A6 /* Api.swift in Sources */,
+				023770252525FD2500CC3F32 /* ProfileViewController.swift in Sources */,
 				027510ED2503D1B800BF7987 /* SceneDelegate.swift in Sources */,
+				0237701C2525FC9300CC3F32 /* SearchViewController.swift in Sources */,
+				0237701F2525FCE300CC3F32 /* PostViewController.swift in Sources */,
+				023770222525FD0400CC3F32 /* FavoritesViewController.swift in Sources */,
 				021210CD2509C1DA0062DB29 /* RestaurantSignupViewController.swift in Sources */,
 				021210CF2509C2710062DB29 /* UserSignupViewController.swift in Sources */,
 				02FA637C250D63ED00703E29 /* ExploreViewController.swift in Sources */,
