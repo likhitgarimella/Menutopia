@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -459,7 +459,7 @@
                         <viewLayoutGuide key="safeArea" id="fFd-0O-UHO"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Post" id="sSS-q4-5bA"/>
+                    <tabBarItem key="tabBarItem" title="Post" image="plus" id="sSS-q4-5bA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUg-Xh-xxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -481,7 +481,7 @@
             </objects>
             <point key="canvasLocation" x="5361" y="558"/>
         </scene>
-        <!--Notifications-->
+        <!--Profile-->
         <scene sceneID="L8q-7K-fON">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Rro-ky-0p2" sceneMemberID="viewController">
@@ -491,7 +491,7 @@
                         <viewLayoutGuide key="safeArea" id="apF-Ql-0ln"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Notifications" image="notification" id="86Z-Ot-NmT"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="users" id="86Z-Ot-NmT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ew-bQ-J9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -821,13 +821,14 @@
     <resources>
         <image name="compass" width="22" height="22"/>
         <image name="login" width="345" height="264"/>
-        <image name="notification" width="22" height="22"/>
+        <image name="plus" width="24" height="24"/>
         <image name="restaurant" width="345" height="261"/>
         <image name="search" width="20" height="20"/>
         <image name="select-signup" width="345" height="309"/>
         <image name="splash-image" width="341" height="340"/>
         <image name="star" width="22" height="21"/>
         <image name="user" width="345" height="224"/>
+        <image name="users" width="24" height="20"/>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
