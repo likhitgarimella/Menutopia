@@ -9,12 +9,81 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    @IBOutlet var restaurantNameLabel: UILabel!
+    @IBOutlet var userNameLabel: UILabel!
+    
+    @IBOutlet var logout: UIButton!
+    
+    var restaurant: AppUser? {
+        didSet {
+            updateView1()
+        }
+    }
+    
+    var user: AppUser? {
+        didSet {
+            updateView2()
+        }
+    }
+    
+    func fetchRestaurant() {
+        
+        Api.UserDet.observeCurrentRestaurant { (restaurant) in
+            self.restaurant = restaurant
+        }
+        
+    }
+    
+    func fetchUser() {
+        
+        Api.UserDet.observeCurrentUser { (user) in
+            self.user = user
+        }
+        
+    }
+    
+    func updateView1() {
+        
+        self.restaurantNameLabel.text = restaurant!.restaurantName
+        
+    }
+    
+    func updateView2() {
+        
+        self.userNameLabel.text = user!.userUsername
+        
+    }
+    
+    func Properties() {
         
         
         
     }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        fetchRestaurant()
+        fetchUser()
+        
+    }
     
-}   // #21
+    /// Logout functionality
+    @IBAction func logoutAct(_ sender: UIButton) {
+        
+        /// using AuthService class
+        AuthService.logout(onSuccess: {
+            print("----------------")
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "ViewController")
+            self.present(vc, animated: true, completion: nil)
+        }, onError: {
+            (errorMessage) in
+            /// implement hud here
+            print(errorMessage)
+        })
+        
+    }
+    
+}   // #90
