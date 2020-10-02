@@ -448,7 +448,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Va-up-Uqs">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select-profile-pic" translatesAutoresizingMaskIntoConstraints="NO" id="1Va-up-Uqs">
                                 <rect key="frame" x="20" y="40" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="5M1-e9-rJZ"/>
@@ -514,6 +514,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="users" id="86Z-Ot-NmT"/>
                     <connections>
+                        <outlet property="editProfile" destination="4d5-R6-Ddp" id="AZ4-z8-MaK"/>
                         <outlet property="logout" destination="kne-sJ-UMu" id="5eu-He-7F5"/>
                         <outlet property="restaurantNameLabel" destination="NFl-nC-IXE" id="Hez-76-m8R"/>
                         <outlet property="userNameLabel" destination="ZWm-cd-UEE" id="gOg-gT-U3e"/>
@@ -850,6 +851,7 @@
         <image name="plus" width="24" height="24"/>
         <image name="restaurant" width="345" height="261"/>
         <image name="search" width="20" height="20"/>
+        <image name="select-profile-pic" width="100" height="100"/>
         <image name="select-signup" width="345" height="309"/>
         <image name="splash-image" width="341" height="340"/>
         <image name="star" width="22" height="21"/>

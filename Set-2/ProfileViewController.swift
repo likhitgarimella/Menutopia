@@ -13,6 +13,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet var restaurantNameLabel: UILabel!
     @IBOutlet var userNameLabel: UILabel!
     
+    @IBOutlet var editProfile: UIButton!
     @IBOutlet var logout: UIButton!
     
     var restaurant: AppUser? {
@@ -57,7 +58,8 @@ class ProfileViewController: UIViewController {
     
     func Properties() {
         
-        
+        editProfile.layer.cornerRadius = 18
+        logout.layer.cornerRadius = 18
         
     }
 
@@ -66,6 +68,8 @@ class ProfileViewController: UIViewController {
         
         fetchRestaurant()
         fetchUser()
+        
+        Properties()
         
     }
     
@@ -86,4 +90,4 @@ class ProfileViewController: UIViewController {
         
     }
     
-}   // #90
+}   // #94
