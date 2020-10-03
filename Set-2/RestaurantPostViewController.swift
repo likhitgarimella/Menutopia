@@ -11,7 +11,8 @@ import JGProgressHUD
 
 class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     
-    // Outlets
+    // MARK: - Outlets
+    
     @IBOutlet var mealName: UITextField!
     @IBOutlet var mealDesc: UITextView!
     @IBOutlet var mealPrice: UITextField!
@@ -60,7 +61,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     
     /// array data
     let names1 = ["vegetarian", "non-vegetarian", "vegan", "vegetarian1", "non-vegetarian1", "vegan1"]
-    let names2 = ["vegetarian", "non-vegetarian", "vegan"]
+    let names2 = ["burger", "pizza", "salad", "fries", "dessert", "juice"]
     let names3 = ["vegetarian", "non-vegetarian", "vegan"]
     
     // progress hud
@@ -97,7 +98,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // MARK: - ScrollView-1
+        // MARK: - ScrollView-1 build
         
         /// scroll view
         let scview1 = UIScrollView()
@@ -170,6 +171,79 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         /// scroll view prop
         scview1.contentSize = CGSize(width: xOffset, height: scview1.frame.height)
         
+        // MARK: - ScrollView-2 build
+        
+        /// scroll view
+        let scview2 = UIScrollView()
+        scview2.delegate = self
+        
+        scview2.showsHorizontalScrollIndicator = false
+        
+        /// adding scroll view to view
+        view.addSubview(scview2)
+        
+        /// scroll view constraints
+        scview2.translatesAutoresizingMaskIntoConstraints = false
+        scview2.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        scview2.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        scview2.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        scview2.topAnchor.constraint(equalTo: selectType.bottomAnchor, constant: 10).isActive = true
+        scview2.bottomAnchor.constraint(equalTo: selectGenre.topAnchor, constant: -10).isActive = true
+        
+        /// bg color
+        scview2.backgroundColor = UIColor.orange
+        
+        /// array count
+        for j in 0 ..< names2.count {
+            
+            /// array index
+            let name2 = names2[j]
+            /// button
+            let button2 = UIButton()
+            /// button tag
+            button2.tag = j
+            button2.layer.cornerRadius = 15
+            button2.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1.0)
+            button2.titleLabel?.font = UIFont(name: "SFProRounded-Medium", size: 16)
+            button2.titleLabel?.textAlignment = .center
+            button2.setTitleColor(UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0), for: .normal)
+            button2.setTitle(name2, for: .normal)
+            /// add target
+            button2.addTarget(self, action: #selector(self.buttonEvent2(_:)), for: .touchUpInside)
+            /// old one
+            // button.addTarget(self, action: #selector(buttonTouch), for: .touchUpInside)
+            
+            let strofMenu2 = names2[selectedIndex2]
+            
+            if (j == selectedIndex2) {
+                if(strofMenu2 == "burger") {
+                    /// button selected
+                    button2.backgroundColor = UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0)
+                    button2.setTitleColor(UIColor.white, for: .normal)
+                }
+                /// button normal
+                button2.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1.0)
+                button2.setTitleColor(UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0), for: .normal)
+            } else {
+                /// button normal
+                button2.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1.0)
+                button2.setTitleColor(UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0), for: .normal)
+            }
+            
+            /// add buttons to button array
+            buttonArray2.add(button2)
+            
+            /// button positions & dimensions
+            button2.frame = CGRect(x: xOffset, y: CGFloat(buttonPadding), width: button2.intrinsicContentSize.width + 48, height: 30)
+            xOffset = xOffset + CGFloat(buttonPadding) + button2.frame.size.width
+            /// adding button to scroll view
+            scview2.addSubview(button2)
+            
+        }
+        
+        /// scroll view prop
+        scview2.contentSize = CGSize(width: xOffset, height: scview2.frame.height)
+        
         hideKeyboardWhenTappedAround()
         
         Properties()
@@ -178,7 +252,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-    // MARK: - ScrollView-1
+    // MARK: - ScrollView-1 func
     
     @objc func buttonEvent1(_ sender: UIButton) {
         
@@ -213,4 +287,4 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-}   // #217
+}   // #291
