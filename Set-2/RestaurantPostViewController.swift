@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JGProgressHUD
 
 class RestaurantPostViewController: UIViewController {
     
@@ -29,6 +30,39 @@ class RestaurantPostViewController: UIViewController {
     @IBOutlet var foodGenreLabel: UILabel!
     /// dummy label for food cuisine
     @IBOutlet var foodCuisineLabel: UILabel!
+    
+    // MARK: - Scroll view
+    
+    /// scroll view
+    var scView: UIScrollView!
+    /// space b/w button and cell
+    let buttonPadding: CGFloat = 10
+    var xOffset: CGFloat = 10
+    
+    // MARK: - Declarations
+    
+    /// global declaration
+    let button1 = UIButton.init(type: .custom)
+    let button2 = UIButton.init(type: .custom)
+    let button3 = UIButton.init(type: .custom)
+    
+    /// selected index of button in scroll view
+    var selectedIndex1 : Int = 0
+    var selectedIndex2 : Int = 0
+    var selectedIndex3 : Int = 0
+    
+    /// array of buttons
+    var buttonArray1 : NSMutableArray = []
+    var buttonArray2 : NSMutableArray = []
+    var buttonArray3 : NSMutableArray = []
+    
+    /// array data
+    let names1 = ["vegetarian", "non-vegetarian", "vegan"]
+    let names2 = ["vegetarian", "non-vegetarian", "vegan"]
+    let names3 = ["vegetarian", "non-vegetarian", "vegan"]
+    
+    // progress hud
+    let hud1 = JGProgressHUD(style: .dark)
     
     func Properties() {
         
@@ -67,4 +101,4 @@ class RestaurantPostViewController: UIViewController {
         
     }
     
-}   // #71
+}   // #105
