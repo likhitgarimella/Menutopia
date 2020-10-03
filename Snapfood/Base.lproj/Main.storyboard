@@ -415,8 +415,32 @@
                     <view key="view" contentMode="scaleToFill" id="z6V-vK-tsX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share your Post" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7r-AX-aSJ">
+                                <rect key="frame" x="20" y="36" width="167" height="29"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4Ub-Ic-MhW">
+                                <rect key="frame" x="20" y="89" width="374" height="32"/>
+                                <segments>
+                                    <segment title="Restaurant"/>
+                                    <segment title="User"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fFd-0O-UHO"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fFd-0O-UHO" firstAttribute="trailing" secondItem="4Ub-Ic-MhW" secondAttribute="trailing" constant="20" id="0X2-cz-hRn"/>
+                            <constraint firstItem="m7r-AX-aSJ" firstAttribute="top" secondItem="fFd-0O-UHO" secondAttribute="top" constant="36" id="0m8-6J-zHA"/>
+                            <constraint firstItem="m7r-AX-aSJ" firstAttribute="leading" secondItem="fFd-0O-UHO" secondAttribute="leading" constant="20" id="6Tv-id-yya"/>
+                            <constraint firstItem="4Ub-Ic-MhW" firstAttribute="top" secondItem="m7r-AX-aSJ" secondAttribute="bottom" constant="24" id="TmK-e3-eBU"/>
+                            <constraint firstItem="fFd-0O-UHO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m7r-AX-aSJ" secondAttribute="trailing" symbolic="YES" id="dvE-Ai-zAi"/>
+                            <constraint firstItem="4Ub-Ic-MhW" firstAttribute="leading" secondItem="fFd-0O-UHO" secondAttribute="leading" constant="20" id="wNs-yy-PAC"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Post" image="plus" id="sSS-q4-5bA"/>
                 </viewController>
