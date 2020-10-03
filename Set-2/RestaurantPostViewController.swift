@@ -31,7 +31,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     /// dummy label for food cuisine
     @IBOutlet var foodCuisineLabel: UILabel!
     
-    // MARK: - Scroll view
+    // MARK: - Scroll view params
     
     /// scroll view
     var scview1: UIScrollView!
@@ -65,6 +65,8 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     
     // progress hud
     let hud1 = JGProgressHUD(style: .dark)
+    
+    // MARK: - Functions
     
     func Properties() {
         
@@ -121,47 +123,47 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         for j in 0 ..< names1.count {
             
             /// array index
-            let name = names1[j]
+            let name1 = names1[j]
             /// button
-            let button = UIButton()
+            let button1 = UIButton()
             /// button tag
-            button.tag = j
-            button.layer.cornerRadius = 15
-            button.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1.0)
-            button.titleLabel?.font = UIFont(name: "SFProRounded-Medium", size: 16)
-            button.titleLabel?.textAlignment = .center
-            button.setTitleColor(UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0), for: .normal)
-            button.setTitle(name, for: .normal)
+            button1.tag = j
+            button1.layer.cornerRadius = 15
+            button1.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1.0)
+            button1.titleLabel?.font = UIFont(name: "SFProRounded-Medium", size: 16)
+            button1.titleLabel?.textAlignment = .center
+            button1.setTitleColor(UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0), for: .normal)
+            button1.setTitle(name1, for: .normal)
             /// add target
-            button.addTarget(self, action: #selector(self.buttonEvent1(_:)), for: .touchUpInside)
+            button1.addTarget(self, action: #selector(self.buttonEvent1(_:)), for: .touchUpInside)
             /// old one
             // button.addTarget(self, action: #selector(buttonTouch), for: .touchUpInside)
             
-            let strofMenu = names1[selectedIndex1]
+            let strofMenu1 = names1[selectedIndex1]
             
             if (j == selectedIndex1) {
-                if(strofMenu == "vegetarian") {
+                if(strofMenu1 == "vegetarian") {
                     /// button selected
-                    button.backgroundColor = UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0)
-                    button.setTitleColor(UIColor.white, for: .normal)
+                    button1.backgroundColor = UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0)
+                    button1.setTitleColor(UIColor.white, for: .normal)
                 }
                 /// button normal
-                button.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1.0)
-                button.setTitleColor(UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0), for: .normal)
+                button1.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1.0)
+                button1.setTitleColor(UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0), for: .normal)
             } else {
                 /// button normal
-                button.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1.0)
-                button.setTitleColor(UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0), for: .normal)
+                button1.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1.0)
+                button1.setTitleColor(UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0), for: .normal)
             }
             
             /// add buttons to button array
-            buttonArray1.add(button)
+            buttonArray1.add(button1)
             
             /// button positions & dimensions
-            button.frame = CGRect(x: xOffset, y: CGFloat(buttonPadding), width: button.intrinsicContentSize.width + 48, height: 30)
-            xOffset = xOffset + CGFloat(buttonPadding) + button.frame.size.width
+            button1.frame = CGRect(x: xOffset, y: CGFloat(buttonPadding), width: button1.intrinsicContentSize.width + 48, height: 30)
+            xOffset = xOffset + CGFloat(buttonPadding) + button1.frame.size.width
             /// adding button to scroll view
-            scview1.addSubview(button)
+            scview1.addSubview(button1)
             
         }
         
@@ -211,4 +213,4 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-}   // #215
+}   // #217
