@@ -926,7 +926,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post your Meal!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkA-6J-dVM">
-                                                <rect key="frame" x="20" y="12" width="167.66666666666666" height="28"/>
+                                                <rect key="frame" x="20" y="12" width="163" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -993,37 +993,37 @@
                                                 <rect key="frame" x="272" y="258.66666666666669" width="84" height="19"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWg-Xe-TsV">
-                                                <rect key="frame" x="19.999999999999993" y="327.33333333333331" width="93.333333333333314" height="21"/>
+                                                <rect key="frame" x="19.999999999999993" y="327.33333333333331" width="90.333333333333314" height="21"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
                                                 <color key="textColor" systemColor="systemBlueColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Food Genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20R-WR-ZTz">
-                                                <rect key="frame" x="20" y="408.33333333333331" width="151" height="21"/>
+                                                <rect key="frame" x="20" y="418.33333333333331" width="142.66666666666666" height="21"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
                                                 <color key="textColor" systemColor="systemBlueColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAz-Lw-hx1">
-                                                <rect key="frame" x="40" y="298" width="31.333333333333329" height="19.333333333333314"/>
+                                                <rect key="frame" x="40" y="298" width="29.666666666666671" height="19.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MH-pb-NLj">
-                                                <rect key="frame" x="111.33333333333333" y="298.33333333333331" width="40.333333333333329" height="18.666666666666686"/>
+                                                <rect key="frame" x="109.66666666666667" y="298.33333333333331" width="38.333333333333329" height="18.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cuisine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhb-5P-Fi9">
-                                                <rect key="frame" x="191.66666666666666" y="298.33333333333331" width="50.333333333333343" height="18.666666666666686"/>
+                                                <rect key="frame" x="188" y="298.33333333333331" width="47.333333333333343" height="18.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Cuisine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ke4-Yd-Bjr">
-                                                <rect key="frame" x="20" y="489.33333333333331" width="116" height="21"/>
+                                                <rect key="frame" x="20" y="509.33333333333326" width="111" height="21"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
                                                 <color key="textColor" systemColor="systemBlueColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1039,7 +1039,7 @@
                                             <constraint firstItem="VAz-Lw-hx1" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="40" id="H7z-wD-8Oy"/>
                                             <constraint firstItem="nly-o1-dna" firstAttribute="top" secondItem="HZR-RJ-yD0" secondAttribute="bottom" constant="24" id="HJj-3n-sp7"/>
                                             <constraint firstItem="kwM-vr-rFZ" firstAttribute="centerX" secondItem="qPh-9I-eDL" secondAttribute="centerX" id="HqX-eM-KNz"/>
-                                            <constraint firstItem="ke4-Yd-Bjr" firstAttribute="top" secondItem="20R-WR-ZTz" secondAttribute="bottom" constant="60" id="Jrw-bv-OAZ"/>
+                                            <constraint firstItem="ke4-Yd-Bjr" firstAttribute="top" secondItem="20R-WR-ZTz" secondAttribute="bottom" constant="70" id="Jrw-bv-OAZ"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kkA-6J-dVM" secondAttribute="trailing" constant="20" symbolic="YES" id="LxH-U2-ewN"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Fhb-5P-Fi9" secondAttribute="trailing" constant="20" symbolic="YES" id="MB7-um-Sn6"/>
                                             <constraint firstItem="kkA-6J-dVM" firstAttribute="top" secondItem="pd4-zd-Yad" secondAttribute="top" constant="12" id="Mao-Uh-bon"/>
@@ -1048,7 +1048,7 @@
                                             <constraint firstAttribute="trailing" secondItem="4tD-aU-Eaj" secondAttribute="trailing" constant="20" id="SGW-1B-iDn"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MWg-Xe-TsV" secondAttribute="trailing" constant="20" symbolic="YES" id="Vf6-AT-7e4"/>
                                             <constraint firstItem="ke4-Yd-Bjr" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="20" id="Vft-Vd-m0z"/>
-                                            <constraint firstItem="20R-WR-ZTz" firstAttribute="top" secondItem="MWg-Xe-TsV" secondAttribute="bottom" constant="60" id="WIx-Ga-axa"/>
+                                            <constraint firstItem="20R-WR-ZTz" firstAttribute="top" secondItem="MWg-Xe-TsV" secondAttribute="bottom" constant="70" id="WIx-Ga-axa"/>
                                             <constraint firstItem="kkA-6J-dVM" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="20" id="WNl-C6-CJU"/>
                                             <constraint firstItem="vR5-jd-r8y" firstAttribute="top" secondItem="4tD-aU-Eaj" secondAttribute="bottom" constant="24" id="Y9h-qC-Rhh"/>
                                             <constraint firstItem="MWg-Xe-TsV" firstAttribute="top" secondItem="VAz-Lw-hx1" secondAttribute="bottom" constant="10" id="YTf-CG-eT1"/>
