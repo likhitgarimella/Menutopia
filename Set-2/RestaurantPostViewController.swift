@@ -66,7 +66,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     /// array data
     let names1 = ["vegetarian", "non-vegetarian", "vegan", "vegetarian1", "non-vegetarian1", "vegan1"]
     let names2 = ["burger", "pizza", "salad", "fries", "dessert", "juice"]
-    let names3 = ["vegetarian", "non-vegetarian", "vegan"]
+    let names3 = ["mexican", "italian", "indian", "chinese", "spanish", "french", "japanese", "thai", "greek", "mediterranean"]
     
     // progress hud
     let hud1 = JGProgressHUD(style: .dark)
@@ -420,7 +420,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         foodCuisineLabel.text = selectedButtonName
         
         for i in 0 ..< buttonArray3.count {
-            let buttonthree : UIButton = (buttonArray2[i] as! UIButton)
+            let buttonthree : UIButton = (buttonArray3[i] as! UIButton)
             if i == selectedIndex3 {
                 /// button selected
                 buttonthree.backgroundColor = UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0)
