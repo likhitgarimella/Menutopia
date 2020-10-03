@@ -893,10 +893,10 @@
             </objects>
             <point key="canvasLocation" x="1912" y="1279"/>
         </scene>
-        <!--View Controller-->
+        <!--User Post View Controller-->
         <scene sceneID="PFj-4t-8ck">
             <objects>
-                <viewController id="SRr-Td-UoL" sceneMemberID="viewController">
+                <viewController id="SRr-Td-UoL" customClass="UserPostViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="58N-eh-PTH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -908,10 +908,10 @@
             </objects>
             <point key="canvasLocation" x="6438" y="5"/>
         </scene>
-        <!--View Controller-->
+        <!--Restaurant Post View Controller-->
         <scene sceneID="bc1-Nk-PHG">
             <objects>
-                <viewController id="VLy-Rl-BW3" sceneMemberID="viewController">
+                <viewController id="VLy-Rl-BW3" customClass="RestaurantPostViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pfc-4S-vvO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -10,6 +10,8 @@
 		0172B93A084744908D31BDCB /* Pods_Snapfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCFAB7B393D3DA1D527E783 /* Pods_Snapfood.framework */; };
 		021210CD2509C1DA0062DB29 /* RestaurantSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021210CC2509C1DA0062DB29 /* RestaurantSignupViewController.swift */; };
 		021210CF2509C2710062DB29 /* UserSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021210CE2509C2710062DB29 /* UserSignupViewController.swift */; };
+		022EB024252875F300A71104 /* RestaurantPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB023252875F300A71104 /* RestaurantPostViewController.swift */; };
+		022EB0272528761500A71104 /* UserPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB0262528761500A71104 /* UserPostViewController.swift */; };
 		0237701C2525FC9300CC3F32 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237701B2525FC9300CC3F32 /* SearchViewController.swift */; };
 		0237701F2525FCE300CC3F32 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237701E2525FCE300CC3F32 /* PostViewController.swift */; };
 		023770222525FD0400CC3F32 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023770212525FD0400CC3F32 /* FavoritesViewController.swift */; };
@@ -48,6 +50,8 @@
 /* Begin PBXFileReference section */
 		021210CC2509C1DA0062DB29 /* RestaurantSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantSignupViewController.swift; sourceTree = "<group>"; };
 		021210CE2509C2710062DB29 /* UserSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignupViewController.swift; sourceTree = "<group>"; };
+		022EB023252875F300A71104 /* RestaurantPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPostViewController.swift; sourceTree = "<group>"; };
+		022EB0262528761500A71104 /* UserPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostViewController.swift; sourceTree = "<group>"; };
 		0237701B2525FC9300CC3F32 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0237701E2525FCE300CC3F32 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		023770212525FD0400CC3F32 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 				02FA637B250D63ED00703E29 /* ExploreViewController.swift */,
 				0237701B2525FC9300CC3F32 /* SearchViewController.swift */,
 				0237701E2525FCE300CC3F32 /* PostViewController.swift */,
+				022EB023252875F300A71104 /* RestaurantPostViewController.swift */,
+				022EB0262528761500A71104 /* UserPostViewController.swift */,
 				023770212525FD0400CC3F32 /* FavoritesViewController.swift */,
 				023770242525FD2500CC3F32 /* ProfileViewController.swift */,
 			);
@@ -341,11 +347,13 @@
 				0259A0972509E50200C567A6 /* Api.swift in Sources */,
 				023770252525FD2500CC3F32 /* ProfileViewController.swift in Sources */,
 				027510ED2503D1B800BF7987 /* SceneDelegate.swift in Sources */,
+				022EB024252875F300A71104 /* RestaurantPostViewController.swift in Sources */,
 				0237701C2525FC9300CC3F32 /* SearchViewController.swift in Sources */,
 				0237701F2525FCE300CC3F32 /* PostViewController.swift in Sources */,
 				023770222525FD0400CC3F32 /* FavoritesViewController.swift in Sources */,
 				021210CD2509C1DA0062DB29 /* RestaurantSignupViewController.swift in Sources */,
 				021210CF2509C2710062DB29 /* UserSignupViewController.swift in Sources */,
+				022EB0272528761500A71104 /* UserPostViewController.swift in Sources */,
 				02FA637C250D63ED00703E29 /* ExploreViewController.swift in Sources */,
 				02A15A0B2508DA07001B5FAD /* LoginViewController.swift in Sources */,
 				027510FF2503E25000BF7987 /* Extensions.swift in Sources */,
