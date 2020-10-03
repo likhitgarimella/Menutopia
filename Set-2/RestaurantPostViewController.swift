@@ -34,7 +34,9 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     // MARK: - Scroll view
     
     /// scroll view
-    var scView: UIScrollView!
+    var scview1: UIScrollView!
+    var scview2: UIScrollView!
+    var scview3: UIScrollView!
     /// space b/w button and cell
     let buttonPadding: CGFloat = 10
     var xOffset: CGFloat = 10
@@ -93,27 +95,27 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // MARK: - Horz scroll view, properties & conditions
+        // MARK: - ScrollView-1
         
         /// scroll view
-        let scView = UIScrollView()
-        scView.delegate = self
+        let scview1 = UIScrollView()
+        scview1.delegate = self
         
-        scView.showsHorizontalScrollIndicator = false
+        scview1.showsHorizontalScrollIndicator = false
         
         /// adding scroll view to view
-        view.addSubview(scView)
+        view.addSubview(scview1)
         
         /// scroll view constraints
-        scView.translatesAutoresizingMaskIntoConstraints = false
-        scView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        scView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        scView.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        scView.topAnchor.constraint(equalTo: selectType.bottomAnchor, constant: 10).isActive = true
-        scView.bottomAnchor.constraint(equalTo: selectGenre.topAnchor, constant: -10).isActive = true
+        scview1.translatesAutoresizingMaskIntoConstraints = false
+        scview1.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        scview1.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        scview1.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        scview1.topAnchor.constraint(equalTo: selectType.bottomAnchor, constant: 10).isActive = true
+        scview1.bottomAnchor.constraint(equalTo: selectGenre.topAnchor, constant: -10).isActive = true
         
         /// bg color
-        scView.backgroundColor = UIColor.orange
+        scview1.backgroundColor = UIColor.orange
         
         /// array count
         for j in 0 ..< names1.count {
@@ -131,7 +133,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
             button.setTitleColor(UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0), for: .normal)
             button.setTitle(name, for: .normal)
             /// add target
-            button.addTarget(self, action: #selector(self.buttonEvent(_:)), for: .touchUpInside)
+            button.addTarget(self, action: #selector(self.buttonEvent1(_:)), for: .touchUpInside)
             /// old one
             // button.addTarget(self, action: #selector(buttonTouch), for: .touchUpInside)
             
@@ -159,12 +161,12 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
             button.frame = CGRect(x: xOffset, y: CGFloat(buttonPadding), width: button.intrinsicContentSize.width + 48, height: 30)
             xOffset = xOffset + CGFloat(buttonPadding) + button.frame.size.width
             /// adding button to scroll view
-            scView.addSubview(button)
+            scview1.addSubview(button)
             
         }
         
         /// scroll view prop
-        scView.contentSize = CGSize(width: xOffset, height: scView.frame.height)
+        scview1.contentSize = CGSize(width: xOffset, height: scview1.frame.height)
         
         hideKeyboardWhenTappedAround()
         
@@ -174,7 +176,9 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-    @objc func buttonEvent(_ sender: UIButton) {
+    // MARK: - ScrollView-1
+    
+    @objc func buttonEvent1(_ sender: UIButton) {
         
         /// button taptic
         let taptic = UIImpactFeedbackGenerator(style: .light)
@@ -207,4 +211,4 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-}   // #211
+}   // #215
