@@ -64,9 +64,9 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     var buttonArray3 : NSMutableArray = []
     
     /// array data
-    let names1 = ["vegetarian", "non-vegetarian", "vegan", "vegetarian1", "non-vegetarian1", "vegan1"]
-    let names2 = ["burger", "pizza", "salad", "fries", "dessert", "juice"]
-    let names3 = ["mexican", "italian", "indian", "chinese", "spanish", "french", "japanese", "thai", "greek", "mediterranean"]
+    let names1 = ["appetizer", "bread", "breakfast", "burger", "dessert", "drink", "noodles", "pasta", "pizza", "salad", "sandwich", "seafood", "soup", "starch", "steak", "taco", "wings", "-other-"]
+    let names2 = ["alcoholic", "beef", "chicken", "coffee", "dairy", "egg", "fish", "frappucino", "fruit", "grains", "ice cream", "non-alcoholic", "noodle", "pancake", "shellfish", "smoothie", "sushi", "tea", "vegetable", "-other-"]
+    let names3 = ["american", "cantonese", "chinese", "french", "gluten free", "indian", "italian", "japanese", "korean", "mexican", "spanish", "tex-mex", "thai", "vegan", "vegetarian", "vietnamese", "-other-"]
     
     // progress hud
     let hud1 = JGProgressHUD(style: .dark)
