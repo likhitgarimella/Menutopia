@@ -13,7 +13,7 @@ class UserPostViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        hideKeyboardWhenTappedAround()
         
     }
     
