@@ -248,6 +248,79 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         /// scroll view prop
         scview2.contentSize = CGSize(width: xOffset2, height: scview2.frame.height)
         
+        // MARK: - ScrollView-3 build
+        
+        /// scroll view
+        let scview3 = UIScrollView()
+        scview3.delegate = self
+        
+        scview3.showsHorizontalScrollIndicator = false
+        
+        /// adding scroll view to view
+        view.addSubview(scview3)
+        
+        /// scroll view constraints
+        scview3.translatesAutoresizingMaskIntoConstraints = false
+        scview3.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        scview3.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        scview3.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        scview3.topAnchor.constraint(equalTo: selectCuisine.bottomAnchor, constant: 10).isActive = true
+        // scview3.bottomAnchor.constraint(equalTo: selectCuisine.topAnchor, constant: -10).isActive = true
+        
+        /// bg color
+        scview3.backgroundColor = UIColor.orange
+        
+        /// array count
+        for j in 0 ..< names3.count {
+            
+            /// array index
+            let name3 = names3[j]
+            /// button
+            let button3 = UIButton()
+            /// button tag
+            button3.tag = j
+            button3.layer.cornerRadius = 15
+            button3.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1.0)
+            button3.titleLabel?.font = UIFont(name: "SFProRounded-Medium", size: 16)
+            button3.titleLabel?.textAlignment = .center
+            button3.setTitleColor(UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0), for: .normal)
+            button3.setTitle(name3, for: .normal)
+            /// add target
+            button3.addTarget(self, action: #selector(self.buttonEvent3(_:)), for: .touchUpInside)
+            /// old one
+            // button.addTarget(self, action: #selector(buttonTouch), for: .touchUpInside)
+            
+            let strofMenu3 = names3[selectedIndex3]
+            
+            if (j == selectedIndex3) {
+                if(strofMenu3 == "burger") {
+                    /// button selected
+                    button3.backgroundColor = UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0)
+                    button3.setTitleColor(UIColor.white, for: .normal)
+                }
+                /// button normal
+                button3.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1.0)
+                button3.setTitleColor(UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0), for: .normal)
+            } else {
+                /// button normal
+                button3.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1.0)
+                button3.setTitleColor(UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0), for: .normal)
+            }
+            
+            /// add buttons to button array
+            buttonArray3.add(button3)
+            
+            /// button positions & dimensions
+            button3.frame = CGRect(x: xOffset3, y: CGFloat(buttonPadding3), width: button3.intrinsicContentSize.width + 48, height: 30)
+            xOffset3 = xOffset3 + CGFloat(buttonPadding3) + button3.frame.size.width
+            /// adding button to scroll view
+            scview3.addSubview(button3)
+            
+        }
+        
+        /// scroll view prop
+        scview3.contentSize = CGSize(width: xOffset3, height: scview3.frame.height)
+        
         hideKeyboardWhenTappedAround()
         
         Properties()
@@ -326,4 +399,39 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-}   // #330
+    // MARK: - ScrollView-3 func
+    
+    @objc func buttonEvent3(_ sender: UIButton) {
+        
+        /// button taptic
+        let taptic = UIImpactFeedbackGenerator(style: .light)
+        taptic.prepare()
+        taptic.impactOccurred()
+        
+        /// button tag
+        let index = sender.tag
+        /// selected index = button tag
+        selectedIndex3 = index
+        /// name of selected button
+        let selectedButtonName = names3[index]
+        /// print name of selected button & button tag
+        print("\(selectedButtonName); \(sender.tag)")
+        /// print that in dummy label
+        foodCuisineLabel.text = selectedButtonName
+        
+        for i in 0 ..< buttonArray3.count {
+            let buttonthree : UIButton = (buttonArray2[i] as! UIButton)
+            if i == selectedIndex3 {
+                /// button selected
+                buttonthree.backgroundColor = UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0)
+                buttonthree.setTitleColor(UIColor.white, for: .normal)
+            } else {
+                /// button normal
+                buttonthree.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1.0)
+                buttonthree.setTitleColor(UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0), for: .normal)
+            }
+        }
+        
+    }
+    
+}   // #438
