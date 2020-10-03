@@ -943,23 +943,53 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select-profile-pic" translatesAutoresizingMaskIntoConstraints="NO" id="HZR-RJ-yD0">
-                                                <rect key="frame" x="20" y="121" width="100" height="100"/>
+                                                <rect key="frame" x="20" y="125" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="37q-KK-qRr"/>
                                                     <constraint firstAttribute="width" constant="100" id="sGI-dW-gEi"/>
                                                 </constraints>
                                             </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vR5-jd-r8y">
+                                                <rect key="frame" x="140" y="125" width="254" height="100"/>
+                                                <color key="backgroundColor" red="0.9882352941176471" green="0.93725490196078431" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="FX1-sS-ucn"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Price" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nly-o1-dna">
+                                                <rect key="frame" x="20" y="249" width="160" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="8j7-i7-sFm"/>
+                                                    <constraint firstAttribute="height" constant="40" id="AJU-Ro-nvH"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="nly-o1-dna" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="20" id="Bfc-ac-znG"/>
+                                            <constraint firstItem="nly-o1-dna" firstAttribute="top" secondItem="HZR-RJ-yD0" secondAttribute="bottom" constant="24" id="HJj-3n-sp7"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kkA-6J-dVM" secondAttribute="trailing" constant="20" symbolic="YES" id="LxH-U2-ewN"/>
                                             <constraint firstItem="kkA-6J-dVM" firstAttribute="top" secondItem="pd4-zd-Yad" secondAttribute="top" constant="12" id="Mao-Uh-bon"/>
                                             <constraint firstAttribute="trailing" secondItem="4tD-aU-Eaj" secondAttribute="trailing" constant="20" id="SGW-1B-iDn"/>
                                             <constraint firstItem="kkA-6J-dVM" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="20" id="WNl-C6-CJU"/>
+                                            <constraint firstItem="vR5-jd-r8y" firstAttribute="top" secondItem="4tD-aU-Eaj" secondAttribute="bottom" constant="24" id="Y9h-qC-Rhh"/>
                                             <constraint firstItem="HZR-RJ-yD0" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="20" id="ccx-hh-6Ol"/>
                                             <constraint firstItem="4tD-aU-Eaj" firstAttribute="top" secondItem="kkA-6J-dVM" secondAttribute="bottom" constant="20" id="dpy-EV-8Uu"/>
-                                            <constraint firstItem="HZR-RJ-yD0" firstAttribute="top" secondItem="4tD-aU-Eaj" secondAttribute="bottom" constant="20" id="i4y-W2-bfg"/>
+                                            <constraint firstItem="HZR-RJ-yD0" firstAttribute="top" secondItem="4tD-aU-Eaj" secondAttribute="bottom" constant="24" id="i4y-W2-bfg"/>
                                             <constraint firstItem="4tD-aU-Eaj" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="20" id="pyW-6A-ZFY"/>
+                                            <constraint firstItem="vR5-jd-r8y" firstAttribute="leading" secondItem="HZR-RJ-yD0" secondAttribute="trailing" constant="20" id="tdj-bE-h8R"/>
+                                            <constraint firstAttribute="trailing" secondItem="vR5-jd-r8y" secondAttribute="trailing" constant="20" id="vMh-eK-rAD"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -984,7 +1014,9 @@
                     </view>
                     <size key="freeformSize" width="414" height="800"/>
                     <connections>
+                        <outlet property="mealDesc" destination="vR5-jd-r8y" id="t8J-gS-F2Y"/>
                         <outlet property="mealName" destination="4tD-aU-Eaj" id="hAM-Of-0Ui"/>
+                        <outlet property="mealPrice" destination="nly-o1-dna" id="f9l-IV-FlQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8F-Wd-w58" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
