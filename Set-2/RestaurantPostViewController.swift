@@ -14,6 +14,21 @@ class RestaurantPostViewController: UIViewController {
     @IBOutlet var mealName: UITextField!
     @IBOutlet var mealDesc: UITextView!
     @IBOutlet var mealPrice: UITextField!
+    @IBOutlet var sponsorOutlet: UIButton!
+    
+    /// reference label 1
+    @IBOutlet var selectType: UILabel!
+    /// reference label 2
+    @IBOutlet var selectGenre: UILabel!
+    /// reference label 3
+    @IBOutlet var selectCuisine: UILabel!
+    
+    /// dummy label for food type
+    @IBOutlet var foodTypeLabel: UILabel!
+    /// dummy label for food genre
+    @IBOutlet var foodGenreLabel: UILabel!
+    /// dummy label for food cuisine
+    @IBOutlet var foodCuisineLabel: UILabel!
     
     func Properties() {
         
@@ -28,6 +43,7 @@ class RestaurantPostViewController: UIViewController {
         mealName.layer.cornerRadius = 20
         mealDesc.layer.cornerRadius = 20
         mealPrice.layer.cornerRadius = 20
+        sponsorOutlet.layer.cornerRadius = 20
         
     }
     
@@ -51,4 +67,4 @@ class RestaurantPostViewController: UIViewController {
         
     }
     
-}   // #55
+}   // #71
