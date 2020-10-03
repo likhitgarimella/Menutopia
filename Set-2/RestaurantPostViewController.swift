@@ -39,8 +39,12 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     var scview2: UIScrollView!
     var scview3: UIScrollView!
     /// space b/w button and cell
-    let buttonPadding: CGFloat = 10
-    var xOffset: CGFloat = 10
+    let buttonPadding1: CGFloat = 10
+    let buttonPadding2: CGFloat = 10
+    let buttonPadding3: CGFloat = 10
+    var xOffset1: CGFloat = 10
+    var xOffset2: CGFloat = 10
+    var xOffset3: CGFloat = 10
     
     // MARK: - Declarations
     
@@ -161,15 +165,15 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
             buttonArray1.add(button1)
             
             /// button positions & dimensions
-            button1.frame = CGRect(x: xOffset, y: CGFloat(buttonPadding), width: button1.intrinsicContentSize.width + 48, height: 30)
-            xOffset = xOffset + CGFloat(buttonPadding) + button1.frame.size.width
+            button1.frame = CGRect(x: xOffset1, y: CGFloat(buttonPadding1), width: button1.intrinsicContentSize.width + 48, height: 30)
+            xOffset1 = xOffset1 + CGFloat(buttonPadding1) + button1.frame.size.width
             /// adding button to scroll view
             scview1.addSubview(button1)
             
         }
         
         /// scroll view prop
-        scview1.contentSize = CGSize(width: xOffset, height: scview1.frame.height)
+        scview1.contentSize = CGSize(width: xOffset1, height: scview1.frame.height)
         
         // MARK: - ScrollView-2 build
         
@@ -187,8 +191,8 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         scview2.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         scview2.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         scview2.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        scview2.topAnchor.constraint(equalTo: selectType.bottomAnchor, constant: 10).isActive = true
-        scview2.bottomAnchor.constraint(equalTo: selectGenre.topAnchor, constant: -10).isActive = true
+        scview2.topAnchor.constraint(equalTo: selectGenre.bottomAnchor, constant: 10).isActive = true
+        scview2.bottomAnchor.constraint(equalTo: selectCuisine.topAnchor, constant: -10).isActive = true
         
         /// bg color
         scview2.backgroundColor = UIColor.orange
@@ -234,15 +238,15 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
             buttonArray2.add(button2)
             
             /// button positions & dimensions
-            button2.frame = CGRect(x: xOffset, y: CGFloat(buttonPadding), width: button2.intrinsicContentSize.width + 48, height: 30)
-            xOffset = xOffset + CGFloat(buttonPadding) + button2.frame.size.width
+            button2.frame = CGRect(x: xOffset2, y: CGFloat(buttonPadding2), width: button2.intrinsicContentSize.width + 48, height: 30)
+            xOffset2 = xOffset2 + CGFloat(buttonPadding2) + button2.frame.size.width
             /// adding button to scroll view
             scview2.addSubview(button2)
             
         }
         
         /// scroll view prop
-        scview2.contentSize = CGSize(width: xOffset, height: scview2.frame.height)
+        scview2.contentSize = CGSize(width: xOffset2, height: scview2.frame.height)
         
         hideKeyboardWhenTappedAround()
         
@@ -287,4 +291,39 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-}   // #291
+    // MARK: - ScrollView-2 func
+    
+    @objc func buttonEvent2(_ sender: UIButton) {
+        
+        /// button taptic
+        let taptic = UIImpactFeedbackGenerator(style: .light)
+        taptic.prepare()
+        taptic.impactOccurred()
+        
+        /// button tag
+        let index = sender.tag
+        /// selected index = button tag
+        selectedIndex2 = index
+        /// name of selected button
+        let selectedButtonName = names2[index]
+        /// print name of selected button & button tag
+        print("\(selectedButtonName); \(sender.tag)")
+        /// print that in dummy label
+        foodGenreLabel.text = selectedButtonName
+        
+        for i in 0 ..< buttonArray2.count {
+            let buttontwo : UIButton = (buttonArray2[i] as! UIButton)
+            if i == selectedIndex2 {
+                /// button selected
+                buttontwo.backgroundColor = UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0)
+                buttontwo.setTitleColor(UIColor.white, for: .normal)
+            } else {
+                /// button normal
+                buttontwo.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1.0)
+                buttontwo.setTitleColor(UIColor(red: 207/255, green: 69/255, blue: 92/255, alpha: 1.0), for: .normal)
+            }
+        }
+        
+    }
+    
+}   // #330
