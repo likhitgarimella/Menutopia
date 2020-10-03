@@ -429,20 +429,50 @@
                                     <segment title="User"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="switchSegment:" destination="gBb-HN-xLE" eventType="valueChanged" id="19a-mA-yYn"/>
+                                </connections>
                             </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZ4-iu-w6p">
+                                <rect key="frame" x="0.0" y="132" width="414" height="555"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="SRr-Td-UoL" kind="embed" id="POL-4k-hu0"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvZ-rn-6uX">
+                                <rect key="frame" x="0.0" y="132" width="414" height="555"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="VLy-Rl-BW3" kind="embed" id="KGH-xO-l6b"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fFd-0O-UHO"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fFd-0O-UHO" firstAttribute="trailing" secondItem="4Ub-Ic-MhW" secondAttribute="trailing" constant="20" id="0X2-cz-hRn"/>
                             <constraint firstItem="m7r-AX-aSJ" firstAttribute="top" secondItem="fFd-0O-UHO" secondAttribute="top" constant="36" id="0m8-6J-zHA"/>
+                            <constraint firstItem="uvZ-rn-6uX" firstAttribute="top" secondItem="4Ub-Ic-MhW" secondAttribute="bottom" constant="12" id="4AO-lD-51a"/>
                             <constraint firstItem="m7r-AX-aSJ" firstAttribute="leading" secondItem="fFd-0O-UHO" secondAttribute="leading" constant="20" id="6Tv-id-yya"/>
+                            <constraint firstItem="jZ4-iu-w6p" firstAttribute="top" secondItem="4Ub-Ic-MhW" secondAttribute="bottom" constant="12" id="Pv1-UG-XSp"/>
                             <constraint firstItem="4Ub-Ic-MhW" firstAttribute="top" secondItem="m7r-AX-aSJ" secondAttribute="bottom" constant="24" id="TmK-e3-eBU"/>
+                            <constraint firstItem="fFd-0O-UHO" firstAttribute="bottom" secondItem="uvZ-rn-6uX" secondAttribute="bottom" id="Zc7-IA-oMA"/>
+                            <constraint firstItem="fFd-0O-UHO" firstAttribute="bottom" secondItem="jZ4-iu-w6p" secondAttribute="bottom" id="ZgO-wG-dRj"/>
+                            <constraint firstItem="jZ4-iu-w6p" firstAttribute="leading" secondItem="fFd-0O-UHO" secondAttribute="leading" id="awu-2d-APT"/>
+                            <constraint firstItem="fFd-0O-UHO" firstAttribute="trailing" secondItem="jZ4-iu-w6p" secondAttribute="trailing" id="bk1-QM-cgR"/>
+                            <constraint firstItem="uvZ-rn-6uX" firstAttribute="leading" secondItem="fFd-0O-UHO" secondAttribute="leading" id="dCD-I6-ckI"/>
                             <constraint firstItem="fFd-0O-UHO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m7r-AX-aSJ" secondAttribute="trailing" symbolic="YES" id="dvE-Ai-zAi"/>
+                            <constraint firstItem="fFd-0O-UHO" firstAttribute="trailing" secondItem="uvZ-rn-6uX" secondAttribute="trailing" id="fcM-yq-awR"/>
                             <constraint firstItem="4Ub-Ic-MhW" firstAttribute="leading" secondItem="fFd-0O-UHO" secondAttribute="leading" constant="20" id="wNs-yy-PAC"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Post" image="plus" id="sSS-q4-5bA"/>
+                    <connections>
+                        <outlet property="restaurantView" destination="uvZ-rn-6uX" id="ApG-Ua-vJ9"/>
+                        <outlet property="segment" destination="4Ub-Ic-MhW" id="3Cj-JB-qN6"/>
+                        <outlet property="userView" destination="jZ4-iu-w6p" id="1FM-QN-bfz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUg-Xh-xxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -863,6 +893,34 @@
             </objects>
             <point key="canvasLocation" x="1912" y="1279"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="PFj-4t-8ck">
+            <objects>
+                <viewController id="SRr-Td-UoL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="58N-eh-PTH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="555"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VXJ-hb-IwF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6438" y="5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bc1-Nk-PHG">
+            <objects>
+                <viewController id="VLy-Rl-BW3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pfc-4S-vvO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="555"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8F-Wd-w58" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6438" y="-736"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="byU-wR-8Fx"/>
@@ -881,6 +939,9 @@
         <image name="star" width="22" height="21"/>
         <image name="user" width="345" height="224"/>
         <image name="users" width="24" height="20"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
