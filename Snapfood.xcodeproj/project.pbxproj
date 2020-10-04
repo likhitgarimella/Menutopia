@@ -35,6 +35,7 @@
 		025C11482505836500A1E130 /* SF-Pro-Rounded-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 025C113A2505836500A1E130 /* SF-Pro-Rounded-Ultralight.otf */; };
 		025C11492505836500A1E130 /* SF-Pro-Text-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 025C113B2505836500A1E130 /* SF-Pro-Text-ThinItalic.otf */; };
 		025C114A2505836500A1E130 /* SF-Pro-Rounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 025C113C2505836500A1E130 /* SF-Pro-Rounded-Light.otf */; };
+		0266B7172529BBFE0058BE7E /* MealPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266B7162529BBFE0058BE7E /* MealPostModel.swift */; };
 		027510EB2503D1B800BF7987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027510EA2503D1B800BF7987 /* AppDelegate.swift */; };
 		027510ED2503D1B800BF7987 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027510EC2503D1B800BF7987 /* SceneDelegate.swift */; };
 		027510EF2503D1B800BF7987 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027510EE2503D1B800BF7987 /* ViewController.swift */; };
@@ -75,6 +76,7 @@
 		025C113A2505836500A1E130 /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
 		025C113B2505836500A1E130 /* SF-Pro-Text-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-ThinItalic.otf"; sourceTree = "<group>"; };
 		025C113C2505836500A1E130 /* SF-Pro-Rounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Light.otf"; sourceTree = "<group>"; };
+		0266B7162529BBFE0058BE7E /* MealPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPostModel.swift; sourceTree = "<group>"; };
 		027510E72503D1B800BF7987 /* Snapfood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapfood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		027510EA2503D1B800BF7987 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		027510EC2503D1B800BF7987 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			children = (
 				0237701E2525FCE300CC3F32 /* PostViewController.swift */,
 				022EB023252875F300A71104 /* RestaurantPostViewController.swift */,
+				0266B7162529BBFE0058BE7E /* MealPostModel.swift */,
 				022EB0262528761500A71104 /* UserPostViewController.swift */,
 			);
 			path = "Set-3";
@@ -360,6 +363,7 @@
 				0237701F2525FCE300CC3F32 /* PostViewController.swift in Sources */,
 				023770222525FD0400CC3F32 /* FavoritesViewController.swift in Sources */,
 				021210CD2509C1DA0062DB29 /* RestaurantSignupViewController.swift in Sources */,
+				0266B7172529BBFE0058BE7E /* MealPostModel.swift in Sources */,
 				021210CF2509C2710062DB29 /* UserSignupViewController.swift in Sources */,
 				022EB0272528761500A71104 /* UserPostViewController.swift in Sources */,
 				02FA637C250D63ED00703E29 /* ExploreViewController.swift in Sources */,
