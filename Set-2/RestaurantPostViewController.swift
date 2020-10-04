@@ -17,6 +17,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet var mealDesc: UITextView!
     @IBOutlet var mealPrice: UITextField!
     @IBOutlet var sponsorOutlet: UIButton!
+    @IBOutlet var submitOutlet: UIButton!
     
     /// reference label 1
     @IBOutlet var selectType: UILabel!
@@ -87,6 +88,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         mealDesc.layer.cornerRadius = 20
         mealPrice.layer.cornerRadius = 20
         sponsorOutlet.layer.cornerRadius = 20
+        submitOutlet.layer.cornerRadius = 20
         
     }
     
@@ -122,7 +124,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         scview1.bottomAnchor.constraint(equalTo: selectGenre.topAnchor, constant: -10).isActive = true
         
         /// bg color
-        scview1.backgroundColor = UIColor.orange
+        scview1.backgroundColor = UIColor.white
         
         /// array count
         for j in 0 ..< names1.count {
@@ -195,7 +197,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         scview2.bottomAnchor.constraint(equalTo: selectCuisine.topAnchor, constant: -10).isActive = true
         
         /// bg color
-        scview2.backgroundColor = UIColor.orange
+        scview2.backgroundColor = UIColor.white
         
         /// array count
         for j in 0 ..< names2.count {
@@ -265,10 +267,10 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         scview3.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         scview3.heightAnchor.constraint(equalToConstant: 50).isActive = true
         scview3.topAnchor.constraint(equalTo: selectCuisine.bottomAnchor, constant: 10).isActive = true
-        // scview3.bottomAnchor.constraint(equalTo: selectCuisine.topAnchor, constant: -10).isActive = true
+        scview3.bottomAnchor.constraint(equalTo: submitOutlet.topAnchor, constant: -30).isActive = true
         
         /// bg color
-        scview3.backgroundColor = UIColor.orange
+        scview3.backgroundColor = UIColor.white
         
         /// array count
         for j in 0 ..< names3.count {
@@ -434,4 +436,4 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-}   // #438
+}   // #440

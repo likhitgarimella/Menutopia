@@ -903,6 +903,7 @@
                     <view key="view" contentMode="scaleToFill" id="58N-eh-PTH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FKX-Hi-dY7"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     </view>
                     <size key="freeformSize" width="414" height="800"/>
@@ -916,14 +917,14 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="VLy-Rl-BW3" customClass="RestaurantPostViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pfc-4S-vvO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZ7-rx-flF">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="950"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pd4-zd-Yad">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="950"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post your Meal!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkA-6J-dVM">
                                                 <rect key="frame" x="20" y="12" width="163" height="28"/>
@@ -1028,18 +1029,32 @@
                                                 <color key="textColor" systemColor="systemBlueColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1B5-ml-yT0">
+                                                <rect key="frame" x="20" y="620.33333333333337" width="374" height="40"/>
+                                                <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Qgv-3s-tNn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="1B5-ml-yT0" firstAttribute="top" secondItem="ke4-Yd-Bjr" secondAttribute="bottom" constant="90" id="22B-EP-dPm"/>
                                             <constraint firstAttribute="trailing" secondItem="qPh-9I-eDL" secondAttribute="trailing" constant="20" id="39L-gL-w63"/>
                                             <constraint firstItem="5MH-pb-NLj" firstAttribute="leading" secondItem="VAz-Lw-hx1" secondAttribute="trailing" constant="40" id="74f-CG-fVZ"/>
                                             <constraint firstItem="MWg-Xe-TsV" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="20" id="Aqc-Hz-lCv"/>
                                             <constraint firstItem="nly-o1-dna" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="20" id="Bfc-ac-znG"/>
                                             <constraint firstItem="qPh-9I-eDL" firstAttribute="top" secondItem="vR5-jd-r8y" secondAttribute="bottom" constant="24" id="GYH-2V-hMd"/>
+                                            <constraint firstAttribute="trailing" secondItem="1B5-ml-yT0" secondAttribute="trailing" constant="20" id="H66-J5-xMF"/>
                                             <constraint firstItem="VAz-Lw-hx1" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="40" id="H7z-wD-8Oy"/>
                                             <constraint firstItem="nly-o1-dna" firstAttribute="top" secondItem="HZR-RJ-yD0" secondAttribute="bottom" constant="24" id="HJj-3n-sp7"/>
                                             <constraint firstItem="kwM-vr-rFZ" firstAttribute="centerX" secondItem="qPh-9I-eDL" secondAttribute="centerX" id="HqX-eM-KNz"/>
                                             <constraint firstItem="ke4-Yd-Bjr" firstAttribute="top" secondItem="20R-WR-ZTz" secondAttribute="bottom" constant="70" id="Jrw-bv-OAZ"/>
+                                            <constraint firstItem="1B5-ml-yT0" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="20" id="Kug-RK-Lkc"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kkA-6J-dVM" secondAttribute="trailing" constant="20" symbolic="YES" id="LxH-U2-ewN"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Fhb-5P-Fi9" secondAttribute="trailing" constant="20" symbolic="YES" id="MB7-um-Sn6"/>
                                             <constraint firstItem="kkA-6J-dVM" firstAttribute="top" secondItem="pd4-zd-Yad" secondAttribute="top" constant="12" id="Mao-Uh-bon"/>
@@ -1057,6 +1072,7 @@
                                             <constraint firstItem="5MH-pb-NLj" firstAttribute="centerY" secondItem="VAz-Lw-hx1" secondAttribute="centerY" id="c2t-7d-TAP"/>
                                             <constraint firstItem="HZR-RJ-yD0" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="20" id="ccx-hh-6Ol"/>
                                             <constraint firstItem="4tD-aU-Eaj" firstAttribute="top" secondItem="kkA-6J-dVM" secondAttribute="bottom" constant="20" id="dpy-EV-8Uu"/>
+                                            <constraint firstAttribute="bottom" secondItem="1B5-ml-yT0" secondAttribute="bottom" constant="289.67000000000002" id="eJQ-Dw-xEO"/>
                                             <constraint firstItem="VAz-Lw-hx1" firstAttribute="top" secondItem="nly-o1-dna" secondAttribute="bottom" constant="10" id="ec3-hF-SUB"/>
                                             <constraint firstItem="HZR-RJ-yD0" firstAttribute="top" secondItem="4tD-aU-Eaj" secondAttribute="bottom" constant="24" id="i4y-W2-bfg"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ke4-Yd-Bjr" secondAttribute="trailing" constant="20" symbolic="YES" id="nYG-Q1-8lI"/>
@@ -1078,6 +1094,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="R6W-Dm-JMq"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="FZ7-rx-flF" firstAttribute="leading" secondItem="pfc-4S-vvO" secondAttribute="leading" id="7pT-l8-LsX"/>
@@ -1086,7 +1103,7 @@
                             <constraint firstItem="FZ7-rx-flF" firstAttribute="top" secondItem="pfc-4S-vvO" secondAttribute="topMargin" id="yRF-ik-I26"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="414" height="800"/>
+                    <size key="freeformSize" width="414" height="950"/>
                     <connections>
                         <outlet property="foodCuisineLabel" destination="Fhb-5P-Fi9" id="iEw-DK-MxA"/>
                         <outlet property="foodGenreLabel" destination="5MH-pb-NLj" id="wiu-eC-Q1e"/>
@@ -1098,15 +1115,16 @@
                         <outlet property="selectGenre" destination="20R-WR-ZTz" id="jhc-Uw-DIM"/>
                         <outlet property="selectType" destination="MWg-Xe-TsV" id="30F-ke-hfU"/>
                         <outlet property="sponsorOutlet" destination="qPh-9I-eDL" id="dJ3-em-Ttf"/>
+                        <outlet property="submitOutlet" destination="1B5-ml-yT0" id="2PZ-6h-2R3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8F-Wd-w58" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6437.68115942029" y="-736.14130434782612"/>
+            <point key="canvasLocation" x="6438" y="-837"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dK4-NH-PMa"/>
+        <segue reference="byU-wR-8Fx"/>
         <segue reference="83a-6F-wcJ"/>
         <segue reference="5QU-o9-fNs"/>
     </inferredMetricsTieBreakers>
