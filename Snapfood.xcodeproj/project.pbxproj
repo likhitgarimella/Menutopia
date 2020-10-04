@@ -143,15 +143,21 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		0266B7152529BB580058BE7E /* Set-3 */ = {
+		0266B7152529BB580058BE7E /* Restaurant-post */ = {
 			isa = PBXGroup;
 			children = (
-				0237701E2525FCE300CC3F32 /* PostViewController.swift */,
 				022EB023252875F300A71104 /* RestaurantPostViewController.swift */,
 				0266B7162529BBFE0058BE7E /* MealPostModel.swift */,
+			);
+			path = "Restaurant-post";
+			sourceTree = "<group>";
+		};
+		0266B71B2529BDE90058BE7E /* User-post */ = {
+			isa = PBXGroup;
+			children = (
 				022EB0262528761500A71104 /* UserPostViewController.swift */,
 			);
-			path = "Set-3";
+			path = "User-post";
 			sourceTree = "<group>";
 		};
 		027510DE2503D1B800BF7987 = {
@@ -161,7 +167,8 @@
 				027510E92503D1B800BF7987 /* Snapfood */,
 				0259A0912509E1D500C567A6 /* Set-1 */,
 				02FA637A250D63A200703E29 /* Set-2 */,
-				0266B7152529BB580058BE7E /* Set-3 */,
+				0266B7152529BB580058BE7E /* Restaurant-post */,
+				0266B71B2529BDE90058BE7E /* User-post */,
 				027510E82503D1B800BF7987 /* Products */,
 				31A2D91CB99F3D3085B6B20A /* Pods */,
 				DA21E98B7D56C7C6A2D74B98 /* Frameworks */,
@@ -196,6 +203,7 @@
 			children = (
 				02FA637B250D63ED00703E29 /* ExploreViewController.swift */,
 				0237701B2525FC9300CC3F32 /* SearchViewController.swift */,
+				0237701E2525FCE300CC3F32 /* PostViewController.swift */,
 				023770212525FD0400CC3F32 /* FavoritesViewController.swift */,
 				023770242525FD2500CC3F32 /* ProfileViewController.swift */,
 			);
