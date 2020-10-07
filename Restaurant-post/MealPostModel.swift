@@ -34,14 +34,14 @@ extension MealPostModel {
         let post = MealPostModel()
         /// Remodel Post class, bcuz it currently doesn't have a post id property
         post.id = key
-        post.mealName = dict["mealName"] as? String
-        post.photoUrl = dict["photoUrl"] as? String
-        post.mealDesc = dict["mealDesc"] as? String
-        post.mealPrice = dict["mealPrice"] as? String
-        post.typeLabel = dict["typeLabel"] as? String
-        post.genreLabel = dict["genreLabel"] as? String
-        post.cuisineLabel = dict["cuisineLabel"] as? String
-        post.uid = dict["uid"] as? String
+        post.uid = dict["1) uid"] as? String
+        post.photoUrl = dict["2) Photo Url"] as? String
+        post.mealName = dict["3) Meal Name"] as? String
+        post.mealDesc = dict["4) Meal Desc"] as? String
+        post.mealPrice = dict["5) Meal Price"] as? String
+        post.typeLabel = dict["6) Meal Type"] as? String
+        post.genreLabel = dict["7) Meal Genre"] as? String
+        post.cuisineLabel = dict["8) Meal Cuisine"] as? String
         
         return post
         

@@ -491,6 +491,47 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
+    @IBAction func submitButton(_ sender: UIButton) {
+        
+        hud1.show(in: self.view)
+        
+        // selected image(imageSelected) should be from selectedImage
+        guard let imageSelected = self.selectedImage else {
+            print("Avatar is nil")
+            hud1.indicatorView = nil    // remove indicator
+            hud1.textLabel.text = "Empty image"
+            hud1.dismiss(afterDelay: 2.0, animated: true)
+            return
+        }
+        // image data from selected image in jpeg format
+        guard let imageData = imageSelected.jpegData(compressionQuality: 0.4) else {
+            return
+        }
+        HelperServiceRestaurant.uploadDataToServer(data: imageData, name: mealName.text!, desc: mealDesc.text!, price: mealPrice.text!, type: foodTypeLabel.text!, genre: foodGenreLabel.text!, cuisine: foodCuisineLabel.text!, onSuccess: {
+            self.clean()
+            // dismiss hud
+            self.hud1.dismiss()
+            // self.tabBarController?.selectedIndex = 0
+        })
+        
+    }
+    
+    // Reset function
+    func clean() {
+        // selected image should be blank again, after we push the post to db
+        self.selectedImage = nil
+        // setting back to placeholder image
+        self.mealImage.image = UIImage(named: "select-profile-pic")
+        // textfields should be blank again, after we push the post to db
+        self.mealName.text = nil
+        self.mealDesc.text = nil
+        self.mealPrice.text = nil
+        // setting back submit button to disabled state
+        submitOutlet.isEnabled = false
+        // setting back text view text color to light gray, so that delegate methods work
+        // self.captionTextView.textColor = UIColor.lightGray
+    }
+    
 }
 
 extension RestaurantPostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -507,4 +548,4 @@ extension RestaurantPostViewController: UIImagePickerControllerDelegate, UINavig
         dismiss(animated: true, completion: nil)
     }
     
-}   // #511
+}   // #552
