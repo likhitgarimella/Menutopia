@@ -14,6 +14,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     // MARK: - Outlets
     
     @IBOutlet var mealName: UITextField!
+    @IBOutlet var mealImage: UIImageView!
     @IBOutlet var mealDesc: UITextView!
     @IBOutlet var mealPrice: UITextField!
     @IBOutlet var sponsorOutlet: UIButton!
@@ -48,6 +49,8 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     var xOffset3: CGFloat = 10
     
     // MARK: - Declarations
+    
+    var selectedImage: UIImage?
     
     /// global declaration
     let button1 = UIButton.init(type: .custom)
@@ -85,6 +88,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     func CornerRadius() {
         
         mealName.layer.cornerRadius = 20
+        mealImage.layer.cornerRadius = 20
         mealDesc.layer.cornerRadius = 20
         mealPrice.layer.cornerRadius = 20
         sponsorOutlet.layer.cornerRadius = 20
@@ -98,6 +102,14 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         mealName.leftViewMode = .always
         mealPrice.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: mealPrice.frame.height))
         mealPrice.leftViewMode = .always
+        
+    }
+    
+    func TextViewProperties() {
+        
+        mealDesc.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1.0)
+        // padding for text view
+        mealDesc.textContainerInset = UIEdgeInsets(top: 6, left: 6, bottom: 6, right: 6)
         
     }
 
@@ -328,6 +340,26 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         Properties()
         CornerRadius()
         LeftPadding()
+        TextViewProperties()
+        
+        // Add gesture for image
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleSelectPhoto))
+        mealImage.addGestureRecognizer(tapGesture)
+        mealImage.isUserInteractionEnabled = true
+        
+    }
+    
+    @objc func handleSelectPhoto() {
+        
+        let pickerController = UIImagePickerController()
+        // To get access to selected media files, add delegate
+        pickerController.delegate = self
+        /// presenting it in full screen bcuz...
+        /// i want the view to change...
+        /// so that viewWillAppear will work...
+        pickerController.modalPresentationStyle = .fullScreen
+        // present photo library
+        present(pickerController, animated: true, completion: nil)
         
     }
     
@@ -436,4 +468,20 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-}   // #440
+}
+
+extension RestaurantPostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        // Selected image to display it in our image view
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            // Store this img in an instance variable
+            selectedImage = image
+            // set image's imageView to selected image
+            mealImage.image = image
+        }
+        print("Image selected from library")
+        dismiss(animated: true, completion: nil)
+    }
+    
+}   // #488
