@@ -363,6 +363,29 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        handlePost()
+        
+    }
+    
+    func handlePost() {
+        
+        if selectedImage != nil {
+            // Enable
+            self.submitOutlet.isEnabled = true
+            submitOutlet.setTitleColor(UIColor.white, for: .normal)
+            // shareOutlet.backgroundColor = UIColor(red: 80/255, green: 101/255, blue: 161/255, alpha: 1)
+        } else {
+            // Disable
+            self.submitOutlet.isEnabled = false
+            submitOutlet.setTitleColor(UIColor.lightText, for: .normal)
+            // shareOutlet.backgroundColor = UIColor(red: 80/255, green: 101/255, blue: 161/255, alpha: 1)
+        }
+        
+    }
+    
     // MARK: - ScrollView-1 func
     
     @objc func buttonEvent1(_ sender: UIButton) {
@@ -484,4 +507,4 @@ extension RestaurantPostViewController: UIImagePickerControllerDelegate, UINavig
         dismiss(animated: true, completion: nil)
     }
     
-}   // #488
+}   // #511
