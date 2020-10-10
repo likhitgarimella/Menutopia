@@ -1,21 +1,161 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Medium.otf">
+            <string>SFProRounded-Medium</string>
+        </array>
+        <array key="SF-Pro-Rounded-Regular.otf">
+            <string>SFProRounded-Regular</string>
+        </array>
+        <array key="SF-Pro-Rounded-Semibold.otf">
+            <string>SFProRounded-Semibold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RestaurantCollectionViewCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RestaurantCollectionViewCell" id="tsR-Zx-aO9" customClass="RestaurantCollectionViewCell" customModule="Snapfood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="425"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <rect key="frame" x="0.0" y="0.0" width="350" height="425"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irl-0R-53R">
+                        <rect key="frame" x="4" y="4" width="342" height="417"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="TJV-DX-ywO">
+                                <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5ZU-IY-ERi"/>
+                                    <constraint firstAttribute="width" constant="50" id="7kI-aD-bcL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ol6-NE-2Bq">
+                                <rect key="frame" x="68" y="10" width="122.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="16"/>
+                                <color key="textColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQv-tQ-nuB">
+                                <rect key="frame" x="68" y="33.5" width="36" height="14.5"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ic6-RA-QH6">
+                                <rect key="frame" x="10" y="76" width="322" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="hT2-1v-5kd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrO-A2-VAg">
+                                <rect key="frame" x="10" y="324" width="59.5" height="14.5"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyv-5V-1JW">
+                                <rect key="frame" x="10" y="346.5" width="26.5" height="14.5"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tag-1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCn-zU-DPA">
+                                <rect key="frame" x="226" y="346.5" width="27.5" height="14.5"/>
+                                <color key="backgroundColor" red="0.81176470588235294" green="0.27058823529411763" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tag-2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mO-bJ-Ygq">
+                                <rect key="frame" x="263.5" y="346.5" width="29" height="14.5"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tag-3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F00-iV-V8j">
+                                <rect key="frame" x="302.5" y="346.5" width="29.5" height="14.5"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bCv-Zo-z2r">
+                                <rect key="frame" x="10" y="369" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="aZL-jQ-tCY"/>
+                                    <constraint firstAttribute="width" constant="24" id="utq-81-Rzx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkJ-3v-WaT">
+                                <rect key="frame" x="38" y="374" width="14.5" height="14.5"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="MMM d, h:mm a" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elf-US-AGv">
+                                <rect key="frame" x="258" y="375" width="68" height="12"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="10"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oQv-tQ-nuB" firstAttribute="leading" secondItem="ol6-NE-2Bq" secondAttribute="leading" id="21G-YX-8Th"/>
+                            <constraint firstItem="F00-iV-V8j" firstAttribute="leading" secondItem="9mO-bJ-Ygq" secondAttribute="trailing" constant="10" id="3K3-TS-7Vp"/>
+                            <constraint firstItem="TJV-DX-ywO" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="5ZE-UB-VyK"/>
+                            <constraint firstItem="EkJ-3v-WaT" firstAttribute="leading" secondItem="bCv-Zo-z2r" secondAttribute="trailing" constant="4" id="6g0-XG-x0W"/>
+                            <constraint firstItem="oyv-5V-1JW" firstAttribute="top" secondItem="NrO-A2-VAg" secondAttribute="bottom" constant="8" id="7zl-89-bJJ"/>
+                            <constraint firstItem="bCv-Zo-z2r" firstAttribute="top" secondItem="oyv-5V-1JW" secondAttribute="bottom" constant="8" id="9ur-fB-5FV"/>
+                            <constraint firstItem="oQv-tQ-nuB" firstAttribute="top" secondItem="ol6-NE-2Bq" secondAttribute="bottom" constant="4" id="Bh2-nL-P6v"/>
+                            <constraint firstItem="ol6-NE-2Bq" firstAttribute="leading" secondItem="TJV-DX-ywO" secondAttribute="trailing" constant="8" id="CsR-pr-SHb"/>
+                            <constraint firstItem="NrO-A2-VAg" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="DRq-WF-ebD"/>
+                            <constraint firstItem="Elf-US-AGv" firstAttribute="centerY" secondItem="EkJ-3v-WaT" secondAttribute="centerY" id="Ea9-uj-XqL"/>
+                            <constraint firstAttribute="trailing" secondItem="Elf-US-AGv" secondAttribute="trailing" constant="16" id="G0q-Cx-bJm"/>
+                            <constraint firstItem="9mO-bJ-Ygq" firstAttribute="centerY" secondItem="gCn-zU-DPA" secondAttribute="centerY" id="I8m-Ld-d5e"/>
+                            <constraint firstItem="NrO-A2-VAg" firstAttribute="top" secondItem="Ic6-RA-QH6" secondAttribute="bottom" constant="8" id="JB7-mr-juD"/>
+                            <constraint firstAttribute="width" constant="342" id="QC8-zc-TQQ"/>
+                            <constraint firstItem="F00-iV-V8j" firstAttribute="centerY" secondItem="9mO-bJ-Ygq" secondAttribute="centerY" id="VaN-Oh-MOA"/>
+                            <constraint firstItem="EkJ-3v-WaT" firstAttribute="centerY" secondItem="bCv-Zo-z2r" secondAttribute="centerY" id="aj4-t2-twr"/>
+                            <constraint firstItem="bCv-Zo-z2r" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="ftF-Jp-RQM"/>
+                            <constraint firstItem="Ic6-RA-QH6" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="iV2-fa-UZL"/>
+                            <constraint firstItem="oyv-5V-1JW" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="n5x-bR-O9e"/>
+                            <constraint firstItem="9mO-bJ-Ygq" firstAttribute="leading" secondItem="gCn-zU-DPA" secondAttribute="trailing" constant="10" id="nHH-f9-Ku2"/>
+                            <constraint firstAttribute="trailing" secondItem="Ic6-RA-QH6" secondAttribute="trailing" constant="10" id="rsY-We-F5d"/>
+                            <constraint firstItem="Ic6-RA-QH6" firstAttribute="top" secondItem="TJV-DX-ywO" secondAttribute="bottom" constant="16" id="rwb-ob-dgs"/>
+                            <constraint firstItem="TJV-DX-ywO" firstAttribute="top" secondItem="irl-0R-53R" secondAttribute="top" constant="10" id="sXY-uz-eCB"/>
+                            <constraint firstAttribute="trailing" secondItem="F00-iV-V8j" secondAttribute="trailing" constant="10" id="t2O-wI-Ta1"/>
+                            <constraint firstItem="gCn-zU-DPA" firstAttribute="centerY" secondItem="oyv-5V-1JW" secondAttribute="centerY" id="wxl-wY-kOc"/>
+                            <constraint firstItem="ol6-NE-2Bq" firstAttribute="top" secondItem="irl-0R-53R" secondAttribute="top" constant="10" id="znX-zc-rgi"/>
+                        </constraints>
+                    </view>
+                </subviews>
             </view>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <viewLayoutGuide key="safeArea" id="DFQ-wk-kmT"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="irl-0R-53R" secondAttribute="trailing" constant="4" id="6Rw-iM-bVD"/>
+                <constraint firstItem="irl-0R-53R" firstAttribute="leading" secondItem="tsR-Zx-aO9" secondAttribute="leading" constant="4" id="6qO-es-wh4"/>
+                <constraint firstAttribute="bottom" secondItem="irl-0R-53R" secondAttribute="bottom" constant="4" id="Bgb-ST-lDn"/>
+                <constraint firstItem="irl-0R-53R" firstAttribute="top" secondItem="tsR-Zx-aO9" secondAttribute="top" constant="4" id="alh-N4-daD"/>
+            </constraints>
+            <connections>
+                <outlet property="cardView" destination="irl-0R-53R" id="kGL-H6-gVJ"/>
+                <outlet property="widthConstraint" destination="QC8-zc-TQQ" id="QTI-lB-Jvo"/>
+            </connections>
+            <point key="canvasLocation" x="-200.00000000000003" y="35.825892857142854"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="placeholder-image" width="200" height="200"/>
+    </resources>
 </document>
