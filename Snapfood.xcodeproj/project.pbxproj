@@ -52,6 +52,7 @@
 		027510FF2503E25000BF7987 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027510FE2503E24F00BF7987 /* Extensions.swift */; };
 		02A15A0B2508DA07001B5FAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A15A0A2508DA07001B5FAD /* LoginViewController.swift */; };
 		02A15A0D2508DA31001B5FAD /* SelectSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */; };
+		02B6067C2531A894009987CF /* SponsorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6067B2531A894009987CF /* SponsorViewController.swift */; };
 		02FA637C250D63ED00703E29 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA637B250D63ED00703E29 /* ExploreViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,7 @@
 		027510FE2503E24F00BF7987 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		02A15A0A2508DA07001B5FAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSignupViewController.swift; sourceTree = "<group>"; };
+		02B6067B2531A894009987CF /* SponsorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorViewController.swift; sourceTree = "<group>"; };
 		02FA637B250D63ED00703E29 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		0568DE127CA574181615345D /* Pods-Snapfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapfood.release.xcconfig"; path = "Target Support Files/Pods-Snapfood/Pods-Snapfood.release.xcconfig"; sourceTree = "<group>"; };
 		7BCFAB7B393D3DA1D527E783 /* Pods_Snapfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,6 +227,7 @@
 				02FA637B250D63ED00703E29 /* ExploreViewController.swift */,
 				0237701B2525FC9300CC3F32 /* SearchViewController.swift */,
 				0237701E2525FCE300CC3F32 /* PostViewController.swift */,
+				02B6067B2531A894009987CF /* SponsorViewController.swift */,
 				023770212525FD0400CC3F32 /* FavoritesViewController.swift */,
 				023770242525FD2500CC3F32 /* ProfileViewController.swift */,
 			);
@@ -387,6 +390,7 @@
 				027510EB2503D1B800BF7987 /* AppDelegate.swift in Sources */,
 				0259A0972509E50200C567A6 /* Api.swift in Sources */,
 				023770252525FD2500CC3F32 /* ProfileViewController.swift in Sources */,
+				02B6067C2531A894009987CF /* SponsorViewController.swift in Sources */,
 				027510ED2503D1B800BF7987 /* SceneDelegate.swift in Sources */,
 				022EB024252875F300A71104 /* RestaurantPostViewController.swift in Sources */,
 				0237701C2525FC9300CC3F32 /* SearchViewController.swift in Sources */,
