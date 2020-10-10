@@ -513,7 +513,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         }
         
         // Upload data
-        HelperServiceRestaurant.uploadDataToServer(data: imageData, name: mealName.text!, desc: mealDesc.text!, price: mealPrice.text!, type: foodTypeLabel.text!, genre: foodGenreLabel.text!, cuisine: foodCuisineLabel.text!, timestamp: Int(truncating: timestamp), onSuccess: {
+        HelperServiceRestaurant.uploadDataToServer(data: imageData, name: mealName.text!, desc: mealDesc.text!, price: mealPrice.text!, type: foodTypeLabel.text!, genre: foodGenreLabel.text!, cuisine: foodCuisineLabel.text!, timestamp: Double(Int(truncating: timestamp)), onSuccess: {
             self.clean()
             // dismiss hud
             self.hud1.dismiss()

@@ -31,7 +31,7 @@ class MealPostModel {
     
     var isLiked: Bool?
     
-    var timestampVal: Int?
+    var timestampVal: Double?
     
 }
 
@@ -51,7 +51,7 @@ extension MealPostModel {
         post.typeLabel = dict["6) Meal Type"] as? String
         post.genreLabel = dict["7) Meal Genre"] as? String
         post.cuisineLabel = dict["8) Meal Cuisine"] as? String
-        post.timestampVal = dict["9) Timestamp"] as? Int
+        post.timestampVal = dict["9) Timestamp"] as? Double
         
         post.likeCount = dict["10) Like Count"] as? Int
         post.likes = dict["11) Likes"] as? Dictionary<String, Any>

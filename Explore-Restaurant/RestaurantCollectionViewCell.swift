@@ -68,6 +68,16 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         tag2.text = "    \(String(describing: restaurantPost?.genreLabel))    "
         tag3.text = "    \(String(describing: restaurantPost?.cuisineLabel))    "
         
+        /// Timestamp
+        if let seconds = restaurantPost?.timestampVal {
+            let timeStampDate = NSDate(timeIntervalSince1970: seconds)
+            let pastDate = Date(timeIntervalSince1970: seconds)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MMM d, h:mm a"
+            timestampValue.text = dateFormatter.string(from: timeStampDate as Date)
+            timestampValue.text = pastDate.timeAgoDisplay()
+        }
+        
         setupUserInfo()
         
         /// Update like

@@ -11,7 +11,7 @@ import FirebaseStorage
 
 class HelperServiceRestaurant {
     
-    static func uploadDataToServer(data: Data, name: String, desc: String, price: String, type: String, genre: String, cuisine: String, timestamp: Int, onSuccess: @escaping () -> Void) {
+    static func uploadDataToServer(data: Data, name: String, desc: String, price: String, type: String, genre: String, cuisine: String, timestamp: Double, onSuccess: @escaping () -> Void) {
         // NSUUID
         let photoIdString = NSUUID().uuidString
         print("Photo Id String: \(photoIdString)")
@@ -35,7 +35,7 @@ class HelperServiceRestaurant {
         }
     }
     
-    static func sendDataToDatabase(photoUrl: String, name: String, desc: String, price: String, type: String, genre: String, cuisine: String, timestamp: Int, onSuccess: @escaping () -> Void) {
+    static func sendDataToDatabase(photoUrl: String, name: String, desc: String, price: String, type: String, genre: String, cuisine: String, timestamp: Double, onSuccess: @escaping () -> Void) {
         let newPostId = Api.RestaurantPost.REF_POSTS.childByAutoId().key
         let newPostReference = Api.RestaurantPost.REF_POSTS.child(newPostId!)
         guard let currentUser = Api.UserDet.CURRENT_USER else {
