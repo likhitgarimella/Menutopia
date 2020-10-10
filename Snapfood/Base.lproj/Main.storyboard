@@ -398,6 +398,10 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="xX0-Gf-9Kl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jOV-P1-Ilw"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -409,6 +413,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Explore" image="compass" id="PAx-2C-KZp"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="xX0-Gf-9Kl" id="hsM-u2-iFO"/>
+                        <outlet property="restaurantFeedCollectionView" destination="Vdc-1c-GdG" id="zld-g7-Dvv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ig5-Od-yaz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
