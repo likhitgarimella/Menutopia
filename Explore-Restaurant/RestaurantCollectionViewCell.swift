@@ -117,6 +117,9 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         
     }
     
+    /// New setupUserInfo() func
+    /// previously, our cell had to go look up the db for a user based on the uid...
+    /// it now knows all that information already...
     func setupUserInfo() {
         
         restName.text = user?.restaurantName
@@ -126,8 +129,59 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        // initial text
+        restName.text = ""
+        restMealName.text = ""
+        restMenuDesc.text = ""
+        restItemPrice.text = ""
+        tag1.text = ""
+        tag2.text = ""
+        tag3.text = ""
+        timestampValue.text = ""
         
+        // corner radius
+        cardView.layer.cornerRadius = 10
+        
+        // shadow properties
+        cardView.layer.shadowColor = UIColor.lightGray.cgColor
+        cardView.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+        cardView.layer.shadowRadius = 2.0
+        cardView.layer.shadowOpacity = 0.5
+        cardView.layer.masksToBounds = false
+        
+        // constraint
+        self.contentView.translatesAutoresizingMaskIntoConstraints = false
+        let screenWidth = UIScreen.main.bounds.size.width
+        widthConstraint.constant = screenWidth - (2 * 12)
+        
+        // Tap gesture for like image on tap
+        let tapGestureForLikeImageView = UITapGestureRecognizer(target: self, action: #selector(likeImageViewTouch))
+        restLikeImageView.addGestureRecognizer(tapGestureForLikeImageView)
+        restLikeImageView.isUserInteractionEnabled = true
         
     }
     
-}   // #124
+    @objc func likeImageViewTouch() {
+        
+        /// Old
+        /*
+        mentorPostRef = Api.MentorPost.REF_POSTS.child(mentorPost!.id!)
+        incrementLikes(forRef: mentorPostRef)
+        */
+        
+        /// New
+        Api.RestaurantPost.incrementLikes(postId: restaurantPost!.id!, onSuccess: { (post) in
+            self.updateLike(post: post)
+            /// New #2
+            /// Now the post property of the cell is updated right after a like/dislike
+            self.restaurantPost?.likes = post.likes
+            self.restaurantPost?.isLiked = post.isLiked
+            self.restaurantPost?.likeCount = post.likeCount
+        }) { (errorMessage) in
+            // hud
+            print(errorMessage!)
+        }
+        
+    }
+    
+}   // #188
