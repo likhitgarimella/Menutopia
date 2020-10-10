@@ -8,6 +8,7 @@
 
 import UIKit
 // import Firebase
+import SDWebImage
 
 /// If a View needs data, it should ask controllers...
 
@@ -20,6 +21,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var restProfilePic: UIImageView!
     @IBOutlet weak var restName: UILabel!
     @IBOutlet weak var restDetails: UILabel!
+    
     @IBOutlet weak var restMealName: UILabel!
     @IBOutlet weak var restMenuItemImage: UIImageView!
     @IBOutlet weak var restMenuDesc: UILabel!
@@ -59,11 +61,55 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
             restMenuItemImage.sd_setImage(with: photoUrl)
         }
         
+        restMenuDesc.text = restaurantPost?.mealDesc
+        restItemPrice.text = restaurantPost?.mealPrice
+        
+        tag1.text = "    \(String(describing: restaurantPost?.typeLabel))    "
+        tag2.text = "    \(String(describing: restaurantPost?.genreLabel))    "
+        tag3.text = "    \(String(describing: restaurantPost?.cuisineLabel))    "
+        
+        setupUserInfo()
+        
+        /// Update like
+        updateLike(post: restaurantPost!)
+        
+        /// New
+        self.updateLike(post: self.restaurantPost!)
+        
+    }
+    
+    func updateLike(post: MealPostModel) {
+        
+        // print(post.isLiked)
+        /// we first checked if its true, and no one liked this post before..
+        /// or if probably someone did, but the current user did not..
+        /// then we display, non-selected like icon..
+        /// otherwise, display likeSelected icon..
+        let imageName = post.likes == nil || !post.isLiked! ? "likeOff" : "likeOn"
+        restMenuItemImage.image = UIImage(named: imageName)
+        /// Below commented snippet can be put in 1 line.. as above..
+        /* if post.isLiked == false {
+            likeImageView.image = UIImage(named: "like")
+        } else {
+            likeImageView.image = UIImage(named: "likeSelected")
+        } */
+        
+        // We now update like count
+        /// Use optional chaining with guard
+        guard let count = post.likeCount else {
+            return
+        }
+        if count != 0 {
+            likeCountButton.setTitle("\(count) likes", for: .normal)
+        } else {
+            likeCountButton.setTitle("0 likes", for: .normal)
+        }
+        
     }
     
     func setupUserInfo() {
         
-        
+        restName.text = user?.restaurantName
         
     }
     
@@ -74,4 +120,4 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         
     }
     
-}   // #78
+}   // #124

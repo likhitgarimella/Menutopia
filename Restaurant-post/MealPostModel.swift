@@ -26,6 +26,11 @@ class MealPostModel {
     var genreLabel: String?
     var cuisineLabel: String?
     
+    var likes: Dictionary<String, Any>?
+    var likeCount: Int?
+    
+    var isLiked: Bool?
+    
     var timestampVal: Int?
     
 }
@@ -48,8 +53,23 @@ extension MealPostModel {
         post.cuisineLabel = dict["8) Meal Cuisine"] as? String
         post.timestampVal = dict["9) Timestamp"] as? Int
         
+        post.likeCount = dict["10) Like Count"] as? Int
+        post.likes = dict["11) Likes"] as? Dictionary<String, Any>
+        
+        if let currentUserId = Auth.auth().currentUser?.uid {
+            if post.likes != nil {
+                /* if post.likes[currentUserId] != nil {
+                    post.isLiked = true
+                } else {
+                    post.isLiked = false
+                } */
+                /// Above commented snippet can be put in 1 line.. as below..
+                post.isLiked = post.likes![currentUserId] != nil
+            }
+        }
+        
         return post
         
     }
     
-}   // #56
+}   // #76
