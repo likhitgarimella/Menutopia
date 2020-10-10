@@ -62,6 +62,17 @@ class ProfileViewController: UIViewController {
         logout.layer.cornerRadius = 20
         
     }
+    
+    func Condition() {
+        
+        if restaurantNameLabel.text != nil {
+            userNameLabel.text = ""
+        }
+        if userNameLabel.text != nil {
+            restaurantNameLabel.text = ""
+        }
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +81,7 @@ class ProfileViewController: UIViewController {
         fetchUser()
         
         Properties()
+        Condition()
         
     }
     
@@ -90,4 +102,4 @@ class ProfileViewController: UIViewController {
         
     }
     
-}   // #94
+}   // #106
