@@ -506,26 +506,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select-profile-pic" translatesAutoresizingMaskIntoConstraints="NO" id="1Va-up-Uqs">
-                                <rect key="frame" x="20" y="40" width="100" height="100"/>
+                                <rect key="frame" x="20" y="56" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="5M1-e9-rJZ"/>
                                     <constraint firstAttribute="height" constant="100" id="8mY-UM-0rT"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWm-cd-UEE">
-                                <rect key="frame" x="144" y="40" width="18" height="26.333333333333329"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="22"/>
+                                <rect key="frame" x="144" y="20" width="19.666666666666657" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
                                 <color key="textColor" red="0.81176470588235294" green="0.27058823529411763" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFl-nC-IXE">
-                                <rect key="frame" x="144" y="40" width="18" height="26.333333333333329"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="22"/>
+                                <rect key="frame" x="144" y="20" width="19.666666666666657" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
                                 <color key="textColor" red="0.81176470588235294" green="0.27058823529411763" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d5-R6-Ddp">
-                                <rect key="frame" x="20" y="184" width="160" height="40"/>
+                                <rect key="frame" x="20" y="236" width="160" height="40"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5ht-J9-vUe"/>
@@ -537,7 +537,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kne-sJ-UMu">
-                                <rect key="frame" x="234" y="184" width="160" height="40"/>
+                                <rect key="frame" x="234" y="236" width="160" height="40"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="ifJ-R2-TC1"/>
@@ -551,21 +551,58 @@
                                     <action selector="logoutAct:" destination="Rro-ky-0p2" eventType="touchUpInside" id="swW-Lv-vsT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pu-aG-Glf">
+                                <rect key="frame" x="144" y="52.666666666666657" width="83" height="29"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="14"/>
+                                <state key="normal" title="Enter address">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAa-TH-KM6">
+                                <rect key="frame" x="144" y="85.666666666666671" width="102" height="29"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="14"/>
+                                <state key="normal" title="Enter city &amp; state">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtn-z3-Dya">
+                                <rect key="frame" x="144" y="118.66666666666669" width="73" height="29"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="14"/>
+                                <state key="normal" title="Enter phone">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzC-p3-sPP">
+                                <rect key="frame" x="144" y="151.66666666666666" width="103" height="29"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="14"/>
+                                <state key="normal" title="Enter open hours">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="apF-Ql-0ln"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="NFl-nC-IXE" firstAttribute="top" secondItem="apF-Ql-0ln" secondAttribute="top" constant="40" id="0ME-dr-QgI"/>
+                            <constraint firstItem="NFl-nC-IXE" firstAttribute="top" secondItem="apF-Ql-0ln" secondAttribute="top" constant="20" id="0ME-dr-QgI"/>
                             <constraint firstItem="kne-sJ-UMu" firstAttribute="centerY" secondItem="4d5-R6-Ddp" secondAttribute="centerY" id="28l-x0-hcR"/>
                             <constraint firstItem="4d5-R6-Ddp" firstAttribute="leading" secondItem="apF-Ql-0ln" secondAttribute="leading" constant="20" id="GdL-2P-NEN"/>
+                            <constraint firstItem="0pu-aG-Glf" firstAttribute="top" secondItem="ZWm-cd-UEE" secondAttribute="bottom" constant="4.0000000000000142" id="IKY-jS-U2Q"/>
+                            <constraint firstItem="dzC-p3-sPP" firstAttribute="leading" secondItem="Jtn-z3-Dya" secondAttribute="leading" id="JYi-c4-t8Y"/>
                             <constraint firstItem="apF-Ql-0ln" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NFl-nC-IXE" secondAttribute="trailing" symbolic="YES" id="Jl8-mn-1wL"/>
                             <constraint firstItem="NFl-nC-IXE" firstAttribute="leading" secondItem="1Va-up-Uqs" secondAttribute="trailing" constant="24" id="R7b-9g-7Z6"/>
+                            <constraint firstItem="RAa-TH-KM6" firstAttribute="top" secondItem="0pu-aG-Glf" secondAttribute="bottom" constant="4" id="Xuq-54-ki1"/>
+                            <constraint firstItem="0pu-aG-Glf" firstAttribute="top" secondItem="NFl-nC-IXE" secondAttribute="bottom" constant="4.0000000000000071" id="ayB-KF-uKt"/>
                             <constraint firstItem="apF-Ql-0ln" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZWm-cd-UEE" secondAttribute="trailing" symbolic="YES" id="ekh-LX-EFK"/>
                             <constraint firstItem="ZWm-cd-UEE" firstAttribute="leading" secondItem="1Va-up-Uqs" secondAttribute="trailing" constant="24" id="fX9-9K-ede"/>
-                            <constraint firstItem="1Va-up-Uqs" firstAttribute="top" secondItem="apF-Ql-0ln" secondAttribute="top" constant="40" id="fpH-0J-dtJ"/>
-                            <constraint firstItem="4d5-R6-Ddp" firstAttribute="top" secondItem="1Va-up-Uqs" secondAttribute="bottom" constant="44" id="qQS-SE-hoN"/>
+                            <constraint firstItem="1Va-up-Uqs" firstAttribute="top" secondItem="apF-Ql-0ln" secondAttribute="top" constant="56" id="fpH-0J-dtJ"/>
+                            <constraint firstItem="Jtn-z3-Dya" firstAttribute="leading" secondItem="RAa-TH-KM6" secondAttribute="leading" id="ir4-JI-Mn3"/>
+                            <constraint firstItem="dzC-p3-sPP" firstAttribute="top" secondItem="Jtn-z3-Dya" secondAttribute="bottom" constant="4" id="jLt-wC-cWe"/>
+                            <constraint firstItem="Jtn-z3-Dya" firstAttribute="top" secondItem="RAa-TH-KM6" secondAttribute="bottom" constant="4" id="pUQ-qt-5xe"/>
+                            <constraint firstItem="4d5-R6-Ddp" firstAttribute="top" secondItem="1Va-up-Uqs" secondAttribute="bottom" constant="80" id="qQS-SE-hoN"/>
+                            <constraint firstItem="0pu-aG-Glf" firstAttribute="leading" secondItem="NFl-nC-IXE" secondAttribute="leading" id="vH7-Dl-880"/>
                             <constraint firstItem="1Va-up-Uqs" firstAttribute="leading" secondItem="apF-Ql-0ln" secondAttribute="leading" constant="20" id="yrq-NQ-AKf"/>
-                            <constraint firstItem="ZWm-cd-UEE" firstAttribute="top" secondItem="apF-Ql-0ln" secondAttribute="top" constant="40" id="zgM-Hk-nkV"/>
+                            <constraint firstItem="RAa-TH-KM6" firstAttribute="leading" secondItem="0pu-aG-Glf" secondAttribute="leading" id="yx0-Mj-0Lb"/>
+                            <constraint firstItem="ZWm-cd-UEE" firstAttribute="top" secondItem="apF-Ql-0ln" secondAttribute="top" constant="20" id="zgM-Hk-nkV"/>
                             <constraint firstItem="apF-Ql-0ln" firstAttribute="trailing" secondItem="kne-sJ-UMu" secondAttribute="trailing" constant="20" id="zmf-63-4gb"/>
                         </constraints>
                     </view>
@@ -593,13 +630,13 @@
                                 <rect key="frame" x="20" y="30" width="374" height="264"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let the exploring begin!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzN-0I-SMI">
-                                <rect key="frame" x="101.66666666666667" y="314" width="210.66666666666663" height="23.333333333333314"/>
+                                <rect key="frame" x="103.66666666666667" y="314" width="206.66666666666663" height="24"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L87-ZM-ofb">
-                                <rect key="frame" x="20" y="357.33333333333331" width="374" height="40"/>
+                                <rect key="frame" x="20" y="358" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ujC-rY-ccd"/>
                                 </constraints>
@@ -613,7 +650,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KVe-dl-85X">
-                                <rect key="frame" x="20" y="417.33333333333331" width="374" height="40"/>
+                                <rect key="frame" x="20" y="418" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Uxb-7d-B1s"/>
                                 </constraints>
@@ -627,7 +664,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6N-HL-BZP">
-                                <rect key="frame" x="20" y="487.33333333333331" width="374" height="39.999999999999943"/>
+                                <rect key="frame" x="20" y="488" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="JMn-S7-qDu"/>
