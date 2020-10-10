@@ -230,8 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				02FA637B250D63ED00703E29 /* ExploreRestaurantViewController.swift */,
-				02B6068125320ABD009987CF /* RestaurantCollectionViewCell.swift */,
 				02B6068225320ABD009987CF /* RestaurantCollectionViewCell.xib */,
+				02B6068125320ABD009987CF /* RestaurantCollectionViewCell.swift */,
 			);
 			path = "Explore-Restaurant";
 			sourceTree = "<group>";
