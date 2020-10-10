@@ -11,18 +11,22 @@ import FirebaseAuth
 
 class MealPostModel {
     
-    var mealName: String?
+    /// Remodel Post class, bcuz it currently doesn't have a post id property
+    var id: String?
+    
+    var uid: String?
+    
     var photoUrl: String?
+    
+    var mealName: String?
     var mealDesc: String?
     var mealPrice: String?
+    
     var typeLabel: String?
     var genreLabel: String?
     var cuisineLabel: String?
     
-    var uid: String?
-    
-    /// Remodel Post class, bcuz it currently doesn't have a post id property
-    var id: String?
+    var timestampVal: Int?
     
 }
 
@@ -42,9 +46,10 @@ extension MealPostModel {
         post.typeLabel = dict["6) Meal Type"] as? String
         post.genreLabel = dict["7) Meal Genre"] as? String
         post.cuisineLabel = dict["8) Meal Cuisine"] as? String
+        post.timestampVal = dict["9) Timestamp"] as? Int
         
         return post
         
     }
     
-}   // #51
+}   // #56

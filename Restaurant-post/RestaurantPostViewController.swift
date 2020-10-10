@@ -495,6 +495,9 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         
         hud1.show(in: self.view)
         
+        // Creating a timestamp
+        let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
+        
         // selected image(imageSelected) should be from selectedImage
         guard let imageSelected = self.selectedImage else {
             print("Avatar is nil")
@@ -503,11 +506,14 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
             hud1.dismiss(afterDelay: 2.0, animated: true)
             return
         }
+        
         // image data from selected image in jpeg format
         guard let imageData = imageSelected.jpegData(compressionQuality: 0.4) else {
             return
         }
-        HelperServiceRestaurant.uploadDataToServer(data: imageData, name: mealName.text!, desc: mealDesc.text!, price: mealPrice.text!, type: foodTypeLabel.text!, genre: foodGenreLabel.text!, cuisine: foodCuisineLabel.text!, onSuccess: {
+        
+        // Upload data
+        HelperServiceRestaurant.uploadDataToServer(data: imageData, name: mealName.text!, desc: mealDesc.text!, price: mealPrice.text!, type: foodTypeLabel.text!, genre: foodGenreLabel.text!, cuisine: foodCuisineLabel.text!, timestamp: Int(truncating: timestamp), onSuccess: {
             self.clean()
             // dismiss hud
             self.hud1.dismiss()
@@ -548,4 +554,4 @@ extension RestaurantPostViewController: UIImagePickerControllerDelegate, UINavig
         dismiss(animated: true, completion: nil)
     }
     
-}   // #552
+}   // #558
