@@ -20,7 +20,8 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var restProfilePic: UIImageView!
     @IBOutlet weak var restName: UILabel!
     @IBOutlet weak var restDetails: UILabel!
-    @IBOutlet weak var restMenuItem: UIImageView!
+    @IBOutlet weak var restMealName: UILabel!
+    @IBOutlet weak var restMenuItemImage: UIImageView!
     @IBOutlet weak var restMenuDesc: UILabel!
     @IBOutlet weak var restItemPrice: UILabel!
     
@@ -51,7 +52,12 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     
     func updateView() {
         
+        restMealName.text = restaurantPost?.mealName
         
+        if let photoUrlString = restaurantPost?.photoUrl {
+            let photoUrl = URL(string: photoUrlString)
+            restMenuItemImage.sd_setImage(with: photoUrl)
+        }
         
     }
     
@@ -67,5 +73,5 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         
         
     }
-
-}   // #72
+    
+}   // #78

@@ -22,14 +22,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RestaurantCollectionViewCell" id="tsR-Zx-aO9" customClass="RestaurantCollectionViewCell" customModule="Snapfood" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="350" height="425"/>
+            <rect key="frame" x="0.0" y="0.0" width="350" height="432"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="350" height="425"/>
+                <rect key="frame" x="0.0" y="0.0" width="350" height="432"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irl-0R-53R">
-                        <rect key="frame" x="4" y="4" width="342" height="417"/>
+                        <rect key="frame" x="4" y="4" width="342" height="424"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="TJV-DX-ywO">
                                 <rect key="frame" x="10" y="10" width="50" height="50"/>
@@ -50,61 +50,67 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OH-Qp-me3">
+                                <rect key="frame" x="10" y="68" width="78" height="19.5"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
+                                <color key="textColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ic6-RA-QH6">
-                                <rect key="frame" x="10" y="76" width="322" height="240"/>
+                                <rect key="frame" x="10" y="95.5" width="322" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="hT2-1v-5kd"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrO-A2-VAg">
-                                <rect key="frame" x="10" y="324" width="59.5" height="14.5"/>
+                                <rect key="frame" x="10" y="343.5" width="59.5" height="14.5"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="12"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyv-5V-1JW">
-                                <rect key="frame" x="10" y="346.5" width="26.5" height="14.5"/>
+                                <rect key="frame" x="10" y="366" width="26.5" height="14.5"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="12"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tag-1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCn-zU-DPA">
-                                <rect key="frame" x="226" y="346.5" width="27.5" height="14.5"/>
+                                <rect key="frame" x="226" y="366" width="27.5" height="14.5"/>
                                 <color key="backgroundColor" red="0.81176470588235294" green="0.27058823529411763" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tag-2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mO-bJ-Ygq">
-                                <rect key="frame" x="263.5" y="346.5" width="29" height="14.5"/>
+                                <rect key="frame" x="263.5" y="366" width="29" height="14.5"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tag-3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F00-iV-V8j">
-                                <rect key="frame" x="302.5" y="346.5" width="29.5" height="14.5"/>
+                                <rect key="frame" x="302.5" y="366" width="29.5" height="14.5"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="likeOff" translatesAutoresizingMaskIntoConstraints="NO" id="bCv-Zo-z2r">
-                                <rect key="frame" x="10" y="369" width="24" height="24"/>
+                                <rect key="frame" x="10" y="388.5" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="aZL-jQ-tCY"/>
                                     <constraint firstAttribute="width" constant="24" id="utq-81-Rzx"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jnt-4X-f9Q">
-                                <rect key="frame" x="34" y="367.5" width="30" height="27"/>
+                                <rect key="frame" x="34" y="387" width="30" height="27"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="12"/>
                                 <state key="normal" title="24">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="MMM d, h:mm a" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elf-US-AGv">
-                                <rect key="frame" x="258" y="375" width="68" height="12"/>
+                                <rect key="frame" x="258" y="394.5" width="68" height="12"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="10"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -117,6 +123,7 @@
                             <constraint firstItem="F00-iV-V8j" firstAttribute="leading" secondItem="9mO-bJ-Ygq" secondAttribute="trailing" constant="10" id="3K3-TS-7Vp"/>
                             <constraint firstItem="TJV-DX-ywO" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="5ZE-UB-VyK"/>
                             <constraint firstItem="oyv-5V-1JW" firstAttribute="top" secondItem="NrO-A2-VAg" secondAttribute="bottom" constant="8" id="7zl-89-bJJ"/>
+                            <constraint firstItem="1OH-Qp-me3" firstAttribute="top" secondItem="TJV-DX-ywO" secondAttribute="bottom" constant="8" id="8am-1u-zMc"/>
                             <constraint firstItem="bCv-Zo-z2r" firstAttribute="top" secondItem="oyv-5V-1JW" secondAttribute="bottom" constant="8" id="9ur-fB-5FV"/>
                             <constraint firstItem="oQv-tQ-nuB" firstAttribute="top" secondItem="ol6-NE-2Bq" secondAttribute="bottom" constant="4" id="Bh2-nL-P6v"/>
                             <constraint firstItem="ol6-NE-2Bq" firstAttribute="leading" secondItem="TJV-DX-ywO" secondAttribute="trailing" constant="8" id="CsR-pr-SHb"/>
@@ -127,14 +134,16 @@
                             <constraint firstAttribute="width" constant="342" id="QC8-zc-TQQ"/>
                             <constraint firstItem="Elf-US-AGv" firstAttribute="centerY" secondItem="Jnt-4X-f9Q" secondAttribute="centerY" id="Scs-Kc-YWx"/>
                             <constraint firstItem="F00-iV-V8j" firstAttribute="centerY" secondItem="9mO-bJ-Ygq" secondAttribute="centerY" id="VaN-Oh-MOA"/>
+                            <constraint firstItem="Ic6-RA-QH6" firstAttribute="top" secondItem="1OH-Qp-me3" secondAttribute="bottom" constant="8" id="YWN-ci-4fw"/>
                             <constraint firstItem="bCv-Zo-z2r" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="ftF-Jp-RQM"/>
                             <constraint firstItem="Ic6-RA-QH6" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="iV2-fa-UZL"/>
                             <constraint firstItem="oyv-5V-1JW" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="n5x-bR-O9e"/>
                             <constraint firstItem="9mO-bJ-Ygq" firstAttribute="leading" secondItem="gCn-zU-DPA" secondAttribute="trailing" constant="10" id="nHH-f9-Ku2"/>
                             <constraint firstAttribute="trailing" secondItem="Ic6-RA-QH6" secondAttribute="trailing" constant="10" id="rsY-We-F5d"/>
-                            <constraint firstItem="Ic6-RA-QH6" firstAttribute="top" secondItem="TJV-DX-ywO" secondAttribute="bottom" constant="16" id="rwb-ob-dgs"/>
+                            <constraint firstAttribute="bottom" secondItem="bCv-Zo-z2r" secondAttribute="bottom" constant="11.5" id="s5y-er-Orl"/>
                             <constraint firstItem="TJV-DX-ywO" firstAttribute="top" secondItem="irl-0R-53R" secondAttribute="top" constant="10" id="sXY-uz-eCB"/>
                             <constraint firstAttribute="trailing" secondItem="F00-iV-V8j" secondAttribute="trailing" constant="10" id="t2O-wI-Ta1"/>
+                            <constraint firstItem="1OH-Qp-me3" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="uTm-ZX-f9L"/>
                             <constraint firstItem="Jnt-4X-f9Q" firstAttribute="leading" secondItem="bCv-Zo-z2r" secondAttribute="trailing" id="vJN-JD-COH"/>
                             <constraint firstItem="gCn-zU-DPA" firstAttribute="centerY" secondItem="oyv-5V-1JW" secondAttribute="centerY" id="wxl-wY-kOc"/>
                             <constraint firstItem="ol6-NE-2Bq" firstAttribute="top" secondItem="irl-0R-53R" secondAttribute="top" constant="10" id="znX-zc-rgi"/>
@@ -155,8 +164,9 @@
                 <outlet property="restDetails" destination="oQv-tQ-nuB" id="Miy-gq-Yr1"/>
                 <outlet property="restItemPrice" destination="oyv-5V-1JW" id="tzD-Py-o1W"/>
                 <outlet property="restLikeImageView" destination="bCv-Zo-z2r" id="OJy-iF-zkh"/>
+                <outlet property="restMealName" destination="1OH-Qp-me3" id="Idk-hp-4F3"/>
                 <outlet property="restMenuDesc" destination="NrO-A2-VAg" id="6ao-ls-N1g"/>
-                <outlet property="restMenuItem" destination="Ic6-RA-QH6" id="ijB-sd-nJk"/>
+                <outlet property="restMenuItemImage" destination="Ic6-RA-QH6" id="gQB-ou-X3A"/>
                 <outlet property="restName" destination="ol6-NE-2Bq" id="YhJ-Ve-2nX"/>
                 <outlet property="restProfilePic" destination="TJV-DX-ywO" id="vhm-GS-2bb"/>
                 <outlet property="tag1" destination="gCn-zU-DPA" id="l1P-1Y-skd"/>
