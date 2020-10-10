@@ -53,7 +53,9 @@
 		02A15A0B2508DA07001B5FAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A15A0A2508DA07001B5FAD /* LoginViewController.swift */; };
 		02A15A0D2508DA31001B5FAD /* SelectSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */; };
 		02B6067C2531A894009987CF /* SponsorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6067B2531A894009987CF /* SponsorViewController.swift */; };
-		02FA637C250D63ED00703E29 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA637B250D63ED00703E29 /* ExploreViewController.swift */; };
+		02B6068325320ABD009987CF /* RestaurantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6068125320ABD009987CF /* RestaurantCollectionViewCell.swift */; };
+		02B6068425320ABD009987CF /* RestaurantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B6068225320ABD009987CF /* RestaurantCollectionViewCell.xib */; };
+		02FA637C250D63ED00703E29 /* ExploreRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA637B250D63ED00703E29 /* ExploreRestaurantViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,7 +106,9 @@
 		02A15A0A2508DA07001B5FAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSignupViewController.swift; sourceTree = "<group>"; };
 		02B6067B2531A894009987CF /* SponsorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorViewController.swift; sourceTree = "<group>"; };
-		02FA637B250D63ED00703E29 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		02B6068125320ABD009987CF /* RestaurantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewCell.swift; sourceTree = "<group>"; };
+		02B6068225320ABD009987CF /* RestaurantCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantCollectionViewCell.xib; sourceTree = "<group>"; };
+		02FA637B250D63ED00703E29 /* ExploreRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreRestaurantViewController.swift; sourceTree = "<group>"; };
 		0568DE127CA574181615345D /* Pods-Snapfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapfood.release.xcconfig"; path = "Target Support Files/Pods-Snapfood/Pods-Snapfood.release.xcconfig"; sourceTree = "<group>"; };
 		7BCFAB7B393D3DA1D527E783 /* Pods_Snapfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68CA803AFED627A62142BF2 /* Pods-Snapfood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapfood.debug.xcconfig"; path = "Target Support Files/Pods-Snapfood/Pods-Snapfood.debug.xcconfig"; sourceTree = "<group>"; };
@@ -225,7 +229,9 @@
 		02B6067E2531EA50009987CF /* Explore-Restaurant */ = {
 			isa = PBXGroup;
 			children = (
-				02FA637B250D63ED00703E29 /* ExploreViewController.swift */,
+				02FA637B250D63ED00703E29 /* ExploreRestaurantViewController.swift */,
+				02B6068125320ABD009987CF /* RestaurantCollectionViewCell.swift */,
+				02B6068225320ABD009987CF /* RestaurantCollectionViewCell.xib */,
 			);
 			path = "Explore-Restaurant";
 			sourceTree = "<group>";
@@ -325,6 +331,7 @@
 				025C11442505836500A1E130 /* SF-Pro-Rounded-Black.otf in Resources */,
 				025C114A2505836500A1E130 /* SF-Pro-Rounded-Light.otf in Resources */,
 				025C11482505836500A1E130 /* SF-Pro-Rounded-Ultralight.otf in Resources */,
+				02B6068425320ABD009987CF /* RestaurantCollectionViewCell.xib in Resources */,
 				025C11412505836500A1E130 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
 				025C11452505836500A1E130 /* SF-Pro-Rounded-Thin.otf in Resources */,
 				025C11472505836500A1E130 /* SF-Pro-Rounded-Semibold.otf in Resources */,
@@ -412,8 +419,9 @@
 				0266B7172529BBFE0058BE7E /* MealPostModel.swift in Sources */,
 				0266B7302529EDCB0058BE7E /* HelperServiceUser.swift in Sources */,
 				021210CF2509C2710062DB29 /* UserSignupViewController.swift in Sources */,
+				02B6068325320ABD009987CF /* RestaurantCollectionViewCell.swift in Sources */,
 				022EB0272528761500A71104 /* UserPostViewController.swift in Sources */,
-				02FA637C250D63ED00703E29 /* ExploreViewController.swift in Sources */,
+				02FA637C250D63ED00703E29 /* ExploreRestaurantViewController.swift in Sources */,
 				02A15A0B2508DA07001B5FAD /* LoginViewController.swift in Sources */,
 				027510FF2503E25000BF7987 /* Extensions.swift in Sources */,
 				0266B72A2529EB800058BE7E /* UserPostApi.swift in Sources */,

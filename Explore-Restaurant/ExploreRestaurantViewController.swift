@@ -1,5 +1,5 @@
 //
-//  ExploreViewController.swift
+//  ExploreRestaurantViewController.swift
 //  Snapfood
 //
 //  Created by Likhit Garimella on 13/09/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExploreViewController: UIViewController {
+class ExploreRestaurantViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -382,7 +382,7 @@
         <!--Explore-->
         <scene sceneID="t31-Wp-c9o">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="fvh-3q-dK0" customClass="ExploreViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="fvh-3q-dK0" customClass="ExploreRestaurantViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GYw-vF-o7N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
