@@ -189,7 +189,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="likeOff" width="22" height="22"/>
+        <image name="likeOff" width="20" height="21"/>
         <image name="placeholder-image" width="200" height="200"/>
     </resources>
 </document>
