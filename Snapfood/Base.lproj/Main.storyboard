@@ -397,6 +397,10 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="fvh-3q-dK0" id="wjU-6x-igC"/>
+                                    <outlet property="delegate" destination="fvh-3q-dK0" id="57e-lg-KIw"/>
+                                </connections>
                             </collectionView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="xX0-Gf-9Kl">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>

@@ -47,7 +47,7 @@ class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegat
     /// it's job is to, given a user id, look up the corresponding user on db...
     func fetchUser(uid: String, completed: @escaping () -> Void) {
         
-        Api.UserDet.observeUser(withId: uid, completion: { (user) in
+        Api.UserDet.observeRestaurant(withId: uid, completion: { (user) in
             self.users.append(user)
             completed()
         })
