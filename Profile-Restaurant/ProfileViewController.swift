@@ -28,19 +28,45 @@ class ProfileViewController: UIViewController {
         }
     }
     
+    @IBOutlet var profileCollectionView: UICollectionView!
+    
+    var posts: [MealPostModel] = []
+    
     func fetchRestaurant() {
         
+        /// observeCurrentRestaurant
         Api.UserDet.observeCurrentRestaurant { (restaurant) in
             self.restaurant = restaurant
+            self.profileCollectionView.reloadData()
         }
         
     }
     
     func fetchUser() {
         
+        /// observeCurrentUser
         Api.UserDet.observeCurrentUser { (user) in
             self.user = user
+            self.profileCollectionView.reloadData()
         }
+        
+    }
+    
+    func fetchMyPosts() {
+        
+        guard let currentUser = Api.UserDet.CURRENT_USER else {
+            return
+        }
+        Api.MyRestaurantPosts.REF_MYPOSTS.child(currentUser.uid).observe(.childAdded, with: {
+            snapshot in
+            print(snapshot)
+            Api.RestaurantPost.observePost(withId: snapshot.key, completion: {
+                post in
+                // print(post.id)
+                self.posts.append(post)
+                self.profileCollectionView.reloadData()
+            })
+        })
         
     }
     
@@ -73,7 +99,7 @@ class ProfileViewController: UIViewController {
         }
         
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -82,6 +108,8 @@ class ProfileViewController: UIViewController {
         
         Properties()
         Condition()
+        
+        fetchMyPosts()
         
     }
     
@@ -230,4 +258,21 @@ class ProfileViewController: UIViewController {
         
     }
     
-}   // #234
+}
+
+extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return posts.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCollectionViewCell", for: indexPath) as! PhotoCollectionViewCell
+        let post = posts[indexPath.row]
+        cell.post = post
+        return cell
+        
+    }
+    
+}   // #279
