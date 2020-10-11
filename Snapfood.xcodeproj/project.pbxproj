@@ -50,7 +50,8 @@
 		027510F42503D1CC00BF7987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027510F32503D1CC00BF7987 /* Assets.xcassets */; };
 		027510F72503D1CC00BF7987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027510F52503D1CC00BF7987 /* LaunchScreen.storyboard */; };
 		027510FF2503E25000BF7987 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027510FE2503E24F00BF7987 /* Extensions.swift */; };
-		029F0BCE2533755500C6C567 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029F0BCD2533755500C6C567 /* PhotoCollectionViewCell.swift */; };
+		029F0BD32533864900C6C567 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029F0BD12533864900C6C567 /* PhotoCollectionViewCell.swift */; };
+		029F0BD42533864900C6C567 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029F0BD22533864900C6C567 /* PhotoCollectionViewCell.xib */; };
 		02A15A0B2508DA07001B5FAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A15A0A2508DA07001B5FAD /* LoginViewController.swift */; };
 		02A15A0D2508DA31001B5FAD /* SelectSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */; };
 		02B6067C2531A894009987CF /* SponsorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6067B2531A894009987CF /* SponsorViewController.swift */; };
@@ -104,7 +105,8 @@
 		027510F62503D1CC00BF7987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		027510F82503D1CC00BF7987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		027510FE2503E24F00BF7987 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		029F0BCD2533755500C6C567 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		029F0BD12533864900C6C567 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		029F0BD22533864900C6C567 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		02A15A0A2508DA07001B5FAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSignupViewController.swift; sourceTree = "<group>"; };
 		02B6067B2531A894009987CF /* SponsorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorViewController.swift; sourceTree = "<group>"; };
@@ -234,7 +236,8 @@
 			isa = PBXGroup;
 			children = (
 				023770242525FD2500CC3F32 /* ProfileViewController.swift */,
-				029F0BCD2533755500C6C567 /* PhotoCollectionViewCell.swift */,
+				029F0BD22533864900C6C567 /* PhotoCollectionViewCell.xib */,
+				029F0BD12533864900C6C567 /* PhotoCollectionViewCell.swift */,
 			);
 			path = "Profile-Restaurant";
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				025C11492505836500A1E130 /* SF-Pro-Text-ThinItalic.otf in Resources */,
+				029F0BD42533864900C6C567 /* PhotoCollectionViewCell.xib in Resources */,
 				025C11422505836500A1E130 /* SF-Pro-Rounded-Medium.otf in Resources */,
 				025C11462505836500A1E130 /* SF-Pro-Text-MediumItalic.otf in Resources */,
 				025C11442505836500A1E130 /* SF-Pro-Rounded-Black.otf in Resources */,
@@ -418,7 +422,6 @@
 				023770252525FD2500CC3F32 /* ProfileViewController.swift in Sources */,
 				02B6067C2531A894009987CF /* SponsorViewController.swift in Sources */,
 				027510ED2503D1B800BF7987 /* SceneDelegate.swift in Sources */,
-				029F0BCE2533755500C6C567 /* PhotoCollectionViewCell.swift in Sources */,
 				022EB024252875F300A71104 /* RestaurantPostViewController.swift in Sources */,
 				0237701C2525FC9300CC3F32 /* SearchViewController.swift in Sources */,
 				0266B71E2529BF2A0058BE7E /* RestaurantPostApi.swift in Sources */,
@@ -429,6 +432,7 @@
 				021210CD2509C1DA0062DB29 /* RestaurantSignupViewController.swift in Sources */,
 				0266B7212529BF750058BE7E /* MyRestaurantPostsApi.swift in Sources */,
 				0266B7172529BBFE0058BE7E /* MealPostModel.swift in Sources */,
+				029F0BD32533864900C6C567 /* PhotoCollectionViewCell.swift in Sources */,
 				0266B7302529EDCB0058BE7E /* HelperServiceUser.swift in Sources */,
 				021210CF2509C2710062DB29 /* UserSignupViewController.swift in Sources */,
 				02B6068325320ABD009987CF /* RestaurantCollectionViewCell.swift in Sources */,

@@ -84,8 +84,8 @@ class ProfileViewController: UIViewController {
     
     func Properties() {
         
-        editProfile.layer.cornerRadius = 20
-        logout.layer.cornerRadius = 20
+        editProfile.layer.cornerRadius = 18
+        logout.layer.cornerRadius = 18
         
     }
     
@@ -102,6 +102,12 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Register CollectionViewCell 'PhotoCollectionViewCell' here
+        profileCollectionView.register(UINib.init(nibName: "PhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PhotoCollectionViewCell")
+        if let flowLayout = profileCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
+        }
         
         fetchRestaurant()
         fetchUser()
@@ -275,4 +281,4 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         
     }
     
-}   // #279
+}   // #285
