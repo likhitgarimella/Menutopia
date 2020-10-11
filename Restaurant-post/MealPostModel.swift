@@ -53,8 +53,8 @@ extension MealPostModel {
         post.cuisineLabel = dict["8) Meal Cuisine"] as? String
         post.timestampVal = dict["9) Timestamp"] as? Double
         
-        post.likeCount = dict["10) Like Count"] as? Int
-        post.likes = dict["11) Likes"] as? Dictionary<String, Any>
+        post.likeCount = dict["Like Count"] as? Int
+        post.likes = dict["Likes"] as? Dictionary<String, Any>
         
         if let currentUserId = Auth.auth().currentUser?.uid {
             if post.likes != nil {

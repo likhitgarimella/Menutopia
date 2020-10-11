@@ -61,8 +61,8 @@ class RestaurantPostApi {
             if var post = currentData.value as? [String: AnyObject], let uid = Api.UserDet.CURRENT_USER?.uid {
                 // print("Value 1: \(currentData.value)")
                 var likes: Dictionary<String, Bool>
-                likes = post["likes"] as? [String: Bool] ?? [:]
-                var likeCount = post["likeCount"] as? Int ?? 0
+                likes = post["Likes"] as? [String: Bool] ?? [:]
+                var likeCount = post["Like Count"] as? Int ?? 0
                 if let _ = likes[uid] {
                     likeCount -= 1
                     likes.removeValue(forKey: uid)
@@ -70,8 +70,8 @@ class RestaurantPostApi {
                     likeCount += 1
                     likes[uid] = true
                 }
-                post["likeCount"] = likeCount as AnyObject
-                post["likes"] = likes as AnyObject
+                post["Like Count"] = likeCount as AnyObject
+                post["Likes"] = likes as AnyObject
                 
                 currentData.value = post
                 

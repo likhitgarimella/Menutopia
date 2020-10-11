@@ -64,9 +64,9 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         restMenuDesc.text = restaurantPost?.mealDesc
         restItemPrice.text = restaurantPost?.mealPrice
         
-        tag1.text = "    \(String(describing: restaurantPost?.typeLabel))    "
-        tag2.text = "    \(String(describing: restaurantPost?.genreLabel))    "
-        tag3.text = "    \(String(describing: restaurantPost?.cuisineLabel))    "
+        tag1.text = (" " + (restaurantPost?.typeLabel)! + "            ")
+        tag2.text = (" " + (restaurantPost?.genreLabel)! + "            ")
+        tag3.text = (" " + (restaurantPost?.cuisineLabel)! + "            ")
         
         /// Timestamp
         if let seconds = restaurantPost?.timestampVal {
@@ -96,7 +96,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         /// then we display, non-selected like icon..
         /// otherwise, display likeSelected icon..
         let imageName = post.likes == nil || !post.isLiked! ? "likeOff" : "likeOn"
-        restMenuItemImage.image = UIImage(named: imageName)
+        restLikeImageView.image = UIImage(named: imageName)
         /// Below commented snippet can be put in 1 line.. as above..
         /* if post.isLiked == false {
             likeImageView.image = UIImage(named: "like")
@@ -141,6 +141,14 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         
         // corner radius
         cardView.layer.cornerRadius = 10
+        restProfilePic.layer.cornerRadius = 25
+        restMenuItemImage.layer.cornerRadius = 20
+        tag1.layer.masksToBounds = true
+        tag1.layer.cornerRadius = tag1.bounds.height/2
+        tag2.layer.masksToBounds = true
+        tag2.layer.cornerRadius = tag2.bounds.height/2
+        tag3.layer.masksToBounds = true
+        tag3.layer.cornerRadius = tag3.bounds.height/2
         
         // shadow properties
         cardView.layer.shadowColor = UIColor.lightGray.cgColor
@@ -184,4 +192,4 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         
     }
     
-}   // #188
+}   // #196
