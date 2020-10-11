@@ -529,7 +529,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
             self.clean()
             // dismiss hud
             self.hud1.dismiss()
-            // self.tabBarController?.selectedIndex = 0
+            self.tabBarController?.selectedIndex = 0
         })
         
     }

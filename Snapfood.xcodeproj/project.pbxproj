@@ -163,7 +163,7 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		0266B7152529BB580058BE7E /* Restaurant-post */ = {
+		0266B7152529BB580058BE7E /* Post-Restaurant */ = {
 			isa = PBXGroup;
 			children = (
 				022EB023252875F300A71104 /* RestaurantPostViewController.swift */,
@@ -171,11 +171,12 @@
 				0266B71D2529BF2A0058BE7E /* RestaurantPostApi.swift */,
 				0266B7202529BF750058BE7E /* MyRestaurantPostsApi.swift */,
 				0266B7232529BF960058BE7E /* HelperServiceRestaurant.swift */,
+				02B6067B2531A894009987CF /* SponsorViewController.swift */,
 			);
-			path = "Restaurant-post";
+			path = "Post-Restaurant";
 			sourceTree = "<group>";
 		};
-		0266B71B2529BDE90058BE7E /* User-post */ = {
+		0266B71B2529BDE90058BE7E /* Post-User */ = {
 			isa = PBXGroup;
 			children = (
 				022EB0262528761500A71104 /* UserPostViewController.swift */,
@@ -184,7 +185,7 @@
 				0266B72C2529EB9C0058BE7E /* MyUserPostsApi.swift */,
 				0266B72F2529EDCB0058BE7E /* HelperServiceUser.swift */,
 			);
-			path = "User-post";
+			path = "Post-User";
 			sourceTree = "<group>";
 		};
 		027510DE2503D1B800BF7987 = {
@@ -194,9 +195,10 @@
 				027510E92503D1B800BF7987 /* Snapfood */,
 				0259A0912509E1D500C567A6 /* Set-1 */,
 				02FA637A250D63A200703E29 /* Set-2 */,
-				0266B7152529BB580058BE7E /* Restaurant-post */,
+				0266B7152529BB580058BE7E /* Post-Restaurant */,
 				02B6067E2531EA50009987CF /* Explore-Restaurant */,
-				0266B71B2529BDE90058BE7E /* User-post */,
+				029F0BA42533595000C6C567 /* Profile-Restaurant */,
+				0266B71B2529BDE90058BE7E /* Post-User */,
 				027510E82503D1B800BF7987 /* Products */,
 				31A2D91CB99F3D3085B6B20A /* Pods */,
 				DA21E98B7D56C7C6A2D74B98 /* Frameworks */,
@@ -226,6 +228,14 @@
 			path = Snapfood;
 			sourceTree = "<group>";
 		};
+		029F0BA42533595000C6C567 /* Profile-Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				023770242525FD2500CC3F32 /* ProfileViewController.swift */,
+			);
+			path = "Profile-Restaurant";
+			sourceTree = "<group>";
+		};
 		02B6067E2531EA50009987CF /* Explore-Restaurant */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,9 +251,7 @@
 			children = (
 				0237701B2525FC9300CC3F32 /* SearchViewController.swift */,
 				0237701E2525FCE300CC3F32 /* PostViewController.swift */,
-				02B6067B2531A894009987CF /* SponsorViewController.swift */,
 				023770212525FD0400CC3F32 /* FavoritesViewController.swift */,
-				023770242525FD2500CC3F32 /* ProfileViewController.swift */,
 			);
 			path = "Set-2";
 			sourceTree = "<group>";
