@@ -662,13 +662,13 @@
                                 <rect key="frame" x="20" y="30" width="374" height="264"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let the exploring begin!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzN-0I-SMI">
-                                <rect key="frame" x="103.66666666666667" y="314" width="206.66666666666663" height="24"/>
+                                <rect key="frame" x="101.66666666666667" y="314" width="210.66666666666663" height="23.333333333333314"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L87-ZM-ofb">
-                                <rect key="frame" x="20" y="358" width="374" height="40"/>
+                                <rect key="frame" x="20" y="357.33333333333331" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ujC-rY-ccd"/>
                                 </constraints>
@@ -682,7 +682,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KVe-dl-85X">
-                                <rect key="frame" x="20" y="418" width="374" height="40"/>
+                                <rect key="frame" x="20" y="417.33333333333331" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Uxb-7d-B1s"/>
                                 </constraints>
@@ -696,7 +696,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6N-HL-BZP">
-                                <rect key="frame" x="20" y="488" width="374" height="40"/>
+                                <rect key="frame" x="20" y="487.33333333333331" width="374" height="39.999999999999943"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="JMn-S7-qDu"/>
