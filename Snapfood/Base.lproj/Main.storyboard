@@ -589,6 +589,9 @@
                                 <state key="normal" title="Enter address">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="address:" destination="Rro-ky-0p2" eventType="touchUpInside" id="2JJ-HG-Jqj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAa-TH-KM6">
                                 <rect key="frame" x="144" y="85.666666666666671" width="102" height="29"/>
@@ -596,6 +599,9 @@
                                 <state key="normal" title="Enter city &amp; state">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="citynstate:" destination="Rro-ky-0p2" eventType="touchUpInside" id="9SF-NB-Zwt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtn-z3-Dya">
                                 <rect key="frame" x="144" y="118.66666666666669" width="73" height="29"/>
@@ -603,6 +609,9 @@
                                 <state key="normal" title="Enter phone">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="phone:" destination="Rro-ky-0p2" eventType="touchUpInside" id="x7r-Q4-lQv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzC-p3-sPP">
                                 <rect key="frame" x="144" y="151.66666666666666" width="103" height="29"/>
@@ -610,6 +619,9 @@
                                 <state key="normal" title="Enter open hours">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="openhours:" destination="Rro-ky-0p2" eventType="touchUpInside" id="kda-YO-LVe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="apF-Ql-0ln"/>
