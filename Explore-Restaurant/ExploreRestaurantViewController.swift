@@ -10,7 +10,7 @@ import UIKit
 // import Firebase
 // import FirebaseDatabase
 
-class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITabBarControllerDelegate {
     
     @IBOutlet var restaurantFeedCollectionView: UICollectionView!
     @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
@@ -86,6 +86,22 @@ class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegat
         
         loadPosts()
         
+        self.tabBarController?.delegate = self
+        
+        restaurantFeedCollectionView.delegate = self
+        restaurantFeedCollectionView.dataSource = self
+        
     }
     
-}   // #92
+    // Scroll to top in coll view when tapped on tab bar icon
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+
+        let tabBarIndex = tabBarController.selectedIndex
+        print(tabBarIndex)
+        
+        if tabBarIndex == 0 {
+            self.restaurantFeedCollectionView.setContentOffset(CGPoint.zero, animated: true)
+        }
+    }
+    
+}   // #108
