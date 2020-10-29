@@ -379,7 +379,7 @@
             </objects>
             <point key="canvasLocation" x="1911.594202898551" y="116.57608695652175"/>
         </scene>
-        <!--Explore-->
+        <!--Menu-->
         <scene sceneID="t31-Wp-c9o">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="fvh-3q-dK0" customClass="ExploreRestaurantViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
@@ -418,7 +418,7 @@
                             <constraint firstItem="jOV-P1-Ilw" firstAttribute="bottom" secondItem="Vdc-1c-GdG" secondAttribute="bottom" id="twl-t8-33z"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Explore" image="compass" id="PAx-2C-KZp"/>
+                    <tabBarItem key="tabBarItem" title="Menu" image="menu" id="PAx-2C-KZp"/>
                     <connections>
                         <outlet property="activityIndicatorView" destination="xX0-Gf-9Kl" id="hsM-u2-iFO"/>
                         <outlet property="restaurantFeedCollectionView" destination="Vdc-1c-GdG" id="zld-g7-Dvv"/>
@@ -428,7 +428,7 @@
             </objects>
             <point key="canvasLocation" x="4103" y="-1964"/>
         </scene>
-        <!--Search-->
+        <!--Feed-->
         <scene sceneID="OMp-iH-nxf">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="ovG-pG-ZTc" customClass="SearchViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
@@ -438,7 +438,7 @@
                         <viewLayoutGuide key="safeArea" id="g7L-uF-x7w"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" image="search" id="zsx-BG-bfm"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="image-post" id="zsx-BG-bfm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgb-SE-Gfg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -514,7 +514,7 @@
             </objects>
             <point key="canvasLocation" x="5361" y="-327"/>
         </scene>
-        <!--Favorites-->
+        <!--Explore-->
         <scene sceneID="hQE-xZ-OSf">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="2jz-ZB-rZK" customClass="FavoritesViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
@@ -524,7 +524,7 @@
                         <viewLayoutGuide key="safeArea" id="niD-im-8dS"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Favorites" image="star" id="5FG-r6-h9A"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="compass" id="5FG-r6-h9A"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXt-kL-Kcw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1070,7 +1070,7 @@
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Price" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nly-o1-dna">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Price in $" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nly-o1-dna">
                                                 <rect key="frame" x="20" y="248" width="160" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="160" id="8j7-i7-sFm"/>
@@ -1280,16 +1280,16 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="compass" width="22" height="22"/>
+        <image name="image-post" width="20" height="20"/>
         <image name="login" width="345" height="264"/>
+        <image name="menu" width="28" height="28"/>
         <image name="plus" width="24" height="24"/>
         <image name="restaurant" width="345" height="261"/>
-        <image name="search" width="20" height="20"/>
         <image name="select-profile-pic" width="100" height="100"/>
         <image name="select-signup" width="345" height="309"/>
         <image name="splash-image" width="341" height="340"/>
         <image name="sponsor" width="84" height="19"/>
         <image name="sponsor-img" width="345" height="291"/>
-        <image name="star" width="22" height="21"/>
         <image name="user" width="345" height="224"/>
         <image name="users" width="24" height="20"/>
         <systemColor name="systemBlueColor">

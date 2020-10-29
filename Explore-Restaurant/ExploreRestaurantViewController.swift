@@ -76,6 +76,8 @@ class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        activityIndicatorView.center = self.view.center
+        
         // Register CollectionViewCell 'RestaurantCollectionViewCell' here
         restaurantFeedCollectionView.register(UINib.init(nibName: "RestaurantCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RestaurantCollectionViewCell")
         if let flowLayout = restaurantFeedCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
@@ -86,4 +88,4 @@ class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegat
         
     }
     
-}   // #90
+}   // #92

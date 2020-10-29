@@ -68,8 +68,14 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zg6-Pt-2HJ">
+                                <rect key="frame" x="10" y="381" width="12.5" height="24"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyv-5V-1JW">
-                                <rect key="frame" x="10" y="381" width="44" height="24"/>
+                                <rect key="frame" x="26.5" y="381" width="44" height="24"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -127,15 +133,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gCn-zU-DPA" firstAttribute="leading" relation="lessThanOrEqual" secondItem="oyv-5V-1JW" secondAttribute="trailing" constant="161.5" id="0BB-F1-DtL"/>
                             <constraint firstItem="Jnt-4X-f9Q" firstAttribute="centerY" secondItem="bCv-Zo-z2r" secondAttribute="centerY" id="0oJ-p2-JOC"/>
                             <constraint firstItem="oQv-tQ-nuB" firstAttribute="leading" secondItem="ol6-NE-2Bq" secondAttribute="leading" id="21G-YX-8Th"/>
                             <constraint firstItem="F00-iV-V8j" firstAttribute="leading" secondItem="9mO-bJ-Ygq" secondAttribute="trailing" constant="8" id="3K3-TS-7Vp"/>
                             <constraint firstItem="TJV-DX-ywO" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="5ZE-UB-VyK"/>
                             <constraint firstItem="oyv-5V-1JW" firstAttribute="top" secondItem="NrO-A2-VAg" secondAttribute="bottom" constant="16" id="7zl-89-bJJ"/>
+                            <constraint firstItem="Zg6-Pt-2HJ" firstAttribute="centerY" secondItem="oyv-5V-1JW" secondAttribute="centerY" id="8Sd-jS-h2Y"/>
                             <constraint firstItem="1OH-Qp-me3" firstAttribute="top" secondItem="TJV-DX-ywO" secondAttribute="bottom" constant="8" id="8am-1u-zMc"/>
                             <constraint firstItem="bCv-Zo-z2r" firstAttribute="top" secondItem="oyv-5V-1JW" secondAttribute="bottom" constant="16" id="9ur-fB-5FV"/>
                             <constraint firstAttribute="trailing" secondItem="NrO-A2-VAg" secondAttribute="trailing" constant="10" id="APx-3f-ajg"/>
+                            <constraint firstItem="oyv-5V-1JW" firstAttribute="leading" secondItem="Zg6-Pt-2HJ" secondAttribute="trailing" constant="4" id="AWL-0b-Llz"/>
                             <constraint firstItem="oQv-tQ-nuB" firstAttribute="top" secondItem="ol6-NE-2Bq" secondAttribute="bottom" constant="4" id="Bh2-nL-P6v"/>
                             <constraint firstItem="ol6-NE-2Bq" firstAttribute="leading" secondItem="TJV-DX-ywO" secondAttribute="trailing" constant="8" id="CsR-pr-SHb"/>
                             <constraint firstItem="NrO-A2-VAg" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="DRq-WF-ebD"/>
@@ -147,9 +154,10 @@
                             <constraint firstItem="Elf-US-AGv" firstAttribute="centerY" secondItem="Jnt-4X-f9Q" secondAttribute="centerY" id="Scs-Kc-YWx"/>
                             <constraint firstItem="F00-iV-V8j" firstAttribute="centerY" secondItem="9mO-bJ-Ygq" secondAttribute="centerY" id="VaN-Oh-MOA"/>
                             <constraint firstItem="Ic6-RA-QH6" firstAttribute="top" secondItem="1OH-Qp-me3" secondAttribute="bottom" constant="8" id="YWN-ci-4fw"/>
+                            <constraint firstItem="Zg6-Pt-2HJ" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="Yfq-iC-ItT"/>
                             <constraint firstItem="bCv-Zo-z2r" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="ftF-Jp-RQM"/>
                             <constraint firstItem="Ic6-RA-QH6" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="iV2-fa-UZL"/>
-                            <constraint firstItem="oyv-5V-1JW" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="n5x-bR-O9e"/>
+                            <constraint firstItem="gCn-zU-DPA" firstAttribute="leading" relation="lessThanOrEqual" secondItem="oyv-5V-1JW" secondAttribute="trailing" constant="145" id="jb6-Z1-kib"/>
                             <constraint firstItem="9mO-bJ-Ygq" firstAttribute="leading" secondItem="gCn-zU-DPA" secondAttribute="trailing" constant="8" id="nHH-f9-Ku2"/>
                             <constraint firstAttribute="trailing" secondItem="Ic6-RA-QH6" secondAttribute="trailing" constant="10" id="rsY-We-F5d"/>
                             <constraint firstItem="TJV-DX-ywO" firstAttribute="top" secondItem="irl-0R-53R" secondAttribute="top" constant="10" id="sXY-uz-eCB"/>
