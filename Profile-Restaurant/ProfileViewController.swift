@@ -84,8 +84,8 @@ class ProfileViewController: UIViewController {
     
     func Properties() {
         
-        editProfile.layer.cornerRadius = 18
-        logout.layer.cornerRadius = 18
+        editProfile.layer.cornerRadius = 16
+        logout.layer.cornerRadius = 16
         
     }
     

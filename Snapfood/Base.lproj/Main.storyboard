@@ -558,25 +558,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d5-R6-Ddp">
-                                <rect key="frame" x="20" y="216" width="160" height="36"/>
+                                <rect key="frame" x="20" y="216" width="160" height="32"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="5ht-J9-vUe"/>
+                                    <constraint firstAttribute="height" constant="32" id="5ht-J9-vUe"/>
                                     <constraint firstAttribute="width" constant="160" id="lyi-Jy-ArB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
                                 <state key="normal" title="Edit Profile">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kne-sJ-UMu">
-                                <rect key="frame" x="234" y="216" width="160" height="36"/>
+                                <rect key="frame" x="234" y="216" width="160" height="32"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="ifJ-R2-TC1"/>
-                                    <constraint firstAttribute="height" constant="36" id="wBj-IJ-8o7"/>
+                                    <constraint firstAttribute="height" constant="32" id="wBj-IJ-8o7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -625,7 +625,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Llt-ud-kMu">
-                                <rect key="frame" x="0.0" y="260" width="414" height="427"/>
+                                <rect key="frame" x="0.0" y="256" width="414" height="431"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H7M-LJ-cGC">
@@ -700,13 +700,13 @@
                                 <rect key="frame" x="20" y="30" width="374" height="264"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let the exploring begin!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzN-0I-SMI">
-                                <rect key="frame" x="101.66666666666667" y="314" width="210.66666666666663" height="23.333333333333314"/>
+                                <rect key="frame" x="103.66666666666667" y="314" width="206.66666666666663" height="24"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L87-ZM-ofb">
-                                <rect key="frame" x="20" y="357.33333333333331" width="374" height="40"/>
+                                <rect key="frame" x="20" y="358" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ujC-rY-ccd"/>
                                 </constraints>
@@ -720,7 +720,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KVe-dl-85X">
-                                <rect key="frame" x="20" y="417.33333333333331" width="374" height="40"/>
+                                <rect key="frame" x="20" y="418" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Uxb-7d-B1s"/>
                                 </constraints>
@@ -734,7 +734,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6N-HL-BZP">
-                                <rect key="frame" x="20" y="487.33333333333331" width="374" height="39.999999999999943"/>
+                                <rect key="frame" x="20" y="488" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="JMn-S7-qDu"/>
@@ -1078,7 +1078,7 @@
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1274,9 +1274,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CG4-qB-vAW"/>
-        <segue reference="Wiq-Au-WLx"/>
-        <segue reference="5uX-w9-ay9"/>
+        <segue reference="dK4-NH-PMa"/>
+        <segue reference="83a-6F-wcJ"/>
+        <segue reference="5QU-o9-fNs"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="compass" width="22" height="22"/>

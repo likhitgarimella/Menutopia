@@ -97,7 +97,7 @@ class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegat
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
 
         let tabBarIndex = tabBarController.selectedIndex
-        print(tabBarIndex)
+        // print(tabBarIndex)
         
         if tabBarIndex == 0 {
             self.restaurantFeedCollectionView.setContentOffset(CGPoint.zero, animated: true)
