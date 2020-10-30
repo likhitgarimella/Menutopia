@@ -54,4 +54,42 @@ class UserPostApi {
         
     }
     
-}   // #58
+    func incrementLikes(postId: String, onSuccess: @escaping (UserPostModel) -> Void, onError: @escaping (_ errorMessage: String?) -> Void ) {
+        
+        let postRef = Api.UserPost.REF_POSTS.child(postId)
+        postRef.runTransactionBlock ({ (currentData: MutableData) -> TransactionResult in
+            if var post = currentData.value as? [String: AnyObject], let uid = Api.UserDet.CURRENT_USER?.uid {
+                // print("Value 1: \(currentData.value)")
+                var likes: Dictionary<String, Bool>
+                likes = post["Likes"] as? [String: Bool] ?? [:]
+                var likeCount = post["Like Count"] as? Int ?? 0
+                if let _ = likes[uid] {
+                    likeCount -= 1
+                    likes.removeValue(forKey: uid)
+                } else {
+                    likeCount += 1
+                    likes[uid] = true
+                }
+                post["Like Count"] = likeCount as AnyObject
+                post["Likes"] = likes as AnyObject
+                
+                currentData.value = post
+                
+                return TransactionResult.success(withValue: currentData)
+            }
+            return TransactionResult.success(withValue: currentData)
+        }) { (error, committed, snapshot) in
+            if let error = error {
+                onError(error.localizedDescription)
+            }
+            // print("Value 2: \(snapshot?.value)")
+            if let dict = snapshot?.value as? [String: Any] {
+                let post = UserPostModel.transformPostPhoto(dict: dict, key: snapshot!.key)
+                onSuccess(post)
+            }
+            
+        }
+        
+    }
+    
+}   // #96

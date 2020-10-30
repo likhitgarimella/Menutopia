@@ -40,10 +40,10 @@ class UserProfileViewController: UIViewController {
         guard let currentUser = Api.UserDet.CURRENT_USER else {
             return
         }
-        Api.MyRestaurantPosts.REF_MYPOSTS.child(currentUser.uid).observe(.childAdded, with: {
+        Api.MyUserPosts.REF_MYPOSTS.child(currentUser.uid).observe(.childAdded, with: {
             snapshot in
             print(snapshot)
-            Api.RestaurantPost.observePost(withId: snapshot.key, completion: {
+            Api.UserPost.observePost(withId: snapshot.key, completion: {
                 post in
                 // print(post.id)
                 self.posts.append(post)
