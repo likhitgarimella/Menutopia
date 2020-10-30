@@ -1256,15 +1256,28 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIL-sD-AMM">
+                                <rect key="frame" x="189" y="459" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="Lsi-kg-HKA"/>
+                                    <constraint firstAttribute="height" constant="36" id="bry-wU-Nm3"/>
+                                </constraints>
+                                <state key="normal" image="down-arrow"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="92L-s7-tNd" eventType="touchUpInside" id="0ri-pG-wYO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l8i-5W-Wfd"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ZCl-hL-xYY" firstAttribute="leading" secondItem="l8i-5W-Wfd" secondAttribute="leading" constant="20" id="1SY-LH-tRz"/>
+                            <constraint firstItem="SIL-sD-AMM" firstAttribute="centerX" secondItem="AVT-PN-Xas" secondAttribute="centerX" id="PPY-Zf-dxb"/>
                             <constraint firstItem="gVH-qJ-sSa" firstAttribute="centerX" secondItem="AVT-PN-Xas" secondAttribute="centerX" id="Shd-z1-mjr"/>
                             <constraint firstItem="l8i-5W-Wfd" firstAttribute="trailing" secondItem="ZCl-hL-xYY" secondAttribute="trailing" constant="20" id="a6l-68-CaJ"/>
                             <constraint firstItem="ZCl-hL-xYY" firstAttribute="top" secondItem="l8i-5W-Wfd" secondAttribute="top" constant="20" id="gef-nN-lia"/>
                             <constraint firstItem="gVH-qJ-sSa" firstAttribute="top" secondItem="ZCl-hL-xYY" secondAttribute="bottom" constant="20" id="iYJ-55-NyU"/>
+                            <constraint firstItem="l8i-5W-Wfd" firstAttribute="bottom" secondItem="SIL-sD-AMM" secondAttribute="bottom" constant="40" id="rlW-ER-opG"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1280,6 +1293,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="compass" width="22" height="22"/>
+        <image name="down-arrow" width="36" height="36"/>
         <image name="image-post" width="20" height="20"/>
         <image name="login" width="345" height="264"/>
         <image name="menu" width="28" height="28"/>
