@@ -19,12 +19,22 @@ struct Api {
     
     // MARK:- Restaurant Post
     
-    /// Firebase node - RestaurantPosts-Details
+    /// Firebase node - Restaurant-Posts - Details
     static var RestaurantPost = RestaurantPostApi()
     
-    // MARK:- Profile
+    // MARK:- User Post
+    
+    /// Firebase node - User-Posts - Details
+    static var UserPost = UserPostApi()
+    
+    // MARK:- Restaurant Profile
     
     /// Firebase node - My-Restaurant-Posts
     static var MyRestaurantPosts = MyRestaurantPostsApi()
     
-}   // #31
+    // MARK:- User Profile
+    
+    /// Firebase node - My-User-Posts
+    static var MyUserPosts = MyUserPostsApi()
+    
+}   // #41
