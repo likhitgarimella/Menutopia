@@ -1444,9 +1444,11 @@
                     <navigationItem key="navigationItem" id="0sh-8m-lzi"/>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
+                        <outlet property="bioOutlet" destination="J5p-4s-jKD" id="p7p-qx-eJp"/>
                         <outlet property="editProfile" destination="yBW-6P-8dI" id="PRn-uO-IfU"/>
                         <outlet property="logout" destination="TKQ-zD-Ml6" id="Lsb-tg-qR1"/>
                         <outlet property="profileCollectionView" destination="6AY-Sk-TDj" id="oDB-s1-rUf"/>
+                        <outlet property="profilePic" destination="lBX-pN-vdR" id="i10-tO-qem"/>
                         <outlet property="userNameLabel" destination="4Bs-ak-t5a" id="KK4-dh-TNl"/>
                         <outlet property="userUsernameLabel" destination="puA-D2-i7p" id="WdW-Yk-S7B"/>
                     </connections>

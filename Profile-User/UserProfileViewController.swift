@@ -10,11 +10,14 @@ import UIKit
 
 class UserProfileViewController: UIViewController {
     
+    @IBOutlet var profilePic: UIImageView!
     @IBOutlet var userUsernameLabel: UILabel!
     @IBOutlet var userNameLabel: UILabel!
     
     @IBOutlet var editProfile: UIButton!
     @IBOutlet var logout: UIButton!
+    
+    @IBOutlet var bioOutlet: UIButton!
     
     var user: AppUser? {
         didSet {
@@ -58,6 +61,10 @@ class UserProfileViewController: UIViewController {
         
         self.userUsernameLabel.text = user!.userUsername
         self.userNameLabel.text = user!.userName
+        bioOutlet.isHidden = false
+        profilePic.isHidden = false
+        editProfile.isHidden = false
+        logout.isHidden = false
         
     }
     
@@ -65,6 +72,15 @@ class UserProfileViewController: UIViewController {
         
         editProfile.layer.cornerRadius = 16
         logout.layer.cornerRadius = 16
+        
+    }
+    
+    func Default() {
+        
+        profilePic.isHidden = true
+        bioOutlet.isHidden = true
+        editProfile.isHidden = true
+        logout.isHidden = true
         
     }
 
@@ -76,6 +92,8 @@ class UserProfileViewController: UIViewController {
         Properties()
         
         fetchMyPosts()
+        
+        Default()
         
     }
     
@@ -96,4 +114,4 @@ class UserProfileViewController: UIViewController {
         
     }
     
-}   // #100
+}   // #118
