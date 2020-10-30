@@ -1363,6 +1363,25 @@
                                     <constraint firstAttribute="width" constant="100" id="ddi-xS-3pL"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5p-4s-jKD">
+                                <rect key="frame" x="144" y="32" width="54" height="29"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="14"/>
+                                <state key="normal" title="Enter Bio">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBW-6P-8dI">
+                                <rect key="frame" x="20" y="176" width="160" height="32"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="IeG-sk-liP"/>
+                                    <constraint firstAttribute="width" constant="160" id="MQl-A1-dwJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
+                                <state key="normal" title="Edit Profile">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKQ-zD-Ml6">
                                 <rect key="frame" x="234" y="176" width="160" height="32"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1391,18 +1410,12 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBW-6P-8dI">
-                                <rect key="frame" x="20" y="176" width="160" height="32"/>
-                                <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="IeG-sk-liP"/>
-                                    <constraint firstAttribute="width" constant="160" id="MQl-A1-dwJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
-                                <state key="normal" title="Edit Profile">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bs-ak-t5a">
+                                <rect key="frame" x="144" y="28" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
+                                <color key="textColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1413,10 +1426,16 @@
                             <constraint firstItem="lBX-pN-vdR" firstAttribute="leading" secondItem="ija-5A-Icw" secondAttribute="leading" constant="20" id="Cx6-5i-4lx"/>
                             <constraint firstItem="puA-D2-i7p" firstAttribute="top" secondItem="ija-5A-Icw" secondAttribute="topMargin" constant="20" id="G2O-0M-DrZ"/>
                             <constraint firstAttribute="trailing" secondItem="TKQ-zD-Ml6" secondAttribute="trailing" constant="20" id="Ihf-eQ-XA9"/>
+                            <constraint firstItem="J5p-4s-jKD" firstAttribute="top" secondItem="4Bs-ak-t5a" secondAttribute="bottom" constant="4" id="O1T-b5-wep"/>
                             <constraint firstItem="6AY-Sk-TDj" firstAttribute="leading" secondItem="ija-5A-Icw" secondAttribute="leading" id="O3y-wg-2sL"/>
+                            <constraint firstItem="4Bs-ak-t5a" firstAttribute="top" secondItem="puA-D2-i7p" secondAttribute="bottom" constant="8" id="SFm-Lt-C49"/>
                             <constraint firstItem="6AY-Sk-TDj" firstAttribute="top" secondItem="yBW-6P-8dI" secondAttribute="bottom" constant="8" id="Sc1-7C-7sk"/>
                             <constraint firstItem="yBW-6P-8dI" firstAttribute="top" secondItem="lBX-pN-vdR" secondAttribute="bottom" constant="38" id="V7T-xc-EST"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4Bs-ak-t5a" secondAttribute="trailing" constant="20" symbolic="YES" id="ZZR-Rq-GQw"/>
                             <constraint firstItem="lBX-pN-vdR" firstAttribute="top" secondItem="ija-5A-Icw" secondAttribute="top" constant="38" id="c9f-Fg-20t"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="J5p-4s-jKD" secondAttribute="trailing" constant="20" symbolic="YES" id="oIE-q8-oCK"/>
+                            <constraint firstItem="4Bs-ak-t5a" firstAttribute="leading" secondItem="puA-D2-i7p" secondAttribute="leading" id="vJW-fG-7pt"/>
+                            <constraint firstItem="J5p-4s-jKD" firstAttribute="leading" secondItem="puA-D2-i7p" secondAttribute="leading" id="xRw-xH-5LM"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="puA-D2-i7p" secondAttribute="trailing" constant="20" symbolic="YES" id="y6s-bj-kIN"/>
                             <constraint firstItem="TKQ-zD-Ml6" firstAttribute="centerY" secondItem="yBW-6P-8dI" secondAttribute="centerY" id="zpV-HV-qId"/>
                         </constraints>
@@ -1427,12 +1446,13 @@
                         <outlet property="editProfile" destination="yBW-6P-8dI" id="PRn-uO-IfU"/>
                         <outlet property="logout" destination="TKQ-zD-Ml6" id="Lsb-tg-qR1"/>
                         <outlet property="profileCollectionView" destination="6AY-Sk-TDj" id="oDB-s1-rUf"/>
-                        <outlet property="userNameLabel" destination="puA-D2-i7p" id="IaO-po-1P6"/>
+                        <outlet property="userNameLabel" destination="4Bs-ak-t5a" id="KK4-dh-TNl"/>
+                        <outlet property="userUsernameLabel" destination="puA-D2-i7p" id="WdW-Yk-S7B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dv-np-Yfr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5361" y="1864"/>
+            <point key="canvasLocation" x="5360.8695652173919" y="1863.5869565217392"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

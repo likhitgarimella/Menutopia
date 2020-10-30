@@ -10,6 +10,7 @@ import UIKit
 
 class UserProfileViewController: UIViewController {
     
+    @IBOutlet var userUsernameLabel: UILabel!
     @IBOutlet var userNameLabel: UILabel!
     
     @IBOutlet var editProfile: UIButton!
@@ -55,7 +56,8 @@ class UserProfileViewController: UIViewController {
     
     func updateView2() {
         
-        self.userNameLabel.text = user!.userUsername
+        self.userUsernameLabel.text = user!.userUsername
+        self.userNameLabel.text = user!.userName
         
     }
     
@@ -94,4 +96,4 @@ class UserProfileViewController: UIViewController {
         
     }
     
-}   // #98
+}   // #100
