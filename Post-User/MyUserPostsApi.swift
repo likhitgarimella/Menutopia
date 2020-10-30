@@ -8,6 +8,12 @@
 
 import Foundation
 
+import FirebaseDatabase
+
+/// Write your own Api, to conveniently observe database data...
+
 class MyUserPostsApi {
     
-}   // #14
+    var REF_MYPOSTS = Database.database().reference().child("My-User-Posts")
+    
+}   // #20
