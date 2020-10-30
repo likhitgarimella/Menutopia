@@ -15,6 +15,11 @@ class RestaurantProfileViewController: UIViewController {
     @IBOutlet var editProfile: UIButton!
     @IBOutlet var logout: UIButton!
     
+    @IBOutlet var addressOutlet: UIButton!
+    @IBOutlet var cityStateOutlet: UIButton!
+    @IBOutlet var phoneOutlet: UIButton!
+    @IBOutlet var openhoursOutlet: UIButton!
+    
     var restaurant: AppUser? {
         didSet {
             updateView1()
@@ -56,6 +61,10 @@ class RestaurantProfileViewController: UIViewController {
     func updateView1() {
         
         self.restaurantNameLabel.text = restaurant!.restaurantName
+        addressOutlet.isHidden = false
+        cityStateOutlet.isHidden = false
+        phoneOutlet.isHidden = false
+        openhoursOutlet.isHidden = false
         
     }
     
@@ -63,6 +72,15 @@ class RestaurantProfileViewController: UIViewController {
         
         editProfile.layer.cornerRadius = 16
         logout.layer.cornerRadius = 16
+        
+    }
+    
+    func Default() {
+        
+        addressOutlet.isHidden = true
+        cityStateOutlet.isHidden = true
+        phoneOutlet.isHidden = true
+        openhoursOutlet.isHidden = true
         
     }
     
@@ -80,6 +98,8 @@ class RestaurantProfileViewController: UIViewController {
         Properties()
         
         fetchMyPosts()
+        
+        Default()
         
     }
     
@@ -245,4 +265,4 @@ extension RestaurantProfileViewController: UICollectionViewDelegate, UICollectio
         
     }
     
-}   // #249
+}   // #269
