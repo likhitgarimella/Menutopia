@@ -1,5 +1,5 @@
 //
-//  SearchViewController.swift
+//  DiscoverViewController.swift
 //  Snapfood
 //
 //  Created by Likhit Garimella on 01/10/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class DiscoverViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

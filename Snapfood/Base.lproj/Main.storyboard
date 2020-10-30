@@ -431,7 +431,7 @@
         <!--Feed-->
         <scene sceneID="OMp-iH-nxf">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="ovG-pG-ZTc" customClass="SearchViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="ovG-pG-ZTc" customClass="FeedViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kbv-MX-xS6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -514,17 +514,17 @@
             </objects>
             <point key="canvasLocation" x="5361" y="-327"/>
         </scene>
-        <!--Explore-->
+        <!--Discover-->
         <scene sceneID="hQE-xZ-OSf">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="2jz-ZB-rZK" customClass="FavoritesViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="2jz-ZB-rZK" customClass="DiscoverViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0ov-eL-5Cv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="niD-im-8dS"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Explore" image="compass" id="5FG-r6-h9A"/>
+                    <tabBarItem key="tabBarItem" title="Discover" image="compass" id="5FG-r6-h9A"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXt-kL-Kcw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,9 +12,9 @@
 		021210CF2509C2710062DB29 /* UserSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021210CE2509C2710062DB29 /* UserSignupViewController.swift */; };
 		022EB024252875F300A71104 /* RestaurantPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB023252875F300A71104 /* RestaurantPostViewController.swift */; };
 		022EB0272528761500A71104 /* UserPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB0262528761500A71104 /* UserPostViewController.swift */; };
-		0237701C2525FC9300CC3F32 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237701B2525FC9300CC3F32 /* SearchViewController.swift */; };
+		0237701C2525FC9300CC3F32 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237701B2525FC9300CC3F32 /* FeedViewController.swift */; };
 		0237701F2525FCE300CC3F32 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237701E2525FCE300CC3F32 /* PostViewController.swift */; };
-		023770222525FD0400CC3F32 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023770212525FD0400CC3F32 /* FavoritesViewController.swift */; };
+		023770222525FD0400CC3F32 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023770212525FD0400CC3F32 /* DiscoverViewController.swift */; };
 		023770252525FD2500CC3F32 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023770242525FD2500CC3F32 /* ProfileViewController.swift */; };
 		0259A0902509E0CC00C567A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0259A08F2509E0CC00C567A6 /* GoogleService-Info.plist */; };
 		0259A0932509E2B900C567A6 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0259A0922509E2B900C567A6 /* AppUser.swift */; };
@@ -65,9 +65,9 @@
 		021210CE2509C2710062DB29 /* UserSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignupViewController.swift; sourceTree = "<group>"; };
 		022EB023252875F300A71104 /* RestaurantPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPostViewController.swift; sourceTree = "<group>"; };
 		022EB0262528761500A71104 /* UserPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostViewController.swift; sourceTree = "<group>"; };
-		0237701B2525FC9300CC3F32 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0237701B2525FC9300CC3F32 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0237701E2525FCE300CC3F32 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
-		023770212525FD0400CC3F32 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		023770212525FD0400CC3F32 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		023770242525FD2500CC3F32 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0259A08F2509E0CC00C567A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0259A0922509E2B900C567A6 /* AppUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
@@ -255,9 +255,9 @@
 		02FA637A250D63A200703E29 /* Set-2 */ = {
 			isa = PBXGroup;
 			children = (
-				0237701B2525FC9300CC3F32 /* SearchViewController.swift */,
+				0237701B2525FC9300CC3F32 /* FeedViewController.swift */,
 				0237701E2525FCE300CC3F32 /* PostViewController.swift */,
-				023770212525FD0400CC3F32 /* FavoritesViewController.swift */,
+				023770212525FD0400CC3F32 /* DiscoverViewController.swift */,
 			);
 			path = "Set-2";
 			sourceTree = "<group>";
@@ -423,12 +423,12 @@
 				02B6067C2531A894009987CF /* SponsorViewController.swift in Sources */,
 				027510ED2503D1B800BF7987 /* SceneDelegate.swift in Sources */,
 				022EB024252875F300A71104 /* RestaurantPostViewController.swift in Sources */,
-				0237701C2525FC9300CC3F32 /* SearchViewController.swift in Sources */,
+				0237701C2525FC9300CC3F32 /* FeedViewController.swift in Sources */,
 				0266B71E2529BF2A0058BE7E /* RestaurantPostApi.swift in Sources */,
 				0266B7272529EB570058BE7E /* UserPostModel.swift in Sources */,
 				0266B7242529BF960058BE7E /* HelperServiceRestaurant.swift in Sources */,
 				0237701F2525FCE300CC3F32 /* PostViewController.swift in Sources */,
-				023770222525FD0400CC3F32 /* FavoritesViewController.swift in Sources */,
+				023770222525FD0400CC3F32 /* DiscoverViewController.swift in Sources */,
 				021210CD2509C1DA0062DB29 /* RestaurantSignupViewController.swift in Sources */,
 				0266B7212529BF750058BE7E /* MyRestaurantPostsApi.swift in Sources */,
 				0266B7172529BBFE0058BE7E /* MealPostModel.swift in Sources */,

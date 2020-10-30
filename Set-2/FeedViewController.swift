@@ -1,5 +1,5 @@
 //
-//  FavoritesViewController.swift
+//  FeedViewController.swift
 //  Snapfood
 //
 //  Created by Likhit Garimella on 01/10/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FavoritesViewController: UIViewController {
+class FeedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
