@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  RestaurantProfileViewController.swift
 //  Snapfood
 //
 //  Created by Likhit Garimella on 01/10/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class RestaurantProfileViewController: UIViewController {
     
     @IBOutlet var restaurantNameLabel: UILabel!
     @IBOutlet var userNameLabel: UILabel!
@@ -266,7 +266,7 @@ class ProfileViewController: UIViewController {
     
 }
 
-extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension RestaurantProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return posts.count

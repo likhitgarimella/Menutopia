@@ -15,7 +15,7 @@
 		0237701C2525FC9300CC3F32 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237701B2525FC9300CC3F32 /* FeedViewController.swift */; };
 		0237701F2525FCE300CC3F32 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237701E2525FCE300CC3F32 /* PostViewController.swift */; };
 		023770222525FD0400CC3F32 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023770212525FD0400CC3F32 /* DiscoverViewController.swift */; };
-		023770252525FD2500CC3F32 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023770242525FD2500CC3F32 /* ProfileViewController.swift */; };
+		023770252525FD2500CC3F32 /* RestaurantProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023770242525FD2500CC3F32 /* RestaurantProfileViewController.swift */; };
 		0259A0902509E0CC00C567A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0259A08F2509E0CC00C567A6 /* GoogleService-Info.plist */; };
 		0259A0932509E2B900C567A6 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0259A0922509E2B900C567A6 /* AppUser.swift */; };
 		0259A0952509E44100C567A6 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0259A0942509E44100C567A6 /* UserApi.swift */; };
@@ -68,7 +68,7 @@
 		0237701B2525FC9300CC3F32 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0237701E2525FCE300CC3F32 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		023770212525FD0400CC3F32 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
-		023770242525FD2500CC3F32 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		023770242525FD2500CC3F32 /* RestaurantProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantProfileViewController.swift; sourceTree = "<group>"; };
 		0259A08F2509E0CC00C567A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0259A0922509E2B900C567A6 /* AppUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		0259A0942509E44100C567A6 /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
@@ -235,7 +235,7 @@
 		029F0BA42533595000C6C567 /* Profile-Restaurant */ = {
 			isa = PBXGroup;
 			children = (
-				023770242525FD2500CC3F32 /* ProfileViewController.swift */,
+				023770242525FD2500CC3F32 /* RestaurantProfileViewController.swift */,
 				029F0BD22533864900C6C567 /* PhotoCollectionViewCell.xib */,
 				029F0BD12533864900C6C567 /* PhotoCollectionViewCell.swift */,
 			);
@@ -419,7 +419,7 @@
 				0266B72D2529EB9C0058BE7E /* MyUserPostsApi.swift in Sources */,
 				027510EB2503D1B800BF7987 /* AppDelegate.swift in Sources */,
 				0259A0972509E50200C567A6 /* Api.swift in Sources */,
-				023770252525FD2500CC3F32 /* ProfileViewController.swift in Sources */,
+				023770252525FD2500CC3F32 /* RestaurantProfileViewController.swift in Sources */,
 				02B6067C2531A894009987CF /* SponsorViewController.swift in Sources */,
 				027510ED2503D1B800BF7987 /* SceneDelegate.swift in Sources */,
 				022EB024252875F300A71104 /* RestaurantPostViewController.swift in Sources */,
