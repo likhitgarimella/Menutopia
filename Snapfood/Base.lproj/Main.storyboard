@@ -522,7 +522,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="niD-im-8dS"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Discover" image="compass" id="5FG-r6-h9A"/>
                 </viewController>
@@ -531,9 +531,71 @@
             <point key="canvasLocation" x="5361" y="558"/>
         </scene>
         <!--Profile-->
+        <scene sceneID="1w0-Ko-8uE">
+            <objects>
+                <viewController id="WXK-mH-DWl" customClass="ProfileViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UMN-pF-PUa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1hU-27-KY8">
+                                <rect key="frame" x="20" y="24" width="374" height="32"/>
+                                <segments>
+                                    <segment title="Restaurant"/>
+                                    <segment title="User"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="switchSegment:" destination="WXK-mH-DWl" eventType="valueChanged" id="cD3-f3-jU7"/>
+                                    <action selector="switchSegment:" destination="gBb-HN-xLE" eventType="valueChanged" id="siu-5l-5TO"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjg-N9-J3h">
+                                <rect key="frame" x="0.0" y="59" width="414" height="628"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="knt-QE-XTz" kind="embed" id="xcY-2B-T5M"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4hq-86-azL">
+                                <rect key="frame" x="0.0" y="59" width="414" height="628"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="Rro-ky-0p2" kind="embed" id="ZAl-T0-637"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dQM-Re-9zr"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dQM-Re-9zr" firstAttribute="bottom" secondItem="mjg-N9-J3h" secondAttribute="bottom" id="0Hh-Aa-hq3"/>
+                            <constraint firstItem="dQM-Re-9zr" firstAttribute="trailing" secondItem="4hq-86-azL" secondAttribute="trailing" id="BOk-h9-ET7"/>
+                            <constraint firstItem="mjg-N9-J3h" firstAttribute="leading" secondItem="dQM-Re-9zr" secondAttribute="leading" id="ICz-gw-Sue"/>
+                            <constraint firstItem="4hq-86-azL" firstAttribute="leading" secondItem="dQM-Re-9zr" secondAttribute="leading" id="KNb-uF-cxd"/>
+                            <constraint firstItem="4hq-86-azL" firstAttribute="top" secondItem="1hU-27-KY8" secondAttribute="bottom" constant="4" id="NNn-Yk-WuY"/>
+                            <constraint firstItem="dQM-Re-9zr" firstAttribute="trailing" secondItem="1hU-27-KY8" secondAttribute="trailing" constant="20" id="SdC-xZ-N2n"/>
+                            <constraint firstItem="1hU-27-KY8" firstAttribute="top" secondItem="dQM-Re-9zr" secondAttribute="top" constant="24" id="cDF-TN-rIj"/>
+                            <constraint firstItem="dQM-Re-9zr" firstAttribute="bottom" secondItem="4hq-86-azL" secondAttribute="bottom" id="ivI-i8-VBg"/>
+                            <constraint firstItem="dQM-Re-9zr" firstAttribute="trailing" secondItem="mjg-N9-J3h" secondAttribute="trailing" id="oWO-Qi-kYC"/>
+                            <constraint firstItem="1hU-27-KY8" firstAttribute="leading" secondItem="dQM-Re-9zr" secondAttribute="leading" constant="20" id="obR-S5-eZf"/>
+                            <constraint firstItem="mjg-N9-J3h" firstAttribute="top" secondItem="1hU-27-KY8" secondAttribute="bottom" constant="4" id="xzj-Hi-z4B"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="users" id="gFf-mO-HGJ"/>
+                    <connections>
+                        <outlet property="restaurantProfile" destination="4hq-86-azL" id="FaJ-hf-84H"/>
+                        <outlet property="segment" destination="1hU-27-KY8" id="aP1-bg-sxL"/>
+                        <outlet property="userProfile" destination="mjg-N9-J3h" id="lmE-OB-lAV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4U-y9-PUs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3822" y="1022"/>
+        </scene>
+        <!--Restaurant Profile View Controller-->
         <scene sceneID="L8q-7K-fON">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Rro-ky-0p2" customClass="RestaurantProfileViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Rro-ky-0p2" userLabel="Restaurant Profile View Controller" customClass="RestaurantProfileViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i0G-n2-OmJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -625,7 +687,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Llt-ud-kMu">
-                                <rect key="frame" x="0.0" y="256" width="414" height="431"/>
+                                <rect key="frame" x="0.0" y="256" width="414" height="480"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H7M-LJ-cGC">
@@ -676,6 +738,8 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="users" id="86Z-Ot-NmT"/>
+                    <navigationItem key="navigationItem" id="BBt-6q-hwQ"/>
+                    <size key="freeformSize" width="414" height="736"/>
                     <connections>
                         <outlet property="editProfile" destination="4d5-R6-Ddp" id="AZ4-z8-MaK"/>
                         <outlet property="logout" destination="kne-sJ-UMu" id="5eu-He-7F5"/>
@@ -686,7 +750,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ew-bQ-J9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4102.898550724638" y="1537.5000000000002"/>
+            <point key="canvasLocation" x="3822" y="1865"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="8UT-ty-ryi">
@@ -823,7 +887,7 @@
                         <segue destination="ovG-pG-ZTc" kind="relationship" relationship="viewControllers" id="96q-m2-aJI"/>
                         <segue destination="gBb-HN-xLE" kind="relationship" relationship="viewControllers" id="Qmq-eu-7ka"/>
                         <segue destination="2jz-ZB-rZK" kind="relationship" relationship="viewControllers" id="mhD-1N-WI6"/>
-                        <segue destination="Rro-ky-0p2" kind="relationship" relationship="viewControllers" id="wSD-GG-uIW"/>
+                        <segue destination="WXK-mH-DWl" kind="relationship" relationship="viewControllers" id="Nr7-ed-cbr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="By2-XQ-bLi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1234,7 +1298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8F-Wd-w58" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6438" y="-837"/>
+            <point key="canvasLocation" x="6437.68115942029" y="-837.22826086956525"/>
         </scene>
         <!--Sponsor View Controller-->
         <scene sceneID="1pz-s1-qlV">
@@ -1285,6 +1349,22 @@
             </objects>
             <point key="canvasLocation" x="7277" y="-998"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="2Zg-d6-dtb">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="knt-QE-XTz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ija-5A-Icw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0sh-8m-lzi"/>
+                    <size key="freeformSize" width="414" height="736"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dv-np-Yfr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5361" y="1864"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="dK4-NH-PMa"/>
@@ -1314,9 +1394,6 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

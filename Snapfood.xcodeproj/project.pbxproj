@@ -43,6 +43,7 @@
 		0266B72A2529EB800058BE7E /* UserPostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266B7292529EB800058BE7E /* UserPostApi.swift */; };
 		0266B72D2529EB9C0058BE7E /* MyUserPostsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266B72C2529EB9C0058BE7E /* MyUserPostsApi.swift */; };
 		0266B7302529EDCB0058BE7E /* HelperServiceUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266B72F2529EDCB0058BE7E /* HelperServiceUser.swift */; };
+		02697BFD254BC8900099A960 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02697BFC254BC8900099A960 /* ProfileViewController.swift */; };
 		027510EB2503D1B800BF7987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027510EA2503D1B800BF7987 /* AppDelegate.swift */; };
 		027510ED2503D1B800BF7987 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027510EC2503D1B800BF7987 /* SceneDelegate.swift */; };
 		027510EF2503D1B800BF7987 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027510EE2503D1B800BF7987 /* ViewController.swift */; };
@@ -96,6 +97,7 @@
 		0266B7292529EB800058BE7E /* UserPostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostApi.swift; sourceTree = "<group>"; };
 		0266B72C2529EB9C0058BE7E /* MyUserPostsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUserPostsApi.swift; sourceTree = "<group>"; };
 		0266B72F2529EDCB0058BE7E /* HelperServiceUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperServiceUser.swift; sourceTree = "<group>"; };
+		02697BFC254BC8900099A960 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		027510E72503D1B800BF7987 /* Snapfood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapfood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		027510EA2503D1B800BF7987 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		027510EC2503D1B800BF7987 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				0237701B2525FC9300CC3F32 /* FeedViewController.swift */,
 				0237701E2525FCE300CC3F32 /* PostViewController.swift */,
 				023770212525FD0400CC3F32 /* DiscoverViewController.swift */,
+				02697BFC254BC8900099A960 /* ProfileViewController.swift */,
 			);
 			path = "Set-2";
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				02B6067C2531A894009987CF /* SponsorViewController.swift in Sources */,
 				027510ED2503D1B800BF7987 /* SceneDelegate.swift in Sources */,
 				022EB024252875F300A71104 /* RestaurantPostViewController.swift in Sources */,
+				02697BFD254BC8900099A960 /* ProfileViewController.swift in Sources */,
 				0237701C2525FC9300CC3F32 /* FeedViewController.swift in Sources */,
 				0266B71E2529BF2A0058BE7E /* RestaurantPostApi.swift in Sources */,
 				0266B7272529EB570058BE7E /* UserPostModel.swift in Sources */,
