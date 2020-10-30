@@ -607,12 +607,6 @@
                                     <constraint firstAttribute="height" constant="100" id="8mY-UM-0rT"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWm-cd-UEE">
-                                <rect key="frame" x="144" y="20" width="19.666666666666657" height="28.666666666666671"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
-                                <color key="textColor" red="0.81176470588235294" green="0.27058823529411763" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFl-nC-IXE">
                                 <rect key="frame" x="144" y="20" width="19.666666666666657" height="28.666666666666671"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
@@ -712,15 +706,12 @@
                             <constraint firstItem="apF-Ql-0ln" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jtn-z3-Dya" secondAttribute="trailing" symbolic="YES" id="CUg-fL-z5T"/>
                             <constraint firstItem="apF-Ql-0ln" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RAa-TH-KM6" secondAttribute="trailing" symbolic="YES" id="Daa-yk-C91"/>
                             <constraint firstItem="4d5-R6-Ddp" firstAttribute="leading" secondItem="apF-Ql-0ln" secondAttribute="leading" constant="20" id="GdL-2P-NEN"/>
-                            <constraint firstItem="0pu-aG-Glf" firstAttribute="top" secondItem="ZWm-cd-UEE" secondAttribute="bottom" constant="4.0000000000000142" id="IKY-jS-U2Q"/>
                             <constraint firstItem="Llt-ud-kMu" firstAttribute="trailing" secondItem="apF-Ql-0ln" secondAttribute="trailing" id="J5x-Nk-feb"/>
                             <constraint firstItem="dzC-p3-sPP" firstAttribute="leading" secondItem="Jtn-z3-Dya" secondAttribute="leading" id="JYi-c4-t8Y"/>
                             <constraint firstItem="apF-Ql-0ln" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NFl-nC-IXE" secondAttribute="trailing" symbolic="YES" id="Jl8-mn-1wL"/>
                             <constraint firstItem="NFl-nC-IXE" firstAttribute="leading" secondItem="1Va-up-Uqs" secondAttribute="trailing" constant="24" id="R7b-9g-7Z6"/>
                             <constraint firstItem="RAa-TH-KM6" firstAttribute="top" secondItem="0pu-aG-Glf" secondAttribute="bottom" constant="4" id="Xuq-54-ki1"/>
                             <constraint firstItem="0pu-aG-Glf" firstAttribute="top" secondItem="NFl-nC-IXE" secondAttribute="bottom" constant="4.0000000000000071" id="ayB-KF-uKt"/>
-                            <constraint firstItem="apF-Ql-0ln" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZWm-cd-UEE" secondAttribute="trailing" symbolic="YES" id="ekh-LX-EFK"/>
-                            <constraint firstItem="ZWm-cd-UEE" firstAttribute="leading" secondItem="1Va-up-Uqs" secondAttribute="trailing" constant="24" id="fX9-9K-ede"/>
                             <constraint firstItem="1Va-up-Uqs" firstAttribute="top" secondItem="apF-Ql-0ln" secondAttribute="top" constant="56" id="fpH-0J-dtJ"/>
                             <constraint firstItem="apF-Ql-0ln" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0pu-aG-Glf" secondAttribute="trailing" symbolic="YES" id="gt6-1P-NGv"/>
                             <constraint firstItem="Llt-ud-kMu" firstAttribute="top" secondItem="4d5-R6-Ddp" secondAttribute="bottom" constant="8" id="icz-fq-7vZ"/>
@@ -733,7 +724,6 @@
                             <constraint firstItem="0pu-aG-Glf" firstAttribute="leading" secondItem="NFl-nC-IXE" secondAttribute="leading" id="vH7-Dl-880"/>
                             <constraint firstItem="1Va-up-Uqs" firstAttribute="leading" secondItem="apF-Ql-0ln" secondAttribute="leading" constant="20" id="yrq-NQ-AKf"/>
                             <constraint firstItem="RAa-TH-KM6" firstAttribute="leading" secondItem="0pu-aG-Glf" secondAttribute="leading" id="yx0-Mj-0Lb"/>
-                            <constraint firstItem="ZWm-cd-UEE" firstAttribute="top" secondItem="apF-Ql-0ln" secondAttribute="top" constant="20" id="zgM-Hk-nkV"/>
                             <constraint firstItem="apF-Ql-0ln" firstAttribute="trailing" secondItem="kne-sJ-UMu" secondAttribute="trailing" constant="20" id="zmf-63-4gb"/>
                         </constraints>
                     </view>
@@ -745,7 +735,6 @@
                         <outlet property="logout" destination="kne-sJ-UMu" id="5eu-He-7F5"/>
                         <outlet property="profileCollectionView" destination="Llt-ud-kMu" id="ge0-eP-lbn"/>
                         <outlet property="restaurantNameLabel" destination="NFl-nC-IXE" id="Hez-76-m8R"/>
-                        <outlet property="userNameLabel" destination="ZWm-cd-UEE" id="gOg-gT-U3e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ew-bQ-J9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1349,14 +1338,30 @@
             </objects>
             <point key="canvasLocation" x="7277" y="-998"/>
         </scene>
-        <!--View Controller-->
+        <!--User Profile View Controller-->
         <scene sceneID="2Zg-d6-dtb">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="knt-QE-XTz" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="knt-QE-XTz" customClass="UserProfileViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ija-5A-Icw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puA-D2-i7p">
+                                <rect key="frame" x="144" y="20" width="19.666666666666664" height="28.666666666666664"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
+                                <color key="textColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="select-profile-pic" translatesAutoresizingMaskIntoConstraints="NO" id="lBX-pN-vdR">
+                                <rect key="frame" x="20" y="56" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Hby-Ct-ena"/>
+                                    <constraint firstAttribute="width" constant="100" id="ddi-xS-3pL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="0sh-8m-lzi"/>
                     <size key="freeformSize" width="414" height="736"/>

@@ -11,7 +11,6 @@ import UIKit
 class RestaurantProfileViewController: UIViewController {
     
     @IBOutlet var restaurantNameLabel: UILabel!
-    @IBOutlet var userNameLabel: UILabel!
     
     @IBOutlet var editProfile: UIButton!
     @IBOutlet var logout: UIButton!
@@ -19,12 +18,6 @@ class RestaurantProfileViewController: UIViewController {
     var restaurant: AppUser? {
         didSet {
             updateView1()
-        }
-    }
-    
-    var user: AppUser? {
-        didSet {
-            updateView2()
         }
     }
     
@@ -37,16 +30,6 @@ class RestaurantProfileViewController: UIViewController {
         /// observeCurrentRestaurant
         Api.UserDet.observeCurrentRestaurant { (restaurant) in
             self.restaurant = restaurant
-            self.profileCollectionView.reloadData()
-        }
-        
-    }
-    
-    func fetchUser() {
-        
-        /// observeCurrentUser
-        Api.UserDet.observeCurrentUser { (user) in
-            self.user = user
             self.profileCollectionView.reloadData()
         }
         
@@ -76,27 +59,10 @@ class RestaurantProfileViewController: UIViewController {
         
     }
     
-    func updateView2() {
-        
-        self.userNameLabel.text = user!.userUsername
-        
-    }
-    
     func Properties() {
         
         editProfile.layer.cornerRadius = 16
         logout.layer.cornerRadius = 16
-        
-    }
-    
-    func Condition() {
-        
-        if restaurantNameLabel.text != nil {
-            userNameLabel.text = ""
-        }
-        if userNameLabel.text != nil {
-            restaurantNameLabel.text = ""
-        }
         
     }
     
@@ -110,10 +76,8 @@ class RestaurantProfileViewController: UIViewController {
         }
         
         fetchRestaurant()
-        fetchUser()
         
         Properties()
-        Condition()
         
         fetchMyPosts()
         
@@ -281,4 +245,4 @@ extension RestaurantProfileViewController: UICollectionViewDelegate, UICollectio
         
     }
     
-}   // #285
+}   // #249
