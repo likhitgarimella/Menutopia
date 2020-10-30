@@ -738,6 +738,7 @@
                         <outlet property="openhoursOutlet" destination="dzC-p3-sPP" id="32x-1O-Kpu"/>
                         <outlet property="phoneOutlet" destination="Jtn-z3-Dya" id="al9-yQ-OhY"/>
                         <outlet property="profileCollectionView" destination="Llt-ud-kMu" id="ge0-eP-lbn"/>
+                        <outlet property="profilePic" destination="1Va-up-Uqs" id="j1z-YF-vBW"/>
                         <outlet property="restaurantNameLabel" destination="NFl-nC-IXE" id="Hez-76-m8R"/>
                     </connections>
                 </viewController>

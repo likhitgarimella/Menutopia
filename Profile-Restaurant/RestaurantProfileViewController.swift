@@ -10,6 +10,7 @@ import UIKit
 
 class RestaurantProfileViewController: UIViewController {
     
+    @IBOutlet var profilePic: UIImageView!
     @IBOutlet var restaurantNameLabel: UILabel!
     
     @IBOutlet var editProfile: UIButton!
@@ -65,6 +66,9 @@ class RestaurantProfileViewController: UIViewController {
         cityStateOutlet.isHidden = false
         phoneOutlet.isHidden = false
         openhoursOutlet.isHidden = false
+        profilePic.isHidden = false
+        editProfile.isHidden = false
+        logout.isHidden = false
         
     }
     
@@ -77,10 +81,13 @@ class RestaurantProfileViewController: UIViewController {
     
     func Default() {
         
+        profilePic.isHidden = true
         addressOutlet.isHidden = true
         cityStateOutlet.isHidden = true
         phoneOutlet.isHidden = true
         openhoursOutlet.isHidden = true
+        editProfile.isHidden = true
+        logout.isHidden = true
         
     }
     
@@ -265,4 +272,4 @@ extension RestaurantProfileViewController: UICollectionViewDelegate, UICollectio
         
     }
     
-}   // #269
+}   // #276
