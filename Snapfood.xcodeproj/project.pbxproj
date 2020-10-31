@@ -213,6 +213,7 @@
 		02697C16254BF4320099A960 /* Explore-User */ = {
 			isa = PBXGroup;
 			children = (
+				0237701B2525FC9300CC3F32 /* FeedViewController.swift */,
 			);
 			path = "Explore-User";
 			sourceTree = "<group>";
@@ -223,7 +224,7 @@
 				025C112E2505833500A1E130 /* Fonts */,
 				027510E92503D1B800BF7987 /* Snapfood */,
 				0259A0912509E1D500C567A6 /* Set-1 */,
-				02FA637A250D63A200703E29 /* Set-2 */,
+				02FA637A250D63A200703E29 /* Segments */,
 				0266B7152529BB580058BE7E /* Post-Restaurant */,
 				02B6067E2531EA50009987CF /* Explore-Restaurant */,
 				029F0BA42533595000C6C567 /* Profile-Restaurant */,
@@ -279,15 +280,14 @@
 			path = "Explore-Restaurant";
 			sourceTree = "<group>";
 		};
-		02FA637A250D63A200703E29 /* Set-2 */ = {
+		02FA637A250D63A200703E29 /* Segments */ = {
 			isa = PBXGroup;
 			children = (
-				0237701B2525FC9300CC3F32 /* FeedViewController.swift */,
 				0237701E2525FCE300CC3F32 /* PostViewController.swift */,
 				023770212525FD0400CC3F32 /* DiscoverViewController.swift */,
 				02697BFC254BC8900099A960 /* ProfileViewController.swift */,
 			);
-			path = "Set-2";
+			path = Segments;
 			sourceTree = "<group>";
 		};
 		31A2D91CB99F3D3085B6B20A /* Pods */ = {
