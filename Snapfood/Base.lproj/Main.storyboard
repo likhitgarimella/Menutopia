@@ -600,7 +600,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select-profile-pic" translatesAutoresizingMaskIntoConstraints="NO" id="1Va-up-Uqs">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rest-prof-pic-2" translatesAutoresizingMaskIntoConstraints="NO" id="1Va-up-Uqs">
                                 <rect key="frame" x="20" y="56" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="5M1-e9-rJZ"/>
@@ -621,7 +621,7 @@
                                     <constraint firstAttribute="width" constant="160" id="lyi-Jy-ArB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
-                                <state key="normal" title="Edit Profile">
+                                <state key="normal" title="- Edit Profile -">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -1379,7 +1379,7 @@
                                 <color key="textColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select-profile-pic" translatesAutoresizingMaskIntoConstraints="NO" id="lBX-pN-vdR">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-prof-pic" translatesAutoresizingMaskIntoConstraints="NO" id="lBX-pN-vdR">
                                 <rect key="frame" x="20" y="38" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Hby-Ct-ena"/>
@@ -1401,7 +1401,7 @@
                                     <constraint firstAttribute="width" constant="160" id="MQl-A1-dwJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
-                                <state key="normal" title="Edit Profile">
+                                <state key="normal" title="- Edit Profile -">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -1440,6 +1440,11 @@
                                     <constraint firstAttribute="width" constant="345" id="hUe-5E-Nud"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="1Tj-Yy-Na5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OWo-FL-h4F"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1470,9 +1475,11 @@
                     <navigationItem key="navigationItem" id="0sh-8m-lzi"/>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="1Tj-Yy-Na5" id="xTy-bf-TZc"/>
                         <outlet property="bioOutlet" destination="J5p-4s-jKD" id="p7p-qx-eJp"/>
                         <outlet property="editProfile" destination="yBW-6P-8dI" id="PRn-uO-IfU"/>
                         <outlet property="logout" destination="TKQ-zD-Ml6" id="Lsb-tg-qR1"/>
+                        <outlet property="nothingToShow" destination="Gpp-1d-AoX" id="OjU-wo-Dyt"/>
                         <outlet property="profileCollectionView" destination="6AY-Sk-TDj" id="oDB-s1-rUf"/>
                         <outlet property="profilePic" destination="lBX-pN-vdR" id="i10-tO-qem"/>
                         <outlet property="userNameLabel" destination="4Bs-ak-t5a" id="KK4-dh-TNl"/>
@@ -1496,6 +1503,7 @@
         <image name="login" width="345" height="264"/>
         <image name="menu" width="28" height="28"/>
         <image name="plus" width="24" height="24"/>
+        <image name="rest-prof-pic-2" width="100" height="100"/>
         <image name="restaurant" width="345" height="261"/>
         <image name="select-profile-pic" width="100" height="100"/>
         <image name="select-signup" width="345" height="309"/>
@@ -1503,6 +1511,7 @@
         <image name="sponsor" width="84" height="19"/>
         <image name="sponsor-img" width="345" height="291"/>
         <image name="user" width="345" height="224"/>
+        <image name="user-prof-pic" width="103" height="102"/>
         <image name="users" width="24" height="20"/>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

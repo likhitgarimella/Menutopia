@@ -19,6 +19,10 @@ class UserProfileViewController: UIViewController {
     
     @IBOutlet var bioOutlet: UIButton!
     
+    @IBOutlet var nothingToShow: UIImageView!
+    
+    @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
+    
     var user: AppUser? {
         didSet {
             updateView2()
@@ -41,6 +45,9 @@ class UserProfileViewController: UIViewController {
     
     func fetchMyPosts() {
         
+        // start when loadPosts func starts
+        activityIndicatorView.startAnimating()
+        
         guard let currentUser = Api.UserDet.CURRENT_USER else {
             return
         }
@@ -51,6 +58,9 @@ class UserProfileViewController: UIViewController {
                 post in
                 // print(post.id)
                 self.posts.append(post)
+                /// stop before view reloads data
+                self.activityIndicatorView.stopAnimating()
+                self.activityIndicatorView.hidesWhenStopped = true
                 self.profileCollectionView.reloadData()
             })
         })
@@ -83,9 +93,21 @@ class UserProfileViewController: UIViewController {
         logout.isHidden = true
         
     }
+    
+    func Conditions() {
+        
+        // stop act ind for empty coll view
+        if posts.count == 0 {
+            activityIndicatorView.stopAnimating()
+            activityIndicatorView.hidesWhenStopped = true
+        }
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        activityIndicatorView.center = self.view.center
         
         fetchUser()
         
@@ -94,6 +116,8 @@ class UserProfileViewController: UIViewController {
         fetchMyPosts()
         
         Default()
+        
+        Conditions()
         
     }
     
@@ -114,4 +138,4 @@ class UserProfileViewController: UIViewController {
         
     }
     
-}   // #118
+}   // #142

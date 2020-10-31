@@ -31,7 +31,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irl-0R-53R">
                         <rect key="frame" x="4" y="4" width="342" height="486"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="TJV-DX-ywO">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rest-prof-pic" translatesAutoresizingMaskIntoConstraints="NO" id="TJV-DX-ywO">
                                 <rect key="frame" x="10" y="10" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5ZU-IY-ERi"/>
@@ -199,6 +199,6 @@
     </objects>
     <resources>
         <image name="likeOff" width="20" height="21"/>
-        <image name="placeholder-image" width="200" height="200"/>
+        <image name="rest-prof-pic" width="50" height="50"/>
     </resources>
 </document>

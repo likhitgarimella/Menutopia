@@ -101,6 +101,16 @@ class RestaurantProfileViewController: UIViewController {
         
     }
     
+    func Conditions() {
+        
+        // stop act ind for empty coll view
+        if posts.count == 0 {
+            activityIndicatorView.stopAnimating()
+            activityIndicatorView.hidesWhenStopped = true
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -119,6 +129,8 @@ class RestaurantProfileViewController: UIViewController {
         fetchMyPosts()
         
         Default()
+        
+        Conditions()
         
     }
     
@@ -284,4 +296,4 @@ extension RestaurantProfileViewController: UICollectionViewDelegate, UICollectio
         
     }
     
-}   // #288
+}   // #300
