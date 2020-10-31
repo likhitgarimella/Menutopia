@@ -12,7 +12,7 @@ import Foundation
 
 struct Api {
     
-    // MARK:- User
+    // MARK:- Firebase User
     
     /// Firebase node - Restaurants & Users
     static var UserDet = UserApi()
@@ -37,4 +37,9 @@ struct Api {
     /// Firebase node - My-User-Posts
     static var MyUserPosts = MyUserPostsApi()
     
-}   // #41
+    // MARK:- User Panel
+    
+    static var Follow = FollowApi()
+    static var Feed = FeedApi()
+    
+}   // #46

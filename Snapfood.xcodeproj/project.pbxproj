@@ -35,6 +35,8 @@
 		025C11482505836500A1E130 /* SF-Pro-Rounded-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 025C113A2505836500A1E130 /* SF-Pro-Rounded-Ultralight.otf */; };
 		025C11492505836500A1E130 /* SF-Pro-Text-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 025C113B2505836500A1E130 /* SF-Pro-Text-ThinItalic.otf */; };
 		025C114A2505836500A1E130 /* SF-Pro-Rounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 025C113C2505836500A1E130 /* SF-Pro-Rounded-Light.otf */; };
+		025DDE60254D9095000F561B /* FollowApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DDE5F254D9095000F561B /* FollowApi.swift */; };
+		025DDE64254D90C0000F561B /* FeedApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DDE63254D90C0000F561B /* FeedApi.swift */; };
 		0266B7172529BBFE0058BE7E /* MealPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266B7162529BBFE0058BE7E /* MealPostModel.swift */; };
 		0266B71E2529BF2A0058BE7E /* RestaurantPostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266B71D2529BF2A0058BE7E /* RestaurantPostApi.swift */; };
 		0266B7212529BF750058BE7E /* MyRestaurantPostsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266B7202529BF750058BE7E /* MyRestaurantPostsApi.swift */; };
@@ -90,6 +92,8 @@
 		025C113A2505836500A1E130 /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
 		025C113B2505836500A1E130 /* SF-Pro-Text-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-ThinItalic.otf"; sourceTree = "<group>"; };
 		025C113C2505836500A1E130 /* SF-Pro-Rounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Light.otf"; sourceTree = "<group>"; };
+		025DDE5F254D9095000F561B /* FollowApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowApi.swift; sourceTree = "<group>"; };
+		025DDE63254D90C0000F561B /* FeedApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedApi.swift; sourceTree = "<group>"; };
 		0266B7162529BBFE0058BE7E /* MealPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPostModel.swift; sourceTree = "<group>"; };
 		0266B71D2529BF2A0058BE7E /* RestaurantPostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPostApi.swift; sourceTree = "<group>"; };
 		0266B7202529BF750058BE7E /* MyRestaurantPostsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRestaurantPostsApi.swift; sourceTree = "<group>"; };
@@ -142,8 +146,8 @@
 				02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */,
 				021210CC2509C1DA0062DB29 /* RestaurantSignupViewController.swift */,
 				021210CE2509C2710062DB29 /* UserSignupViewController.swift */,
-				0259A0962509E50200C567A6 /* Api.swift */,
 				0259A0982509E5A900C567A6 /* AuthService.swift */,
+				0259A0962509E50200C567A6 /* Api.swift */,
 				0259A0922509E2B900C567A6 /* AppUser.swift */,
 				0259A0942509E44100C567A6 /* UserApi.swift */,
 			);
@@ -192,6 +196,8 @@
 				0266B7292529EB800058BE7E /* UserPostApi.swift */,
 				0266B72C2529EB9C0058BE7E /* MyUserPostsApi.swift */,
 				0266B72F2529EDCB0058BE7E /* HelperServiceUser.swift */,
+				025DDE5F254D9095000F561B /* FollowApi.swift */,
+				025DDE63254D90C0000F561B /* FeedApi.swift */,
 			);
 			path = "Post-User";
 			sourceTree = "<group>";
@@ -439,6 +445,7 @@
 				0259A0992509E5AA00C567A6 /* AuthService.swift in Sources */,
 				027510EF2503D1B800BF7987 /* ViewController.swift in Sources */,
 				0266B72D2529EB9C0058BE7E /* MyUserPostsApi.swift in Sources */,
+				025DDE64254D90C0000F561B /* FeedApi.swift in Sources */,
 				027510EB2503D1B800BF7987 /* AppDelegate.swift in Sources */,
 				0259A0972509E50200C567A6 /* Api.swift in Sources */,
 				023770252525FD2500CC3F32 /* RestaurantProfileViewController.swift in Sources */,
@@ -450,6 +457,7 @@
 				0237701C2525FC9300CC3F32 /* FeedViewController.swift in Sources */,
 				0266B71E2529BF2A0058BE7E /* RestaurantPostApi.swift in Sources */,
 				0266B7272529EB570058BE7E /* UserPostModel.swift in Sources */,
+				025DDE60254D9095000F561B /* FollowApi.swift in Sources */,
 				0266B7242529BF960058BE7E /* HelperServiceRestaurant.swift in Sources */,
 				0237701F2525FCE300CC3F32 /* PostViewController.swift in Sources */,
 				023770222525FD0400CC3F32 /* DiscoverViewController.swift in Sources */,
