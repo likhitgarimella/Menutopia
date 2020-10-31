@@ -21,6 +21,10 @@ class RestaurantProfileViewController: UIViewController {
     @IBOutlet var phoneOutlet: UIButton!
     @IBOutlet var openhoursOutlet: UIButton!
     
+    @IBOutlet var nothingToShow: UIImageView!
+    
+    @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
+    
     var restaurant: AppUser? {
         didSet {
             updateView1()
@@ -43,6 +47,9 @@ class RestaurantProfileViewController: UIViewController {
     
     func fetchMyPosts() {
         
+        // start when loadPosts func starts
+        activityIndicatorView.startAnimating()
+        
         guard let currentUser = Api.UserDet.CURRENT_USER else {
             return
         }
@@ -53,6 +60,9 @@ class RestaurantProfileViewController: UIViewController {
                 post in
                 // print(post.id)
                 self.posts.append(post)
+                /// stop before view reloads data
+                self.activityIndicatorView.stopAnimating()
+                self.activityIndicatorView.hidesWhenStopped = true
                 self.profileCollectionView.reloadData()
             })
         })
@@ -93,6 +103,8 @@ class RestaurantProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        activityIndicatorView.center = self.view.center
         
         // Register CollectionViewCell 'PhotoCollectionViewCell' here
         profileCollectionView.register(UINib.init(nibName: "PhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PhotoCollectionViewCell")
@@ -272,4 +284,4 @@ extension RestaurantProfileViewController: UICollectionViewDelegate, UICollectio
         
     }
     
-}   // #276
+}   // #288

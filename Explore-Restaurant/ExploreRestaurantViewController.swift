@@ -35,7 +35,7 @@ class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegat
             self.fetchUser(uid: postId, completed: {
                 self.restaurantPosts.append(post)
                 print(self.restaurantPosts)
-                /// stop before tablew view reloads data
+                /// stop before view reloads data
                 self.activityIndicatorView.stopAnimating()
                 self.activityIndicatorView.hidesWhenStopped = true
                 self.restaurantFeedCollectionView.reloadData()
