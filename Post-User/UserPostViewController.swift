@@ -106,24 +106,34 @@ class UserPostViewController: UIViewController, UITextViewDelegate {
     
     @IBAction func shareButton(_ sender: UIButton) {
         
+        // hud
         hud1.show(in: self.view)
+        
+        // Creating a timestamp
+        let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
         
         // selected image(imageSelected) should be from selectedImage
         guard let imageSelected = self.selectedImage else {
             print("Avatar is nil")
             hud1.indicatorView = nil    // remove indicator
-            hud1.textLabel.text = "Profile image can't be empty"
+            hud1.textLabel.text = "Empty image"
             hud1.dismiss(afterDelay: 2.0, animated: true)
             return
         }
+        
         // image data from selected image in jpeg format
         guard let imageData = imageSelected.jpegData(compressionQuality: 0.4) else {
             return
         }
-        HelperService.uploadDataToServer(data: imageData, caption: captionTextView.text!, onSuccess: {
+        
+        // Upload data
+        HelperServiceUser.uploadDataToServer(data: imageData, caption: captionTextView.text!, timestamp: Double(Int(truncating: timestamp)), onSuccess: {
             self.clean()
+            // dismiss hud
+            self.hud1.dismiss()
             self.tabBarController?.selectedIndex = 0
         })
+        
     }
     
     // Reset function
@@ -160,4 +170,4 @@ extension UserPostViewController: UIImagePickerControllerDelegate, UINavigationC
         dismiss(animated: true, completion: nil)
     }
     
-}   // #164
+}   // #174
