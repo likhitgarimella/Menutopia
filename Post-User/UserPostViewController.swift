@@ -104,4 +104,44 @@ class UserPostViewController: UIViewController, UITextViewDelegate {
         
     }
     
-}   // #108
+    @IBAction func shareButton(_ sender: UIButton) {
+        
+        hud1.show(in: self.view)
+        
+        // selected image(imageSelected) should be from selectedImage
+        guard let imageSelected = self.selectedImage else {
+            print("Avatar is nil")
+            hud1.indicatorView = nil    // remove indicator
+            hud1.textLabel.text = "Profile image can't be empty"
+            hud1.dismiss(afterDelay: 2.0, animated: true)
+            return
+        }
+        // image data from selected image in jpeg format
+        guard let imageData = imageSelected.jpegData(compressionQuality: 0.4) else {
+            return
+        }
+        HelperService.uploadDataToServer(data: imageData, caption: captionTextView.text!, onSuccess: {
+            self.clean()
+            self.tabBarController?.selectedIndex = 0
+        })
+    }
+    
+    // Reset function
+    func clean() {
+        self.photo.image = UIImage(named: "Placeholder-image")
+        // selected image should be blank again, after we push the post to db
+        self.selectedImage = nil
+        self.captionTextView.text = "Write a caption..."
+        // setting back text view text color to light gray, so that delegate methods work
+        self.captionTextView.textColor = UIColor.lightGray
+    }
+    
+    @IBAction func remove(_ sender: UIBarButtonItem) {
+        
+        clean()
+        // we need to test for bad inputs again, after clearing the inputs
+        handlePost()
+        
+    }
+    
+}   // #148

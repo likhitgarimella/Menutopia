@@ -1165,6 +1165,9 @@
                                     <constraint firstAttribute="height" constant="23" id="H97-4d-hCn"/>
                                 </constraints>
                                 <state key="normal" image="delete"/>
+                                <connections>
+                                    <action selector="remove:" destination="SRr-Td-UoL" eventType="touchUpInside" id="MeR-vR-U1a"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Post!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4E1-Hf-gv2">
                                 <rect key="frame" x="20" y="12" width="124" height="28"/>
@@ -1182,6 +1185,9 @@
                                 <state key="normal" title="Share">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="shareButton:" destination="SRr-Td-UoL" eventType="touchUpInside" id="vQ4-f1-XI6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FKX-Hi-dY7"/>
