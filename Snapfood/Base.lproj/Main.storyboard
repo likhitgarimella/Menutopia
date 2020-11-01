@@ -442,7 +442,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgb-SE-Gfg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5361" y="-1217"/>
+            <point key="canvasLocation" x="5361" y="-1463"/>
         </scene>
         <!--Post-->
         <scene sceneID="iOj-ku-o80">
@@ -521,14 +521,59 @@
                     <view key="view" contentMode="scaleToFill" id="0ov-eL-5Cv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="f3u-uF-FXd">
+                                <rect key="frame" x="20" y="24" width="374" height="32"/>
+                                <segments>
+                                    <segment title="Restaurants"/>
+                                    <segment title="Users"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="switchSegment:" destination="2jz-ZB-rZK" eventType="valueChanged" id="m0k-M5-JbX"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZT-Lp-Pd2">
+                                <rect key="frame" x="0.0" y="59" width="414" height="628"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="PA0-TK-aOJ" kind="embed" id="KAv-q1-QbR"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O90-2l-Qxv">
+                                <rect key="frame" x="0.0" y="59" width="414" height="628"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="OGD-Y4-6Eb" kind="embed" id="TWQ-M6-nBg"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="niD-im-8dS"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O90-2l-Qxv" firstAttribute="leading" secondItem="niD-im-8dS" secondAttribute="leading" id="0eE-cQ-4q4"/>
+                            <constraint firstItem="GZT-Lp-Pd2" firstAttribute="top" secondItem="f3u-uF-FXd" secondAttribute="bottom" constant="4" id="18z-kn-2ti"/>
+                            <constraint firstItem="f3u-uF-FXd" firstAttribute="top" secondItem="niD-im-8dS" secondAttribute="top" constant="24" id="1ll-bm-yO9"/>
+                            <constraint firstItem="f3u-uF-FXd" firstAttribute="leading" secondItem="niD-im-8dS" secondAttribute="leading" constant="20" id="6oB-9E-WkF"/>
+                            <constraint firstItem="O90-2l-Qxv" firstAttribute="trailing" secondItem="niD-im-8dS" secondAttribute="trailing" id="Kg0-yL-vbp"/>
+                            <constraint firstItem="O90-2l-Qxv" firstAttribute="bottom" secondItem="niD-im-8dS" secondAttribute="bottom" id="LE1-SH-oPa"/>
+                            <constraint firstItem="O90-2l-Qxv" firstAttribute="top" secondItem="f3u-uF-FXd" secondAttribute="bottom" constant="4" id="RWI-9o-eWV"/>
+                            <constraint firstItem="niD-im-8dS" firstAttribute="trailing" secondItem="f3u-uF-FXd" secondAttribute="trailing" constant="20" id="YDg-M8-UyA"/>
+                            <constraint firstItem="GZT-Lp-Pd2" firstAttribute="bottom" secondItem="niD-im-8dS" secondAttribute="bottom" id="jTN-vl-bit"/>
+                            <constraint firstItem="GZT-Lp-Pd2" firstAttribute="trailing" secondItem="niD-im-8dS" secondAttribute="trailing" id="w6w-jh-3Ya"/>
+                            <constraint firstItem="GZT-Lp-Pd2" firstAttribute="leading" secondItem="niD-im-8dS" secondAttribute="leading" id="xZO-vw-4Wr"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Discover" image="compass" id="5FG-r6-h9A"/>
+                    <connections>
+                        <outlet property="discoverRestaurants" destination="O90-2l-Qxv" id="rye-f8-QA7"/>
+                        <outlet property="discoverUsers" destination="GZT-Lp-Pd2" id="dJv-tn-jSg"/>
+                        <outlet property="segment" destination="f3u-uF-FXd" id="Ipe-qN-ayQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXt-kL-Kcw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5361" y="558"/>
+            <point key="canvasLocation" x="5361" y="1277"/>
         </scene>
         <!--Profile-->
         <scene sceneID="1w0-Ko-8uE">
@@ -547,7 +592,6 @@
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="switchSegment:" destination="WXK-mH-DWl" eventType="valueChanged" id="cD3-f3-jU7"/>
-                                    <action selector="switchSegment:" destination="gBb-HN-xLE" eventType="valueChanged" id="siu-5l-5TO"/>
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjg-N9-J3h">
@@ -590,7 +634,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i4U-y9-PUs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3822" y="1022"/>
+            <point key="canvasLocation" x="3759" y="1278"/>
         </scene>
         <!--Restaurant Profile View Controller-->
         <scene sceneID="L8q-7K-fON">
@@ -760,7 +804,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ew-bQ-J9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3821.739130434783" y="1864.4021739130437"/>
+            <point key="canvasLocation" x="3822" y="2738"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="8UT-ty-ryi">
@@ -1488,7 +1532,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dv-np-Yfr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5360.8695652173919" y="1863.5869565217392"/>
+            <point key="canvasLocation" x="5361" y="2738"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="u91-EM-9GA">
+            <objects>
+                <viewController id="PA0-TK-aOJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t25-0y-Yhg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="736"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rm7-Dt-gmD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6438" y="1795"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zmk-oz-uBI">
+            <objects>
+                <viewController id="OGD-Y4-6Eb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BIT-MD-OJa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="736"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZY8-Fr-pcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6438" y="982"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -1521,6 +1595,12 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
