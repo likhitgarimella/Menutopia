@@ -41,7 +41,7 @@ class UserPostViewController: UIViewController, UITextViewDelegate {
     
     func Properties() {
         
-        shareOutlet.layer.cornerRadius = 6
+        shareOutlet.layer.cornerRadius = 20
         
         captionTextView.backgroundColor = UIColor.white
         // text view delegate
@@ -131,14 +131,14 @@ class UserPostViewController: UIViewController, UITextViewDelegate {
             self.clean()
             // dismiss hud
             self.hud1.dismiss()
-            self.tabBarController?.selectedIndex = 0
+            self.tabBarController?.selectedIndex = 1
         })
         
     }
     
     // Reset function
     func clean() {
-        self.photo.image = UIImage(named: "Placeholder-image")
+        self.photo.image = UIImage(named: "placeholder-image")
         // selected image should be blank again, after we push the post to db
         self.selectedImage = nil
         self.captionTextView.text = "Write a caption..."
