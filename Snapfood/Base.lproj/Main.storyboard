@@ -1167,20 +1167,38 @@
                                 <state key="normal" image="delete"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Post!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4E1-Hf-gv2">
-                                <rect key="frame" x="20.000000000000007" y="12" width="127.66666666666669" height="28"/>
+                                <rect key="frame" x="20" y="12" width="124" height="28"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ou7-5i-MTj">
+                                <rect key="frame" x="20" y="451" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.37647058823529411" green="0.45490196078431372" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KJg-0X-IR9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButton:" destination="VLy-Rl-BW3" eventType="touchUpInside" id="skP-ns-Rnb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FKX-Hi-dY7"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="FKX-Hi-dY7" firstAttribute="bottom" secondItem="ou7-5i-MTj" secondAttribute="bottom" constant="309" id="0jr-tA-BvH"/>
                             <constraint firstItem="4E1-Hf-gv2" firstAttribute="leading" secondItem="FKX-Hi-dY7" secondAttribute="leading" constant="20" id="Cum-OY-hdH"/>
                             <constraint firstItem="FKX-Hi-dY7" firstAttribute="trailing" secondItem="VEQ-TK-aGO" secondAttribute="trailing" constant="20" id="FJB-RY-Nta"/>
+                            <constraint firstItem="FKX-Hi-dY7" firstAttribute="right" secondItem="ou7-5i-MTj" secondAttribute="right" constant="20" id="H7F-DO-L1M"/>
                             <constraint firstItem="4E1-Hf-gv2" firstAttribute="top" secondItem="FKX-Hi-dY7" secondAttribute="top" constant="12" id="JLV-ij-G8e"/>
                             <constraint firstItem="8hI-Wo-Lni" firstAttribute="top" secondItem="4E1-Hf-gv2" secondAttribute="bottom" constant="20" id="Zmz-OS-LJS"/>
                             <constraint firstItem="8hI-Wo-Lni" firstAttribute="trailing" secondItem="FKX-Hi-dY7" secondAttribute="trailing" id="bxE-hd-4Em"/>
+                            <constraint firstItem="VEQ-TK-aGO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4E1-Hf-gv2" secondAttribute="trailing" constant="8" symbolic="YES" id="fXC-Et-iH2"/>
+                            <constraint firstItem="ou7-5i-MTj" firstAttribute="left" secondItem="FKX-Hi-dY7" secondAttribute="left" constant="20" id="kLg-fW-Grr"/>
                             <constraint firstItem="8hI-Wo-Lni" firstAttribute="leading" secondItem="FKX-Hi-dY7" secondAttribute="leading" id="nLI-r2-hrT"/>
                             <constraint firstItem="VEQ-TK-aGO" firstAttribute="centerY" secondItem="4E1-Hf-gv2" secondAttribute="centerY" id="uX5-dM-tCE"/>
                         </constraints>
