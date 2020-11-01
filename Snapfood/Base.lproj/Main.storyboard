@@ -1182,9 +1182,6 @@
                                 <state key="normal" title="Share">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="submitButton:" destination="VLy-Rl-BW3" eventType="touchUpInside" id="skP-ns-Rnb"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FKX-Hi-dY7"/>
@@ -1204,6 +1201,12 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="800"/>
+                    <connections>
+                        <outlet property="captionTextView" destination="5hj-Ba-hlC" id="HOb-Wp-ML7"/>
+                        <outlet property="photo" destination="c6H-FR-3IG" id="rem-bY-TCr"/>
+                        <outlet property="removeOutlet" destination="VEQ-TK-aGO" id="SkW-gF-nw4"/>
+                        <outlet property="shareOutlet" destination="ou7-5i-MTj" id="9lV-EX-GN5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXJ-hb-IwF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
