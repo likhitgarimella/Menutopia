@@ -144,4 +144,20 @@ class UserPostViewController: UIViewController, UITextViewDelegate {
         
     }
     
-}   // #148
+}
+
+extension UserPostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        // Selected image to display it in our profile image
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            // Store this img in an instance variable
+            selectedImage = image
+            // set profile image's imageView to selected image
+            photo.image = image
+        }
+        print("Image selected from library")
+        dismiss(animated: true, completion: nil)
+    }
+    
+}   // #164
