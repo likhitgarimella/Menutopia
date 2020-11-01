@@ -1128,8 +1128,50 @@
                     <view key="view" contentMode="scaleToFill" id="58N-eh-PTH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hI-Wo-Lni">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="c6H-FR-3IG">
+                                        <rect key="frame" x="8" y="14" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="67v-Ub-KPi"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hj-Ba-hlC">
+                                        <rect key="frame" x="136" y="14" width="270" height="120"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="5hj-Ba-hlC" secondAttribute="bottom" constant="14" id="6vK-Zo-nAO"/>
+                                    <constraint firstAttribute="height" constant="148" id="W6A-98-dwq"/>
+                                    <constraint firstItem="5hj-Ba-hlC" firstAttribute="top" secondItem="8hI-Wo-Lni" secondAttribute="top" constant="14" id="WDr-XY-xE9"/>
+                                    <constraint firstAttribute="bottom" secondItem="c6H-FR-3IG" secondAttribute="bottom" constant="14" id="aLy-Br-ewj"/>
+                                    <constraint firstItem="c6H-FR-3IG" firstAttribute="top" secondItem="8hI-Wo-Lni" secondAttribute="top" constant="14" id="mfS-HR-wWm"/>
+                                    <constraint firstItem="5hj-Ba-hlC" firstAttribute="leading" secondItem="c6H-FR-3IG" secondAttribute="trailing" constant="8" id="omS-aS-M9c"/>
+                                    <constraint firstAttribute="trailing" secondItem="5hj-Ba-hlC" secondAttribute="trailing" constant="8" id="sZ2-1L-t00"/>
+                                    <constraint firstItem="c6H-FR-3IG" firstAttribute="leading" secondItem="8hI-Wo-Lni" secondAttribute="leading" constant="8" id="xDQ-cy-NII"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEQ-TK-aGO">
+                                <rect key="frame" x="196.66666666666666" y="208" width="21" height="23"/>
+                                <state key="normal" image="delete"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="FKX-Hi-dY7"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VEQ-TK-aGO" firstAttribute="centerX" secondItem="58N-eh-PTH" secondAttribute="centerX" id="5Eg-LO-j9W"/>
+                            <constraint firstItem="VEQ-TK-aGO" firstAttribute="top" secondItem="8hI-Wo-Lni" secondAttribute="bottom" constant="60" id="Kfc-kb-yVf"/>
+                            <constraint firstItem="8hI-Wo-Lni" firstAttribute="trailing" secondItem="FKX-Hi-dY7" secondAttribute="trailing" id="bxE-hd-4Em"/>
+                            <constraint firstItem="8hI-Wo-Lni" firstAttribute="leading" secondItem="FKX-Hi-dY7" secondAttribute="leading" id="nLI-r2-hrT"/>
+                            <constraint firstItem="8hI-Wo-Lni" firstAttribute="top" secondItem="FKX-Hi-dY7" secondAttribute="top" id="zTB-9X-2lT"/>
+                        </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="800"/>
                 </viewController>
@@ -1572,10 +1614,12 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="compass" width="22" height="22"/>
+        <image name="delete" width="21" height="23"/>
         <image name="down-arrow" width="36" height="36"/>
         <image name="image-post" width="20" height="20"/>
         <image name="login" width="345" height="264"/>
         <image name="menu" width="28" height="28"/>
+        <image name="placeholder-image" width="200" height="200"/>
         <image name="plus" width="24" height="24"/>
         <image name="rest-prof-pic-2" width="100" height="100"/>
         <image name="restaurant" width="345" height="261"/>
@@ -1593,14 +1637,14 @@
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
