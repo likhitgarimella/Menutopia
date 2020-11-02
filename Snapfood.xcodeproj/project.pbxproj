@@ -61,6 +61,8 @@
 		02B6067C2531A894009987CF /* SponsorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6067B2531A894009987CF /* SponsorViewController.swift */; };
 		02B6068325320ABD009987CF /* RestaurantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6068125320ABD009987CF /* RestaurantCollectionViewCell.swift */; };
 		02B6068425320ABD009987CF /* RestaurantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B6068225320ABD009987CF /* RestaurantCollectionViewCell.xib */; };
+		02C08899254FF85400C7FB5A /* DiscoverRestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C08898254FF85400C7FB5A /* DiscoverRestaurantsViewController.swift */; };
+		02C0889C254FF87000C7FB5A /* DiscoverPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0889B254FF87000C7FB5A /* DiscoverPeopleViewController.swift */; };
 		02FA637C250D63ED00703E29 /* ExploreRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA637B250D63ED00703E29 /* ExploreRestaurantViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +122,8 @@
 		02B6067B2531A894009987CF /* SponsorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorViewController.swift; sourceTree = "<group>"; };
 		02B6068125320ABD009987CF /* RestaurantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewCell.swift; sourceTree = "<group>"; };
 		02B6068225320ABD009987CF /* RestaurantCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantCollectionViewCell.xib; sourceTree = "<group>"; };
+		02C08898254FF85400C7FB5A /* DiscoverRestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRestaurantsViewController.swift; sourceTree = "<group>"; };
+		02C0889B254FF87000C7FB5A /* DiscoverPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleViewController.swift; sourceTree = "<group>"; };
 		02FA637B250D63ED00703E29 /* ExploreRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreRestaurantViewController.swift; sourceTree = "<group>"; };
 		0568DE127CA574181615345D /* Pods-Snapfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapfood.release.xcconfig"; path = "Target Support Files/Pods-Snapfood/Pods-Snapfood.release.xcconfig"; sourceTree = "<group>"; };
 		7BCFAB7B393D3DA1D527E783 /* Pods_Snapfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,9 +232,11 @@
 				0266B7152529BB580058BE7E /* Post-Restaurant */,
 				02B6067E2531EA50009987CF /* Explore-Restaurant */,
 				029F0BA42533595000C6C567 /* Profile-Restaurant */,
+				02C08895254FF76400C7FB5A /* Discover-Restaurants */,
 				0266B71B2529BDE90058BE7E /* Post-User */,
 				02697C16254BF4320099A960 /* Explore-User */,
 				02697C15254BF40E0099A960 /* Profile-User */,
+				02C08896254FF77200C7FB5A /* Discover-People */,
 				027510E82503D1B800BF7987 /* Products */,
 				31A2D91CB99F3D3085B6B20A /* Pods */,
 				DA21E98B7D56C7C6A2D74B98 /* Frameworks */,
@@ -278,6 +284,22 @@
 				02B6068125320ABD009987CF /* RestaurantCollectionViewCell.swift */,
 			);
 			path = "Explore-Restaurant";
+			sourceTree = "<group>";
+		};
+		02C08895254FF76400C7FB5A /* Discover-Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				02C08898254FF85400C7FB5A /* DiscoverRestaurantsViewController.swift */,
+			);
+			path = "Discover-Restaurants";
+			sourceTree = "<group>";
+		};
+		02C08896254FF77200C7FB5A /* Discover-People */ = {
+			isa = PBXGroup;
+			children = (
+				02C0889B254FF87000C7FB5A /* DiscoverPeopleViewController.swift */,
+			);
+			path = "Discover-People";
 			sourceTree = "<group>";
 		};
 		02FA637A250D63A200703E29 /* Segments */ = {
@@ -448,6 +470,7 @@
 				025DDE64254D90C0000F561B /* FeedApi.swift in Sources */,
 				027510EB2503D1B800BF7987 /* AppDelegate.swift in Sources */,
 				0259A0972509E50200C567A6 /* Api.swift in Sources */,
+				02C08899254FF85400C7FB5A /* DiscoverRestaurantsViewController.swift in Sources */,
 				023770252525FD2500CC3F32 /* RestaurantProfileViewController.swift in Sources */,
 				02697C18254BF4A10099A960 /* UserProfileViewController.swift in Sources */,
 				02B6067C2531A894009987CF /* SponsorViewController.swift in Sources */,
@@ -462,6 +485,7 @@
 				0237701F2525FCE300CC3F32 /* PostViewController.swift in Sources */,
 				023770222525FD0400CC3F32 /* DiscoverViewController.swift in Sources */,
 				021210CD2509C1DA0062DB29 /* RestaurantSignupViewController.swift in Sources */,
+				02C0889C254FF87000C7FB5A /* DiscoverPeopleViewController.swift in Sources */,
 				0266B7212529BF750058BE7E /* MyRestaurantPostsApi.swift in Sources */,
 				0266B7172529BBFE0058BE7E /* MealPostModel.swift in Sources */,
 				029F0BD32533864900C6C567 /* PhotoCollectionViewCell.swift in Sources */,

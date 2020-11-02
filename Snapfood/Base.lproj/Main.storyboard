@@ -1615,10 +1615,10 @@
             </objects>
             <point key="canvasLocation" x="5361" y="2738"/>
         </scene>
-        <!--View Controller-->
+        <!--Discover People View Controller-->
         <scene sceneID="u91-EM-9GA">
             <objects>
-                <viewController id="PA0-TK-aOJ" sceneMemberID="viewController">
+                <viewController id="PA0-TK-aOJ" customClass="DiscoverPeopleViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t25-0y-Yhg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1700,10 +1700,10 @@
             </objects>
             <point key="canvasLocation" x="6438" y="1795"/>
         </scene>
-        <!--View Controller-->
+        <!--Discover Restaurants View Controller-->
         <scene sceneID="Zmk-oz-uBI">
             <objects>
-                <viewController id="OGD-Y4-6Eb" sceneMemberID="viewController">
+                <viewController id="OGD-Y4-6Eb" customClass="DiscoverRestaurantsViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BIT-MD-OJa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
