@@ -63,6 +63,7 @@
 		02B6068425320ABD009987CF /* RestaurantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B6068225320ABD009987CF /* RestaurantCollectionViewCell.xib */; };
 		02C08899254FF85400C7FB5A /* DiscoverRestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C08898254FF85400C7FB5A /* DiscoverRestaurantsViewController.swift */; };
 		02C0889C254FF87000C7FB5A /* DiscoverPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0889B254FF87000C7FB5A /* DiscoverPeopleViewController.swift */; };
+		02C0889F254FFBF600C7FB5A /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0889E254FFBF600C7FB5A /* PeopleTableViewCell.swift */; };
 		02FA637C250D63ED00703E29 /* ExploreRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA637B250D63ED00703E29 /* ExploreRestaurantViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +125,7 @@
 		02B6068225320ABD009987CF /* RestaurantCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantCollectionViewCell.xib; sourceTree = "<group>"; };
 		02C08898254FF85400C7FB5A /* DiscoverRestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRestaurantsViewController.swift; sourceTree = "<group>"; };
 		02C0889B254FF87000C7FB5A /* DiscoverPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleViewController.swift; sourceTree = "<group>"; };
+		02C0889E254FFBF600C7FB5A /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		02FA637B250D63ED00703E29 /* ExploreRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreRestaurantViewController.swift; sourceTree = "<group>"; };
 		0568DE127CA574181615345D /* Pods-Snapfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapfood.release.xcconfig"; path = "Target Support Files/Pods-Snapfood/Pods-Snapfood.release.xcconfig"; sourceTree = "<group>"; };
 		7BCFAB7B393D3DA1D527E783 /* Pods_Snapfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -298,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				02C0889B254FF87000C7FB5A /* DiscoverPeopleViewController.swift */,
+				02C0889E254FFBF600C7FB5A /* PeopleTableViewCell.swift */,
 			);
 			path = "Discover-People";
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 			files = (
 				02A15A0D2508DA31001B5FAD /* SelectSignupViewController.swift in Sources */,
 				0259A0952509E44100C567A6 /* UserApi.swift in Sources */,
+				02C0889F254FFBF600C7FB5A /* PeopleTableViewCell.swift in Sources */,
 				0259A0932509E2B900C567A6 /* AppUser.swift in Sources */,
 				0259A0992509E5AA00C567A6 /* AuthService.swift in Sources */,
 				027510EF2503D1B800BF7987 /* ViewController.swift in Sources */,

@@ -1629,7 +1629,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PeopleTableViewCell" rowHeight="80" id="izx-uC-US8" customClass="PeopleTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PeopleTableViewCell" rowHeight="80" id="izx-uC-US8" customClass="PeopleTableViewCell" customModule="Snapfood" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="izx-uC-US8" id="LBj-E5-erW">
@@ -1650,7 +1650,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQt-1f-Fm1">
-                                                    <rect key="frame" x="92" y="17" width="42.666666666666657" height="21.666666666666671"/>
+                                                    <rect key="frame" x="92" y="17" width="44.333333333333343" height="21"/>
                                                     <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
                                                     <color key="textColor" red="0.37647058823529411" green="0.45490196078431372" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1666,7 +1666,7 @@
                                                     </state>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDd-6s-fVx">
-                                                    <rect key="frame" x="92" y="43.666666666666664" width="38" height="19.333333333333336"/>
+                                                    <rect key="frame" x="92" y="43.666666666666664" width="39.333333333333343" height="19.333333333333336"/>
                                                     <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -1683,6 +1683,7 @@
                                                 <constraint firstItem="V9b-ip-cEQ" firstAttribute="leading" secondItem="LBj-E5-erW" secondAttribute="leading" constant="20" id="lxT-EH-JGN"/>
                                                 <constraint firstItem="IQt-1f-Fm1" firstAttribute="leading" secondItem="V9b-ip-cEQ" secondAttribute="trailing" constant="12" id="nLM-He-aSY"/>
                                                 <constraint firstAttribute="bottom" secondItem="V9b-ip-cEQ" secondAttribute="bottom" constant="10" id="p0I-PS-OvO"/>
+                                                <constraint firstItem="zFq-dM-tQS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dDd-6s-fVx" secondAttribute="trailing" constant="8" symbolic="YES" id="wkM-qr-oyv"/>
                                                 <constraint firstItem="zFq-dM-tQS" firstAttribute="centerY" secondItem="V9b-ip-cEQ" secondAttribute="centerY" id="xE4-gP-1kb"/>
                                             </constraints>
                                         </tableViewCellContentView>
