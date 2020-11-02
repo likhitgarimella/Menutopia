@@ -1688,6 +1688,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="followButton" destination="zFq-dM-tQS" id="2HI-nE-vEr"/>
+                                            <outlet property="nameLabel" destination="dDd-6s-fVx" id="TJ4-1m-UfD"/>
+                                            <outlet property="usernameLabel" destination="IQt-1f-Fm1" id="Itm-6i-xis"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

@@ -23,6 +23,8 @@ class AppUser {
     
     var id: String?
     
+    var isFollowing: Bool?
+    
 }
 
 extension AppUser {
@@ -48,4 +50,4 @@ extension AppUser {
         
     }
     
-}   // #52
+}   // #54
