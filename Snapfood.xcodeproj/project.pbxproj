@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0172B93A084744908D31BDCB /* Pods_Snapfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCFAB7B393D3DA1D527E783 /* Pods_Snapfood.framework */; };
 		021210CD2509C1DA0062DB29 /* RestaurantSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021210CC2509C1DA0062DB29 /* RestaurantSignupViewController.swift */; };
 		021210CF2509C2710062DB29 /* UserSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021210CE2509C2710062DB29 /* UserSignupViewController.swift */; };
 		021DB03725512EA600F7739C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021DB03625512EA600F7739C /* HomeTableViewCell.swift */; };
 		021DB03A2551761E00F7739C /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021DB0392551761E00F7739C /* RestaurantTableViewCell.swift */; };
+		021DB03D255185F100F7739C /* Pods_Snapfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCFAB7B393D3DA1D527E783 /* Pods_Snapfood.framework */; };
 		022EB024252875F300A71104 /* RestaurantPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB023252875F300A71104 /* RestaurantPostViewController.swift */; };
 		022EB0272528761500A71104 /* UserPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB0262528761500A71104 /* UserPostViewController.swift */; };
 		0237701C2525FC9300CC3F32 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237701B2525FC9300CC3F32 /* FeedViewController.swift */; };
@@ -141,7 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0172B93A084744908D31BDCB /* Pods_Snapfood.framework in Frameworks */,
+				021DB03D255185F100F7739C /* Pods_Snapfood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
