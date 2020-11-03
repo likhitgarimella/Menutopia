@@ -1707,6 +1707,10 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="knt-QE-XTz" id="FIi-0N-vGi"/>
+                                    <outlet property="delegate" destination="knt-QE-XTz" id="mZa-UI-Mzh"/>
+                                </connections>
                             </collectionView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gpp-1d-AoX">
                                 <rect key="frame" x="34.666666666666657" y="222" width="345" height="292"/>

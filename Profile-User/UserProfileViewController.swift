@@ -109,6 +109,12 @@ class UserProfileViewController: UIViewController {
         
         activityIndicatorView.center = self.view.center
         
+        // Register CollectionViewCell 'Photo2CollectionViewCell' here
+        profileCollectionView.register(UINib.init(nibName: "Photo2CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "Photo2CollectionViewCell")
+        if let flowLayout = profileCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
+        }
+        
         fetchUser()
         
         Properties()
@@ -176,4 +182,22 @@ class UserProfileViewController: UIViewController {
         
     }
     
-}   // #180
+}
+
+///
+extension UserProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return posts.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Photo2CollectionViewCell", for: indexPath) as! Photo2CollectionViewCell
+        let post = posts[indexPath.row]
+        cell.post = post
+        return cell
+        
+    }
+    
+}   // #204

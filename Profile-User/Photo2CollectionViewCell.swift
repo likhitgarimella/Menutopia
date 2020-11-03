@@ -65,7 +65,7 @@ class Photo2CollectionViewCell: UICollectionViewCell {
         
         // corner radius
         cardView.layer.cornerRadius = 10
-        photo.layer.cornerRadius = 20
+        photo.layer.cornerRadius = 10
         
         // shadow properties
         cardView.layer.shadowColor = UIColor.lightGray.cgColor
