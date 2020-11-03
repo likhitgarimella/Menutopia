@@ -12,6 +12,8 @@
 		021DB03725512EA600F7739C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021DB03625512EA600F7739C /* HomeTableViewCell.swift */; };
 		021DB03A2551761E00F7739C /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021DB0392551761E00F7739C /* RestaurantTableViewCell.swift */; };
 		021DB03D255185F100F7739C /* Pods_Snapfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCFAB7B393D3DA1D527E783 /* Pods_Snapfood.framework */; };
+		021DB06A2551D5D700F7739C /* Photo2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021DB0682551D5D700F7739C /* Photo2CollectionViewCell.swift */; };
+		021DB06B2551D5D700F7739C /* Photo2CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021DB0692551D5D700F7739C /* Photo2CollectionViewCell.xib */; };
 		022EB024252875F300A71104 /* RestaurantPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB023252875F300A71104 /* RestaurantPostViewController.swift */; };
 		022EB0272528761500A71104 /* UserPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB0262528761500A71104 /* UserPostViewController.swift */; };
 		0237701C2525FC9300CC3F32 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237701B2525FC9300CC3F32 /* FeedViewController.swift */; };
@@ -74,6 +76,8 @@
 		021210CE2509C2710062DB29 /* UserSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignupViewController.swift; sourceTree = "<group>"; };
 		021DB03625512EA600F7739C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		021DB0392551761E00F7739C /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		021DB0682551D5D700F7739C /* Photo2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo2CollectionViewCell.swift; sourceTree = "<group>"; };
+		021DB0692551D5D700F7739C /* Photo2CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Photo2CollectionViewCell.xib; sourceTree = "<group>"; };
 		022EB023252875F300A71104 /* RestaurantPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPostViewController.swift; sourceTree = "<group>"; };
 		022EB0262528761500A71104 /* UserPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostViewController.swift; sourceTree = "<group>"; };
 		0237701B2525FC9300CC3F32 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +220,8 @@
 			isa = PBXGroup;
 			children = (
 				02697C17254BF4A10099A960 /* UserProfileViewController.swift */,
+				021DB0692551D5D700F7739C /* Photo2CollectionViewCell.xib */,
+				021DB0682551D5D700F7739C /* Photo2CollectionViewCell.swift */,
 			);
 			path = "Profile-User";
 			sourceTree = "<group>";
@@ -406,6 +412,7 @@
 				025C114A2505836500A1E130 /* SF-Pro-Rounded-Light.otf in Resources */,
 				025C11482505836500A1E130 /* SF-Pro-Rounded-Ultralight.otf in Resources */,
 				02B6068425320ABD009987CF /* RestaurantCollectionViewCell.xib in Resources */,
+				021DB06B2551D5D700F7739C /* Photo2CollectionViewCell.xib in Resources */,
 				025C11412505836500A1E130 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
 				025C11452505836500A1E130 /* SF-Pro-Rounded-Thin.otf in Resources */,
 				025C11472505836500A1E130 /* SF-Pro-Rounded-Semibold.otf in Resources */,
@@ -474,6 +481,7 @@
 				0259A0952509E44100C567A6 /* UserApi.swift in Sources */,
 				02C0889F254FFBF600C7FB5A /* PeopleTableViewCell.swift in Sources */,
 				0259A0932509E2B900C567A6 /* AppUser.swift in Sources */,
+				021DB06A2551D5D700F7739C /* Photo2CollectionViewCell.swift in Sources */,
 				0259A0992509E5AA00C567A6 /* AuthService.swift in Sources */,
 				027510EF2503D1B800BF7987 /* ViewController.swift in Sources */,
 				021DB03725512EA600F7739C /* HomeTableViewCell.swift in Sources */,
