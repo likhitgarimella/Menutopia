@@ -463,7 +463,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzt-KT-NOJ">
-                                                    <rect key="frame" x="59.999999999999993" y="22" width="80.333333333333314" height="20"/>
+                                                    <rect key="frame" x="59.999999999999993" y="22.666666666666664" width="80.333333333333314" height="18.666666666666664"/>
                                                     <fontDescription key="fontDescription" name="SFProText-SemiboldItalic" family="SF Pro Text" pointSize="16"/>
                                                     <color key="textColor" red="0.37647058820000001" green="0.4549019608" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -474,7 +474,7 @@
                                                         <constraint firstAttribute="height" constant="320" id="hgw-Aq-uT9"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ere-U3-vY4">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like-unselected" translatesAutoresizingMaskIntoConstraints="NO" id="Ere-U3-vY4">
                                                     <rect key="frame" x="20" y="390" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="k5w-Hy-twc"/>
@@ -489,16 +489,19 @@
                                                     </constraints>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXK-73-iVa">
-                                                    <rect key="frame" x="12" y="437" width="141" height="29"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                                    <rect key="frame" x="12" y="437" width="128" height="29"/>
+                                                    <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="14"/>
                                                     <state key="normal" title="Be the first to like this">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJt-Yw-3va">
-                                                    <rect key="frame" x="12" y="474" width="54" height="19"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
-                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <rect key="frame" x="11.999999999999996" y="474" width="54.666666666666657" height="19"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="19" id="PLz-7L-7Uq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1847,6 +1850,7 @@
         <image name="delete" width="21" height="23"/>
         <image name="down-arrow" width="36" height="36"/>
         <image name="image-post" width="20" height="20"/>
+        <image name="like-unselected" width="24" height="20"/>
         <image name="login" width="345" height="264"/>
         <image name="menu" width="28" height="28"/>
         <image name="placeholder-image" width="200" height="200"/>
