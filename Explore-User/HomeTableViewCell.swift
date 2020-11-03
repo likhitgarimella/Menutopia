@@ -7,8 +7,18 @@
 //
 
 import UIKit
+// import Firebase
+
+/// If a View needs data, it should ask controllers...
 
 class HomeTableViewCell: UITableViewCell {
+    
+    // Outlets
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var postImageView: UIImageView!
+    @IBOutlet var likeImageView: UIImageView!
+    @IBOutlet var likeCountButton: UIButton!
+    @IBOutlet var captionLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,4 +34,4 @@ class HomeTableViewCell: UITableViewCell {
         
     }
 
-}   // #28
+}   // #38

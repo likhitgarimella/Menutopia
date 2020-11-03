@@ -528,6 +528,13 @@
                                                 <constraint firstItem="ixT-tw-nYe" firstAttribute="leading" secondItem="cVU-6t-BQK" secondAttribute="leading" constant="12" id="zZV-da-rbt"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="captionLabel" destination="eJt-Yw-3va" id="NyG-Bu-WDw"/>
+                                            <outlet property="likeCountButton" destination="lXK-73-iVa" id="DWq-2R-bAM"/>
+                                            <outlet property="likeImageView" destination="Ere-U3-vY4" id="ayT-KP-GRq"/>
+                                            <outlet property="nameLabel" destination="kzt-KT-NOJ" id="4Ch-26-DV0"/>
+                                            <outlet property="postImageView" destination="CKJ-fe-Ovp" id="InC-7O-I2a"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
