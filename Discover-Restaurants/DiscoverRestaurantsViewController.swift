@@ -32,4 +32,22 @@ class DiscoverRestaurantsViewController: UIViewController {
         
     }
     
-}   // #36
+}
+
+extension DiscoverRestaurantsViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return restaurants.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantTableViewCell", for: indexPath) as! RestaurantTableViewCell
+        cell.backgroundColor = UIColor.white
+        
+        let restaurant = restaurants[indexPath.row]
+        cell.restaurant = restaurant
+        
+        return cell
+    }
+    
+}   // #54
