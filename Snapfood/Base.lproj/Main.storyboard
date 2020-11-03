@@ -1587,13 +1587,19 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIL-sD-AMM">
-                                <rect key="frame" x="189" y="459" width="36" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="36" id="Lsi-kg-HKA"/>
-                                    <constraint firstAttribute="height" constant="36" id="bry-wU-Nm3"/>
-                                </constraints>
-                                <state key="normal" image="down-arrow"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SIL-sD-AMM">
+                                <rect key="frame" x="190" y="464" width="34" height="31"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Back">
+                                            <attributes>
+                                                <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="16" name="SFProRounded-Regular"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="dismiss:" destination="92L-s7-tNd" eventType="touchUpInside" id="0ri-pG-wYO"/>
                                 </connections>
@@ -1959,7 +1965,6 @@
     <resources>
         <image name="compass" width="22" height="22"/>
         <image name="delete" width="21" height="23"/>
-        <image name="down-arrow" width="36" height="36"/>
         <image name="image-post" width="20" height="20"/>
         <image name="like-unselected" width="24" height="20"/>
         <image name="login" width="345" height="264"/>

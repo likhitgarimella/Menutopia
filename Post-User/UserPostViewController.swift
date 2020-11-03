@@ -43,6 +43,8 @@ class UserPostViewController: UIViewController, UITextViewDelegate {
         
         shareOutlet.layer.cornerRadius = 20
         
+        captionTextView.layer.borderWidth = 0.5
+        captionTextView.layer.borderColor = UIColor.lightGray.cgColor
         captionTextView.backgroundColor = UIColor.white
         // text view delegate
         captionTextView.delegate = self
@@ -170,4 +172,4 @@ extension UserPostViewController: UIImagePickerControllerDelegate, UINavigationC
         dismiss(animated: true, completion: nil)
     }
     
-}   // #174
+}   // #176
