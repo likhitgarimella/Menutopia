@@ -11,6 +11,7 @@
 		021210CD2509C1DA0062DB29 /* RestaurantSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021210CC2509C1DA0062DB29 /* RestaurantSignupViewController.swift */; };
 		021210CF2509C2710062DB29 /* UserSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021210CE2509C2710062DB29 /* UserSignupViewController.swift */; };
 		021DB03725512EA600F7739C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021DB03625512EA600F7739C /* HomeTableViewCell.swift */; };
+		021DB03A2551761E00F7739C /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021DB0392551761E00F7739C /* RestaurantTableViewCell.swift */; };
 		022EB024252875F300A71104 /* RestaurantPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB023252875F300A71104 /* RestaurantPostViewController.swift */; };
 		022EB0272528761500A71104 /* UserPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EB0262528761500A71104 /* UserPostViewController.swift */; };
 		0237701C2525FC9300CC3F32 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237701B2525FC9300CC3F32 /* FeedViewController.swift */; };
@@ -72,6 +73,7 @@
 		021210CC2509C1DA0062DB29 /* RestaurantSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantSignupViewController.swift; sourceTree = "<group>"; };
 		021210CE2509C2710062DB29 /* UserSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignupViewController.swift; sourceTree = "<group>"; };
 		021DB03625512EA600F7739C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		021DB0392551761E00F7739C /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		022EB023252875F300A71104 /* RestaurantPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPostViewController.swift; sourceTree = "<group>"; };
 		022EB0262528761500A71104 /* UserPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostViewController.swift; sourceTree = "<group>"; };
 		0237701B2525FC9300CC3F32 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				02C08898254FF85400C7FB5A /* DiscoverRestaurantsViewController.swift */,
+				021DB0392551761E00F7739C /* RestaurantTableViewCell.swift */,
 			);
 			path = "Discover-Restaurants";
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				02FA637C250D63ED00703E29 /* ExploreRestaurantViewController.swift in Sources */,
 				02A15A0B2508DA07001B5FAD /* LoginViewController.swift in Sources */,
 				027510FF2503E25000BF7987 /* Extensions.swift in Sources */,
+				021DB03A2551761E00F7739C /* RestaurantTableViewCell.swift in Sources */,
 				0266B72A2529EB800058BE7E /* UserPostApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
