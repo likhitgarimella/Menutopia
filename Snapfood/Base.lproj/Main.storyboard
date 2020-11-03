@@ -1925,6 +1925,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="Lwq-gg-doU" id="in4-5k-pML"/>
+                                            <outlet property="contactButton" destination="NAx-Va-VzC" id="TD3-Jz-iT5"/>
+                                            <outlet property="nameLabel" destination="vis-tg-Au1" id="aC9-w7-bYm"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
