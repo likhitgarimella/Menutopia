@@ -540,6 +540,11 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="yrH-z9-Wre">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g7L-uF-x7w"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -551,6 +556,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="image-post" id="zsx-BG-bfm"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="yrH-z9-Wre" id="dOm-SW-tkX"/>
+                        <outlet property="tableView" destination="BhM-ne-t74" id="g2D-gq-1iq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgb-SE-Gfg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
