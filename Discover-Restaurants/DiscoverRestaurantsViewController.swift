@@ -12,10 +12,14 @@ class DiscoverRestaurantsViewController: UIViewController {
 
     @IBOutlet weak var restaurantsTableView: UITableView!
     
+    @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
+    
     var restaurants: [AppUser] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        activityIndicatorView.center = self.view.center
         
         hideKeyboardWhenTappedAround()
         loadRestaurants()
@@ -25,8 +29,14 @@ class DiscoverRestaurantsViewController: UIViewController {
     
     func loadRestaurants() {
         
+        /// start when loadRestaurants func starts
+        activityIndicatorView.startAnimating()
+        
         Api.UserDet.observeRestaurants { (restaurant) in
             self.restaurants.append(restaurant)
+            /// stop before view reloads data
+            self.activityIndicatorView.stopAnimating()
+            self.activityIndicatorView.hidesWhenStopped = true
             self.restaurantsTableView.reloadData()
         }
         
@@ -50,4 +60,4 @@ extension DiscoverRestaurantsViewController: UITableViewDataSource {
         return cell
     }
     
-}   // #54
+}   // #64

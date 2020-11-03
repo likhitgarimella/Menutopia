@@ -43,7 +43,7 @@ class FeedViewController: UIViewController {
     
     func loadPosts() {
         
-        // start when loadPosts func starts
+        /// start when loadPosts func starts
         activityIndicatorView.startAnimating()
         
         Api.Feed.observeFeed(withId: Api.UserDet.CURRENT_USER!.uid, completion: {
@@ -54,7 +54,7 @@ class FeedViewController: UIViewController {
             self.fetchUser(uid: postId, completed: {
                 self.posts.append(post)
                 // print(self.posts)
-                // stop before tablew view reloads data
+                /// stop before tablew view reloads data
                 self.activityIndicatorView.stopAnimating()
                 self.activityIndicatorView.hidesWhenStopped = true
                 self.tableView.reloadData()

@@ -1838,6 +1838,11 @@
                                     <outlet property="delegate" destination="PA0-TK-aOJ" id="4qE-N3-dKR"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="xbB-Vj-rzB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yp1-55-O1G"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1850,6 +1855,7 @@
                     </view>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="xbB-Vj-rzB" id="nw8-GP-seL"/>
                         <outlet property="peopleTableView" destination="3zK-XF-npR" id="c3h-Pe-aqA"/>
                     </connections>
                 </viewController>
@@ -1943,12 +1949,18 @@
                                     <outlet property="delegate" destination="OGD-Y4-6Eb" id="DkK-Hg-YEt"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="xDH-Mb-z7j">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jW1-Tx-yfE"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="xDH-Mb-z7j" id="rsR-VJ-eAd"/>
                         <outlet property="restaurantsTableView" destination="QIf-PY-nMm" id="80h-zl-Prr"/>
                     </connections>
                 </viewController>

@@ -45,7 +45,7 @@ class UserProfileViewController: UIViewController {
     
     func fetchMyPosts() {
         
-        // start when loadPosts func starts
+        /// start when fetchMyPosts func starts
         activityIndicatorView.startAnimating()
         
         guard let currentUser = Api.UserDet.CURRENT_USER else {

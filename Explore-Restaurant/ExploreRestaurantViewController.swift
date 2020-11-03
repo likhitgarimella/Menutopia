@@ -24,14 +24,14 @@ class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegat
     // load restaurant posts
     func loadPosts() {
         
-        // start when loadPosts func starts
+        /// start when loadPosts func starts
         activityIndicatorView.startAnimating()
         
         Api.RestaurantPost.observePosts { (post) in
             guard let postId = post.uid else {
                 return
             }
-            // fetch user data in mentor posts
+            /// fetch user data in mentor posts
             self.fetchUser(uid: postId, completed: {
                 self.restaurantPosts.append(post)
                 print(self.restaurantPosts)

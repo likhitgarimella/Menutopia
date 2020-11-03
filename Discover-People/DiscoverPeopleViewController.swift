@@ -12,10 +12,14 @@ class DiscoverPeopleViewController: UIViewController {
     
     @IBOutlet weak var peopleTableView: UITableView!
     
+    @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
+    
     var users: [AppUser] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        activityIndicatorView.center = self.view.center
         
         hideKeyboardWhenTappedAround()
         loadUsers()
@@ -25,11 +29,17 @@ class DiscoverPeopleViewController: UIViewController {
     
     func loadUsers() {
         
+        /// start when loadUsers func starts
+        activityIndicatorView.startAnimating()
+        
         Api.UserDet.observeUsers { (user) in
             self.isFollowing(userId: user.id!, completed: {
                 (value) in
                 user.isFollowing = value
                 self.users.append(user)
+                /// stop before view reloads data
+                self.activityIndicatorView.stopAnimating()
+                self.activityIndicatorView.hidesWhenStopped = true
                 self.peopleTableView.reloadData()
             })
         }
@@ -60,4 +70,4 @@ extension DiscoverPeopleViewController: UITableViewDataSource {
         return cell
     }
     
-}   // #64
+}   // #74
