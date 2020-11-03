@@ -1942,6 +1942,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <size key="freeformSize" width="414" height="736"/>
+                    <connections>
+                        <outlet property="restaurantsTableView" destination="QIf-PY-nMm" id="80h-zl-Prr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZY8-Fr-pcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
