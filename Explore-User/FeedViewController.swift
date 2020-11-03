@@ -25,7 +25,7 @@ class FeedViewController: UIViewController {
     func Properties() {
         
         tableView.backgroundColor = UIColor.white
-        tableView.estimatedRowHeight = 515
+        tableView.estimatedRowHeight = 470
         tableView.rowHeight = UITableView.automaticDimension
         
     }
