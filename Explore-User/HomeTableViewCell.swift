@@ -20,11 +20,12 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet var likeImageView: UIImageView!
     @IBOutlet var likeCountButton: UIButton!
     @IBOutlet var captionLabel: UILabel!
+    @IBOutlet weak var timestampValue: UILabel!
     
     // linking home VC & home table view cell
     var homeVC: FeedViewController?
     
-    var post: UserPostModel? {
+    var userPost: UserPostModel? {
         didSet {
             updateView()
         }
@@ -40,19 +41,30 @@ class HomeTableViewCell: UITableViewCell {
     
     func updateView() {
         
-        captionLabel.text = post?.caption
-        if let photoUrlString = post?.photoUrl {
+        captionLabel.text = userPost?.caption
+        
+        if let photoUrlString = userPost?.photoUrl {
             let photoUrl = URL(string: photoUrlString)
             postImageView.sd_setImage(with: photoUrl)
+        }
+        
+        /// Timestamp
+        if let seconds = userPost?.timestampVal {
+            let timeStampDate = NSDate(timeIntervalSince1970: seconds)
+            let pastDate = Date(timeIntervalSince1970: seconds)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MMM d, h:mm a"
+            timestampValue.text = dateFormatter.string(from: timeStampDate as Date)
+            timestampValue.text = pastDate.timeAgoDisplay()
         }
         
         setupUserInfo()
         
         /// Update like
-        updateLike(post: post!)
+        updateLike(post: userPost!)
         
         /// New #1
-        self.updateLike(post: self.post!)
+        self.updateLike(post: self.userPost!)
         
     }
     
@@ -110,13 +122,13 @@ class HomeTableViewCell: UITableViewCell {
     
     @objc func likeImageViewTouch() {
         
-        Api.UserPost.incrementLikes(postId: post!.id!, onSuccess: { (post) in
+        Api.UserPost.incrementLikes(postId: userPost!.id!, onSuccess: { (post) in
             self.updateLike(post: post)
             /// New #2
             /// Now the post property of the cell is updated right after a like/dislike
-            self.post?.likes = post.likes
-            self.post?.isLiked = post.isLiked
-            self.post?.likeCount = post.likeCount
+            self.userPost?.likes = post.likes
+            self.userPost?.isLiked = post.isLiked
+            self.userPost?.likeCount = post.likeCount
         }) { (errorMessage) in
             // hud
             print(errorMessage)
@@ -140,4 +152,4 @@ class HomeTableViewCell: UITableViewCell {
         
     }
     
-}   // #144
+}   // #156

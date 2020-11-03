@@ -103,7 +103,7 @@ extension FeedViewController: UITableViewDataSource {
         cell.backgroundColor = UIColor.white
         let post = posts[indexPath.row]
         let user = users[indexPath.row]
-        cell.post = post
+        cell.userPost = post
         cell.user = user
         // linking home VC & home table view cell
         cell.homeVC = self
