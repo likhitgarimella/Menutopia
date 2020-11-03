@@ -539,6 +539,10 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ovG-pG-ZTc" id="gQV-z8-Dju"/>
+                                    <outlet property="delegate" destination="ovG-pG-ZTc" id="chQ-TN-H6Z"/>
+                                </connections>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="yrH-z9-Wre">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
