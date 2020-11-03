@@ -60,8 +60,25 @@ class Photo2CollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        // initial text
+        captionText.text = ""
         
+        // corner radius
+        cardView.layer.cornerRadius = 10
+        photo.layer.cornerRadius = 20
+        
+        // shadow properties
+        cardView.layer.shadowColor = UIColor.lightGray.cgColor
+        cardView.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+        cardView.layer.shadowRadius = 2.0
+        cardView.layer.shadowOpacity = 0.5
+        cardView.layer.masksToBounds = false
+        
+        // constraint
+        self.contentView.translatesAutoresizingMaskIntoConstraints = false
+        let screenWidth = UIScreen.main.bounds.size.width
+        widthConstraint.constant = screenWidth - (2 * 12)
         
     }
     
-}   // #68
+}   // #85

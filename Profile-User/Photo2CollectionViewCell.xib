@@ -76,6 +76,13 @@
                 <constraint firstItem="YVg-U4-XRJ" firstAttribute="leading" secondItem="ZK9-0u-gap" secondAttribute="leading" constant="4" id="q5Z-9l-qpT"/>
                 <constraint firstItem="YVg-U4-XRJ" firstAttribute="top" secondItem="ZK9-0u-gap" secondAttribute="top" constant="4" id="s7f-a0-UjZ"/>
             </constraints>
+            <connections>
+                <outlet property="captionText" destination="rmN-Sb-6kU" id="5pT-DJ-ebE"/>
+                <outlet property="cardView" destination="YVg-U4-XRJ" id="yh6-Fu-FLm"/>
+                <outlet property="likeCountButton" destination="9e4-H9-NjA" id="rMb-il-x7A"/>
+                <outlet property="photo" destination="2vL-N7-usp" id="pMP-9x-Lah"/>
+                <outlet property="widthConstraint" destination="hUU-3Q-vTX" id="dSc-ju-4vE"/>
+            </connections>
             <point key="canvasLocation" x="-200.00000000000003" y="34.821428571428569"/>
         </collectionViewCell>
     </objects>
