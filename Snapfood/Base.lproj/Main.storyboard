@@ -534,6 +534,7 @@
                                             <outlet property="likeImageView" destination="Ere-U3-vY4" id="ayT-KP-GRq"/>
                                             <outlet property="nameLabel" destination="kzt-KT-NOJ" id="4Ch-26-DV0"/>
                                             <outlet property="postImageView" destination="CKJ-fe-Ovp" id="InC-7O-I2a"/>
+                                            <outlet property="profileImageView" destination="ixT-tw-nYe" id="ROT-Db-FVI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
