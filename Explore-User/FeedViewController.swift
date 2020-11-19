@@ -10,7 +10,7 @@ import UIKit
 // import Firebase
 import SDWebImage
 
-class FeedViewController: UIViewController {
+class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITabBarControllerDelegate {
     
     @IBOutlet var tableView: UITableView!
     
@@ -27,17 +27,6 @@ class FeedViewController: UIViewController {
         tableView.backgroundColor = UIColor.white
         tableView.estimatedRowHeight = 470
         tableView.rowHeight = UITableView.automaticDimension
-        
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        activityIndicatorView.center = self.view.center
-        
-        Properties()
-        
-        loadPosts()
         
     }
     
@@ -90,10 +79,6 @@ class FeedViewController: UIViewController {
         
     }
     
-}
-
-extension FeedViewController: UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
     }
@@ -110,4 +95,31 @@ extension FeedViewController: UITableViewDataSource {
         return cell
     }
     
-}   // #114
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        activityIndicatorView.center = self.view.center
+        
+        Properties()
+        
+        loadPosts()
+        
+        self.tabBarController?.delegate = self
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+    }
+    
+    // Scroll to top in coll view when tapped on tab bar icon
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+
+        let tabBarIndex = tabBarController.selectedIndex
+        // print(tabBarIndex)
+        
+        if tabBarIndex == 1 {
+            self.tableView.setContentOffset(CGPoint.zero, animated: true)
+        }
+    }
+    
+}   // #126

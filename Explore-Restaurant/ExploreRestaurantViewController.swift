@@ -8,11 +8,11 @@
 
 import UIKit
 // import Firebase
-// import FirebaseDatabase
 
 class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITabBarControllerDelegate {
     
     @IBOutlet var restaurantFeedCollectionView: UICollectionView!
+    
     @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
     
     // reference to store MealPostModel class info
