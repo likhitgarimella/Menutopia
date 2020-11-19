@@ -63,6 +63,9 @@ class Photo2CollectionViewCell: UICollectionViewCell {
         // initial text
         captionText.text = ""
         
+        // number of lines
+        captionText.numberOfLines = 0
+        
         // corner radius
         cardView.layer.cornerRadius = 10
         photo.layer.cornerRadius = 10
@@ -81,4 +84,4 @@ class Photo2CollectionViewCell: UICollectionViewCell {
         
     }
     
-}   // #85
+}   // #88

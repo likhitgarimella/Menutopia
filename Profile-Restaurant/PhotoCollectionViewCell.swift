@@ -43,9 +43,14 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         restMenuDesc.text = post?.mealDesc
         restItemPrice.text = post?.mealPrice
         
-        tag1.text = (" " + (post?.typeLabel)! + "            ")
-        tag2.text = (" " + (post?.genreLabel)! + "            ")
-        tag3.text = (" " + (post?.cuisineLabel)! + "            ")
+        /// more spaces here
+        // tag1.text = (" " + (post?.typeLabel)! + "            ")
+        // tag2.text = (" " + (post?.genreLabel)! + "            ")
+        // tag3.text = (" " + (post?.cuisineLabel)! + "            ")
+        
+        tag1.text = " \((post?.typeLabel)!)      "
+        tag2.text = " \((post?.genreLabel)!)      "
+        tag3.text = " \((post?.cuisineLabel)!)      "
         
         /// Update like
         updateLike(post: post!)
@@ -81,6 +86,14 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         tag2.text = ""
         tag3.text = ""
         
+        // number of lines
+        restMealName.numberOfLines = 0
+        restMenuDesc.numberOfLines = 0
+        restItemPrice.numberOfLines = 0
+        tag1.numberOfLines = 0
+        tag2.numberOfLines = 0
+        tag3.numberOfLines = 0
+        
         // corner radius
         cardView.layer.cornerRadius = 10
         photo.layer.cornerRadius = 20
@@ -105,4 +118,4 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         
     }
     
-}   // #109
+}   // #122
