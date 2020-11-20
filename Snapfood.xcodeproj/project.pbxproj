@@ -25,6 +25,7 @@
 		0259A0952509E44100C567A6 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0259A0942509E44100C567A6 /* UserApi.swift */; };
 		0259A0972509E50200C567A6 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0259A0962509E50200C567A6 /* Api.swift */; };
 		0259A0992509E5AA00C567A6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0259A0982509E5A900C567A6 /* AuthService.swift */; };
+		0259DF6F25673A6400E142AC /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0259DF6E25673A6400E142AC /* DescriptionViewController.swift */; };
 		025C113D2505836500A1E130 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 025C112F2505836300A1E130 /* SF-Pro-Rounded-Regular.otf */; };
 		025C113E2505836500A1E130 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 025C11302505836300A1E130 /* SF-Pro-Rounded-Bold.otf */; };
 		025C113F2505836500A1E130 /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 025C11312505836300A1E130 /* SF-Pro-Text-LightItalic.otf */; };
@@ -89,6 +90,7 @@
 		0259A0942509E44100C567A6 /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		0259A0962509E50200C567A6 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		0259A0982509E5A900C567A6 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		0259DF6E25673A6400E142AC /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		025C112F2505836300A1E130 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
 		025C11302505836300A1E130 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
 		025C11312505836300A1E130 /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				027510EE2503D1B800BF7987 /* ViewController.swift */,
+				0259DF6E25673A6400E142AC /* DescriptionViewController.swift */,
 				02A15A0A2508DA07001B5FAD /* LoginViewController.swift */,
 				02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */,
 				021210CC2509C1DA0062DB29 /* RestaurantSignupViewController.swift */,
@@ -500,6 +503,7 @@
 				0266B71E2529BF2A0058BE7E /* RestaurantPostApi.swift in Sources */,
 				0266B7272529EB570058BE7E /* UserPostModel.swift in Sources */,
 				025DDE60254D9095000F561B /* FollowApi.swift in Sources */,
+				0259DF6F25673A6400E142AC /* DescriptionViewController.swift in Sources */,
 				0266B7242529BF960058BE7E /* HelperServiceRestaurant.swift in Sources */,
 				0237701F2525FCE300CC3F32 /* PostViewController.swift in Sources */,
 				023770222525FD0400CC3F32 /* DiscoverViewController.swift in Sources */,
