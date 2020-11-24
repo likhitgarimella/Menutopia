@@ -813,6 +813,9 @@
                                 <state key="normal" title="Edit Profile">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="p8s-2m-zSZ" kind="show" id="HTT-GQ-7AT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kne-sJ-UMu">
                                 <rect key="frame" x="234" y="216" width="160" height="32"/>
@@ -938,6 +941,92 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ew-bQ-J9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3822" y="2738"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7BF-1N-agD">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="p8s-2m-zSZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5eU-zH-eEt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-Wt-AGi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbO-uC-X6E">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cbO-uC-X6E" firstAttribute="top" secondItem="VmA-Wt-AGi" secondAttribute="top" id="Dor-d7-zZP"/>
+                                    <constraint firstItem="cbO-uC-X6E" firstAttribute="leading" secondItem="VmA-Wt-AGi" secondAttribute="leading" id="NYr-Fc-OXT"/>
+                                    <constraint firstAttribute="bottom" secondItem="cbO-uC-X6E" secondAttribute="bottom" id="OHG-s2-jDm"/>
+                                    <constraint firstItem="cbO-uC-X6E" firstAttribute="height" secondItem="VmA-Wt-AGi" secondAttribute="height" priority="250" id="Q4O-J7-krO"/>
+                                    <constraint firstItem="cbO-uC-X6E" firstAttribute="width" secondItem="VmA-Wt-AGi" secondAttribute="width" priority="750" id="VQd-rl-Hfl"/>
+                                    <constraint firstAttribute="trailing" secondItem="cbO-uC-X6E" secondAttribute="trailing" id="ol9-bi-JfW"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gu9-F0-fpC"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VmA-Wt-AGi" firstAttribute="top" secondItem="gu9-F0-fpC" secondAttribute="top" id="AvI-dE-NX4"/>
+                            <constraint firstItem="gu9-F0-fpC" firstAttribute="trailing" secondItem="VmA-Wt-AGi" secondAttribute="trailing" id="OGl-1N-7bb"/>
+                            <constraint firstItem="gu9-F0-fpC" firstAttribute="bottom" secondItem="VmA-Wt-AGi" secondAttribute="bottom" id="Udt-gs-AVs"/>
+                            <constraint firstItem="VmA-Wt-AGi" firstAttribute="leading" secondItem="gu9-F0-fpC" secondAttribute="leading" id="YBd-A8-Mrf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ujO-v8-PNK"/>
+                    <size key="freeformSize" width="414" height="800"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oht-5K-qhl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3821.739130434783" y="3531.521739130435"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Acs-9V-krJ">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Tkr-1j-nyV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kFw-eM-V9o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3m9-PE-W3u">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Koi-18-Amc">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Koi-18-Amc" firstAttribute="leading" secondItem="3m9-PE-W3u" secondAttribute="leading" id="RvF-Jy-uPc"/>
+                                    <constraint firstItem="Koi-18-Amc" firstAttribute="top" secondItem="3m9-PE-W3u" secondAttribute="top" id="b2v-3G-70V"/>
+                                    <constraint firstItem="Koi-18-Amc" firstAttribute="width" secondItem="3m9-PE-W3u" secondAttribute="width" priority="750" id="dO9-Ex-EHY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Koi-18-Amc" secondAttribute="trailing" id="frD-Cb-gNh"/>
+                                    <constraint firstAttribute="bottom" secondItem="Koi-18-Amc" secondAttribute="bottom" id="vj0-Np-a2e"/>
+                                    <constraint firstItem="Koi-18-Amc" firstAttribute="height" secondItem="3m9-PE-W3u" secondAttribute="height" priority="250" id="xIE-LM-O7F"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lea-HD-b7c"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lea-HD-b7c" firstAttribute="trailing" secondItem="3m9-PE-W3u" secondAttribute="trailing" id="72f-Jy-OPQ"/>
+                            <constraint firstItem="Lea-HD-b7c" firstAttribute="bottom" secondItem="3m9-PE-W3u" secondAttribute="bottom" id="Arv-CY-0J3"/>
+                            <constraint firstItem="3m9-PE-W3u" firstAttribute="top" secondItem="Lea-HD-b7c" secondAttribute="top" id="X5A-Xc-Sv8"/>
+                            <constraint firstItem="3m9-PE-W3u" firstAttribute="leading" secondItem="Lea-HD-b7c" secondAttribute="leading" id="s0p-E9-LUB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ecO-2y-ekz"/>
+                    <size key="freeformSize" width="414" height="800"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="487-AO-BKX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5360.8695652173919" y="3531.521739130435"/>
         </scene>
         <!--Description View Controller-->
         <scene sceneID="yx2-sY-hiM">
@@ -1771,6 +1860,9 @@ Download the app and start exploring your local restaurants, you may find your n
                                 <state key="normal" title="Edit Profile">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Tkr-1j-nyV" kind="show" id="ddr-BA-O1m"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKQ-zD-Ml6">
                                 <rect key="frame" x="234" y="176" width="160" height="32"/>
@@ -2102,6 +2194,9 @@ Download the app and start exploring your local restaurants, you may find your n
         <image name="user" width="345" height="224"/>
         <image name="user-prof-pic" width="103" height="102"/>
         <image name="users" width="24" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
