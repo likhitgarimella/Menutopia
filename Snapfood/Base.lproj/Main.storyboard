@@ -156,7 +156,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJj-ET-p5s">
                                 <rect key="frame" x="20" y="588.66666666666663" width="374" height="40"/>
-                                <color key="backgroundColor" red="0.37647058823529411" green="0.45490196078431372" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.45490196078431372" green="0.53725490196078429" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Ufy-Hq-Bqd"/>
                                 </constraints>
@@ -977,7 +977,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbO-uC-X6E">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1020,7 +1020,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Koi-18-Amc">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1546,7 +1546,7 @@ Download the app and start exploring your local restaurants, you may find your n
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ou7-5i-MTj">
                                 <rect key="frame" x="20" y="451" width="374" height="40"/>
-                                <color key="backgroundColor" red="0.37647058823529411" green="0.45490196078431372" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.45490196078431372" green="0.53725490196078429" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="KJg-0X-IR9"/>
                                 </constraints>
@@ -1895,7 +1895,7 @@ Download the app and start exploring your local restaurants, you may find your n
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBW-6P-8dI">
                                 <rect key="frame" x="20" y="176" width="160" height="32"/>
-                                <color key="backgroundColor" red="0.37647058823529411" green="0.45490196078431372" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.37647058820000001" green="0.4549019608" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="IeG-sk-liP"/>
                                     <constraint firstAttribute="width" constant="160" id="MQl-A1-dwJ"/>
@@ -2215,7 +2215,7 @@ Download the app and start exploring your local restaurants, you may find your n
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="CG4-qB-vAW"/>
-        <segue reference="83a-6F-wcJ"/>
+        <segue reference="Wiq-Au-WLx"/>
         <segue reference="5QU-o9-fNs"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -2238,11 +2238,14 @@ Download the app and start exploring your local restaurants, you may find your n
         <image name="user" width="345" height="224"/>
         <image name="user-prof-pic" width="103" height="102"/>
         <image name="users" width="24" height="20"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
