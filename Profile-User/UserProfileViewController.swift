@@ -76,6 +76,7 @@ class UserProfileViewController: UIViewController {
         profilePic.isHidden = false
         editProfile.isHidden = false
         logout.isHidden = false
+        profileCollectionView.isHidden = false
         
     }
     
@@ -92,6 +93,7 @@ class UserProfileViewController: UIViewController {
         bioOutlet.isHidden = true
         editProfile.isHidden = true
         logout.isHidden = true
+        profileCollectionView.isHidden = true
         
     }
     
@@ -198,4 +200,4 @@ extension UserProfileViewController: UICollectionViewDelegate, UICollectionViewD
         
     }
     
-}   // #202
+}   // #204

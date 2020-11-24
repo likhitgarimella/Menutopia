@@ -80,6 +80,7 @@ class RestaurantProfileViewController: UIViewController {
         profilePic.isHidden = false
         editProfile.isHidden = false
         logout.isHidden = false
+        profileCollectionView.isHidden = false
         
     }
     
@@ -99,6 +100,7 @@ class RestaurantProfileViewController: UIViewController {
         openhoursOutlet.isHidden = true
         editProfile.isHidden = true
         logout.isHidden = true
+        profileCollectionView.isHidden = true
         
     }
     
@@ -280,4 +282,4 @@ extension RestaurantProfileViewController: UICollectionViewDelegate, UICollectio
         
     }
     
-}   // #284
+}   // #286
