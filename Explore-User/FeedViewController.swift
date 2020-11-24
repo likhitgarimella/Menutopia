@@ -79,6 +79,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+    /*
     func Conditions() {
         
         // stop act ind for empty coll view
@@ -88,6 +89,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
     }
+    */
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
@@ -114,7 +116,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         loadPosts()
         
-        Conditions()
+        // Conditions()
         
         self.tabBarController?.delegate = self
         
@@ -134,4 +136,4 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-}   // #138
+}   // #140
