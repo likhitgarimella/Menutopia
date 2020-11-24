@@ -21,11 +21,11 @@ class UserSignupViewController: UIViewController {
     
     func Properties() {
         
-        userUsername.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1)
-        userName.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1)
-        userEmail.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1)
-        password.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1)
-        confirmPassword.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1)
+        userUsername.backgroundColor = UIColor(red: 238/255, green: 241/255, blue: 254/255, alpha: 1)
+        userName.backgroundColor = UIColor(red: 238/255, green: 241/255, blue: 254/255, alpha: 1)
+        userEmail.backgroundColor = UIColor(red: 238/255, green: 241/255, blue: 254/255, alpha: 1)
+        password.backgroundColor = UIColor(red: 238/255, green: 241/255, blue: 254/255, alpha: 1)
+        confirmPassword.backgroundColor = UIColor(red: 238/255, green: 241/255, blue: 254/255, alpha: 1)
         
     }
     
@@ -63,6 +63,12 @@ class UserSignupViewController: UIViewController {
         Properties()
         CornerRadius()
         LeftPadding()
+        
+    }
+    
+    @IBAction func dismiss(_ sender: UIButton) {
+        
+        self.dismiss(animated: true, completion: nil)
         
     }
     
@@ -133,4 +139,4 @@ class UserSignupViewController: UIViewController {
         
     }
     
-}   // #137
+}   // #143

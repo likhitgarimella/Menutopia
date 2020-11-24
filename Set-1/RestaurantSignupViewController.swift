@@ -61,6 +61,12 @@ class RestaurantSignupViewController: UIViewController {
         
     }
     
+    @IBAction func dismiss(_ sender: UIButton) {
+        
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+    
     // Progress HUD
     let hud1 = JGProgressHUD(style: .dark)
     
@@ -128,4 +134,4 @@ class RestaurantSignupViewController: UIViewController {
         
     }
     
-}   // #132
+}   // #138
