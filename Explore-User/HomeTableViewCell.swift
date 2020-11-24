@@ -70,7 +70,7 @@ class HomeTableViewCell: UITableViewCell {
     
     func updateLike(post: UserPostModel) {
         
-        print(post.isLiked)
+        // print(post.isLiked)
         /// we first checked if its true, and no one liked this post before..
         /// or if probably someone did, but the current user did not..
         /// then we display, non-selected like icon..
@@ -111,9 +111,15 @@ class HomeTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        // initial text
         nameLabel.text = ""
         captionLabel.text = ""
         
+        // number of lines
+        nameLabel.numberOfLines = 0
+        captionLabel.numberOfLines = 0
+        
+        // Tap gesture for like image on tap
         let tapGestureForLikeImageView = UITapGestureRecognizer(target: self, action: #selector(likeImageViewTouch))
         likeImageView.addGestureRecognizer(tapGestureForLikeImageView)
         likeImageView.isUserInteractionEnabled = true
@@ -131,7 +137,7 @@ class HomeTableViewCell: UITableViewCell {
             self.userPost?.likeCount = post.likeCount
         }) { (errorMessage) in
             // hud
-            print(errorMessage)
+            print(errorMessage!)
         }
         
     }
@@ -152,4 +158,4 @@ class HomeTableViewCell: UITableViewCell {
         
     }
     
-}   // #156
+}   // #162

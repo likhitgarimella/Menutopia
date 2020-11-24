@@ -465,8 +465,8 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzt-KT-NOJ">
-                                                    <rect key="frame" x="59.999999999999993" y="22.666666666666664" width="80.333333333333314" height="18.666666666666664"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzt-KT-NOJ">
+                                                    <rect key="frame" x="60" y="22.333333333333336" width="344" height="19.333333333333336"/>
                                                     <fontDescription key="fontDescription" name="SFProText-SemiboldItalic" family="SF Pro Text" pointSize="16"/>
                                                     <color key="textColor" red="0.37647058820000001" green="0.4549019608" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -499,7 +499,7 @@
                                                     </state>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJt-Yw-3va">
-                                                    <rect key="frame" x="19.999999999999996" y="391" width="54.666666666666657" height="19.333333333333314"/>
+                                                    <rect key="frame" x="20" y="391" width="384" height="19.333333333333314"/>
                                                     <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -521,6 +521,7 @@
                                             <constraints>
                                                 <constraint firstItem="kzt-KT-NOJ" firstAttribute="centerY" secondItem="ixT-tw-nYe" secondAttribute="centerY" id="0TE-i4-muM"/>
                                                 <constraint firstItem="lXK-73-iVa" firstAttribute="leading" secondItem="Ere-U3-vY4" secondAttribute="trailing" constant="8" id="1CO-hJ-AT9"/>
+                                                <constraint firstAttribute="trailing" secondItem="kzt-KT-NOJ" secondAttribute="trailing" constant="10" id="1Mh-O5-h8D"/>
                                                 <constraint firstItem="BDr-bF-ZOt" firstAttribute="centerY" secondItem="lXK-73-iVa" secondAttribute="centerY" id="2dk-z7-xYR"/>
                                                 <constraint firstAttribute="trailing" secondItem="CKJ-fe-Ovp" secondAttribute="trailing" id="3xD-td-NNb"/>
                                                 <constraint firstAttribute="trailing" secondItem="BDr-bF-ZOt" secondAttribute="trailing" constant="16" id="48U-Dz-5Ec"/>
@@ -535,10 +536,9 @@
                                                 <constraint firstItem="CKJ-fe-Ovp" firstAttribute="top" secondItem="ixT-tw-nYe" secondAttribute="bottom" constant="8" id="Vif-SS-nfB"/>
                                                 <constraint firstItem="eJt-Yw-3va" firstAttribute="leading" secondItem="cVU-6t-BQK" secondAttribute="leading" constant="20" id="ZF5-pa-Ipz"/>
                                                 <constraint firstItem="nyQ-6h-VGU" firstAttribute="leading" secondItem="cVU-6t-BQK" secondAttribute="leading" id="ciy-DR-BAJ"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kzt-KT-NOJ" secondAttribute="trailing" constant="20" symbolic="YES" id="cuw-IZ-amS"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eJt-Yw-3va" secondAttribute="trailing" constant="20" symbolic="YES" id="eZA-2a-bHc"/>
                                                 <constraint firstAttribute="bottom" secondItem="nyQ-6h-VGU" secondAttribute="bottom" constant="8.6699999999999999" id="ev7-wM-RGT"/>
                                                 <constraint firstItem="Ere-U3-vY4" firstAttribute="leading" secondItem="cVU-6t-BQK" secondAttribute="leading" constant="20" id="gd8-g3-9a8"/>
+                                                <constraint firstAttribute="trailing" secondItem="eJt-Yw-3va" secondAttribute="trailing" constant="10" id="jKB-Rc-gK4"/>
                                                 <constraint firstItem="ixT-tw-nYe" firstAttribute="top" secondItem="cVU-6t-BQK" secondAttribute="top" constant="12" id="kCc-OU-uQg"/>
                                                 <constraint firstItem="nyQ-6h-VGU" firstAttribute="top" secondItem="Ere-U3-vY4" secondAttribute="bottom" constant="10" id="nJO-CV-eNe"/>
                                                 <constraint firstItem="Ere-U3-vY4" firstAttribute="top" secondItem="eJt-Yw-3va" secondAttribute="bottom" constant="10" id="nkY-H1-cX0"/>
@@ -810,7 +810,7 @@
                                     <constraint firstAttribute="width" constant="160" id="lyi-Jy-ArB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
-                                <state key="normal" title="- Edit Profile -">
+                                <state key="normal" title="Edit Profile">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -835,9 +835,6 @@
                                 <state key="normal" title="Enter address">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="address:" destination="Rro-ky-0p2" eventType="touchUpInside" id="2JJ-HG-Jqj"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAa-TH-KM6">
                                 <rect key="frame" x="144" y="57" width="102" height="29"/>
@@ -845,9 +842,6 @@
                                 <state key="normal" title="Enter city &amp; state">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="citynstate:" destination="Rro-ky-0p2" eventType="touchUpInside" id="9SF-NB-Zwt"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtn-z3-Dya">
                                 <rect key="frame" x="144" y="90" width="73" height="29"/>
@@ -855,9 +849,6 @@
                                 <state key="normal" title="Enter phone">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="phone:" destination="Rro-ky-0p2" eventType="touchUpInside" id="x7r-Q4-lQv"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzC-p3-sPP">
                                 <rect key="frame" x="144" y="123" width="103" height="29"/>
@@ -865,9 +856,6 @@
                                 <state key="normal" title="Enter open hours">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="openhours:" destination="Rro-ky-0p2" eventType="touchUpInside" id="kda-YO-LVe"/>
-                                </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Llt-ud-kMu">
                                 <rect key="frame" x="0.0" y="256" width="414" height="480"/>
@@ -974,7 +962,7 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFb-7Z-pO1">
                                                 <rect key="frame" x="20" y="140" width="374" height="730.66666666666663"/>
-                                                <mutableString key="text">SnapGrub is a Menu photo sharing app for both Restaurants and Users to help them come together with the power of a social media platform.
+                                                <string key="text">SnapGrub is a Menu photo sharing app for both Restaurants and Users to help them come together with the power of a social media platform.
 
 It is dedicated to assist you find your next favourite meal or restaurant while creating a platform for local restaurants to advertise their menus to their users.
 
@@ -988,7 +976,7 @@ Can’t remember the name of that menu item? Go to the restaurant page and scrol
 
 Discover other restaurants to know what they are up to and discover other users and get to follow them to see their posts.
 
-Download the app and start exploring your local restaurants, you may find your new favourite meal on SnapGrub!</mutableString>
+Download the app and start exploring your local restaurants, you may find your new favourite meal on SnapGrub!</string>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1771,9 +1759,6 @@ Download the app and start exploring your local restaurants, you may find your n
                                 <state key="normal" title="Enter bio">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="bio:" destination="knt-QE-XTz" eventType="touchUpInside" id="mPr-WW-WM6"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBW-6P-8dI">
                                 <rect key="frame" x="20" y="176" width="160" height="32"/>
@@ -1783,7 +1768,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                     <constraint firstAttribute="width" constant="160" id="MQl-A1-dwJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
-                                <state key="normal" title="- Edit Profile -">
+                                <state key="normal" title="Edit Profile">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>

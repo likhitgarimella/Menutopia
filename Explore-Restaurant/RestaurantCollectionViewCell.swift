@@ -139,6 +139,16 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         tag3.text = ""
         timestampValue.text = ""
         
+        // number of lines
+        restName.numberOfLines = 0
+        restDetails.numberOfLines = 0
+        restMealName.numberOfLines = 0
+        restMenuDesc.numberOfLines = 0
+        restItemPrice.numberOfLines = 0
+        tag1.numberOfLines = 0
+        tag2.numberOfLines = 0
+        tag3.numberOfLines = 0
+        
         // corner radius
         cardView.layer.cornerRadius = 10
         restProfilePic.layer.cornerRadius = 25
@@ -192,4 +202,4 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         
     }
     
-}   // #196
+}   // #206

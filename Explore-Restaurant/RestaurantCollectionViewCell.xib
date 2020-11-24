@@ -39,19 +39,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ol6-NE-2Bq">
-                                <rect key="frame" x="68" y="10" width="153" height="24"/>
+                                <rect key="frame" x="68" y="10" width="264" height="24"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address, City, State, Phone &amp; Open hours" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQv-tQ-nuB">
-                                <rect key="frame" x="68" y="38" width="247.5" height="17"/>
+                                <rect key="frame" x="68" y="38" width="264" height="17"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="14"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OH-Qp-me3">
-                                <rect key="frame" x="10" y="68" width="97.5" height="24"/>
+                                <rect key="frame" x="10" y="68" width="322" height="24"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -138,6 +138,7 @@
                             <constraint firstItem="oQv-tQ-nuB" firstAttribute="leading" secondItem="ol6-NE-2Bq" secondAttribute="leading" id="21G-YX-8Th"/>
                             <constraint firstItem="F00-iV-V8j" firstAttribute="leading" secondItem="9mO-bJ-Ygq" secondAttribute="trailing" constant="8" id="3K3-TS-7Vp"/>
                             <constraint firstItem="TJV-DX-ywO" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="5ZE-UB-VyK"/>
+                            <constraint firstAttribute="trailing" secondItem="oQv-tQ-nuB" secondAttribute="trailing" constant="10" id="5f5-Xa-0xj"/>
                             <constraint firstItem="oyv-5V-1JW" firstAttribute="top" secondItem="NrO-A2-VAg" secondAttribute="bottom" constant="16" id="7zl-89-bJJ"/>
                             <constraint firstItem="Zg6-Pt-2HJ" firstAttribute="centerY" secondItem="oyv-5V-1JW" secondAttribute="centerY" id="8Sd-jS-h2Y"/>
                             <constraint firstItem="1OH-Qp-me3" firstAttribute="top" secondItem="TJV-DX-ywO" secondAttribute="bottom" constant="8" id="8am-1u-zMc"/>
@@ -146,10 +147,12 @@
                             <constraint firstItem="oQv-tQ-nuB" firstAttribute="top" secondItem="ol6-NE-2Bq" secondAttribute="bottom" constant="4" id="Bh2-nL-P6v"/>
                             <constraint firstItem="ol6-NE-2Bq" firstAttribute="leading" secondItem="TJV-DX-ywO" secondAttribute="trailing" constant="8" id="CsR-pr-SHb"/>
                             <constraint firstItem="NrO-A2-VAg" firstAttribute="leading" secondItem="irl-0R-53R" secondAttribute="leading" constant="10" id="DRq-WF-ebD"/>
+                            <constraint firstAttribute="trailing" secondItem="ol6-NE-2Bq" secondAttribute="trailing" constant="10" id="EsF-rs-HE2"/>
                             <constraint firstAttribute="bottom" secondItem="bCv-Zo-z2r" secondAttribute="bottom" constant="17" id="FR8-Si-r6w"/>
                             <constraint firstAttribute="trailing" secondItem="Elf-US-AGv" secondAttribute="trailing" constant="16" id="G0q-Cx-bJm"/>
                             <constraint firstItem="9mO-bJ-Ygq" firstAttribute="centerY" secondItem="gCn-zU-DPA" secondAttribute="centerY" id="I8m-Ld-d5e"/>
                             <constraint firstItem="NrO-A2-VAg" firstAttribute="top" secondItem="Ic6-RA-QH6" secondAttribute="bottom" constant="8" id="JB7-mr-juD"/>
+                            <constraint firstAttribute="trailing" secondItem="1OH-Qp-me3" secondAttribute="trailing" constant="10" id="PRp-u0-zkf"/>
                             <constraint firstAttribute="width" constant="342" id="QC8-zc-TQQ"/>
                             <constraint firstItem="Elf-US-AGv" firstAttribute="centerY" secondItem="Jnt-4X-f9Q" secondAttribute="centerY" id="Scs-Kc-YWx"/>
                             <constraint firstItem="F00-iV-V8j" firstAttribute="centerY" secondItem="9mO-bJ-Ygq" secondAttribute="centerY" id="VaN-Oh-MOA"/>
