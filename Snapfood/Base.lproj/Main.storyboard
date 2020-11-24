@@ -942,10 +942,10 @@
             </objects>
             <point key="canvasLocation" x="3822" y="2738"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Restaurant Profile View Controller-->
         <scene sceneID="7BF-1N-agD">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="p8s-2m-zSZ" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="p8s-2m-zSZ" customClass="EditRestaurantProfileViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5eU-zH-eEt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -985,10 +985,10 @@
             </objects>
             <point key="canvasLocation" x="3821.739130434783" y="3531.521739130435"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit User Profile View Controller-->
         <scene sceneID="Acs-9V-krJ">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Tkr-1j-nyV" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Tkr-1j-nyV" customClass="EditUserProfileViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kFw-eM-V9o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
