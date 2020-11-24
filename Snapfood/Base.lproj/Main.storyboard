@@ -855,30 +855,30 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pu-aG-Glf">
-                                <rect key="frame" x="144" y="24" width="83" height="29"/>
+                                <rect key="frame" x="144" y="24" width="51" height="29"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="14"/>
-                                <state key="normal" title="Enter address">
+                                <state key="normal" title="Address">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAa-TH-KM6">
-                                <rect key="frame" x="144" y="57" width="102" height="29"/>
+                                <rect key="frame" x="144" y="57" width="72" height="29"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="14"/>
-                                <state key="normal" title="Enter city &amp; state">
+                                <state key="normal" title="City &amp; State">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtn-z3-Dya">
-                                <rect key="frame" x="144" y="90" width="73" height="29"/>
+                                <rect key="frame" x="144" y="90" width="60" height="29"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="14"/>
-                                <state key="normal" title="Enter phone">
+                                <state key="normal" title="Phone No">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzC-p3-sPP">
-                                <rect key="frame" x="144" y="123" width="103" height="29"/>
+                                <rect key="frame" x="144" y="123" width="73" height="29"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="14"/>
-                                <state key="normal" title="Enter open hours">
+                                <state key="normal" title="Open Hours">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -1887,9 +1887,9 @@ Download the app and start exploring your local restaurants, you may find your n
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5p-4s-jKD">
-                                <rect key="frame" x="144" y="32" width="54" height="29"/>
+                                <rect key="frame" x="144" y="32" width="30" height="29"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="14"/>
-                                <state key="normal" title="Enter bio">
+                                <state key="normal" title="Bio">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>

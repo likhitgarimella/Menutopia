@@ -37,6 +37,7 @@ class MealPostModel {
     var cityStateLabel: String?
     var phoneLabel: String?
     var openHoursLabel: String?
+    var profilePhotoUrl: String?
     
 }
 
@@ -63,8 +64,9 @@ extension MealPostModel {
         
         post.addressLabel = dict["Address"] as? String
         post.cityStateLabel = dict["City & State"] as? String
-        post.phoneLabel = dict["Phone no"] as? String
-        post.openHoursLabel = dict["Open hours"] as? String
+        post.phoneLabel = dict["Phone No"] as? String
+        post.openHoursLabel = dict["Open Hours"] as? String
+        post.profilePhotoUrl = dict["Profile Photo Url"] as? String
         
         if let currentUserId = Auth.auth().currentUser?.uid {
             if post.likes != nil {
@@ -82,4 +84,4 @@ extension MealPostModel {
         
     }
     
-}   // #86
+}   // #88
