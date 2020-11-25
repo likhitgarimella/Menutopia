@@ -22,8 +22,6 @@ class RestaurantProfileViewController: UIViewController {
     @IBOutlet var phoneOutlet: UIButton!
     @IBOutlet var openhoursOutlet: UIButton!
     
-    @IBOutlet var nothingToShow: UIImageView!
-    
     @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
     
     var restaurant: AppUser? {
@@ -282,4 +280,4 @@ extension RestaurantProfileViewController: UICollectionViewDelegate, UICollectio
         
     }
     
-}   // #286
+}   // #284

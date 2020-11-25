@@ -69,8 +69,6 @@
 		02C08899254FF85400C7FB5A /* DiscoverRestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C08898254FF85400C7FB5A /* DiscoverRestaurantsViewController.swift */; };
 		02C0889C254FF87000C7FB5A /* DiscoverPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0889B254FF87000C7FB5A /* DiscoverPeopleViewController.swift */; };
 		02C0889F254FFBF600C7FB5A /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0889E254FFBF600C7FB5A /* PeopleTableViewCell.swift */; };
-		02E77549256CCFE9000B9928 /* EditRestaurantProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E77548256CCFE9000B9928 /* EditRestaurantProfileViewController.swift */; };
-		02E7754C256CD010000B9928 /* EditUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7754B256CD010000B9928 /* EditUserProfileViewController.swift */; };
 		02E7754F256DC5DB000B9928 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7754E256DC5DB000B9928 /* SearchBarView.swift */; };
 		02FA637C250D63ED00703E29 /* ExploreRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA637B250D63ED00703E29 /* ExploreRestaurantViewController.swift */; };
 /* End PBXBuildFile section */
@@ -139,8 +137,6 @@
 		02C08898254FF85400C7FB5A /* DiscoverRestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRestaurantsViewController.swift; sourceTree = "<group>"; };
 		02C0889B254FF87000C7FB5A /* DiscoverPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleViewController.swift; sourceTree = "<group>"; };
 		02C0889E254FFBF600C7FB5A /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
-		02E77548256CCFE9000B9928 /* EditRestaurantProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRestaurantProfileViewController.swift; sourceTree = "<group>"; };
-		02E7754B256CD010000B9928 /* EditUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserProfileViewController.swift; sourceTree = "<group>"; };
 		02E7754E256DC5DB000B9928 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		02FA637B250D63ED00703E29 /* ExploreRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreRestaurantViewController.swift; sourceTree = "<group>"; };
 		0568DE127CA574181615345D /* Pods-Snapfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapfood.release.xcconfig"; path = "Target Support Files/Pods-Snapfood/Pods-Snapfood.release.xcconfig"; sourceTree = "<group>"; };
@@ -229,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				02697C17254BF4A10099A960 /* UserProfileViewController.swift */,
-				02E7754B256CD010000B9928 /* EditUserProfileViewController.swift */,
 				021DB0692551D5D700F7739C /* Photo2CollectionViewCell.xib */,
 				021DB0682551D5D700F7739C /* Photo2CollectionViewCell.swift */,
 			);
@@ -293,7 +288,6 @@
 			isa = PBXGroup;
 			children = (
 				023770242525FD2500CC3F32 /* RestaurantProfileViewController.swift */,
-				02E77548256CCFE9000B9928 /* EditRestaurantProfileViewController.swift */,
 				029F0BD22533864900C6C567 /* PhotoCollectionViewCell.xib */,
 				029F0BD12533864900C6C567 /* PhotoCollectionViewCell.swift */,
 			);
@@ -510,7 +504,6 @@
 				02697BFD254BC8900099A960 /* ProfileViewController.swift in Sources */,
 				0237701C2525FC9300CC3F32 /* FeedViewController.swift in Sources */,
 				0266B71E2529BF2A0058BE7E /* RestaurantPostApi.swift in Sources */,
-				02E7754C256CD010000B9928 /* EditUserProfileViewController.swift in Sources */,
 				0266B7272529EB570058BE7E /* UserPostModel.swift in Sources */,
 				025DDE60254D9095000F561B /* FollowApi.swift in Sources */,
 				0259DF6F25673A6400E142AC /* DescriptionViewController.swift in Sources */,
@@ -521,7 +514,6 @@
 				02C0889C254FF87000C7FB5A /* DiscoverPeopleViewController.swift in Sources */,
 				0266B7212529BF750058BE7E /* MyRestaurantPostsApi.swift in Sources */,
 				0266B7172529BBFE0058BE7E /* MealPostModel.swift in Sources */,
-				02E77549256CCFE9000B9928 /* EditRestaurantProfileViewController.swift in Sources */,
 				029F0BD32533864900C6C567 /* PhotoCollectionViewCell.swift in Sources */,
 				0266B7302529EDCB0058BE7E /* HelperServiceUser.swift in Sources */,
 				021210CF2509C2710062DB29 /* UserSignupViewController.swift in Sources */,

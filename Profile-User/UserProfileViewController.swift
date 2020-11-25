@@ -20,8 +20,6 @@ class UserProfileViewController: UIViewController {
     
     @IBOutlet var bioOutlet: UIButton!
     
-    @IBOutlet var nothingToShow: UIImageView!
-    
     @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
     
     var user: AppUser? {
@@ -200,4 +198,4 @@ extension UserProfileViewController: UICollectionViewDelegate, UICollectionViewD
         
     }
     
-}   // #204
+}   // #202
