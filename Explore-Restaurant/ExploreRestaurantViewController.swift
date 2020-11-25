@@ -9,7 +9,7 @@
 import UIKit
 // import Firebase
 
-class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITabBarControllerDelegate {
+class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITabBarControllerDelegate, UISearchBarDelegate {
     
     @IBOutlet var restaurantFeedCollectionView: UICollectionView!
     
@@ -17,6 +17,9 @@ class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegat
     
     // reference to store MealPostModel class info
     var restaurantPosts = [MealPostModel]()
+    
+    // copy of reference
+    var realRestaurantPosts = [MealPostModel]()
     
     // reference to store User class info
     var users = [AppUser]()
@@ -38,6 +41,7 @@ class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegat
                 /// stop before view reloads data
                 self.activityIndicatorView.stopAnimating()
                 self.activityIndicatorView.hidesWhenStopped = true
+                self.realRestaurantPosts = self.restaurantPosts
                 self.restaurantFeedCollectionView.reloadData()
             })
         }
@@ -73,8 +77,36 @@ class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegat
         
     }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        let searchView: UICollectionReusableView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SearchBar", for: indexPath)
+        searchView.backgroundColor = UIColor.white
+        return searchView
+        
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        self.restaurantPosts.removeAll()
+        
+        for item in self.realRestaurantPosts {
+            if (item.mealName!.lowercased().contains(searchBar.text!.lowercased())) {
+                self.restaurantPosts.append(item)
+            }
+        }
+        
+        if (searchBar.text!.isEmpty) {
+            self.restaurantPosts = self.realRestaurantPosts
+        }
+        
+        self.restaurantFeedCollectionView.reloadData()
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        hideKeyboardWhenTappedAround()
         
         activityIndicatorView.center = self.view.center
         
@@ -104,4 +136,4 @@ class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegat
         }
     }
     
-}   // #108
+}   // #140

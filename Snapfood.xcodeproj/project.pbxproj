@@ -71,6 +71,7 @@
 		02C0889F254FFBF600C7FB5A /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0889E254FFBF600C7FB5A /* PeopleTableViewCell.swift */; };
 		02E77549256CCFE9000B9928 /* EditRestaurantProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E77548256CCFE9000B9928 /* EditRestaurantProfileViewController.swift */; };
 		02E7754C256CD010000B9928 /* EditUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7754B256CD010000B9928 /* EditUserProfileViewController.swift */; };
+		02E7754F256DC5DB000B9928 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7754E256DC5DB000B9928 /* SearchBarView.swift */; };
 		02FA637C250D63ED00703E29 /* ExploreRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA637B250D63ED00703E29 /* ExploreRestaurantViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -140,6 +141,7 @@
 		02C0889E254FFBF600C7FB5A /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		02E77548256CCFE9000B9928 /* EditRestaurantProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRestaurantProfileViewController.swift; sourceTree = "<group>"; };
 		02E7754B256CD010000B9928 /* EditUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserProfileViewController.swift; sourceTree = "<group>"; };
+		02E7754E256DC5DB000B9928 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		02FA637B250D63ED00703E29 /* ExploreRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreRestaurantViewController.swift; sourceTree = "<group>"; };
 		0568DE127CA574181615345D /* Pods-Snapfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapfood.release.xcconfig"; path = "Target Support Files/Pods-Snapfood/Pods-Snapfood.release.xcconfig"; sourceTree = "<group>"; };
 		7BCFAB7B393D3DA1D527E783 /* Pods_Snapfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -302,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				02FA637B250D63ED00703E29 /* ExploreRestaurantViewController.swift */,
+				02E7754E256DC5DB000B9928 /* SearchBarView.swift */,
 				02B6068225320ABD009987CF /* RestaurantCollectionViewCell.xib */,
 				02B6068125320ABD009987CF /* RestaurantCollectionViewCell.swift */,
 			);
@@ -526,6 +529,7 @@
 				022EB0272528761500A71104 /* UserPostViewController.swift in Sources */,
 				02FA637C250D63ED00703E29 /* ExploreRestaurantViewController.swift in Sources */,
 				02A15A0B2508DA07001B5FAD /* LoginViewController.swift in Sources */,
+				02E7754F256DC5DB000B9928 /* SearchBarView.swift in Sources */,
 				027510FF2503E25000BF7987 /* Extensions.swift in Sources */,
 				021DB03A2551761E00F7739C /* RestaurantTableViewCell.swift in Sources */,
 				0266B72A2529EB800058BE7E /* UserPostApi.swift in Sources */,

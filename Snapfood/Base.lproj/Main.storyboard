@@ -421,11 +421,42 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IHZ-HN-cWY">
                                     <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="SearchBar" id="Qqc-wT-Ipw" customClass="SearchBarView" customModule="Snapfood" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <searchBar contentMode="redraw" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="4sZ-Ao-sn5">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <scopeButtonTitles>
+                                                <string>Title</string>
+                                                <string>Title</string>
+                                            </scopeButtonTitles>
+                                            <connections>
+                                                <outlet property="delegate" destination="fvh-3q-dK0" id="FpH-Ya-MOG"/>
+                                            </connections>
+                                        </searchBar>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="4sZ-Ao-sn5" secondAttribute="trailing" id="Bcy-qb-fFo"/>
+                                        <constraint firstItem="4sZ-Ao-sn5" firstAttribute="leading" secondItem="Qqc-wT-Ipw" secondAttribute="leading" id="Vxg-iE-jic"/>
+                                        <constraint firstAttribute="bottom" secondItem="4sZ-Ao-sn5" secondAttribute="bottom" id="j45-ph-psr"/>
+                                        <constraint firstItem="4sZ-Ao-sn5" firstAttribute="top" secondItem="Qqc-wT-Ipw" secondAttribute="top" id="ug8-PG-vLr"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="searchBar" destination="4sZ-Ao-sn5" id="aLP-kJ-BnU"/>
+                                    </connections>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="fvh-3q-dK0" id="wjU-6x-igC"/>
                                     <outlet property="delegate" destination="fvh-3q-dK0" id="57e-lg-KIw"/>
@@ -454,7 +485,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ig5-Od-yaz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4103" y="-1964"/>
+            <point key="canvasLocation" x="4102.898550724638" y="-1964.6739130434785"/>
         </scene>
         <!--Feed-->
         <scene sceneID="OMp-iH-nxf">
