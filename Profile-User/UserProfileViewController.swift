@@ -145,41 +145,6 @@ class UserProfileViewController: UIViewController {
         
     }
     
-    /*
-    @IBAction func bio(_ sender: UIButton) {
-        
-        /// Alert
-        let alertController = UIAlertController(title: "Enter bio", message: "Let your friends know you better!", preferredStyle: .alert)
-        /// Add textfield
-        alertController.addTextField(configurationHandler: common(textField:))
-        /// Submit action
-        let submitAction = UIAlertAction(title: "Submit", style: .default) { (_) in
-        }
-        /// Cancel action
-        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) { (_) in
-        }
-        /// AlertView font
-        let titleFont = [NSAttributedString.Key.font: UIFont(name: "SFProRounded-Medium", size: 18.0)!]
-        let titleAttrString = NSMutableAttributedString(string: "Enter bio", attributes: titleFont)
-        alertController.setValue(titleAttrString, forKey: "attributedTitle")
-        /// Adding Submit action
-        alertController.addAction(submitAction)
-        /// Adding Cancel action
-        alertController.addAction(cancelAction)
-        /// Present alert controller
-        present(alertController, animated: true, completion: nil)
-        
-    }
-    
-    /// Textfield prop
-    func common(textField: UITextField!) {
-        let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 32)
-        textField.addConstraint(heightConstraint)
-        textField.minimumFontSize = 18
-        textField.font = UIFont(name: "SFProRounded-Regular", size: 16.0)
-    }
-    */
-    
 }
 
 ///
@@ -198,4 +163,4 @@ extension UserProfileViewController: UICollectionViewDelegate, UICollectionViewD
         
     }
     
-}   // #202
+}   // #167
