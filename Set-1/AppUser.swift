@@ -20,6 +20,7 @@ class AppUser {
     var restCityState: String?
     var restPhone: String?
     var restOpenHours: String?
+    var profilePhotoUrl: String?
     
     var id: String?
     
@@ -40,6 +41,7 @@ extension AppUser {
         user.restCityState = dict["4) Restaurant city & state"] as? String
         user.restPhone = dict["5) Restaurant phone"] as? String
         user.restOpenHours = dict["6) Restaurant open hours"] as? String
+        user.profilePhotoUrl = dict["7) Restaurant profile photo url"] as? String
         
         user.userUsername = dict["1) User username"] as? String
         user.userName = dict["2) User name"] as? String
@@ -50,4 +52,4 @@ extension AppUser {
         
     }
     
-}   // #54
+}   // #56
