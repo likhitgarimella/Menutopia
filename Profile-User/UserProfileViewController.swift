@@ -147,7 +147,6 @@ class UserProfileViewController: UIViewController {
     
 }
 
-///
 extension UserProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -163,4 +162,4 @@ extension UserProfileViewController: UICollectionViewDelegate, UICollectionViewD
         
     }
     
-}   // #167
+}   // #166
