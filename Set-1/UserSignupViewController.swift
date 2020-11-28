@@ -25,6 +25,7 @@ class UserSignupViewController: UIViewController {
         userUsername.backgroundColor = UIColor(red: 238/255, green: 241/255, blue: 254/255, alpha: 1)
         userName.backgroundColor = UIColor(red: 238/255, green: 241/255, blue: 254/255, alpha: 1)
         userEmail.backgroundColor = UIColor(red: 238/255, green: 241/255, blue: 254/255, alpha: 1)
+        userBio.backgroundColor = UIColor(red: 238/255, green: 241/255, blue: 254/255, alpha: 1)
         password.backgroundColor = UIColor(red: 238/255, green: 241/255, blue: 254/255, alpha: 1)
         confirmPassword.backgroundColor = UIColor(red: 238/255, green: 241/255, blue: 254/255, alpha: 1)
         
@@ -35,6 +36,7 @@ class UserSignupViewController: UIViewController {
         userUsername.layer.cornerRadius = 20
         userName.layer.cornerRadius = 20
         userEmail.layer.cornerRadius = 20
+        userBio.layer.cornerRadius = 20
         password.layer.cornerRadius = 20
         confirmPassword.layer.cornerRadius = 20
         register.layer.cornerRadius = 20
@@ -49,6 +51,8 @@ class UserSignupViewController: UIViewController {
         userName.leftViewMode = .always
         userEmail.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: userEmail.frame.height))
         userEmail.leftViewMode = .always
+        userBio.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: userBio.frame.height))
+        userBio.leftViewMode = .always
         password.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: password.frame.height))
         password.leftViewMode = .always
         confirmPassword.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: confirmPassword.frame.height))
@@ -140,4 +144,4 @@ class UserSignupViewController: UIViewController {
         
     }
     
-}   // #144
+}   // #148
