@@ -15,6 +15,7 @@ class UserSignupViewController: UIViewController {
     @IBOutlet var userUsername: UITextField!
     @IBOutlet var userName: UITextField!
     @IBOutlet var userEmail: UITextField!
+    @IBOutlet var userBio: UITextField!
     @IBOutlet var password: UITextField!
     @IBOutlet var confirmPassword: UITextField!
     @IBOutlet var register: UIButton!
@@ -139,4 +140,4 @@ class UserSignupViewController: UIViewController {
         
     }
     
-}   // #143
+}   // #144

@@ -1304,14 +1304,14 @@ Download the app and start exploring your local restaurants, you may find your n
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="FWW-OK-F57" customClass="UserSignupViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jrs-CX-s6K">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1160"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s20-og-o2I">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1160"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ire-9T-bOx">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1160"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="cUi-b6-Twq">
                                                 <rect key="frame" x="20" y="30" width="374" height="224"/>
@@ -1364,8 +1364,22 @@ Download the app and start exploring your local restaurants, you may find your n
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gVp-x8-0jf">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Short bio" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AEZ-LO-fxo">
                                                 <rect key="frame" x="20" y="542" width="374" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Ph3-aR-TCR"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Create Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gVp-x8-0jf">
+                                                <rect key="frame" x="20" y="602" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Ven-BW-e04"/>
                                                 </constraints>
@@ -1379,7 +1393,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8uZ-jl-mIl">
-                                                <rect key="frame" x="20" y="602" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="662" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="9eo-Qq-smd"/>
                                                 </constraints>
@@ -1393,7 +1407,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kqa-mI-Cns">
-                                                <rect key="frame" x="20" y="672" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="732" width="374" height="40"/>
                                                 <color key="backgroundColor" red="0.37647058823529411" green="0.45490196078431372" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="UrA-qJ-ErR"/>
@@ -1407,7 +1421,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KKF-37-WmS">
-                                                <rect key="frame" x="190" y="1029" width="34" height="31"/>
+                                                <rect key="frame" x="190" y="1089" width="34" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="6s1-If-RsW"/>
                                                 </constraints>
@@ -1432,6 +1446,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                             <constraint firstAttribute="right" secondItem="Kqa-mI-Cns" secondAttribute="right" constant="20" id="0pK-WQ-qqI"/>
                                             <constraint firstItem="5Fl-1r-Zoy" firstAttribute="top" secondItem="cUi-b6-Twq" secondAttribute="bottom" constant="30" id="12Y-FB-UJp"/>
                                             <constraint firstAttribute="trailing" secondItem="cUi-b6-Twq" secondAttribute="trailing" constant="20" id="1Bw-BV-8O7"/>
+                                            <constraint firstItem="AEZ-LO-fxo" firstAttribute="leading" secondItem="Ire-9T-bOx" secondAttribute="leading" constant="20" id="6oX-QJ-MVI"/>
                                             <constraint firstAttribute="right" secondItem="5Fl-1r-Zoy" secondAttribute="right" constant="40" id="8WL-ng-QsR"/>
                                             <constraint firstAttribute="bottom" secondItem="KKF-37-WmS" secondAttribute="bottom" constant="40" id="9Dm-xO-UTX"/>
                                             <constraint firstItem="cUi-b6-Twq" firstAttribute="top" secondItem="Ire-9T-bOx" secondAttribute="top" constant="30" id="BFG-f6-NQw"/>
@@ -1445,14 +1460,16 @@ Download the app and start exploring your local restaurants, you may find your n
                                             <constraint firstAttribute="right" secondItem="gVp-x8-0jf" secondAttribute="right" constant="20" id="NQM-wU-u1Y"/>
                                             <constraint firstItem="YTz-Zw-HZ2" firstAttribute="left" secondItem="Ire-9T-bOx" secondAttribute="left" constant="20" id="RER-hf-VIH"/>
                                             <constraint firstItem="8uZ-jl-mIl" firstAttribute="left" secondItem="Ire-9T-bOx" secondAttribute="left" constant="20" id="SC9-LV-eyB"/>
+                                            <constraint firstItem="AEZ-LO-fxo" firstAttribute="top" secondItem="YTz-Zw-HZ2" secondAttribute="bottom" constant="20" id="UPH-rg-G6p"/>
+                                            <constraint firstItem="gVp-x8-0jf" firstAttribute="top" secondItem="AEZ-LO-fxo" secondAttribute="bottom" constant="20" id="Y3o-07-2TJ"/>
                                             <constraint firstAttribute="right" secondItem="Qur-No-YS5" secondAttribute="right" constant="20" id="dLZ-Yb-ykW"/>
                                             <constraint firstItem="Cse-Tg-ew0" firstAttribute="top" secondItem="5Fl-1r-Zoy" secondAttribute="bottom" constant="30" id="ecm-Ie-VJT"/>
+                                            <constraint firstAttribute="trailing" secondItem="AEZ-LO-fxo" secondAttribute="trailing" constant="20" id="fjS-x3-frP"/>
                                             <constraint firstItem="KKF-37-WmS" firstAttribute="top" secondItem="Kqa-mI-Cns" secondAttribute="bottom" constant="317" id="h9h-mL-TFD"/>
                                             <constraint firstAttribute="right" secondItem="Cse-Tg-ew0" secondAttribute="right" constant="20" id="lTS-vW-9Qe"/>
                                             <constraint firstItem="Qur-No-YS5" firstAttribute="top" secondItem="Cse-Tg-ew0" secondAttribute="bottom" constant="20" id="nd3-JT-43C"/>
                                             <constraint firstItem="5Fl-1r-Zoy" firstAttribute="left" secondItem="Ire-9T-bOx" secondAttribute="left" constant="40" id="nrv-eB-2cP"/>
                                             <constraint firstItem="Cse-Tg-ew0" firstAttribute="left" secondItem="Ire-9T-bOx" secondAttribute="left" constant="20" id="ovY-Dp-dOZ"/>
-                                            <constraint firstItem="gVp-x8-0jf" firstAttribute="top" secondItem="YTz-Zw-HZ2" secondAttribute="bottom" constant="20" id="t7n-QW-fdi"/>
                                             <constraint firstItem="Kqa-mI-Cns" firstAttribute="top" secondItem="8uZ-jl-mIl" secondAttribute="bottom" constant="30" id="vLZ-rQ-RSi"/>
                                             <constraint firstItem="Qur-No-YS5" firstAttribute="left" secondItem="Ire-9T-bOx" secondAttribute="left" constant="20" id="w78-I3-cyt"/>
                                             <constraint firstItem="8uZ-jl-mIl" firstAttribute="top" secondItem="gVp-x8-0jf" secondAttribute="bottom" constant="20" id="wt4-wD-xcP"/>
@@ -1479,11 +1496,12 @@ Download the app and start exploring your local restaurants, you may find your n
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HjG-tO-ZOK"/>
-                    <size key="freeformSize" width="414" height="1100"/>
+                    <size key="freeformSize" width="414" height="1160"/>
                     <connections>
                         <outlet property="confirmPassword" destination="8uZ-jl-mIl" id="Klo-fM-U4w"/>
                         <outlet property="password" destination="gVp-x8-0jf" id="ah9-6w-WQL"/>
                         <outlet property="register" destination="Kqa-mI-Cns" id="BdR-pc-6e0"/>
+                        <outlet property="userBio" destination="AEZ-LO-fxo" id="0FC-gh-B7j"/>
                         <outlet property="userEmail" destination="YTz-Zw-HZ2" id="R9S-On-0CN"/>
                         <outlet property="userName" destination="Qur-No-YS5" id="Tx3-QB-LRs"/>
                         <outlet property="userUsername" destination="Cse-Tg-ew0" id="ynd-MW-Lfk"/>
@@ -2205,7 +2223,7 @@ Download the app and start exploring your local restaurants, you may find your n
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="byU-wR-8Fx"/>
+        <segue reference="CG4-qB-vAW"/>
         <segue reference="Wiq-Au-WLx"/>
         <segue reference="5QU-o9-fNs"/>
     </inferredMetricsTieBreakers>
