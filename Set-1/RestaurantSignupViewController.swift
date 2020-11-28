@@ -14,6 +14,10 @@ class RestaurantSignupViewController: UIViewController {
     // Outlets
     @IBOutlet var restName: UITextField!
     @IBOutlet var restEmail: UITextField!
+    @IBOutlet var restAddress: UITextField!
+    @IBOutlet var restCityState: UITextField!
+    @IBOutlet var restPhoneNo: UITextField!
+    @IBOutlet var restOpenHours: UITextField!
     @IBOutlet var password: UITextField!
     @IBOutlet var confirmPassword: UITextField!
     @IBOutlet var register: UIButton!
