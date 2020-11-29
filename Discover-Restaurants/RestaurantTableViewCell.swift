@@ -7,12 +7,16 @@
 //
 
 import UIKit
+// import Firebase
 
 class RestaurantTableViewCell: UITableViewCell {
     
     // Outlets
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var addressLabel: UILabel!
+    
+    @IBOutlet var profileImage: UIImageView!
+    
     @IBOutlet var contactButton: UIButton!
     
     var restaurant: AppUser? {
@@ -24,6 +28,12 @@ class RestaurantTableViewCell: UITableViewCell {
     func updateView() {
         
         nameLabel.text = restaurant?.restaurantName
+        addressLabel.text = "\((restaurant?.restAddress)!), \((restaurant?.restCityState)!), \((restaurant?.restOpenHours)!)"
+        
+        if let photoUrlString = restaurant?.restProfilePhotoUrl {
+            let photoUrl = URL(string: photoUrlString)
+            profileImage.sd_setImage(with: photoUrl, placeholderImage: UIImage(named: "placeholder-image"))
+        }
         
         configureContactButton()
         
@@ -56,4 +66,4 @@ class RestaurantTableViewCell: UITableViewCell {
         
     }
     
-}   // #60
+}   // #70
