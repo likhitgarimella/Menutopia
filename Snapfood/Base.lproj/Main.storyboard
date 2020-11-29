@@ -482,6 +482,7 @@
                     <connections>
                         <outlet property="confirmPassword" destination="SyD-Os-RJD" id="hQ9-Og-UfP"/>
                         <outlet property="password" destination="8B7-rD-N1U" id="1ep-4R-hqB"/>
+                        <outlet property="profileImage" destination="UC9-Us-nbN" id="Jfq-IE-SXd"/>
                         <outlet property="register" destination="vXv-WT-ZG2" id="fQV-8l-FN9"/>
                         <outlet property="restAddress" destination="sDq-MR-cZn" id="LQ3-f8-6QB"/>
                         <outlet property="restCityState" destination="lhA-Sk-bQm" id="7Cl-u3-cgR"/>
