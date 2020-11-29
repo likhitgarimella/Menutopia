@@ -1402,7 +1402,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1535,6 +1535,7 @@ Download the app and start exploring your local restaurants, you may find your n
                     <connections>
                         <outlet property="confirmPassword" destination="8uZ-jl-mIl" id="Klo-fM-U4w"/>
                         <outlet property="password" destination="gVp-x8-0jf" id="ah9-6w-WQL"/>
+                        <outlet property="profileImage" destination="50B-9S-Dsg" id="3ln-RC-7Sz"/>
                         <outlet property="register" destination="Kqa-mI-Cns" id="BdR-pc-6e0"/>
                         <outlet property="userBio" destination="AEZ-LO-fxo" id="0FC-gh-B7j"/>
                         <outlet property="userEmail" destination="YTz-Zw-HZ2" id="R9S-On-0CN"/>
@@ -2075,13 +2076,13 @@ Download the app and start exploring your local restaurants, you may find your n
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQt-1f-Fm1">
-                                                    <rect key="frame" x="86" y="17" width="49" height="24"/>
+                                                    <rect key="frame" x="86" y="17" width="47.333333333333343" height="24"/>
                                                     <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
                                                     <color key="textColor" red="0.37647058823529411" green="0.45490196078431372" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDd-6s-fVx">
-                                                    <rect key="frame" x="86" y="43.666666666666664" width="39.333333333333343" height="19.333333333333336"/>
+                                                    <rect key="frame" x="86" y="43.666666666666664" width="38" height="19.333333333333336"/>
                                                     <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -2258,7 +2259,7 @@ Download the app and start exploring your local restaurants, you may find your n
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="byU-wR-8Fx"/>
+        <segue reference="CG4-qB-vAW"/>
         <segue reference="Wiq-Au-WLx"/>
         <segue reference="5QU-o9-fNs"/>
     </inferredMetricsTieBreakers>

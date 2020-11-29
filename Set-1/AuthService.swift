@@ -80,7 +80,7 @@ class AuthService {
     }
     
     // User Sign up
-    static func userSignUp(username: String, name: String, email: String, password: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
+    static func userSignUp(username: String, name: String, email: String, bio: String, password: String, imageData: Data, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
         
         print("User Sign up")
         // Firebase Auth
@@ -95,17 +95,37 @@ class AuthService {
                 return
             }
             
-            self.setUserInformation(username: username, name: name, email: email, uid: uid, onSuccess: onSuccess)
+            // Firebase Storage
+            // reference url
+            let storageRef = Storage.storage().reference(forURL: "gs://snapfood-2304acc.appspot.com")
+            let storageProfileRef = storageRef.child("UserProfilePics").child(uid)
+            let metadata = StorageMetadata()
+            metadata.contentType = "image/jpg"
+            // put image data
+            storageProfileRef.putData(imageData, metadata: metadata) { (storageMetaData, error) in
+                if error != nil {
+                    print(error!.localizedDescription)
+                    return
+                }
+                // get download url for image from Firebase Storage
+                storageProfileRef.downloadURL { (url, error) in
+                    // convert that download url to string
+                    if let metaImageUrl = url?.absoluteString {
+                        print(metaImageUrl)
+                        self.setUserInformation(profileImageUrl: metaImageUrl, username: username, name: name, email: email, bio: bio, uid: uid, onSuccess: onSuccess)
+                    }
+                }
+            }
             
         })
         
     }
     
     // Set user info to database
-    static func setUserInformation(username: String, name: String, email: String, uid: String, onSuccess: @escaping () -> Void) {
+    static func setUserInformation(profileImageUrl: String, username: String, name: String, email: String, bio: String, uid: String, onSuccess: @escaping () -> Void) {
         
         let databaseRefUser = Database.database().reference().child("Users").child(uid)
-        databaseRefUser.setValue(["1) User username": username, "2) User name": name, "3) User email": email])
+        databaseRefUser.setValue(["1) User username": username, "2) User name": name, "3) User email": email, "4) User bio": bio, "5) User profile photo url": profileImageUrl])
         onSuccess()
         
     }
@@ -122,4 +142,4 @@ class AuthService {
         
     }
     
-}   // #126
+}   // #146

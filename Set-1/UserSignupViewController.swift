@@ -7,6 +7,7 @@
 //
 
 import UIKit
+// import Firebase
 import JGProgressHUD
 
 class UserSignupViewController: UIViewController {
@@ -18,7 +19,17 @@ class UserSignupViewController: UIViewController {
     @IBOutlet var userBio: UITextField!
     @IBOutlet var password: UITextField!
     @IBOutlet var confirmPassword: UITextField!
+    
+    @IBOutlet var profileImage: UIImageView!
+    
     @IBOutlet var register: UIButton!
+    
+    // global variable for selected image
+    var selectedImage: UIImage?
+    
+    // image that appears on screen as profile image for restaurant
+    // an Optional
+    var image: UIImage? = nil
     
     func Properties() {
         
@@ -59,6 +70,33 @@ class UserSignupViewController: UIViewController {
         confirmPassword.leftViewMode = .always
         
     }
+    
+    func ProfileImage() {
+        
+        // Profile image properties
+        profileImage.layer.cornerRadius = 40
+        profileImage.layer.masksToBounds = true
+        
+        // Add gesture for profile image present in screen
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleSelectProfileImageView))
+        profileImage.addGestureRecognizer(tapGesture)
+        profileImage.isUserInteractionEnabled = true
+        
+    }
+    
+    @objc func handleSelectProfileImageView() {
+        
+        let pickerController = UIImagePickerController()
+        // To get access to selected media files, add delegate
+        pickerController.delegate = self
+        /// presenting it in full screen bcuz...
+        /// i want the view to change...
+        /// so that viewWillAppear will work...
+        pickerController.modalPresentationStyle = .fullScreen
+        // present photo library
+        present(pickerController, animated: true, completion: nil)
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +106,7 @@ class UserSignupViewController: UIViewController {
         Properties()
         CornerRadius()
         LeftPadding()
+        ProfileImage()
         
     }
     
@@ -93,20 +132,34 @@ class UserSignupViewController: UIViewController {
             return emailTest.evaluate(with: testStr)
         }
         
-        if (userUsername.text?.isEmpty == false && userName.text?.isEmpty == false && userEmail.text?.isEmpty == false && password.text?.isEmpty == false && confirmPassword.text?.isEmpty == false) {
+        if (userUsername.text?.isEmpty == false && userName.text?.isEmpty == false && userEmail.text?.isEmpty == false && userBio.text?.isEmpty == false && password.text?.isEmpty == false && confirmPassword.text?.isEmpty == false) {
             
             if (password.text == confirmPassword.text) {
                 
                 if(isValidEmail(testStr: userEmail.text!)) {
                     
                     // Validations
-                    guard let username = userUsername.text, let name = userName.text, let email = userEmail.text, let password = password.text else {
+                    guard let username = userUsername.text, let name = userName.text, let email = userEmail.text, let bio = userBio.text, let password = password.text else {
                         print("Invalid Form Input")
                         return
                     }
                     
+                    // selected image should be from image
+                    guard let imageSelected = self.image else {
+                        print("Avatar is nil")
+                        hud1.indicatorView = nil    // remove indicator
+                        hud1.textLabel.text = "Profile image can't be empty"
+                        hud1.dismiss(afterDelay: 2.0, animated: true)
+                        return
+                    }
+                    
+                    // image data from selected image in jpeg format & compression
+                    guard let imageData = imageSelected.jpegData(compressionQuality: 0.4) else {
+                        return
+                    }
+                    
                     // Auth service sign up
-                    AuthService.userSignUp(username: username, name: name, email: email, password: password, onSuccess: {
+                    AuthService.userSignUp(username: username, name: name, email: email, bio: bio, password: password, imageData: imageData, onSuccess: {
                         print("On Success")
                         self.hud1.show(in: self.view)
                         self.hud1.indicatorView = nil
@@ -147,4 +200,30 @@ class UserSignupViewController: UIViewController {
         
     }
     
-}   // #151
+}
+
+extension UserSignupViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        // Selected image to display it in our profile image
+        if let imageSelected = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            // set profile image's imageView to selected image
+            profileImage.image = imageSelected
+            // Store this img in an instance variable
+            image = imageSelected
+        }
+        // Original image
+        if let imageOriginal = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            // set profile image's imageView to original image
+            profileImage.image = imageOriginal
+            // Store this img in an instance variable
+            image = imageOriginal
+        }
+        
+        print("Image selected from library")
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
+}   // #230
