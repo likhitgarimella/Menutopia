@@ -108,7 +108,9 @@ class UserPostViewController: UIViewController, UITextViewDelegate {
     
     @IBAction func shareButton(_ sender: UIButton) {
         
-        // hud
+        // dismiss keyboard
+        view.endEditing(true)
+        
         hud1.show(in: self.view)
         
         // Creating a timestamp
@@ -172,4 +174,4 @@ extension UserPostViewController: UIImagePickerControllerDelegate, UINavigationC
         dismiss(animated: true, completion: nil)
     }
     
-}   // #176
+}   // #178

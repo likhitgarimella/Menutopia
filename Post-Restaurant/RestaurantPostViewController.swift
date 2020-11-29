@@ -495,6 +495,11 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     
     @IBAction func submitButton(_ sender: UIButton) {
         
+        // dismiss keyboard
+        view.endEditing(true)
+        
+        hud1.show(in: self.view)
+        
         if (selectedImage == nil || mealName.text!.isEmpty || mealDesc.text!.isEmpty || mealPrice.text!.isEmpty || foodTypeLabel.text!.isEmpty || foodGenreLabel.text!.isEmpty || foodCuisineLabel.text!.isEmpty) {
             // Alert for empty fields
             let myAlert = UIAlertController(title: "Invalid!", message: "Please fill up all the fields and options", preferredStyle: UIAlertController.Style.alert)
@@ -503,9 +508,6 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
             self.present(myAlert, animated: true, completion: nil)
             return
         }
-        
-        // hud
-        hud1.show(in: self.view)
         
         // Creating a timestamp
         let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
@@ -566,4 +568,4 @@ extension RestaurantPostViewController: UIImagePickerControllerDelegate, UINavig
         dismiss(animated: true, completion: nil)
     }
     
-}   // #570
+}   // #572

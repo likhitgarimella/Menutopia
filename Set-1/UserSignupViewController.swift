@@ -82,6 +82,9 @@ class UserSignupViewController: UIViewController {
     
     @IBAction func registerTapped(_ sender: UIButton) {
         
+        // dismiss keyboard
+        view.endEditing(true)
+        
         hud1.show(in: self.view)
         
         func isValidEmail(testStr:String) -> Bool {
@@ -144,4 +147,4 @@ class UserSignupViewController: UIViewController {
         
     }
     
-}   // #148
+}   // #151
