@@ -2118,6 +2118,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                         <connections>
                                             <outlet property="followButton" destination="zFq-dM-tQS" id="2HI-nE-vEr"/>
                                             <outlet property="nameLabel" destination="dDd-6s-fVx" id="TJ4-1m-UfD"/>
+                                            <outlet property="profileImage" destination="V9b-ip-cEQ" id="c6v-Ie-yEf"/>
                                             <outlet property="usernameLabel" destination="IQt-1f-Fm1" id="Itm-6i-xis"/>
                                         </connections>
                                     </tableViewCell>

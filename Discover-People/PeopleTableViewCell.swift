@@ -7,12 +7,15 @@
 //
 
 import UIKit
+// import Firebase
 
 class PeopleTableViewCell: UITableViewCell {
     
     // Outlets
     @IBOutlet var usernameLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
+    
+    @IBOutlet var profileImage: UIImageView!
     
     @IBOutlet var followButton: UIButton!
     
@@ -26,6 +29,11 @@ class PeopleTableViewCell: UITableViewCell {
         
         usernameLabel.text = user?.userUsername
         nameLabel.text = user?.userName
+        
+        if let photoUrlString = user?.userProfilePhotoUrl {
+            let photoUrl = URL(string: photoUrlString)
+            profileImage.sd_setImage(with: photoUrl, placeholderImage: UIImage(named: "placeholder-image"))
+        }
         
         /// Smoothly update follow and following, when scrolling view -> New #1
         if user!.isFollowing! {
@@ -102,4 +110,4 @@ class PeopleTableViewCell: UITableViewCell {
         
     }
 
-}   // #106
+}   // #114
