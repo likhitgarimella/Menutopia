@@ -51,6 +51,16 @@ class RestaurantTableViewCell: UITableViewCell {
         contactButton.setTitleColor(UIColor.white, for: .normal)
         contactButton.backgroundColor = UIColor(red: 69/255, green: 142/255, blue: 255/255, alpha: 1)
         contactButton.setTitle("Contact", for: .normal)
+        contactButton.addTarget(self, action: #selector(self.callAction), for: .touchUpInside)
+        
+    }
+    
+    @objc func callAction() {
+        
+        if let url = URL(string: "tel://\(phoneLabel.text!)"),
+        UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
         
     }
     
@@ -68,4 +78,4 @@ class RestaurantTableViewCell: UITableViewCell {
         
     }
     
-}   // #70
+}   // #82
