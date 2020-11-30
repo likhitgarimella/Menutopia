@@ -1017,7 +1017,7 @@
                                 </connections>
                             </collectionView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="5Sq-4K-RVx">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="300" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
@@ -1996,7 +1996,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                 </connections>
                             </collectionView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="1Tj-Yy-Na5">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="300" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
@@ -2076,13 +2076,13 @@ Download the app and start exploring your local restaurants, you may find your n
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQt-1f-Fm1">
-                                                    <rect key="frame" x="88" y="17" width="47.333333333333343" height="24"/>
+                                                    <rect key="frame" x="88" y="16" width="47.333333333333343" height="24"/>
                                                     <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
                                                     <color key="textColor" red="0.37647058823529411" green="0.45490196078431372" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDd-6s-fVx">
-                                                    <rect key="frame" x="88" y="43.666666666666664" width="38" height="19.333333333333336"/>
+                                                    <rect key="frame" x="88" y="42.666666666666664" width="38" height="19.333333333333336"/>
                                                     <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -2102,10 +2102,10 @@ Download the app and start exploring your local restaurants, you may find your n
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="V9b-ip-cEQ" secondAttribute="bottom" constant="12" id="3dy-wX-pre"/>
-                                                <constraint firstItem="IQt-1f-Fm1" firstAttribute="top" secondItem="LBj-E5-erW" secondAttribute="top" constant="17" id="9EN-fa-P1E"/>
+                                                <constraint firstItem="IQt-1f-Fm1" firstAttribute="top" secondItem="LBj-E5-erW" secondAttribute="top" constant="16" id="9EN-fa-P1E"/>
                                                 <constraint firstItem="dDd-6s-fVx" firstAttribute="leading" secondItem="V9b-ip-cEQ" secondAttribute="trailing" constant="12" id="Thb-0L-tDi"/>
                                                 <constraint firstItem="zFq-dM-tQS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IQt-1f-Fm1" secondAttribute="trailing" constant="8" symbolic="YES" id="XFl-R3-CjN"/>
-                                                <constraint firstAttribute="bottom" secondItem="dDd-6s-fVx" secondAttribute="bottom" constant="17" id="ZJy-ID-nga"/>
+                                                <constraint firstAttribute="bottom" secondItem="dDd-6s-fVx" secondAttribute="bottom" constant="18" id="ZJy-ID-nga"/>
                                                 <constraint firstItem="V9b-ip-cEQ" firstAttribute="top" secondItem="LBj-E5-erW" secondAttribute="top" constant="12" id="ae0-UV-sSh"/>
                                                 <constraint firstAttribute="trailing" secondItem="zFq-dM-tQS" secondAttribute="trailing" constant="20" id="joq-GU-ekh"/>
                                                 <constraint firstItem="V9b-ip-cEQ" firstAttribute="leading" secondItem="LBj-E5-erW" secondAttribute="leading" constant="20" id="lxT-EH-JGN"/>
@@ -2213,7 +2213,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eu3-4d-2Mz">
                                                     <rect key="frame" x="326.33333333333331" y="70" width="27.666666666666686" height="12"/>
                                                     <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="10"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
