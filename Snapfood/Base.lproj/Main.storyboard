@@ -2063,7 +2063,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="V9b-ip-cEQ">
-                                                    <rect key="frame" x="20" y="13" width="56" height="54"/>
+                                                    <rect key="frame" x="20" y="12" width="56" height="56"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="56" id="c6A-kg-cXT"/>
@@ -2071,7 +2071,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <integer key="value" value="25"/>
+                                                            <integer key="value" value="28"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
@@ -2101,12 +2101,12 @@ Download the app and start exploring your local restaurants, you may find your n
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="V9b-ip-cEQ" secondAttribute="bottom" constant="13" id="3dy-wX-pre"/>
+                                                <constraint firstAttribute="bottom" secondItem="V9b-ip-cEQ" secondAttribute="bottom" constant="12" id="3dy-wX-pre"/>
                                                 <constraint firstItem="IQt-1f-Fm1" firstAttribute="top" secondItem="LBj-E5-erW" secondAttribute="top" constant="17" id="9EN-fa-P1E"/>
                                                 <constraint firstItem="dDd-6s-fVx" firstAttribute="leading" secondItem="V9b-ip-cEQ" secondAttribute="trailing" constant="12" id="Thb-0L-tDi"/>
                                                 <constraint firstItem="zFq-dM-tQS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IQt-1f-Fm1" secondAttribute="trailing" constant="8" symbolic="YES" id="XFl-R3-CjN"/>
                                                 <constraint firstAttribute="bottom" secondItem="dDd-6s-fVx" secondAttribute="bottom" constant="17" id="ZJy-ID-nga"/>
-                                                <constraint firstItem="V9b-ip-cEQ" firstAttribute="top" secondItem="LBj-E5-erW" secondAttribute="top" constant="13" id="ae0-UV-sSh"/>
+                                                <constraint firstItem="V9b-ip-cEQ" firstAttribute="top" secondItem="LBj-E5-erW" secondAttribute="top" constant="12" id="ae0-UV-sSh"/>
                                                 <constraint firstAttribute="trailing" secondItem="zFq-dM-tQS" secondAttribute="trailing" constant="20" id="joq-GU-ekh"/>
                                                 <constraint firstItem="V9b-ip-cEQ" firstAttribute="leading" secondItem="LBj-E5-erW" secondAttribute="leading" constant="20" id="lxT-EH-JGN"/>
                                                 <constraint firstItem="IQt-1f-Fm1" firstAttribute="leading" secondItem="V9b-ip-cEQ" secondAttribute="trailing" constant="12" id="nLM-He-aSY"/>
@@ -2166,15 +2166,15 @@ Download the app and start exploring your local restaurants, you may find your n
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantTableViewCell" rowHeight="103" id="n4p-Sj-dm5" customClass="RestaurantTableViewCell" customModule="Snapfood" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="103"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantTableViewCell" rowHeight="102" id="n4p-Sj-dm5" customClass="RestaurantTableViewCell" customModule="Snapfood" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="102"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n4p-Sj-dm5" id="jPK-Va-xZl">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="J7T-JE-Nif">
-                                                    <rect key="frame" x="20" y="23.333333333333332" width="56" height="56.333333333333343"/>
+                                                    <rect key="frame" x="20" y="23" width="56" height="56"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="56" id="5Gp-rl-lhG"/>
@@ -2182,7 +2182,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <integer key="value" value="27"/>
+                                                            <integer key="value" value="28"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
@@ -2193,7 +2193,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAx-Va-VzC">
-                                                    <rect key="frame" x="286" y="36.666666666666664" width="108" height="29.999999999999993"/>
+                                                    <rect key="frame" x="286" y="36" width="108" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="108" id="9Wy-OQ-gTf"/>
                                                         <constraint firstAttribute="height" constant="30" id="JgN-3t-Y0W"/>
@@ -2209,21 +2209,29 @@ Download the app and start exploring your local restaurants, you may find your n
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eu3-4d-2Mz">
+                                                    <rect key="frame" x="326.33333333333331" y="70" width="27.666666666666686" height="12"/>
+                                                    <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="10"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="J7T-JE-Nif" firstAttribute="centerY" secondItem="jPK-Va-xZl" secondAttribute="centerY" id="0JO-Aq-APJ"/>
+                                                <constraint firstItem="J7T-JE-Nif" firstAttribute="top" secondItem="jPK-Va-xZl" secondAttribute="top" constant="23" id="0sy-Dj-jq1"/>
                                                 <constraint firstItem="J7T-JE-Nif" firstAttribute="leading" secondItem="jPK-Va-xZl" secondAttribute="leading" constant="20" id="0yP-gG-VDL"/>
+                                                <constraint firstAttribute="bottom" secondItem="J7T-JE-Nif" secondAttribute="bottom" constant="23" id="41u-Ka-4AC"/>
                                                 <constraint firstItem="vis-tg-Au1" firstAttribute="top" secondItem="jPK-Va-xZl" secondAttribute="top" constant="16" id="BNm-jy-nV0"/>
                                                 <constraint firstItem="NAx-Va-VzC" firstAttribute="centerY" secondItem="J7T-JE-Nif" secondAttribute="centerY" id="Gs2-Om-JmT"/>
                                                 <constraint firstItem="NAx-Va-VzC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vis-tg-Au1" secondAttribute="trailing" constant="8" symbolic="YES" id="Qd9-IM-kF0"/>
-                                                <constraint firstItem="J7T-JE-Nif" firstAttribute="top" secondItem="jPK-Va-xZl" secondAttribute="top" constant="23.329999999999998" id="Uq4-Ja-8Gt"/>
+                                                <constraint firstItem="Eu3-4d-2Mz" firstAttribute="top" secondItem="NAx-Va-VzC" secondAttribute="bottom" constant="4" id="ZN5-a6-f8s"/>
                                                 <constraint firstItem="Lwq-gg-doU" firstAttribute="leading" secondItem="J7T-JE-Nif" secondAttribute="trailing" constant="12" id="Zqe-SL-4uW"/>
                                                 <constraint firstAttribute="trailing" secondItem="NAx-Va-VzC" secondAttribute="trailing" constant="20" id="bdU-es-bw0"/>
                                                 <constraint firstItem="vis-tg-Au1" firstAttribute="leading" secondItem="J7T-JE-Nif" secondAttribute="trailing" constant="12" id="dgG-bg-wmP"/>
                                                 <constraint firstItem="NAx-Va-VzC" firstAttribute="leading" secondItem="Lwq-gg-doU" secondAttribute="trailing" constant="8" id="jAI-3g-AVq"/>
                                                 <constraint firstItem="Lwq-gg-doU" firstAttribute="top" secondItem="vis-tg-Au1" secondAttribute="bottom" constant="1" id="n97-L2-Iie"/>
-                                                <constraint firstAttribute="bottom" secondItem="J7T-JE-Nif" secondAttribute="bottom" constant="23.329999999999998" id="ySY-ju-67J"/>
+                                                <constraint firstItem="Eu3-4d-2Mz" firstAttribute="centerX" secondItem="NAx-Va-VzC" secondAttribute="centerX" id="zym-af-JOK"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2231,6 +2239,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                             <outlet property="addressLabel" destination="Lwq-gg-doU" id="in4-5k-pML"/>
                                             <outlet property="contactButton" destination="NAx-Va-VzC" id="TD3-Jz-iT5"/>
                                             <outlet property="nameLabel" destination="vis-tg-Au1" id="aC9-w7-bYm"/>
+                                            <outlet property="phoneLabel" destination="Eu3-4d-2Mz" id="qCI-a9-Md1"/>
                                             <outlet property="profileImage" destination="J7T-JE-Nif" id="bNM-Wm-CAm"/>
                                         </connections>
                                     </tableViewCell>

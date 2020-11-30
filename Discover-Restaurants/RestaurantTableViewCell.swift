@@ -14,6 +14,7 @@ class RestaurantTableViewCell: UITableViewCell {
     // Outlets
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var addressLabel: UILabel!
+    @IBOutlet var phoneLabel: UILabel!
     
     @IBOutlet var profileImage: UIImageView!
     
@@ -29,6 +30,7 @@ class RestaurantTableViewCell: UITableViewCell {
         
         nameLabel.text = restaurant?.restaurantName
         addressLabel.text = "\((restaurant?.restAddress)!), \((restaurant?.restCityState)!), \((restaurant?.restOpenHours)!)"
+        phoneLabel.text = restaurant?.restPhone
         
         if let photoUrlString = restaurant?.restProfilePhotoUrl {
             let photoUrl = URL(string: photoUrlString)
