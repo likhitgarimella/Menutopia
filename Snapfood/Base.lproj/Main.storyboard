@@ -323,7 +323,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restaurant phone no." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cee-CN-Uyt">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restaurant phone no. (with country code)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cee-CN-Uyt">
                                                 <rect key="frame" x="20" y="764" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="GMc-c5-JNd"/>
@@ -2271,7 +2271,7 @@ Download the app and start exploring your local restaurants, you may find your n
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CG4-qB-vAW"/>
+        <segue reference="byU-wR-8Fx"/>
         <segue reference="Wiq-Au-WLx"/>
         <segue reference="5QU-o9-fNs"/>
     </inferredMetricsTieBreakers>

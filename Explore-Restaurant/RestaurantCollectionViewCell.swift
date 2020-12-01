@@ -49,6 +49,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     var user: AppUser? {
         didSet {
             setupUserInfo()
+            restDetails.text = "\((user?.restAddress)!), \((user?.restCityState)!), \((user?.restPhone)!), \((user?.restOpenHours)!)"
         }
     }
     
@@ -123,6 +124,10 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     func setupUserInfo() {
         
         restName.text = user?.restaurantName
+        if let photoUrlString = user?.restProfilePhotoUrl {
+            let photoUrl = URL(string: photoUrlString)
+            restProfilePic.sd_setImage(with: photoUrl, placeholderImage: UIImage(named: "placeholder-image"))
+        }
         
     }
     
@@ -131,6 +136,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         
         // initial text
         restName.text = ""
+        // restDetails.text = ""
         restMealName.text = ""
         restMenuDesc.text = ""
         restItemPrice.text = ""
@@ -202,4 +208,4 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         
     }
     
-}   // #206
+}   // #212
