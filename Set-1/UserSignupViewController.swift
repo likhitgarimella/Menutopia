@@ -149,7 +149,7 @@ class UserSignupViewController: UIViewController {
                         print("Avatar is nil")
                         hud1.indicatorView = nil    // remove indicator
                         hud1.textLabel.text = "Profile image can't be empty"
-                        hud1.dismiss(afterDelay: 2.0, animated: true)
+                        hud1.dismiss(afterDelay: 1.0, animated: true)
                         return
                     }
                     
@@ -164,7 +164,7 @@ class UserSignupViewController: UIViewController {
                         self.hud1.show(in: self.view)
                         self.hud1.indicatorView = nil
                         self.hud1.textLabel.text = "Welcome!"
-                        self.hud1.dismiss(afterDelay: 2.0, animated: true)
+                        self.hud1.dismiss(afterDelay: 1.0, animated: true)
                         // segue to tab bar VC
                         self.performSegue(withIdentifier: "userSignupToHome", sender: self)
                     }) {errorString in
@@ -173,21 +173,21 @@ class UserSignupViewController: UIViewController {
                         self.hud1.show(in: self.view)
                         self.hud1.indicatorView = nil
                         self.hud1.textLabel.text = errorString!
-                        self.hud1.dismiss(afterDelay: 2.0, animated: true)
+                        self.hud1.dismiss(afterDelay: 1.0, animated: true)
                     }
                     
                 } else {
                     hud1.show(in: self.view)
                     hud1.indicatorView = nil
                     hud1.textLabel.text = "Enter a valid email address"
-                    hud1.dismiss(afterDelay: 2.0, animated: true)
+                    hud1.dismiss(afterDelay: 1.0, animated: true)
                 }
                 
             } else {
                 hud1.show(in: self.view)
                 hud1.indicatorView = nil
                 hud1.textLabel.text = "Password and Confirm password doesn't match"
-                hud1.dismiss(afterDelay: 2.0, animated: true)
+                hud1.dismiss(afterDelay: 1.0, animated: true)
             }
             
         } else {
