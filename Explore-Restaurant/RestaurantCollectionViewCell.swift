@@ -8,7 +8,7 @@
 
 import UIKit
 // import Firebase
-import SDWebImage
+// import SDWebImage
 
 /// If a View needs data, it should ask controllers...
 
@@ -33,6 +33,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var restLikeImageView: UIImageView!
     @IBOutlet var likeCountButton: UIButton!
+    
     @IBOutlet weak var timestampValue: UILabel!
     
     // linking feed VC & post cell
@@ -136,7 +137,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         
         // initial text
         restName.text = ""
-        // restDetails.text = ""
+        restDetails.text = ""
         restMealName.text = ""
         restMenuDesc.text = ""
         restItemPrice.text = ""
@@ -187,12 +188,6 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     
     @objc func likeImageViewTouch() {
         
-        /// Old
-        /*
-        mentorPostRef = Api.MentorPost.REF_POSTS.child(mentorPost!.id!)
-        incrementLikes(forRef: mentorPostRef)
-        */
-        
         /// New
         Api.RestaurantPost.incrementLikes(postId: restaurantPost!.id!, onSuccess: { (post) in
             self.updateLike(post: post)
@@ -208,4 +203,13 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         
     }
     
-}   // #212
+    /// We can erase all old data before a cell is reused...
+    /// this method will be called right before a cell is reused...
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        restProfilePic.image = UIImage(named: "placeholder-image")
+        
+    }
+    
+}   // #216

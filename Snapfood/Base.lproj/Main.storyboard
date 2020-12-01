@@ -597,19 +597,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-prof-pic" translatesAutoresizingMaskIntoConstraints="NO" id="ixT-tw-nYe">
-                                                    <rect key="frame" x="12" y="12" width="40" height="40"/>
+                                                    <rect key="frame" x="12" y="8" width="44" height="44"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="DKR-ZD-LWz"/>
-                                                        <constraint firstAttribute="width" constant="40" id="jzL-74-Ddb"/>
+                                                        <constraint firstAttribute="height" constant="44" id="DKR-ZD-LWz"/>
+                                                        <constraint firstAttribute="width" constant="44" id="jzL-74-Ddb"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <integer key="value" value="20"/>
+                                                            <integer key="value" value="22"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzt-KT-NOJ">
-                                                    <rect key="frame" x="60" y="22.333333333333336" width="344" height="19.333333333333336"/>
+                                                    <rect key="frame" x="64" y="20.333333333333336" width="340" height="19.333333333333336"/>
                                                     <fontDescription key="fontDescription" name="SFProText-SemiboldItalic" family="SF Pro Text" pointSize="16"/>
                                                     <color key="textColor" red="0.37647058820000001" green="0.4549019608" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -668,6 +668,7 @@
                                                 <constraint firstItem="BDr-bF-ZOt" firstAttribute="centerY" secondItem="lXK-73-iVa" secondAttribute="centerY" id="2dk-z7-xYR"/>
                                                 <constraint firstAttribute="trailing" secondItem="CKJ-fe-Ovp" secondAttribute="trailing" id="3xD-td-NNb"/>
                                                 <constraint firstAttribute="trailing" secondItem="BDr-bF-ZOt" secondAttribute="trailing" constant="16" id="48U-Dz-5Ec"/>
+                                                <constraint firstItem="ixT-tw-nYe" firstAttribute="top" secondItem="cVU-6t-BQK" secondAttribute="top" constant="8" id="4Ma-y1-ylE"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lXK-73-iVa" secondAttribute="trailing" constant="20" symbolic="YES" id="7HL-iM-n1k"/>
                                                 <constraint firstItem="kzt-KT-NOJ" firstAttribute="leading" secondItem="ixT-tw-nYe" secondAttribute="trailing" constant="8" id="7tg-hi-lvy"/>
                                                 <constraint firstAttribute="trailing" secondItem="wA3-AZ-IcG" secondAttribute="trailing" id="FCo-dE-GAz"/>
@@ -676,15 +677,14 @@
                                                 <constraint firstAttribute="trailing" secondItem="nyQ-6h-VGU" secondAttribute="trailing" id="PGK-vy-eFE"/>
                                                 <constraint firstItem="wA3-AZ-IcG" firstAttribute="leading" secondItem="cVU-6t-BQK" secondAttribute="leading" id="PRj-TT-uzu"/>
                                                 <constraint firstItem="BDr-bF-ZOt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lXK-73-iVa" secondAttribute="trailing" constant="8" symbolic="YES" id="RHt-T2-FrL"/>
-                                                <constraint firstItem="CKJ-fe-Ovp" firstAttribute="top" secondItem="ixT-tw-nYe" secondAttribute="bottom" constant="8" id="Vif-SS-nfB"/>
                                                 <constraint firstItem="eJt-Yw-3va" firstAttribute="leading" secondItem="cVU-6t-BQK" secondAttribute="leading" constant="20" id="ZF5-pa-Ipz"/>
                                                 <constraint firstItem="nyQ-6h-VGU" firstAttribute="leading" secondItem="cVU-6t-BQK" secondAttribute="leading" id="ciy-DR-BAJ"/>
                                                 <constraint firstAttribute="bottom" secondItem="nyQ-6h-VGU" secondAttribute="bottom" constant="8.6699999999999999" id="ev7-wM-RGT"/>
                                                 <constraint firstItem="Ere-U3-vY4" firstAttribute="leading" secondItem="cVU-6t-BQK" secondAttribute="leading" constant="20" id="gd8-g3-9a8"/>
                                                 <constraint firstAttribute="trailing" secondItem="eJt-Yw-3va" secondAttribute="trailing" constant="10" id="jKB-Rc-gK4"/>
-                                                <constraint firstItem="ixT-tw-nYe" firstAttribute="top" secondItem="cVU-6t-BQK" secondAttribute="top" constant="12" id="kCc-OU-uQg"/>
                                                 <constraint firstItem="nyQ-6h-VGU" firstAttribute="top" secondItem="Ere-U3-vY4" secondAttribute="bottom" constant="10" id="nJO-CV-eNe"/>
                                                 <constraint firstItem="Ere-U3-vY4" firstAttribute="top" secondItem="eJt-Yw-3va" secondAttribute="bottom" constant="10" id="nkY-H1-cX0"/>
+                                                <constraint firstItem="CKJ-fe-Ovp" firstAttribute="top" secondItem="ixT-tw-nYe" secondAttribute="bottom" constant="8" id="ovl-Jp-p5d"/>
                                                 <constraint firstItem="CKJ-fe-Ovp" firstAttribute="leading" secondItem="cVU-6t-BQK" secondAttribute="leading" id="p3F-t3-NiG"/>
                                                 <constraint firstItem="eJt-Yw-3va" firstAttribute="top" secondItem="wA3-AZ-IcG" secondAttribute="bottom" constant="10" id="qus-yh-hOd"/>
                                                 <constraint firstItem="ixT-tw-nYe" firstAttribute="leading" secondItem="cVU-6t-BQK" secondAttribute="leading" constant="12" id="zZV-da-rbt"/>
@@ -2271,7 +2271,7 @@ Download the app and start exploring your local restaurants, you may find your n
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="byU-wR-8Fx"/>
+        <segue reference="CG4-qB-vAW"/>
         <segue reference="Wiq-Au-WLx"/>
         <segue reference="5QU-o9-fNs"/>
     </inferredMetricsTieBreakers>

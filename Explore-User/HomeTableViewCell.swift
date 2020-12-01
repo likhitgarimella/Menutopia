@@ -8,6 +8,7 @@
 
 import UIKit
 // import Firebase
+// import SDWebImage
 
 /// If a View needs data, it should ask controllers...
 
@@ -16,10 +17,13 @@ class HomeTableViewCell: UITableViewCell {
     // Outlets
     @IBOutlet var profileImageView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
+    
     @IBOutlet var postImageView: UIImageView!
+    @IBOutlet var captionLabel: UILabel!
+    
     @IBOutlet var likeImageView: UIImageView!
     @IBOutlet var likeCountButton: UIButton!
-    @IBOutlet var captionLabel: UILabel!
+    
     @IBOutlet weak var timestampValue: UILabel!
     
     // linking home VC & home table view cell
@@ -103,6 +107,10 @@ class HomeTableViewCell: UITableViewCell {
     func setupUserInfo() {
         
         nameLabel.text = user?.userUsername
+        if let photoUrlString = user?.userProfilePhotoUrl {
+            let photoUrl = URL(string: photoUrlString)
+            profileImageView.sd_setImage(with: photoUrl, placeholderImage: UIImage(named: "user-prof-pic"))
+        }
         
     }
 
@@ -158,4 +166,4 @@ class HomeTableViewCell: UITableViewCell {
         
     }
     
-}   // #162
+}   // #170
