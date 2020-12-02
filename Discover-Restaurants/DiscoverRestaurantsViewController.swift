@@ -14,12 +14,19 @@ class DiscoverRestaurantsViewController: UIViewController {
     
     @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
     
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     var restaurants: [AppUser] = []
+    
+    // copy of reference
+    var filteredData: [AppUser] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         activityIndicatorView.center = self.view.center
+        
+        searchBar.delegate = self
         
         hideKeyboardWhenTappedAround()
         loadRestaurants()
@@ -37,6 +44,7 @@ class DiscoverRestaurantsViewController: UIViewController {
             /// stop before view reloads data
             self.activityIndicatorView.stopAnimating()
             self.activityIndicatorView.hidesWhenStopped = true
+            self.filteredData = self.restaurants
             self.restaurantsTableView.reloadData()
         }
         
@@ -47,17 +55,39 @@ class DiscoverRestaurantsViewController: UIViewController {
 extension DiscoverRestaurantsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return restaurants.count
+        return filteredData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantTableViewCell", for: indexPath) as! RestaurantTableViewCell
         cell.backgroundColor = UIColor.white
         
-        let restaurant = restaurants[indexPath.row]
+        let restaurant = filteredData[indexPath.row]
         cell.restaurant = restaurant
         
         return cell
     }
     
-}   // #64
+}
+
+extension DiscoverRestaurantsViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        filteredData = []
+        
+        if searchText == "" {
+            filteredData = restaurants
+        } else {
+            for item in restaurants {
+                if item.restaurantName!.lowercased().contains(searchText.lowercased()) || item.restAddress!.lowercased().contains(searchBar.text!.lowercased()) || item.restCityState!.lowercased().contains(searchText.lowercased()) || item.restPhone!.lowercased().contains(searchBar.text!.lowercased()) || item.restOpenHours!.lowercased().contains(searchText.lowercased()) {
+                    filteredData.append(item)
+                }
+            }
+        }
+        
+        self.restaurantsTableView.reloadData()
+        
+    }
+    
+}   // #94
