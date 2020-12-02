@@ -14,13 +14,12 @@ class RestaurantProfileViewController: UIViewController {
     @IBOutlet var profilePic: UIImageView!
     @IBOutlet var restaurantNameLabel: UILabel!
     
-    @IBOutlet var editProfile: UIButton!
     @IBOutlet var logout: UIButton!
     
-    @IBOutlet var addressOutlet: UIButton!
-    @IBOutlet var cityStateOutlet: UIButton!
-    @IBOutlet var phoneOutlet: UIButton!
-    @IBOutlet var openhoursOutlet: UIButton!
+    @IBOutlet var addressOutlet: UILabel!
+    @IBOutlet var cityStateOutlet: UILabel!
+    @IBOutlet var phoneOutlet: UILabel!
+    @IBOutlet var openhoursOutlet: UILabel!
     
     @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
     
@@ -70,13 +69,23 @@ class RestaurantProfileViewController: UIViewController {
     
     func updateView1() {
         
-        self.restaurantNameLabel.text = restaurant!.restaurantName
+        restaurantNameLabel.isHidden = false
         addressOutlet.isHidden = false
         cityStateOutlet.isHidden = false
         phoneOutlet.isHidden = false
         openhoursOutlet.isHidden = false
+        self.restaurantNameLabel.text = restaurant!.restaurantName
+        self.addressOutlet.text = restaurant!.restAddress
+        self.cityStateOutlet.text = restaurant!.restCityState
+        self.phoneOutlet.text = restaurant!.restPhone
+        self.openhoursOutlet.text = restaurant!.restOpenHours
+        
         profilePic.isHidden = false
-        editProfile.isHidden = false
+        if let photoUrlString = restaurant?.restProfilePhotoUrl {
+            let photoUrl = URL(string: photoUrlString)
+            profilePic.sd_setImage(with: photoUrl)
+        }
+        
         logout.isHidden = false
         profileCollectionView.isHidden = false
         
@@ -84,19 +93,21 @@ class RestaurantProfileViewController: UIViewController {
     
     func Properties() {
         
-        editProfile.layer.cornerRadius = 16
-        logout.layer.cornerRadius = 16
+        profilePic.layer.cornerRadius = 50
+        logout.layer.cornerRadius = 14
         
     }
     
     func Default() {
         
+        restaurantNameLabel.isHidden = true
         profilePic.isHidden = true
+        
         addressOutlet.isHidden = true
         cityStateOutlet.isHidden = true
         phoneOutlet.isHidden = true
         openhoursOutlet.isHidden = true
-        editProfile.isHidden = true
+        
         logout.isHidden = true
         profileCollectionView.isHidden = true
         
@@ -169,4 +180,4 @@ extension RestaurantProfileViewController: UICollectionViewDelegate, UICollectio
         
     }
     
-}   // #173
+}   // #184

@@ -15,10 +15,9 @@ class UserProfileViewController: UIViewController {
     @IBOutlet var userUsernameLabel: UILabel!
     @IBOutlet var userNameLabel: UILabel!
     
-    @IBOutlet var editProfile: UIButton!
     @IBOutlet var logout: UIButton!
     
-    @IBOutlet var bioOutlet: UIButton!
+    @IBOutlet var bioOutlet: UILabel!
     
     @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
     
@@ -68,11 +67,19 @@ class UserProfileViewController: UIViewController {
     
     func updateView2() {
         
+        userUsernameLabel.isHidden = false
+        userNameLabel.isHidden = false
+        bioOutlet.isHidden = false
         self.userUsernameLabel.text = user!.userUsername
         self.userNameLabel.text = user!.userName
-        bioOutlet.isHidden = false
+        self.bioOutlet.text = user!.userBio
+        
         profilePic.isHidden = false
-        editProfile.isHidden = false
+        if let photoUrlString = user?.userProfilePhotoUrl {
+            let photoUrl = URL(string: photoUrlString)
+            profilePic.sd_setImage(with: photoUrl)
+        }
+        
         logout.isHidden = false
         profileCollectionView.isHidden = false
         
@@ -80,16 +87,19 @@ class UserProfileViewController: UIViewController {
     
     func Properties() {
         
-        editProfile.layer.cornerRadius = 16
-        logout.layer.cornerRadius = 16
+        profilePic.layer.cornerRadius = 50
+        logout.layer.cornerRadius = 14
         
     }
     
     func Default() {
         
+        userUsernameLabel.isHidden = true
+        userNameLabel.isHidden = true
         profilePic.isHidden = true
+        
         bioOutlet.isHidden = true
-        editProfile.isHidden = true
+        
         logout.isHidden = true
         profileCollectionView.isHidden = true
         
@@ -162,4 +172,4 @@ extension UserProfileViewController: UICollectionViewDelegate, UICollectionViewD
         
     }
     
-}   // #166
+}   // #176

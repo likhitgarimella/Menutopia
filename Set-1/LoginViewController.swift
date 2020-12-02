@@ -80,7 +80,7 @@ class LoginViewController: UIViewController {
                     self.hud1.show(in: self.view)
                     self.hud1.indicatorView = nil
                     self.hud1.textLabel.text = "Logged In!"
-                    self.hud1.dismiss(afterDelay: 2.0, animated: true)
+                    self.hud1.dismiss(afterDelay: 1.0, animated: true)
                     // segue to tab bar VC
                     self.performSegue(withIdentifier: "loginToHome", sender: self)
                 }, onError: {errorString in
@@ -89,14 +89,14 @@ class LoginViewController: UIViewController {
                     self.hud1.show(in: self.view)
                     self.hud1.indicatorView = nil
                     self.hud1.textLabel.text = errorString!
-                    self.hud1.dismiss(afterDelay: 2.0, animated: true)
+                    self.hud1.dismiss(afterDelay: 1.0, animated: true)
                 })
                 
             } else {
                 hud1.show(in: self.view)
                 hud1.indicatorView = nil
                 hud1.textLabel.text = "Enter a valid email address"
-                hud1.dismiss(afterDelay: 2.0, animated: true)
+                hud1.dismiss(afterDelay: 1.0, animated: true)
             }
             
         } else {
