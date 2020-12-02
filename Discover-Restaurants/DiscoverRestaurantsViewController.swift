@@ -80,7 +80,7 @@ extension DiscoverRestaurantsViewController: UISearchBarDelegate {
             filteredData = restaurants
         } else {
             for item in restaurants {
-                if item.restaurantName!.lowercased().contains(searchText.lowercased()) || item.restAddress!.lowercased().contains(searchBar.text!.lowercased()) || item.restCityState!.lowercased().contains(searchText.lowercased()) || item.restPhone!.lowercased().contains(searchBar.text!.lowercased()) || item.restOpenHours!.lowercased().contains(searchText.lowercased()) {
+                if (item.restaurantName!.lowercased().contains(searchText.lowercased()) || item.restAddress!.lowercased().contains(searchBar.text!.lowercased()) || item.restCityState!.lowercased().contains(searchText.lowercased()) || item.restPhone!.lowercased().contains(searchBar.text!.lowercased()) || item.restOpenHours!.lowercased().contains(searchText.lowercased())) {
                     filteredData.append(item)
                 }
             }

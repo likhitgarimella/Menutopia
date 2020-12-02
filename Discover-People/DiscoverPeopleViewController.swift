@@ -14,12 +14,19 @@ class DiscoverPeopleViewController: UIViewController {
     
     @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
     
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     var users: [AppUser] = []
+    
+    // copy of reference
+    var filteredData: [AppUser] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         activityIndicatorView.center = self.view.center
+        
+        searchBar.delegate = self
         
         hideKeyboardWhenTappedAround()
         loadUsers()
@@ -40,6 +47,7 @@ class DiscoverPeopleViewController: UIViewController {
                 /// stop before view reloads data
                 self.activityIndicatorView.stopAnimating()
                 self.activityIndicatorView.hidesWhenStopped = true
+                self.filteredData = self.users
                 self.peopleTableView.reloadData()
             })
         }
@@ -57,17 +65,39 @@ class DiscoverPeopleViewController: UIViewController {
 extension DiscoverPeopleViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.count
+        return filteredData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PeopleTableViewCell", for: indexPath) as! PeopleTableViewCell
         cell.backgroundColor = UIColor.white
         
-        let user = users[indexPath.row]
+        let user = filteredData[indexPath.row]
         cell.user = user
         
         return cell
     }
     
-}   // #74
+}
+
+extension DiscoverPeopleViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        filteredData = []
+        
+        if searchText == "" {
+            filteredData = users
+        } else {
+            for item in users {
+                if (item.userUsername!.lowercased().contains(searchText.lowercased()) || item.userName!.lowercased().contains(searchBar.text!.lowercased())) {
+                    filteredData.append(item)
+                }
+            }
+        }
+        
+        self.peopleTableView.reloadData()
+        
+    }
+    
+}   // #104
