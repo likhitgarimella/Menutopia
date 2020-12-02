@@ -156,7 +156,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0259A0912509E1D500C567A6 /* Set-1 */ = {
+		0259A0912509E1D500C567A6 /* Initial */ = {
 			isa = PBXGroup;
 			children = (
 				027510EE2503D1B800BF7987 /* ViewController.swift */,
@@ -165,12 +165,12 @@
 				02A15A0C2508DA31001B5FAD /* SelectSignupViewController.swift */,
 				021210CC2509C1DA0062DB29 /* RestaurantSignupViewController.swift */,
 				021210CE2509C2710062DB29 /* UserSignupViewController.swift */,
-				0259A0982509E5A900C567A6 /* AuthService.swift */,
 				0259A0962509E50200C567A6 /* Api.swift */,
 				0259A0922509E2B900C567A6 /* AppUser.swift */,
 				0259A0942509E44100C567A6 /* UserApi.swift */,
+				0259A0982509E5A900C567A6 /* AuthService.swift */,
 			);
-			path = "Set-1";
+			path = Initial;
 			sourceTree = "<group>";
 		};
 		025C112E2505833500A1E130 /* Fonts */ = {
@@ -245,7 +245,7 @@
 			children = (
 				025C112E2505833500A1E130 /* Fonts */,
 				027510E92503D1B800BF7987 /* Snapfood */,
-				0259A0912509E1D500C567A6 /* Set-1 */,
+				0259A0912509E1D500C567A6 /* Initial */,
 				02FA637A250D63A200703E29 /* Segments */,
 				0266B7152529BB580058BE7E /* Post-Restaurant */,
 				02B6067E2531EA50009987CF /* Explore-Restaurant */,

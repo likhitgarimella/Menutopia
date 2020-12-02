@@ -158,7 +158,7 @@ class RestaurantProfileViewController: UIViewController {
         }, onError: {
             (errorMessage) in
             /// implement hud here
-            print(errorMessage)
+            // print(errorMessage)
         })
         
     }

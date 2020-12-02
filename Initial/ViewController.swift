@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         
         // if user signed in
         if Api.UserDet.CURRENT_RESTAURANT != nil {
-            print("Current user: \(Auth.auth().currentUser)")
+            // print("Current user: \(Auth.auth().currentUser)")
             // segue to tab bar VC
             self.performSegue(withIdentifier: "goToHomeDirect", sender: self)
         }
