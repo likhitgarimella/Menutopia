@@ -90,7 +90,7 @@ class ExploreRestaurantViewController: UIViewController, UICollectionViewDelegat
         self.restaurantPosts.removeAll()
         
         for item in self.realRestaurantPosts {
-            if (item.mealName!.lowercased().contains(searchBar.text!.lowercased()) || item.mealDesc!.lowercased().contains(searchBar.text!.lowercased()) || item.mealPrice!.lowercased().contains(searchBar.text!.lowercased()) || item.typeLabel!.lowercased().contains(searchBar.text!.lowercased()) || item.genreLabel!.lowercased().contains(searchBar.text!.lowercased()) || item.cuisineLabel!.lowercased().contains(searchBar.text!.lowercased())) {
+            if (item.mealName!.lowercased().contains(searchBar.text!.lowercased()) || item.mealDesc!.lowercased().contains(searchBar.text!.lowercased()) || item.typeLabel!.lowercased().contains(searchBar.text!.lowercased()) || item.genreLabel!.lowercased().contains(searchBar.text!.lowercased()) || item.cuisineLabel!.lowercased().contains(searchBar.text!.lowercased())) {
                 self.restaurantPosts.append(item)
             }
         }
