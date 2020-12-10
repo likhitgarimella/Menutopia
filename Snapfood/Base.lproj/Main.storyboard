@@ -2256,9 +2256,9 @@ Download the app and start exploring your local restaurants, you may find your n
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dK4-NH-PMa"/>
+        <segue reference="byU-wR-8Fx"/>
         <segue reference="83a-6F-wcJ"/>
-        <segue reference="5QU-o9-fNs"/>
+        <segue reference="5uX-w9-ay9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="compass" width="22" height="22"/>
