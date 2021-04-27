@@ -9,7 +9,7 @@
 import UIKit
 import JGProgressHUD
 
-class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
+class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     // MARK: - Outlets
     
@@ -51,6 +51,8 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     // MARK: - Declarations
     
     var selectedImage: UIImage?
+    
+    let imagePicker = UIImagePickerController()
     
     /// global declaration
     let button1 = UIButton.init(type: .custom)
@@ -115,6 +117,9 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = true
         
         // MARK: - ScrollView-1 build
         
@@ -342,13 +347,16 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         LeftPadding()
         TextViewProperties()
         
+        /*
         // Add gesture for image
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleSelectPhoto))
         mealImage.addGestureRecognizer(tapGesture)
         mealImage.isUserInteractionEnabled = true
+        */
         
     }
     
+    /*
     @objc func handleSelectPhoto() {
         
         let pickerController = UIImagePickerController()
@@ -360,6 +368,35 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
         pickerController.modalPresentationStyle = .fullScreen
         // present photo library
         present(pickerController, animated: true, completion: nil)
+        
+    }
+    */
+    
+    @IBAction func addBtn(_ sender: UIButton) {
+        
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Photo Gallery", style: .default, handler: { (button) in
+            self.imagePicker.sourceType = .photoLibrary
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }))
+            
+        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (button) in
+            self.imagePicker.sourceType = .camera
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }))
+            
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            
+        present(alert, animated: true, completion: nil)
+            
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        guard let pickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else { return }
+        mealImage.image = pickedImage
+        dismiss(animated: true, completion: nil)
         
     }
     
@@ -554,6 +591,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate {
     
 }
 
+/*
 extension RestaurantPostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -568,4 +606,4 @@ extension RestaurantPostViewController: UIImagePickerControllerDelegate, UINavig
         dismiss(animated: true, completion: nil)
     }
     
-}   // #572
+}   */   // #610
