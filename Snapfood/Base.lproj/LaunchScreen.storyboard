@@ -7,6 +7,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Medium.otf">
+            <string>SFProRounded-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -19,11 +24,20 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-screen-image" translatesAutoresizingMaskIntoConstraints="NO" id="C7A-1p-1jk">
                                 <rect key="frame" x="19.666666666666657" y="132.66666666666663" width="375" height="471"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQb-uq-mdS">
+                                <rect key="frame" x="170" y="664" width="74" height="32"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
+                                <state key="normal" title="Bazan LLC">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dQb-uq-mdS" secondAttribute="bottom" constant="40" id="FVV-Jn-huw"/>
                             <constraint firstItem="C7A-1p-1jk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="H0d-21-45J"/>
+                            <constraint firstItem="dQb-uq-mdS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YXu-Md-Sie"/>
                             <constraint firstItem="C7A-1p-1jk" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="de6-rf-ml4"/>
                         </constraints>
                     </view>
