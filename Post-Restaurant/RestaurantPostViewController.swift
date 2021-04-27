@@ -347,30 +347,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
         LeftPadding()
         TextViewProperties()
         
-        /*
-        // Add gesture for image
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleSelectPhoto))
-        mealImage.addGestureRecognizer(tapGesture)
-        mealImage.isUserInteractionEnabled = true
-        */
-        
     }
-    
-    /*
-    @objc func handleSelectPhoto() {
-        
-        let pickerController = UIImagePickerController()
-        // To get access to selected media files, add delegate
-        pickerController.delegate = self
-        /// presenting it in full screen bcuz...
-        /// i want the view to change...
-        /// so that viewWillAppear will work...
-        pickerController.modalPresentationStyle = .fullScreen
-        // present photo library
-        present(pickerController, animated: true, completion: nil)
-        
-    }
-    */
     
     @IBAction func addBtn(_ sender: UIButton) {
         
@@ -589,21 +566,4 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
         // self.captionTextView.textColor = UIColor.lightGray
     }
     
-}
-
-/*
-extension RestaurantPostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        // Selected image to display it in our image view
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            // Store this img in an instance variable
-            selectedImage = image
-            // set image's imageView to selected image
-            mealImage.image = image
-        }
-        print("Image selected from library")
-        dismiss(animated: true, completion: nil)
-    }
-    
-}   */   // #610
+}   // #570
