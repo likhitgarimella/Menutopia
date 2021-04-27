@@ -1539,7 +1539,7 @@ Download the app and start exploring your local restaurants, you may find your n
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hI-Wo-Lni">
-                                <rect key="frame" x="0.0" y="61" width="414" height="148"/>
+                                <rect key="frame" x="0.0" y="60" width="414" height="148"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="c6H-FR-3IG">
                                         <rect key="frame" x="8" y="14" width="120" height="120"/>
@@ -1568,7 +1568,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEQ-TK-aGO">
-                                <rect key="frame" x="373" y="15" width="21" height="23"/>
+                                <rect key="frame" x="373" y="14.666666666666664" width="21" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="21" id="AYw-Hx-wh7"/>
                                     <constraint firstAttribute="height" constant="23" id="H97-4d-hCn"/>
@@ -1579,7 +1579,7 @@ Download the app and start exploring your local restaurants, you may find your n
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post your Memory" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4E1-Hf-gv2">
-                                <rect key="frame" x="20" y="12" width="192" height="29"/>
+                                <rect key="frame" x="20" y="12" width="192" height="28"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
