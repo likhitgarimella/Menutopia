@@ -79,18 +79,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-    /*
-    func Conditions() {
-        
-        // stop act ind for empty coll view
-        if posts.count == 0 {
-            activityIndicatorView.stopAnimating()
-            activityIndicatorView.hidesWhenStopped = true
-        }
-        
-    }
-    */
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
     }
@@ -136,4 +124,4 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-}   // #140
+}   // #128

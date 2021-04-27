@@ -114,6 +114,8 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
         mealDesc.textContainerInset = UIEdgeInsets(top: 6, left: 6, bottom: 6, right: 6)
         
     }
+    
+    // MARK: - viewDidLoad
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -351,6 +353,10 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
     
     @IBAction func addBtn(_ sender: UIButton) {
         
+        let taptic = UIImpactFeedbackGenerator(style: .light)
+        taptic.prepare()
+        taptic.impactOccurred()
+        
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: "Photo Gallery", style: .default, handler: { (button) in
@@ -371,8 +377,13 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        guard let pickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else { return }
-        mealImage.image = pickedImage
+        if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            // Store this img in an instance variable
+            selectedImage = image
+            // set profile image's imageView to selected image
+            mealImage.image = image
+        }
+        print("Image selected from library")
         dismiss(animated: true, completion: nil)
         
     }
@@ -380,7 +391,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        handlePost()
+        // handlePost()
         
     }
     
@@ -543,7 +554,6 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
         // Upload data
         HelperServiceRestaurant.uploadDataToServer(data: imageData, name: mealName.text!, desc: mealDesc.text!, price: mealPrice.text!, type: foodTypeLabel.text!, genre: foodGenreLabel.text!, cuisine: foodCuisineLabel.text!, timestamp: Double(Int(truncating: timestamp)), onSuccess: {
             self.clean()
-            // dismiss hud
             self.hud1.dismiss()
             self.tabBarController?.selectedIndex = 0
         })
@@ -562,8 +572,6 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
         self.mealPrice.text = nil
         // setting back submit button to disabled state
         submitOutlet.isEnabled = false
-        // setting back text view text color to light gray, so that delegate methods work
-        // self.captionTextView.textColor = UIColor.lightGray
     }
     
-}   // #570
+}   // #578

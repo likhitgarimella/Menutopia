@@ -10,7 +10,9 @@ import UIKit
 // import Firebase
 import JGProgressHUD
 
-class UserPostViewController: UIViewController, UITextViewDelegate {
+class UserPostViewController: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    // MARK: - Outlets
     
     @IBOutlet var photo: UIImageView!
     @IBOutlet var captionTextView: UITextView!
@@ -18,7 +20,16 @@ class UserPostViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet var removeOutlet: UIButton!
     
+    // MARK: - Declarations
+    
     var selectedImage: UIImage?
+    
+    // progress hud
+    let hud1 = JGProgressHUD(style: .dark)
+    
+    let imagePicker = UIImagePickerController()
+    
+    // MARK: - Functions
     
     // Delegate function
     func textViewDidBeginEditing(_ textView: UITextView) {
@@ -36,9 +47,6 @@ class UserPostViewController: UIViewController, UITextViewDelegate {
         }
     }
     
-    // progress hud
-    let hud1 = JGProgressHUD(style: .dark)
-    
     func Properties() {
         
         shareOutlet.layer.cornerRadius = 20
@@ -52,39 +60,62 @@ class UserPostViewController: UIViewController, UITextViewDelegate {
         captionTextView.text = "Write a caption..."
         captionTextView.textColor = UIColor.lightGray
         
-        // Add gesture for profile image present in screen
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleSelectPhoto))
-        photo.addGestureRecognizer(tapGesture)
-        photo.isUserInteractionEnabled = true
-        
     }
     
-    @objc func handleSelectPhoto() {
-        
-        let pickerController = UIImagePickerController()
-        // To get access to selected media files, add delegate
-        pickerController.delegate = self
-        /// presenting it in full screen bcuz...
-        /// i want the view to change...
-        /// so that viewWillAppear will work...
-        pickerController.modalPresentationStyle = .fullScreen
-        // present photo library
-        present(pickerController, animated: true, completion: nil)
-        
-    }
+    // MARK: - viewDidLoad
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = true
         
         hideKeyboardWhenTappedAround()
         Properties()
         
     }
     
+    @IBAction func addBtn(_ sender: UIButton) {
+        
+        let taptic = UIImpactFeedbackGenerator(style: .light)
+        taptic.prepare()
+        taptic.impactOccurred()
+        
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Photo Gallery", style: .default, handler: { (button) in
+            self.imagePicker.sourceType = .photoLibrary
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }))
+            
+        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (button) in
+            self.imagePicker.sourceType = .camera
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }))
+            
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            
+        present(alert, animated: true, completion: nil)
+            
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            // Store this img in an instance variable
+            selectedImage = image
+            // set profile image's imageView to selected image
+            photo.image = image
+        }
+        print("Image selected from library")
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        handlePost()
+        // handlePost()
         
     }
     
@@ -106,12 +137,12 @@ class UserPostViewController: UIViewController, UITextViewDelegate {
         
     }
     
+    // MARK: - Share button
+    
     @IBAction func shareButton(_ sender: UIButton) {
         
         // dismiss keyboard
         view.endEditing(true)
-        
-        hud1.show(in: self.view)
         
         // Creating a timestamp
         let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
@@ -119,6 +150,7 @@ class UserPostViewController: UIViewController, UITextViewDelegate {
         // selected image(imageSelected) should be from selectedImage
         guard let imageSelected = self.selectedImage else {
             print("Avatar is nil")
+            hud1.show(in: self.view)
             hud1.indicatorView = nil    // remove indicator
             hud1.textLabel.text = "Empty image"
             hud1.dismiss(afterDelay: 2.0, animated: true)
@@ -133,7 +165,7 @@ class UserPostViewController: UIViewController, UITextViewDelegate {
         // Upload data
         HelperServiceUser.uploadDataToServer(data: imageData, caption: captionTextView.text!, timestamp: Double(Int(truncating: timestamp)), onSuccess: {
             self.clean()
-            // dismiss hud
+            self.hud1.show(in: self.view)
             self.hud1.dismiss()
             self.tabBarController?.selectedIndex = 1
         })
@@ -158,20 +190,4 @@ class UserPostViewController: UIViewController, UITextViewDelegate {
         
     }
     
-}
-
-extension UserPostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        // Selected image to display it in our profile image
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            // Store this img in an instance variable
-            selectedImage = image
-            // set profile image's imageView to selected image
-            photo.image = image
-        }
-        print("Image selected from library")
-        dismiss(animated: true, completion: nil)
-    }
-    
-}   // #178
+}   // #194

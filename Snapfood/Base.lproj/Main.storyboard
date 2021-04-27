@@ -1538,6 +1538,23 @@ Download the app and start exploring your local restaurants! Find your new favou
                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post your Memory" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4E1-Hf-gv2">
+                                <rect key="frame" x="20" y="12" width="192" height="28"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEQ-TK-aGO">
+                                <rect key="frame" x="373" y="14.666666666666664" width="21" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="AYw-Hx-wh7"/>
+                                    <constraint firstAttribute="height" constant="23" id="H97-4d-hCn"/>
+                                </constraints>
+                                <state key="normal" image="delete"/>
+                                <connections>
+                                    <action selector="remove:" destination="SRr-Td-UoL" eventType="touchUpInside" id="MeR-vR-U1a"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hI-Wo-Lni">
                                 <rect key="frame" x="0.0" y="60" width="414" height="148"/>
                                 <subviews>
@@ -1567,25 +1584,8 @@ Download the app and start exploring your local restaurants! Find your new favou
                                     <constraint firstItem="c6H-FR-3IG" firstAttribute="leading" secondItem="8hI-Wo-Lni" secondAttribute="leading" constant="8" id="xDQ-cy-NII"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEQ-TK-aGO">
-                                <rect key="frame" x="373" y="14.666666666666664" width="21" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="21" id="AYw-Hx-wh7"/>
-                                    <constraint firstAttribute="height" constant="23" id="H97-4d-hCn"/>
-                                </constraints>
-                                <state key="normal" image="delete"/>
-                                <connections>
-                                    <action selector="remove:" destination="SRr-Td-UoL" eventType="touchUpInside" id="MeR-vR-U1a"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post your Memory" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4E1-Hf-gv2">
-                                <rect key="frame" x="20" y="12" width="192" height="28"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ou7-5i-MTj">
-                                <rect key="frame" x="20" y="451" width="374" height="40"/>
+                                <rect key="frame" x="20" y="511" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.45490196078431372" green="0.53725490196078429" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="KJg-0X-IR9"/>
@@ -1598,21 +1598,35 @@ Download the app and start exploring your local restaurants! Find your new favou
                                     <action selector="shareButton:" destination="SRr-Td-UoL" eventType="touchUpInside" id="vQ4-f1-XI6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e05-2T-k1v">
+                                <rect key="frame" x="50" y="216" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="BEH-Kj-vNN"/>
+                                    <constraint firstAttribute="width" constant="36" id="i9v-ne-zv1"/>
+                                </constraints>
+                                <state key="normal" image="plus copy"/>
+                                <connections>
+                                    <action selector="addBtn:" destination="SRr-Td-UoL" eventType="touchUpInside" id="3Pd-p1-Tkj"/>
+                                    <action selector="addBtn:" destination="VLy-Rl-BW3" eventType="touchUpInside" id="Qhc-Fa-DKs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FKX-Hi-dY7"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="FKX-Hi-dY7" firstAttribute="bottom" secondItem="ou7-5i-MTj" secondAttribute="bottom" constant="309" id="0jr-tA-BvH"/>
+                            <constraint firstItem="FKX-Hi-dY7" firstAttribute="bottom" secondItem="ou7-5i-MTj" secondAttribute="bottom" constant="249" id="0jr-tA-BvH"/>
                             <constraint firstItem="4E1-Hf-gv2" firstAttribute="leading" secondItem="FKX-Hi-dY7" secondAttribute="leading" constant="20" id="Cum-OY-hdH"/>
                             <constraint firstItem="FKX-Hi-dY7" firstAttribute="trailing" secondItem="VEQ-TK-aGO" secondAttribute="trailing" constant="20" id="FJB-RY-Nta"/>
                             <constraint firstItem="FKX-Hi-dY7" firstAttribute="right" secondItem="ou7-5i-MTj" secondAttribute="right" constant="20" id="H7F-DO-L1M"/>
                             <constraint firstItem="4E1-Hf-gv2" firstAttribute="top" secondItem="FKX-Hi-dY7" secondAttribute="top" constant="12" id="JLV-ij-G8e"/>
+                            <constraint firstItem="e05-2T-k1v" firstAttribute="centerX" secondItem="c6H-FR-3IG" secondAttribute="centerX" id="WRX-54-wND"/>
                             <constraint firstItem="8hI-Wo-Lni" firstAttribute="top" secondItem="4E1-Hf-gv2" secondAttribute="bottom" constant="20" id="Zmz-OS-LJS"/>
                             <constraint firstItem="8hI-Wo-Lni" firstAttribute="trailing" secondItem="FKX-Hi-dY7" secondAttribute="trailing" id="bxE-hd-4Em"/>
                             <constraint firstItem="VEQ-TK-aGO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4E1-Hf-gv2" secondAttribute="trailing" constant="8" symbolic="YES" id="fXC-Et-iH2"/>
                             <constraint firstItem="ou7-5i-MTj" firstAttribute="left" secondItem="FKX-Hi-dY7" secondAttribute="left" constant="20" id="kLg-fW-Grr"/>
                             <constraint firstItem="8hI-Wo-Lni" firstAttribute="leading" secondItem="FKX-Hi-dY7" secondAttribute="leading" id="nLI-r2-hrT"/>
                             <constraint firstItem="VEQ-TK-aGO" firstAttribute="centerY" secondItem="4E1-Hf-gv2" secondAttribute="centerY" id="uX5-dM-tCE"/>
+                            <constraint firstItem="e05-2T-k1v" firstAttribute="top" secondItem="8hI-Wo-Lni" secondAttribute="bottom" constant="8" id="wu0-my-dAD"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="800"/>
