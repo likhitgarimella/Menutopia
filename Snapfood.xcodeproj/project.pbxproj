@@ -20,7 +20,6 @@
 		0237701F2525FCE300CC3F32 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237701E2525FCE300CC3F32 /* PostViewController.swift */; };
 		023770222525FD0400CC3F32 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023770212525FD0400CC3F32 /* DiscoverViewController.swift */; };
 		023770252525FD2500CC3F32 /* RestaurantProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023770242525FD2500CC3F32 /* RestaurantProfileViewController.swift */; };
-		0259A0902509E0CC00C567A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0259A08F2509E0CC00C567A6 /* GoogleService-Info.plist */; };
 		0259A0932509E2B900C567A6 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0259A0922509E2B900C567A6 /* AppUser.swift */; };
 		0259A0952509E44100C567A6 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0259A0942509E44100C567A6 /* UserApi.swift */; };
 		0259A0972509E50200C567A6 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0259A0962509E50200C567A6 /* Api.swift */; };
@@ -59,6 +58,7 @@
 		027510F42503D1CC00BF7987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027510F32503D1CC00BF7987 /* Assets.xcassets */; };
 		027510F72503D1CC00BF7987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027510F52503D1CC00BF7987 /* LaunchScreen.storyboard */; };
 		027510FF2503E25000BF7987 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027510FE2503E24F00BF7987 /* Extensions.swift */; };
+		0276610B2639986E00B509A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0276610A2639986E00B509A5 /* GoogleService-Info.plist */; };
 		029F0BD32533864900C6C567 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029F0BD12533864900C6C567 /* PhotoCollectionViewCell.swift */; };
 		029F0BD42533864900C6C567 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029F0BD22533864900C6C567 /* PhotoCollectionViewCell.xib */; };
 		02A15A0B2508DA07001B5FAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A15A0A2508DA07001B5FAD /* LoginViewController.swift */; };
@@ -86,7 +86,6 @@
 		0237701E2525FCE300CC3F32 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		023770212525FD0400CC3F32 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		023770242525FD2500CC3F32 /* RestaurantProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantProfileViewController.swift; sourceTree = "<group>"; };
-		0259A08F2509E0CC00C567A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0259A0922509E2B900C567A6 /* AppUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		0259A0942509E44100C567A6 /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		0259A0962509E50200C567A6 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
@@ -127,6 +126,7 @@
 		027510F62503D1CC00BF7987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		027510F82503D1CC00BF7987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		027510FE2503E24F00BF7987 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0276610A2639986E00B509A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		029F0BD12533864900C6C567 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		029F0BD22533864900C6C567 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		02A15A0A2508DA07001B5FAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -279,7 +279,7 @@
 				027510F02503D1B800BF7987 /* Main.storyboard */,
 				027510FE2503E24F00BF7987 /* Extensions.swift */,
 				027510F82503D1CC00BF7987 /* Info.plist */,
-				0259A08F2509E0CC00C567A6 /* GoogleService-Info.plist */,
+				0276610A2639986E00B509A5 /* GoogleService-Info.plist */,
 			);
 			path = Snapfood;
 			sourceTree = "<group>";
@@ -415,6 +415,7 @@
 				025C11422505836500A1E130 /* SF-Pro-Rounded-Medium.otf in Resources */,
 				025C11462505836500A1E130 /* SF-Pro-Text-MediumItalic.otf in Resources */,
 				025C11442505836500A1E130 /* SF-Pro-Rounded-Black.otf in Resources */,
+				0276610B2639986E00B509A5 /* GoogleService-Info.plist in Resources */,
 				025C114A2505836500A1E130 /* SF-Pro-Rounded-Light.otf in Resources */,
 				025C11482505836500A1E130 /* SF-Pro-Rounded-Ultralight.otf in Resources */,
 				02B6068425320ABD009987CF /* RestaurantCollectionViewCell.xib in Resources */,
@@ -424,7 +425,6 @@
 				025C11472505836500A1E130 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				027510F72503D1CC00BF7987 /* LaunchScreen.storyboard in Resources */,
 				025C113D2505836500A1E130 /* SF-Pro-Rounded-Regular.otf in Resources */,
-				0259A0902509E0CC00C567A6 /* GoogleService-Info.plist in Resources */,
 				027510F42503D1CC00BF7987 /* Assets.xcassets in Resources */,
 				027510F22503D1B800BF7987 /* Main.storyboard in Resources */,
 				025C11432505836500A1E130 /* SF-Pro-Rounded-Heavy.otf in Resources */,
@@ -681,7 +681,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.likhitgarimella.Snapfood;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.likhitgarimella.Menutopia-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -703,7 +703,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.likhitgarimella.Snapfood;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.likhitgarimella.Menutopia-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

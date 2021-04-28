@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>505670896606-1q1h1tahkhtde4sdiecd6m93jqeq0bjf.apps.googleusercontent.com</string>
+	<string>505670896606-jrtltijthioaoepf5i0nbr3k2lauooia.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.505670896606-1q1h1tahkhtde4sdiecd6m93jqeq0bjf</string>
+	<string>com.googleusercontent.apps.505670896606-jrtltijthioaoepf5i0nbr3k2lauooia</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDQyxCF_76LN_mALKOafsmirDeK9aPRgoc</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,23 +13,23 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.likhitgarimella.Snapfood</string>
+	<string>com.likhitgarimella.Menutopia-2</string>
 	<key>PROJECT_ID</key>
 	<string>snapfood-2304acc</string>
 	<key>STORAGE_BUCKET</key>
 	<string>snapfood-2304acc.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:505670896606:ios:9ce4bbbd7484f4c8aeeb4f</string>
+	<string>1:505670896606:ios:b706280b6320e49baeeb4f</string>
 	<key>DATABASE_URL</key>
 	<string>https://snapfood-2304acc.firebaseio.com</string>
 </dict>
