@@ -24,7 +24,7 @@ class UserPostViewController: UIViewController, UITextViewDelegate, UIImagePicke
     
     var selectedImage: UIImage?
     
-    // progress hud
+    /// progress hud
     let hud1 = JGProgressHUD(style: .dark)
     
     let imagePicker = UIImagePickerController()
@@ -114,13 +114,11 @@ class UserPostViewController: UIViewController, UITextViewDelegate, UIImagePicke
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         // handlePost()
-        
     }
     
+    /*
     func handlePost() {
-        
         if selectedImage != nil {
             // Enable
             self.removeOutlet.isEnabled = true
@@ -134,8 +132,8 @@ class UserPostViewController: UIViewController, UITextViewDelegate, UIImagePicke
             shareOutlet.setTitleColor(UIColor.lightText, for: .normal)
             shareOutlet.backgroundColor = UIColor(red: 80/255, green: 101/255, blue: 161/255, alpha: 1)
         }
-        
     }
+    */
     
     // MARK: - Share button
     
@@ -144,13 +142,16 @@ class UserPostViewController: UIViewController, UITextViewDelegate, UIImagePicke
         // dismiss keyboard
         view.endEditing(true)
         
+        hud1.show(in: self.view)
+        
+        hud1.dismiss(afterDelay: 2.0, animated: true)
+        
         // Creating a timestamp
         let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
         
         // selected image(imageSelected) should be from selectedImage
         guard let imageSelected = self.selectedImage else {
             print("Avatar is nil")
-            hud1.show(in: self.view)
             hud1.indicatorView = nil    // remove indicator
             hud1.textLabel.text = "Empty image"
             hud1.dismiss(afterDelay: 2.0, animated: true)
@@ -163,9 +164,8 @@ class UserPostViewController: UIViewController, UITextViewDelegate, UIImagePicke
         }
         
         // Upload data
-        HelperServiceUser.uploadDataToServer(data: imageData, caption: captionTextView.text!, timestamp: Double(Int(truncating: timestamp)), onSuccess: {
+        HelperServiceUser.uploadDataToServer(data: imageData, caption: captionTextView.text!.trimmingCharacters(in: .whitespacesAndNewlines), timestamp: Double(Int(truncating: timestamp)), onSuccess: {
             self.clean()
-            self.hud1.show(in: self.view)
             self.hud1.dismiss()
             self.tabBarController?.selectedIndex = 1
         })
@@ -184,10 +184,14 @@ class UserPostViewController: UIViewController, UITextViewDelegate, UIImagePicke
     
     @IBAction func remove(_ sender: UIBarButtonItem) {
         
+        let taptic = UIImpactFeedbackGenerator(style: .light)
+        taptic.prepare()
+        taptic.impactOccurred()
+        
         clean()
         // we need to test for bad inputs again, after clearing the inputs
-        handlePost()
+        // handlePost()
         
     }
     
-}   // #194
+}   // #198

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+// import Firebase
 import JGProgressHUD
 
 class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -74,7 +75,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
     let names2 = ["alcoholic", "beef", "chicken", "coffee", "dairy", "egg", "fish", "frappucino", "fruit", "grains", "ice cream", "non-alcoholic", "noodle", "pancake", "shellfish", "smoothie", "sushi", "tea", "vegetable", "-other-"]
     let names3 = ["american", "cantonese", "chinese", "french", "gluten free", "indian", "italian", "japanese", "korean", "mexican", "spanish", "tex-mex", "thai", "vegan", "vegetarian", "vietnamese", "-other-"]
     
-    // progress hud
+    /// progress hud
     let hud1 = JGProgressHUD(style: .dark)
     
     // MARK: - Functions
@@ -390,13 +391,11 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         // handlePost()
-        
     }
     
+    /*
     func handlePost() {
-        
         if selectedImage != nil {
             // Enable
             self.submitOutlet.isEnabled = true
@@ -408,8 +407,8 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
             submitOutlet.setTitleColor(UIColor.lightText, for: .normal)
             // shareOutlet.backgroundColor = UIColor(red: 80/255, green: 101/255, blue: 161/255, alpha: 1)
         }
-        
     }
+    */
     
     // MARK: - ScrollView-1 func
     
@@ -516,6 +515,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
         
     }
     
+    
     // MARK: - Submit button
     
     @IBAction func submitButton(_ sender: UIButton) {
@@ -525,14 +525,7 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
         
         hud1.show(in: self.view)
         
-        if (selectedImage == nil || mealName.text!.isEmpty || mealDesc.text!.isEmpty || mealPrice.text!.isEmpty || foodTypeLabel.text!.isEmpty || foodGenreLabel.text!.isEmpty || foodCuisineLabel.text!.isEmpty) {
-            // Alert for empty fields
-            let myAlert = UIAlertController(title: "Invalid!", message: "Please fill up all the fields and options", preferredStyle: UIAlertController.Style.alert)
-            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
-            myAlert.addAction(okAction)
-            self.present(myAlert, animated: true, completion: nil)
-            return
-        }
+        hud1.dismiss(afterDelay: 2.0, animated: true)
         
         // Creating a timestamp
         let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
@@ -551,8 +544,17 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
             return
         }
         
+        if (mealName.text!.isEmpty || mealDesc.text!.isEmpty || mealPrice.text!.isEmpty || foodTypeLabel.text!.isEmpty || foodGenreLabel.text!.isEmpty || foodCuisineLabel.text!.isEmpty) {
+            // Alert for empty fields
+            let myAlert = UIAlertController(title: "Invalid!", message: "Please fill up all the fields and options", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+            return
+        }
+        
         // Upload data
-        HelperServiceRestaurant.uploadDataToServer(data: imageData, name: mealName.text!, desc: mealDesc.text!, price: mealPrice.text!, type: foodTypeLabel.text!, genre: foodGenreLabel.text!, cuisine: foodCuisineLabel.text!, timestamp: Double(Int(truncating: timestamp)), onSuccess: {
+        HelperServiceRestaurant.uploadDataToServer(data: imageData, name: mealName.text!.trimmingCharacters(in: .whitespacesAndNewlines), desc: mealDesc.text!.trimmingCharacters(in: .whitespacesAndNewlines), price: mealPrice.text!, type: foodTypeLabel.text!, genre: foodGenreLabel.text!, cuisine: foodCuisineLabel.text!, timestamp: Double(Int(truncating: timestamp)), onSuccess: {
             self.clean()
             self.hud1.dismiss()
             self.tabBarController?.selectedIndex = 0
@@ -574,4 +576,4 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
         submitOutlet.isEnabled = false
     }
     
-}   // #578
+}   // #580
