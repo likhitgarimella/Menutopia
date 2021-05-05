@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18121" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1599,12 +1599,12 @@ Download the app and start exploring your local restaurants! Find your new favou
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e05-2T-k1v">
-                                <rect key="frame" x="50" y="216" width="36" height="36"/>
+                                <rect key="frame" x="31" y="216" width="74" height="28"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="BEH-Kj-vNN"/>
-                                    <constraint firstAttribute="width" constant="36" id="i9v-ne-zv1"/>
+                                    <constraint firstAttribute="width" constant="74" id="0oG-vd-YGN"/>
+                                    <constraint firstAttribute="height" constant="28" id="oUa-l0-ncw"/>
                                 </constraints>
-                                <state key="normal" image="plus copy"/>
+                                <state key="normal" image="add-2"/>
                                 <connections>
                                     <action selector="addBtn:" destination="SRr-Td-UoL" eventType="touchUpInside" id="3Pd-p1-Tkj"/>
                                     <action selector="addBtn:" destination="VLy-Rl-BW3" eventType="touchUpInside" id="Qhc-Fa-DKs"/>
@@ -1776,12 +1776,12 @@ Download the app and start exploring your local restaurants! Find your new favou
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uC-B5-CUO">
-                                                <rect key="frame" x="52" y="232" width="36" height="36"/>
+                                                <rect key="frame" x="33" y="232" width="74" height="28"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="36" id="SF6-wH-IJO"/>
-                                                    <constraint firstAttribute="width" constant="36" id="c7Q-i0-gd2"/>
+                                                    <constraint firstAttribute="width" constant="74" id="J60-Wq-oms"/>
+                                                    <constraint firstAttribute="height" constant="28" id="NBi-1s-Fuf"/>
                                                 </constraints>
-                                                <state key="normal" image="plus copy"/>
+                                                <state key="normal" image="add"/>
                                                 <connections>
                                                     <action selector="addBtn:" destination="VLy-Rl-BW3" eventType="touchUpInside" id="Kj8-Ni-BrX"/>
                                                 </connections>
@@ -2288,6 +2288,8 @@ Download the app and start exploring your local restaurants! Find your new favou
         <segue reference="5uX-w9-ay9"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="add" width="74" height="28"/>
+        <image name="add-2" width="74" height="28"/>
         <image name="compass" width="22" height="22"/>
         <image name="delete" width="21" height="23"/>
         <image name="image-post" width="20" height="20"/>
@@ -2296,7 +2298,6 @@ Download the app and start exploring your local restaurants! Find your new favou
         <image name="menu" width="28" height="28"/>
         <image name="placeholder-image" width="200" height="200"/>
         <image name="plus" width="24" height="24"/>
-        <image name="plus copy" width="36" height="36"/>
         <image name="restaurant" width="345" height="261"/>
         <image name="select-profile-pic" width="100" height="100"/>
         <image name="select-signup" width="345" height="309"/>
