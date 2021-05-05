@@ -75,7 +75,7 @@ class LoginViewController: UIViewController {
                 }
                 
                 // Auth service sign in
-                AuthService.signIn(email: email, password: password, onSuccess: {
+                AuthService.signIn(email: email.trimmingCharacters(in: .whitespacesAndNewlines), password: password.trimmingCharacters(in: .whitespacesAndNewlines), onSuccess: {
                     print("On Success")
                     self.hud1.show(in: self.view)
                     self.hud1.indicatorView = nil

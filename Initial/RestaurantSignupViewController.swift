@@ -144,7 +144,7 @@ class RestaurantSignupViewController: UIViewController {
         
         if (restName.text?.isEmpty == false && restEmail.text?.isEmpty == false && restAddress.text?.isEmpty == false && restCityState.text?.isEmpty == false && restPhoneNo.text?.isEmpty == false && restOpenHours.text?.isEmpty == false && password.text?.isEmpty == false && confirmPassword.text?.isEmpty == false) {
             
-            if (password.text == confirmPassword.text) {
+            if (password.text!.trimmingCharacters(in: .whitespacesAndNewlines) == confirmPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)) {
                 
                 if(isValidEmail(testStr: restEmail.text!)) {
                     
@@ -169,7 +169,7 @@ class RestaurantSignupViewController: UIViewController {
                     }
                     
                     // Auth service sign up
-                    AuthService.restaurantSignUp(name: name, email: email, address: address, cityState: cityState, phoneNo: phoneNo, openHours: openHours, password: password, imageData: imageData, onSuccess: {
+                    AuthService.restaurantSignUp(name: name.trimmingCharacters(in: .whitespacesAndNewlines), email: email.trimmingCharacters(in: .whitespacesAndNewlines), address: address.trimmingCharacters(in: .whitespacesAndNewlines), cityState: cityState.trimmingCharacters(in: .whitespacesAndNewlines), phoneNo: phoneNo.trimmingCharacters(in: .whitespacesAndNewlines), openHours: openHours.trimmingCharacters(in: .whitespacesAndNewlines), password: password.trimmingCharacters(in: .whitespacesAndNewlines), imageData: imageData, onSuccess: {
                         print("On Success")
                         self.hud1.show(in: self.view)
                         self.hud1.indicatorView = nil

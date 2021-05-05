@@ -134,7 +134,7 @@ class UserSignupViewController: UIViewController {
         
         if (userUsername.text?.isEmpty == false && userName.text?.isEmpty == false && userEmail.text?.isEmpty == false && userBio.text?.isEmpty == false && password.text?.isEmpty == false && confirmPassword.text?.isEmpty == false) {
             
-            if (password.text == confirmPassword.text) {
+            if (password.text!.trimmingCharacters(in: .whitespacesAndNewlines) == confirmPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)) {
                 
                 if(isValidEmail(testStr: userEmail.text!)) {
                     
@@ -159,7 +159,7 @@ class UserSignupViewController: UIViewController {
                     }
                     
                     // Auth service sign up
-                    AuthService.userSignUp(username: username, name: name, email: email, bio: bio, password: password, imageData: imageData, onSuccess: {
+                    AuthService.userSignUp(username: username.trimmingCharacters(in: .whitespacesAndNewlines), name: name.trimmingCharacters(in: .whitespacesAndNewlines), email: email.trimmingCharacters(in: .whitespacesAndNewlines), bio: bio.trimmingCharacters(in: .whitespacesAndNewlines), password: password.trimmingCharacters(in: .whitespacesAndNewlines), imageData: imageData, onSuccess: {
                         print("On Success")
                         self.hud1.show(in: self.view)
                         self.hud1.indicatorView = nil
