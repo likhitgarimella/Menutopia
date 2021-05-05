@@ -261,14 +261,17 @@
                                                     <constraint firstAttribute="width" constant="80" id="plT-np-Qpb"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select profile picture" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVE-Er-gU0">
-                                                <rect key="frame" x="145.33333333333334" y="477" width="123.66666666666666" height="17"/>
-                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="14"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxV-PT-N56">
+                                                <rect key="frame" x="136" y="481" width="142" height="24"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="ZUr-5P-kur"/>
+                                                    <constraint firstAttribute="width" constant="142" id="mR0-Mz-Wu6"/>
+                                                </constraints>
+                                                <state key="normal" image="select-prof-pic"/>
+                                            </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restaurant name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o7D-NL-X6S">
-                                                <rect key="frame" x="20" y="524" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="525" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="9gm-Zm-MyW"/>
                                                 </constraints>
@@ -282,7 +285,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restaurant email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SWC-on-KQN">
-                                                <rect key="frame" x="20" y="584" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="585" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="epR-dS-kgC"/>
                                                 </constraints>
@@ -296,7 +299,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restaurant address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sDq-MR-cZn">
-                                                <rect key="frame" x="20" y="644" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="645" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="hwu-nc-lFC"/>
                                                 </constraints>
@@ -310,7 +313,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restaurant city &amp; state" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lhA-Sk-bQm">
-                                                <rect key="frame" x="20" y="704" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="705" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Jux-BD-707"/>
                                                 </constraints>
@@ -324,7 +327,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restaurant phone no. (with country code)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cee-CN-Uyt">
-                                                <rect key="frame" x="20" y="764" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="765" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="GMc-c5-JNd"/>
                                                 </constraints>
@@ -338,7 +341,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Create Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8B7-rD-N1U">
-                                                <rect key="frame" x="20" y="884" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="885" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="xbB-Ou-J2f"/>
                                                 </constraints>
@@ -352,7 +355,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SyD-Os-RJD">
-                                                <rect key="frame" x="20" y="944" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="945" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="7rH-IO-YMV"/>
                                                 </constraints>
@@ -366,7 +369,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXv-WT-ZG2">
-                                                <rect key="frame" x="20" y="1014" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="1015" width="374" height="40"/>
                                                 <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="u8a-Ru-bzu"/>
@@ -400,7 +403,7 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restaurant open hours (00:00 - 00:00)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RuY-Se-13r">
-                                                <rect key="frame" x="20" y="824" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="825" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="GPZ-UK-hKQ"/>
                                                 </constraints>
@@ -419,11 +422,12 @@
                                             <constraint firstItem="lhA-Sk-bQm" firstAttribute="leading" secondItem="tXH-gD-mbg" secondAttribute="leading" constant="20" id="0Ck-mb-Fu4"/>
                                             <constraint firstItem="SWC-on-KQN" firstAttribute="left" secondItem="tXH-gD-mbg" secondAttribute="left" constant="20" id="2hS-fh-KRl"/>
                                             <constraint firstAttribute="bottom" secondItem="FJc-xE-O0W" secondAttribute="bottom" constant="40" id="2pI-eM-nGF"/>
-                                            <constraint firstItem="FJc-xE-O0W" firstAttribute="top" secondItem="vXv-WT-ZG2" secondAttribute="bottom" constant="317" id="5ld-2S-375"/>
                                             <constraint firstItem="vXv-WT-ZG2" firstAttribute="left" secondItem="tXH-gD-mbg" secondAttribute="left" constant="20" id="89w-aa-0RB"/>
                                             <constraint firstAttribute="trailing" secondItem="lhA-Sk-bQm" secondAttribute="trailing" constant="20" id="9Gh-3g-Uzm"/>
+                                            <constraint firstItem="xxV-PT-N56" firstAttribute="centerX" secondItem="tXH-gD-mbg" secondAttribute="centerX" id="Adh-BF-f2s"/>
                                             <constraint firstAttribute="right" secondItem="sQW-fv-XoE" secondAttribute="right" constant="30" id="Dtg-aF-WJY"/>
                                             <constraint firstItem="8B7-rD-N1U" firstAttribute="left" secondItem="tXH-gD-mbg" secondAttribute="left" constant="20" id="FmL-Zo-VTP"/>
+                                            <constraint firstItem="FJc-xE-O0W" firstAttribute="top" secondItem="vXv-WT-ZG2" secondAttribute="bottom" constant="316" id="Izd-wR-Pdy"/>
                                             <constraint firstItem="sQW-fv-XoE" firstAttribute="top" secondItem="znA-uH-eHB" secondAttribute="bottom" constant="30" id="MlN-zH-H0Y"/>
                                             <constraint firstItem="RuY-Se-13r" firstAttribute="leading" secondItem="tXH-gD-mbg" secondAttribute="leading" constant="20" id="OCC-Eb-Q2v"/>
                                             <constraint firstItem="SWC-on-KQN" firstAttribute="top" secondItem="o7D-NL-X6S" secondAttribute="bottom" constant="20" id="OiI-pu-UTa"/>
@@ -439,22 +443,21 @@
                                             <constraint firstItem="o7D-NL-X6S" firstAttribute="left" secondItem="tXH-gD-mbg" secondAttribute="left" constant="20" id="Z2b-da-jNt"/>
                                             <constraint firstItem="FJc-xE-O0W" firstAttribute="centerX" secondItem="tXH-gD-mbg" secondAttribute="centerX" id="ZgJ-uN-6En"/>
                                             <constraint firstItem="SyD-Os-RJD" firstAttribute="top" secondItem="8B7-rD-N1U" secondAttribute="bottom" constant="20" id="ZpD-C6-y6w"/>
+                                            <constraint firstItem="xxV-PT-N56" firstAttribute="top" secondItem="UC9-Us-nbN" secondAttribute="bottom" constant="12" id="aBs-Ig-45i"/>
                                             <constraint firstItem="sDq-MR-cZn" firstAttribute="top" secondItem="SWC-on-KQN" secondAttribute="bottom" constant="20" id="aEr-AG-gvX"/>
-                                            <constraint firstItem="IVE-Er-gU0" firstAttribute="centerX" secondItem="tXH-gD-mbg" secondAttribute="centerX" id="dZw-fo-PFe"/>
                                             <constraint firstItem="lhA-Sk-bQm" firstAttribute="top" secondItem="sDq-MR-cZn" secondAttribute="bottom" constant="20" id="hUJ-4g-5jU"/>
                                             <constraint firstItem="cee-CN-Uyt" firstAttribute="top" secondItem="lhA-Sk-bQm" secondAttribute="bottom" constant="20" id="iGs-ac-waR"/>
                                             <constraint firstItem="sQW-fv-XoE" firstAttribute="left" secondItem="tXH-gD-mbg" secondAttribute="left" constant="30" id="jAV-VD-94Q"/>
                                             <constraint firstAttribute="trailing" secondItem="znA-uH-eHB" secondAttribute="trailing" constant="20" id="jHW-eF-3Kt"/>
                                             <constraint firstItem="znA-uH-eHB" firstAttribute="top" secondItem="tXH-gD-mbg" secondAttribute="top" constant="30" id="jSd-kk-aTC"/>
-                                            <constraint firstItem="IVE-Er-gU0" firstAttribute="top" secondItem="UC9-Us-nbN" secondAttribute="bottom" constant="8" id="khn-sG-dYF"/>
                                             <constraint firstAttribute="right" secondItem="SyD-Os-RJD" secondAttribute="right" constant="20" id="n8u-G6-8m6"/>
-                                            <constraint firstItem="o7D-NL-X6S" firstAttribute="top" secondItem="IVE-Er-gU0" secondAttribute="bottom" constant="30" id="ovc-fV-sG7"/>
                                             <constraint firstItem="sDq-MR-cZn" firstAttribute="leading" secondItem="tXH-gD-mbg" secondAttribute="leading" constant="20" id="p3D-X2-V72"/>
                                             <constraint firstAttribute="trailing" secondItem="cee-CN-Uyt" secondAttribute="trailing" constant="20" id="qiV-4C-psI"/>
                                             <constraint firstItem="8B7-rD-N1U" firstAttribute="top" secondItem="RuY-Se-13r" secondAttribute="bottom" constant="20" id="td3-CF-9F8"/>
                                             <constraint firstItem="RuY-Se-13r" firstAttribute="top" secondItem="cee-CN-Uyt" secondAttribute="bottom" constant="20" id="tf9-YG-qpZ"/>
                                             <constraint firstItem="UC9-Us-nbN" firstAttribute="centerX" secondItem="tXH-gD-mbg" secondAttribute="centerX" id="vEa-RL-qxh"/>
                                             <constraint firstAttribute="right" secondItem="o7D-NL-X6S" secondAttribute="right" constant="20" id="xcB-dt-WyF"/>
+                                            <constraint firstItem="o7D-NL-X6S" firstAttribute="top" secondItem="xxV-PT-N56" secondAttribute="bottom" constant="20" id="zPR-Aq-3tX"/>
                                             <constraint firstAttribute="right" secondItem="8B7-rD-N1U" secondAttribute="right" constant="20" id="zzB-I3-LBA"/>
                                         </constraints>
                                     </view>
@@ -1329,14 +1332,17 @@ Download the app and start exploring your local restaurants! Find your new favou
                                                     <constraint firstAttribute="width" constant="80" id="CED-Ek-tpj"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select profile picture" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBl-5B-bOe">
-                                                <rect key="frame" x="145.33333333333334" y="440" width="123.66666666666666" height="17"/>
-                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="14"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW2-jL-OUi">
+                                                <rect key="frame" x="136" y="444" width="142" height="24"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="142" id="jNW-Tu-Dpw"/>
+                                                    <constraint firstAttribute="height" constant="24" id="sYX-ek-uXm"/>
+                                                </constraints>
+                                                <state key="normal" image="select-prof-pic"/>
+                                            </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cse-Tg-ew0">
-                                                <rect key="frame" x="20" y="487" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="488" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="6he-IE-9Aa"/>
                                                 </constraints>
@@ -1350,7 +1356,7 @@ Download the app and start exploring your local restaurants! Find your new favou
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qur-No-YS5">
-                                                <rect key="frame" x="20" y="547" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="548" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="38v-QZ-jsv"/>
                                                 </constraints>
@@ -1364,7 +1370,7 @@ Download the app and start exploring your local restaurants! Find your new favou
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YTz-Zw-HZ2">
-                                                <rect key="frame" x="20" y="607" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="608" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="RSK-fo-zXZ"/>
                                                 </constraints>
@@ -1378,7 +1384,7 @@ Download the app and start exploring your local restaurants! Find your new favou
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Short bio" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AEZ-LO-fxo">
-                                                <rect key="frame" x="20" y="667" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="668" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Ph3-aR-TCR"/>
                                                 </constraints>
@@ -1392,7 +1398,7 @@ Download the app and start exploring your local restaurants! Find your new favou
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Create Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gVp-x8-0jf">
-                                                <rect key="frame" x="20" y="727" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="728" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Ven-BW-e04"/>
                                                 </constraints>
@@ -1406,7 +1412,7 @@ Download the app and start exploring your local restaurants! Find your new favou
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8uZ-jl-mIl">
-                                                <rect key="frame" x="20" y="787" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="788" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="9eo-Qq-smd"/>
                                                 </constraints>
@@ -1420,7 +1426,7 @@ Download the app and start exploring your local restaurants! Find your new favou
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kqa-mI-Cns">
-                                                <rect key="frame" x="20" y="857" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="858" width="374" height="40"/>
                                                 <color key="backgroundColor" red="0.37647058823529411" green="0.45490196078431372" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="UrA-qJ-ErR"/>
@@ -1467,8 +1473,6 @@ Download the app and start exploring your local restaurants! Find your new favou
                                             <constraint firstItem="cUi-b6-Twq" firstAttribute="leading" secondItem="Ire-9T-bOx" secondAttribute="leading" constant="20" id="C4j-oP-483"/>
                                             <constraint firstItem="gVp-x8-0jf" firstAttribute="left" secondItem="Ire-9T-bOx" secondAttribute="left" constant="20" id="Cvb-kv-wFe"/>
                                             <constraint firstItem="KKF-37-WmS" firstAttribute="centerX" secondItem="Ire-9T-bOx" secondAttribute="centerX" id="DOP-h4-fwh"/>
-                                            <constraint firstItem="Cse-Tg-ew0" firstAttribute="top" secondItem="IBl-5B-bOe" secondAttribute="bottom" constant="30" id="DlM-bC-Zsq"/>
-                                            <constraint firstItem="KKF-37-WmS" firstAttribute="top" secondItem="Kqa-mI-Cns" secondAttribute="bottom" constant="317" id="GzQ-0g-RG6"/>
                                             <constraint firstItem="YTz-Zw-HZ2" firstAttribute="top" secondItem="Qur-No-YS5" secondAttribute="bottom" constant="20" id="HwT-zU-kN3"/>
                                             <constraint firstAttribute="right" secondItem="YTz-Zw-HZ2" secondAttribute="right" constant="20" id="JWF-OH-q7f"/>
                                             <constraint firstItem="Kqa-mI-Cns" firstAttribute="left" secondItem="Ire-9T-bOx" secondAttribute="left" constant="20" id="JlY-er-5Um"/>
@@ -1477,16 +1481,18 @@ Download the app and start exploring your local restaurants! Find your new favou
                                             <constraint firstItem="YTz-Zw-HZ2" firstAttribute="left" secondItem="Ire-9T-bOx" secondAttribute="left" constant="20" id="RER-hf-VIH"/>
                                             <constraint firstItem="8uZ-jl-mIl" firstAttribute="left" secondItem="Ire-9T-bOx" secondAttribute="left" constant="20" id="SC9-LV-eyB"/>
                                             <constraint firstItem="AEZ-LO-fxo" firstAttribute="top" secondItem="YTz-Zw-HZ2" secondAttribute="bottom" constant="20" id="UPH-rg-G6p"/>
+                                            <constraint firstItem="NW2-jL-OUi" firstAttribute="top" secondItem="50B-9S-Dsg" secondAttribute="bottom" constant="12" id="VMf-1C-ux9"/>
+                                            <constraint firstItem="NW2-jL-OUi" firstAttribute="centerX" secondItem="Ire-9T-bOx" secondAttribute="centerX" id="W8l-gE-1z4"/>
                                             <constraint firstItem="gVp-x8-0jf" firstAttribute="top" secondItem="AEZ-LO-fxo" secondAttribute="bottom" constant="20" id="Y3o-07-2TJ"/>
                                             <constraint firstItem="50B-9S-Dsg" firstAttribute="top" secondItem="5Fl-1r-Zoy" secondAttribute="bottom" constant="20" id="YHT-wE-clW"/>
-                                            <constraint firstItem="IBl-5B-bOe" firstAttribute="centerX" secondItem="Ire-9T-bOx" secondAttribute="centerX" id="bki-4d-eaH"/>
                                             <constraint firstAttribute="right" secondItem="Qur-No-YS5" secondAttribute="right" constant="20" id="dLZ-Yb-ykW"/>
-                                            <constraint firstItem="IBl-5B-bOe" firstAttribute="top" secondItem="50B-9S-Dsg" secondAttribute="bottom" constant="8" id="dy4-oJ-FlO"/>
                                             <constraint firstAttribute="trailing" secondItem="AEZ-LO-fxo" secondAttribute="trailing" constant="20" id="fjS-x3-frP"/>
+                                            <constraint firstItem="Cse-Tg-ew0" firstAttribute="top" secondItem="NW2-jL-OUi" secondAttribute="bottom" constant="20" id="h3F-bG-Vn0"/>
                                             <constraint firstAttribute="right" secondItem="Cse-Tg-ew0" secondAttribute="right" constant="20" id="lTS-vW-9Qe"/>
                                             <constraint firstItem="Qur-No-YS5" firstAttribute="top" secondItem="Cse-Tg-ew0" secondAttribute="bottom" constant="20" id="nd3-JT-43C"/>
                                             <constraint firstItem="5Fl-1r-Zoy" firstAttribute="left" secondItem="Ire-9T-bOx" secondAttribute="left" constant="30" id="nrv-eB-2cP"/>
                                             <constraint firstItem="Cse-Tg-ew0" firstAttribute="left" secondItem="Ire-9T-bOx" secondAttribute="left" constant="20" id="ovY-Dp-dOZ"/>
+                                            <constraint firstItem="KKF-37-WmS" firstAttribute="top" secondItem="Kqa-mI-Cns" secondAttribute="bottom" constant="316" id="pa1-Dz-LKG"/>
                                             <constraint firstItem="Kqa-mI-Cns" firstAttribute="top" secondItem="8uZ-jl-mIl" secondAttribute="bottom" constant="30" id="vLZ-rQ-RSi"/>
                                             <constraint firstItem="Qur-No-YS5" firstAttribute="left" secondItem="Ire-9T-bOx" secondAttribute="left" constant="20" id="w78-I3-cyt"/>
                                             <constraint firstItem="8uZ-jl-mIl" firstAttribute="top" secondItem="gVp-x8-0jf" secondAttribute="bottom" constant="20" id="wt4-wD-xcP"/>
@@ -2283,7 +2289,7 @@ Download the app and start exploring your local restaurants! Find your new favou
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="byU-wR-8Fx"/>
+        <segue reference="CG4-qB-vAW"/>
         <segue reference="83a-6F-wcJ"/>
         <segue reference="5uX-w9-ay9"/>
     </inferredMetricsTieBreakers>
@@ -2299,6 +2305,7 @@ Download the app and start exploring your local restaurants! Find your new favou
         <image name="placeholder-image" width="200" height="200"/>
         <image name="plus" width="24" height="24"/>
         <image name="restaurant" width="345" height="261"/>
+        <image name="select-prof-pic" width="142" height="24"/>
         <image name="select-profile-pic" width="100" height="100"/>
         <image name="select-signup" width="345" height="309"/>
         <image name="splash-image" width="341" height="340"/>
