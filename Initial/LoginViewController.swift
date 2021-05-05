@@ -56,7 +56,12 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginTapped(_ sender: UIButton) {
         
+        // dismiss keyboard
+        view.endEditing(true)
+        
         hud1.show(in: self.view)
+        
+        hud1.dismiss(afterDelay: 2.0, animated: true)
         
         func isValidEmail(testStr:String) -> Bool {
             let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -109,4 +114,4 @@ class LoginViewController: UIViewController {
         
     }
     
-}   // #113
+}   // #118

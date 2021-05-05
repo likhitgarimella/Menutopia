@@ -136,6 +136,8 @@ class RestaurantSignupViewController: UIViewController {
         
         hud1.show(in: self.view)
         
+        hud1.dismiss(afterDelay: 2.0, animated: true)
+        
         func isValidEmail(testStr:String) -> Bool {
             let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
             let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
@@ -236,4 +238,4 @@ extension RestaurantSignupViewController: UIImagePickerControllerDelegate, UINav
         
     }
     
-}   // #240
+}   // #242
