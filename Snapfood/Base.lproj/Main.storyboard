@@ -269,6 +269,9 @@
                                                     <constraint firstAttribute="width" constant="142" id="mR0-Mz-Wu6"/>
                                                 </constraints>
                                                 <state key="normal" image="select-prof-pic"/>
+                                                <connections>
+                                                    <action selector="addBtn:" destination="v6Q-i0-owY" eventType="touchUpInside" id="0nr-P9-2fP"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restaurant name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o7D-NL-X6S">
                                                 <rect key="frame" x="20" y="525" width="374" height="40"/>
@@ -2289,7 +2292,7 @@ Download the app and start exploring your local restaurants! Find your new favou
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CG4-qB-vAW"/>
+        <segue reference="byU-wR-8Fx"/>
         <segue reference="83a-6F-wcJ"/>
         <segue reference="5uX-w9-ay9"/>
     </inferredMetricsTieBreakers>

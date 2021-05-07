@@ -33,6 +33,8 @@ class RestaurantSignupViewController: UIViewController {
     // an Optional
     var image: UIImage? = nil
     
+    let imagePicker = UIImagePickerController()
+    
     func Properties() {
         
         restName.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 238/255, alpha: 1)
@@ -87,13 +89,9 @@ class RestaurantSignupViewController: UIViewController {
         profileImage.layer.cornerRadius = 40
         profileImage.layer.masksToBounds = true
         
-        // Add gesture for profile image present in screen
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleSelectProfileImageView))
-        profileImage.addGestureRecognizer(tapGesture)
-        profileImage.isUserInteractionEnabled = true
-        
     }
     
+    /*
     @objc func handleSelectProfileImageView() {
         
         let pickerController = UIImagePickerController()
@@ -107,9 +105,13 @@ class RestaurantSignupViewController: UIViewController {
         present(pickerController, animated: true, completion: nil)
         
     }
+    */
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = true
         
         hideKeyboardWhenTappedAround()
         
@@ -118,6 +120,30 @@ class RestaurantSignupViewController: UIViewController {
         LeftPadding()
         ProfileImage()
         
+    }
+    
+    @IBAction func addBtn(_ sender: UIButton) {
+        
+        let taptic = UIImpactFeedbackGenerator(style: .light)
+        taptic.prepare()
+        taptic.impactOccurred()
+        
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Photo Gallery", style: .default, handler: { (button) in
+            self.imagePicker.sourceType = .photoLibrary
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }))
+            
+        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (button) in
+            self.imagePicker.sourceType = .camera
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }))
+            
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            
+        present(alert, animated: true, completion: nil)
+            
     }
     
     @IBAction func dismiss(_ sender: UIButton) {
@@ -219,23 +245,15 @@ extension RestaurantSignupViewController: UIImagePickerControllerDelegate, UINav
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         // Selected image to display it in our profile image
-        if let imageSelected = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+        if let imageSel = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            // Store this img in an instance variable
+            image = imageSel
             // set profile image's imageView to selected image
-            profileImage.image = imageSelected
-            // Store this img in an instance variable
-            image = imageSelected
+            profileImage.image = imageSel
         }
-        // Original image
-        if let imageOriginal = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            // set profile image's imageView to original image
-            profileImage.image = imageOriginal
-            // Store this img in an instance variable
-            image = imageOriginal
-        }
-        
         print("Image selected from library")
         dismiss(animated: true, completion: nil)
         
     }
     
-}   // #242
+}   // #260
