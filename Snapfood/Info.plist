@@ -23,9 +23,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>This app wants to access your camera.</string>
+	<string>This app requires access to your camera to upload your photo.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app wants to open your photos.</string>
+	<string>This app requires access to the photo library to upload your photo.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>SF-Pro-Text-LightItalic.otf</string>
