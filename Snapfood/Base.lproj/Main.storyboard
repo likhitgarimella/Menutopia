@@ -1719,24 +1719,6 @@ Download the app and start exploring your local restaurants! Find your new favou
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPh-9I-eDL">
-                                                <rect key="frame" x="234" y="276" width="160" height="40"/>
-                                                <color key="backgroundColor" red="0.81176470590000005" green="0.27058823529999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="160" id="aC9-7d-sjD"/>
-                                                    <constraint firstAttribute="height" constant="40" id="xgs-wP-Xrc"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
-                                                <state key="normal">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="92L-s7-tNd" kind="presentation" id="U2Q-qU-Ksc"/>
-                                                </connections>
-                                            </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sponsor" translatesAutoresizingMaskIntoConstraints="NO" id="kwM-vr-rFZ">
-                                                <rect key="frame" x="272" y="286.66666666666669" width="84" height="19"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAz-Lw-hx1">
                                                 <rect key="frame" x="40" y="326" width="0.0" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
@@ -1802,7 +1784,6 @@ Download the app and start exploring your local restaurants! Find your new favou
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="1B5-ml-yT0" firstAttribute="top" secondItem="ke4-Yd-Bjr" secondAttribute="bottom" constant="90" id="22B-EP-dPm"/>
-                                            <constraint firstAttribute="trailing" secondItem="qPh-9I-eDL" secondAttribute="trailing" constant="20" id="39L-gL-w63"/>
                                             <constraint firstItem="5MH-pb-NLj" firstAttribute="left" secondItem="VAz-Lw-hx1" secondAttribute="right" constant="40" id="74f-CG-fVZ"/>
                                             <constraint firstItem="2uC-B5-CUO" firstAttribute="centerX" secondItem="HZR-RJ-yD0" secondAttribute="centerX" id="9lf-Ph-90N"/>
                                             <constraint firstItem="MWg-Xe-TsV" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="20" id="Aqc-Hz-lCv"/>
@@ -1810,14 +1791,12 @@ Download the app and start exploring your local restaurants! Find your new favou
                                             <constraint firstAttribute="trailing" secondItem="1B5-ml-yT0" secondAttribute="trailing" constant="20" id="H66-J5-xMF"/>
                                             <constraint firstItem="VAz-Lw-hx1" firstAttribute="left" secondItem="pd4-zd-Yad" secondAttribute="left" constant="40" id="H7z-wD-8Oy"/>
                                             <constraint firstItem="nly-o1-dna" firstAttribute="top" secondItem="HZR-RJ-yD0" secondAttribute="bottom" constant="52" id="HJj-3n-sp7"/>
-                                            <constraint firstItem="kwM-vr-rFZ" firstAttribute="centerX" secondItem="qPh-9I-eDL" secondAttribute="centerX" id="HqX-eM-KNz"/>
                                             <constraint firstItem="ke4-Yd-Bjr" firstAttribute="top" secondItem="20R-WR-ZTz" secondAttribute="bottom" constant="70" id="Jrw-bv-OAZ"/>
                                             <constraint firstItem="1B5-ml-yT0" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="20" id="Kug-RK-Lkc"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kkA-6J-dVM" secondAttribute="trailing" constant="20" symbolic="YES" id="LxH-U2-ewN"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Fhb-5P-Fi9" secondAttribute="trailing" constant="20" symbolic="YES" id="MB7-um-Sn6"/>
                                             <constraint firstItem="kkA-6J-dVM" firstAttribute="top" secondItem="pd4-zd-Yad" secondAttribute="top" constant="12" id="Mao-Uh-bon"/>
                                             <constraint firstItem="20R-WR-ZTz" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="20" id="Ng4-vG-8qy"/>
-                                            <constraint firstItem="kwM-vr-rFZ" firstAttribute="centerY" secondItem="qPh-9I-eDL" secondAttribute="centerY" id="Oic-2p-0SP"/>
                                             <constraint firstAttribute="trailing" secondItem="4tD-aU-Eaj" secondAttribute="trailing" constant="20" id="SGW-1B-iDn"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MWg-Xe-TsV" secondAttribute="trailing" constant="20" symbolic="YES" id="Vf6-AT-7e4"/>
                                             <constraint firstItem="ke4-Yd-Bjr" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="20" id="Vft-Vd-m0z"/>
@@ -1834,7 +1813,6 @@ Download the app and start exploring your local restaurants! Find your new favou
                                             <constraint firstItem="4tD-aU-Eaj" firstAttribute="top" secondItem="kkA-6J-dVM" secondAttribute="bottom" constant="20" id="dpy-EV-8Uu"/>
                                             <constraint firstItem="VAz-Lw-hx1" firstAttribute="top" secondItem="nly-o1-dna" secondAttribute="bottom" constant="10" id="ec3-hF-SUB"/>
                                             <constraint firstItem="HZR-RJ-yD0" firstAttribute="top" secondItem="4tD-aU-Eaj" secondAttribute="bottom" constant="24" id="i4y-W2-bfg"/>
-                                            <constraint firstItem="qPh-9I-eDL" firstAttribute="centerY" secondItem="nly-o1-dna" secondAttribute="centerY" id="k07-Jz-KmI"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ke4-Yd-Bjr" secondAttribute="trailing" constant="20" symbolic="YES" id="nYG-Q1-8lI"/>
                                             <constraint firstItem="4tD-aU-Eaj" firstAttribute="leading" secondItem="pd4-zd-Yad" secondAttribute="leading" constant="20" id="pyW-6A-ZFY"/>
                                             <constraint firstItem="vR5-jd-r8y" firstAttribute="leading" secondItem="HZR-RJ-yD0" secondAttribute="trailing" constant="20" id="tdj-bE-h8R"/>
@@ -1875,68 +1853,12 @@ Download the app and start exploring your local restaurants! Find your new favou
                         <outlet property="selectCuisine" destination="ke4-Yd-Bjr" id="FrY-T7-Oww"/>
                         <outlet property="selectGenre" destination="20R-WR-ZTz" id="jhc-Uw-DIM"/>
                         <outlet property="selectType" destination="MWg-Xe-TsV" id="30F-ke-hfU"/>
-                        <outlet property="sponsorOutlet" destination="qPh-9I-eDL" id="dJ3-em-Ttf"/>
                         <outlet property="submitOutlet" destination="1B5-ml-yT0" id="2PZ-6h-2R3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8F-Wd-w58" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6437.68115942029" y="-837.22826086956525"/>
-        </scene>
-        <!--Sponsor View Controller-->
-        <scene sceneID="1pz-s1-qlV">
-            <objects>
-                <viewController id="92L-s7-tNd" customClass="SponsorViewController" customModule="Snapfood" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AVT-PN-Xas">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="535"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sponsor-img" translatesAutoresizingMaskIntoConstraints="NO" id="ZCl-hL-xYY">
-                                <rect key="frame" x="20" y="20" width="374" height="290"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="290" id="NZr-hA-R0x"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start the campaign for $ charge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVH-qJ-sSa">
-                                <rect key="frame" x="40" y="330" width="334" height="29"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SIL-sD-AMM">
-                                <rect key="frame" x="190" y="464" width="34" height="31"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Back">
-                                            <attributes>
-                                                <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" size="16" name="SFProRounded-Regular"/>
-                                                <integer key="NSUnderline" value="1"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="dismiss:" destination="92L-s7-tNd" eventType="touchUpInside" id="0ri-pG-wYO"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="l8i-5W-Wfd"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="ZCl-hL-xYY" firstAttribute="leading" secondItem="l8i-5W-Wfd" secondAttribute="leading" constant="20" id="1SY-LH-tRz"/>
-                            <constraint firstItem="SIL-sD-AMM" firstAttribute="centerX" secondItem="AVT-PN-Xas" secondAttribute="centerX" id="PPY-Zf-dxb"/>
-                            <constraint firstItem="gVH-qJ-sSa" firstAttribute="centerX" secondItem="AVT-PN-Xas" secondAttribute="centerX" id="Shd-z1-mjr"/>
-                            <constraint firstItem="l8i-5W-Wfd" firstAttribute="trailing" secondItem="ZCl-hL-xYY" secondAttribute="trailing" constant="20" id="a6l-68-CaJ"/>
-                            <constraint firstItem="ZCl-hL-xYY" firstAttribute="top" secondItem="l8i-5W-Wfd" secondAttribute="top" constant="20" id="gef-nN-lia"/>
-                            <constraint firstItem="gVH-qJ-sSa" firstAttribute="top" secondItem="ZCl-hL-xYY" secondAttribute="bottom" constant="20" id="iYJ-55-NyU"/>
-                            <constraint firstItem="l8i-5W-Wfd" firstAttribute="bottom" secondItem="SIL-sD-AMM" secondAttribute="bottom" constant="40" id="rlW-ER-opG"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a9e-A2-HZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7277" y="-998"/>
         </scene>
         <!--User Profile View Controller-->
         <scene sceneID="2Zg-d6-dtb">
@@ -2315,8 +2237,6 @@ Download the app and start exploring your local restaurants! Find your new favou
         <image name="select-profile-pic" width="100" height="100"/>
         <image name="select-signup" width="345" height="309"/>
         <image name="splash-image" width="341" height="340"/>
-        <image name="sponsor" width="84" height="19"/>
-        <image name="sponsor-img" width="345" height="291"/>
         <image name="user" width="345" height="224"/>
         <image name="user-prof-pic" width="103" height="102"/>
         <image name="users" width="24" height="20"/>

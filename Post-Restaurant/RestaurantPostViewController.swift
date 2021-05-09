@@ -18,7 +18,6 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
     @IBOutlet var mealImage: UIImageView!
     @IBOutlet var mealDesc: UITextView!
     @IBOutlet var mealPrice: UITextField!
-    @IBOutlet var sponsorOutlet: UIButton!
     @IBOutlet var submitOutlet: UIButton!
     
     /// reference label 1
@@ -94,7 +93,6 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
         mealImage.layer.cornerRadius = 20
         mealDesc.layer.cornerRadius = 20
         mealPrice.layer.cornerRadius = 20
-        sponsorOutlet.layer.cornerRadius = 20
         submitOutlet.layer.cornerRadius = 20
         
     }
@@ -576,4 +574,4 @@ class RestaurantPostViewController: UIViewController, UIScrollViewDelegate, UIIm
         submitOutlet.isEnabled = false
     }
     
-}   // #580
+}   // #578
