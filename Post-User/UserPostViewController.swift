@@ -144,7 +144,7 @@ class UserPostViewController: UIViewController, UITextViewDelegate, UIImagePicke
         
         hud1.show(in: self.view)
         
-        hud1.dismiss(afterDelay: 2.0, animated: true)
+        hud1.dismiss(afterDelay: 4.0, animated: true)
         
         // Creating a timestamp
         let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
